@@ -46,8 +46,8 @@ class BookingHotelStartScreen extends StatelessWidget {
                   "Temukan hotel\nberkualitas dengan\nharga terjangkau",
                   style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 24,
                     height: 1.5,
                     wordSpacing: 8,
                   ),
