@@ -80,7 +80,9 @@ class BookingHotelStartScreen extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(width: 4,),
+                      SizedBox(
+                        width: 4,
+                      ),
                       Icon(
                         Icons.arrow_forward,
                         color: Colors.white,
