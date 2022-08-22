@@ -16,7 +16,7 @@ class BookingHotelStartScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
+                  image: const NetworkImage(
                     "https://cdn.pixabay.com/photo/2018/02/24/17/17/window-3178666__340.jpg",
                   ),
                   fit: BoxFit.cover,
@@ -47,22 +47,46 @@ class BookingHotelStartScreen extends StatelessWidget {
                 const Text(
                   "Temukan hotel\nberkualitas dengan\nharga terjangkau",
                   style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 24,
-                    height: 1.5,
-                    wordSpacing: 8,
-                    letterSpacing: 1.5
-                  ),
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 24,
+                      height: 1.5,
+                      wordSpacing: 8,
+                      letterSpacing: 1.5),
                   textAlign: TextAlign.start,
                 ),
-               const SizedBox(
+                const SizedBox(
                   height: 32,
                 ),
                 Text(
                   "Memudahkan anda mencari hotel yang nyaman dan berkualitas",
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.8),
+                    height: 1.5,
+                  ),
+                ),
+                const Spacer(),
+                Container(
+                  height: 52,
+                  decoration: const BoxDecoration(
+                    color: Colors.blueAccent,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Text(
+                        "Cari Hotel",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(width: 4,),
+                      Icon(
+                        Icons.arrow_forward,
+                        color: Colors.white,
+                        size: 16,
+                      )
+                    ],
                   ),
                 )
               ],
