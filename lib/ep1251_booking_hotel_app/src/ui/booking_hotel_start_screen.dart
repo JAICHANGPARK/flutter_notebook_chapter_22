@@ -52,11 +52,12 @@ class BookingHotelStartScreen extends StatelessWidget {
                     fontSize: 24,
                     height: 1.5,
                     wordSpacing: 8,
+                    letterSpacing: 1.5
                   ),
                   textAlign: TextAlign.start,
                 ),
                const SizedBox(
-                  height: 24,
+                  height: 32,
                 ),
                 Text(
                   "Memudahkan anda mencari hotel yang nyaman dan berkualitas",
