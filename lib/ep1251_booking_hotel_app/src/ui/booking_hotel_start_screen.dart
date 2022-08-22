@@ -31,6 +31,7 @@ class BookingHotelStartScreen extends StatelessWidget {
             top: 72,
             bottom: 64,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "TuruRek",
@@ -40,14 +41,17 @@ class BookingHotelStartScreen extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
+                SizedBox(height: 72,),
                 Text(
-                  "Temukan hotel berkualitas dengan harga terjangkau",
+                  "Temukan hotel\nberkualitas dengan\nharga terjangkau",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
-                    height: 1.5
+                    height: 1.5,
+                    wordSpacing: 8,
                   ),
+                  textAlign: TextAlign.start,
                 )
               ],
             ),
