@@ -10,7 +10,7 @@ class BookingHotelApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        "/" : (context)=> BookingHotelStartScreen(),
+        "/": (context) => const BookingHotelStartScreen(),
       },
     );
   }
