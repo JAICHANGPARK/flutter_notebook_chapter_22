@@ -48,7 +48,7 @@ class BookingHotelMainPage extends StatelessWidget {
                     width: 34,
                     decoration: BoxDecoration(
                       color: Colors.blue,
-                      borderRadius: BorderRadius.circular(2)
+                      borderRadius: BorderRadius.circular(2),
                     ),
                   )
                 ],
