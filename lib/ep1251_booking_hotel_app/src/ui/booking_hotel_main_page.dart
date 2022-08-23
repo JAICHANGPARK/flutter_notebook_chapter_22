@@ -27,7 +27,7 @@ class BookingHotelMainPage extends StatelessWidget {
                         ),
                       ),
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             "Surabaya, Jawa Timur",
                             style: TextStyle(
@@ -53,6 +53,27 @@ class BookingHotelMainPage extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: const [
+                Text(
+                  "Category",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  "View All",
+                  style: TextStyle(color: Colors.orangeAccent),
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  size: 14,
+                  color: Colors.orangeAccent,
+                )
+              ],
             )
           ],
         ),
