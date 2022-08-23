@@ -119,7 +119,7 @@ class BookingHotelMainPage extends StatelessWidget {
                       ),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
+                      horizontal: 24,
                       vertical: 4,
                     ),
                     child: Row(
@@ -143,7 +143,7 @@ class BookingHotelMainPage extends StatelessWidget {
                       ),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
+                      horizontal: 24,
                       vertical: 4,
                     ),
                     child: Row(
@@ -167,7 +167,7 @@ class BookingHotelMainPage extends StatelessWidget {
                       ),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
+                      horizontal: 24,
                       vertical: 4,
                     ),
                     child: Row(
