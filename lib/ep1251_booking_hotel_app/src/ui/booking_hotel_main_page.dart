@@ -86,15 +86,27 @@ class BookingHotelMainPage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.hotel_outlined,
                           size: 14,
                           color: Colors.white,
                         ),
-                        SizedBox(width: 4,),
-                        Text("Hotels")
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Text(
+                          "Hotels",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
                       ],
                     ),
                   )
