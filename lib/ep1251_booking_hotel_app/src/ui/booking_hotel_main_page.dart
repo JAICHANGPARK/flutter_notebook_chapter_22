@@ -5,6 +5,30 @@ class BookingHotelMainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text("Dreamwalker"),
+                    Row(
+                      children: [
+                        Text("Surabaya, Jawa Timur"),
+                        Icon(
+                          Icons.keyboard_arrow_down,
+                        )
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
