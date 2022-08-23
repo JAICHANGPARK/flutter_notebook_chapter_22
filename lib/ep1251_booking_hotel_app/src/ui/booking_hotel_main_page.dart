@@ -224,7 +224,7 @@ class BookingHotelMainPage extends StatelessWidget {
               child: ListView(
                 children: [
                   Container(
-                    height: 160,
+                    height: 120,
                     color: Colors.teal,
                   )
                 ],
