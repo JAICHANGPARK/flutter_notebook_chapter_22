@@ -79,20 +79,22 @@ class BookingHotelMainPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 16),
+              margin: EdgeInsets.only(top: 16, left: 16),
               height: 32,
               color: Colors.pink,
+
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
+                    margin: EdgeInsets.only(right: 8),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.hotel_outlined,
                           size: 14,
@@ -105,6 +107,25 @@ class BookingHotelMainPage extends StatelessWidget {
                           "Hotels",
                           style: TextStyle(
                             color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 8),
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      color: Colors.blue,
+                    )),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "Food",
+                          style: TextStyle(
+                            color: Colors.black,
                           ),
                         )
                       ],
