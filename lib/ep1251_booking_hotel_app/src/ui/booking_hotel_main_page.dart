@@ -13,7 +13,7 @@ class BookingHotelMainPage extends StatelessWidget {
               padding: const EdgeInsets.only(
                 left: 16,
                 right: 16,
-                top: 24,
+                top: 32,
               ),
               child: Row(
                 children: [
@@ -24,6 +24,7 @@ class BookingHotelMainPage extends StatelessWidget {
                         "Dreamwalker",
                         style: TextStyle(
                           color: Colors.grey,
+                          fontSize: 12
                         ),
                       ),
                       Row(
