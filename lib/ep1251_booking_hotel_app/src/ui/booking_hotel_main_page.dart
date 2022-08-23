@@ -9,22 +9,29 @@ class BookingHotelMainPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Text("Dreamwalker"),
-                    Row(
-                      children: [
-                        Text("Surabaya, Jawa Timur"),
-                        Icon(
-                          Icons.keyboard_arrow_down,
-                        )
-                      ],
-                    ),
-                  ],
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+                top: 16,
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Dreamwalker"),
+                      Row(
+                        children: [
+                          Text("Surabaya, Jawa Timur"),
+                          Icon(
+                            Icons.keyboard_arrow_down,
+                          )
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
