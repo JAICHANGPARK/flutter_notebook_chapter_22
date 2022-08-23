@@ -78,6 +78,29 @@ class BookingHotelMainPage extends StatelessWidget {
                 ],
               ),
             ),
+            Container(
+              margin: EdgeInsets.only(top: 16),
+              height: 32,
+              color: Colors.pink,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.hotel_outlined,
+                          size: 14,
+                          color: Colors.white,
+                        ),
+                        SizedBox(width: 4,),
+                        Text("Hotels")
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
