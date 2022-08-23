@@ -191,7 +191,7 @@ class BookingHotelMainPage extends StatelessWidget {
             Container(
               height: 240,
               color: Colors.indigo,
-              margin: EdgeInsets.symmetric(vertical: 32),
+              margin: EdgeInsets.fromLTRB(16, 32, 0, 32),
             ),
             Padding(
               padding: EdgeInsets.only(left: 16, right: 16, top: 0, bottom: 16),
@@ -220,15 +220,19 @@ class BookingHotelMainPage extends StatelessWidget {
                 ],
               ),
             ),
-
             Expanded(
               child: ListView(
-                children: List.generate(10, (index) => Container(
-                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 12,),
-                  height: 120,
-                  color: Colors.teal,
-                ))
-              ),
+                  children: List.generate(
+                      10,
+                      (index) => Container(
+                            margin: EdgeInsets.only(
+                              left: 16,
+                              right: 16,
+                              bottom: 12,
+                            ),
+                            height: 120,
+                            color: Colors.teal,
+                          ))),
             ),
           ],
         ),
