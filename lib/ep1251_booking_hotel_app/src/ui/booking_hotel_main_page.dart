@@ -13,7 +13,7 @@ class BookingHotelMainPage extends StatelessWidget {
               padding: const EdgeInsets.only(
                 left: 16,
                 right: 16,
-                top: 16,
+                top: 24,
               ),
               child: Row(
                 children: [
