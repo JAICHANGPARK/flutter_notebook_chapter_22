@@ -18,8 +18,14 @@ class BookingHotelMainPage extends StatelessWidget {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Dreamwalker"),
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
                       Row(
                         children: [
                           Text("Surabaya, Jawa Timur"),
