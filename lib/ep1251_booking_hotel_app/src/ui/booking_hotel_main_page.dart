@@ -81,17 +81,15 @@ class BookingHotelMainPage extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 16, left: 16),
               height: 32,
-              color: Colors.pink,
-
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 8),
-                    decoration: BoxDecoration(
+                    margin: const EdgeInsets.only(right: 8),
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
