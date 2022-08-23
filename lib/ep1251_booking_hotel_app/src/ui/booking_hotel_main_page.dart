@@ -54,27 +54,30 @@ class BookingHotelMainPage extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: const [
-                Text(
-                  "Category",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
+            Padding(
+              padding: EdgeInsets.only(left: 16, right: 16, top: 24),
+              child: Row(
+                children: const [
+                  Text(
+                    "Category",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-                Spacer(),
-                Text(
-                  "View All",
-                  style: TextStyle(color: Colors.orangeAccent),
-                ),
-                Icon(
-                  Icons.arrow_forward,
-                  size: 14,
-                  color: Colors.orangeAccent,
-                )
-              ],
-            )
+                  Spacer(),
+                  Text(
+                    "View All",
+                    style: TextStyle(color: Colors.orangeAccent),
+                  ),
+                  Icon(
+                    Icons.arrow_forward,
+                    size: 14,
+                    color: Colors.orangeAccent,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
