@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1251_booking_hotel_app/src/ui/booking_hotel_main_page.dart';
 
 class BookingHotelStartScreen extends StatelessWidget {
   const BookingHotelStartScreen({Key? key}) : super(key: key);
@@ -66,29 +67,38 @@ class BookingHotelStartScreen extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                Container(
-                  height: 52,
-                  decoration: const BoxDecoration(
-                    color: Colors.blueAccent,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Text(
-                        "Cari Hotel",
-                        style: TextStyle(
-                          color: Colors.white,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => BookingHotelMainPage(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 52,
+                    decoration: const BoxDecoration(
+                      color: Colors.blueAccent,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "Cari Hotel",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 4,
-                      ),
-                      Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                        size: 16,
-                      )
-                    ],
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                          size: 16,
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
