@@ -28,7 +28,13 @@ class BookingHotelMainPage extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          Text("Surabaya, Jawa Timur"),
+                          Text(
+                            "Surabaya, Jawa Timur",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                           Icon(
                             Icons.keyboard_arrow_down,
                           )
