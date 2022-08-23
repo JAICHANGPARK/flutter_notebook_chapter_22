@@ -189,11 +189,12 @@ class BookingHotelMainPage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 200,
+              height: 240,
               color: Colors.indigo,
+              margin: EdgeInsets.symmetric(vertical: 32),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 16, right: 16, top: 24),
+              padding: EdgeInsets.only(left: 16, right: 16, top: 0),
               child: Row(
                 children: const [
                   Text(
@@ -215,6 +216,16 @@ class BookingHotelMainPage extends StatelessWidget {
                     Icons.arrow_forward,
                     size: 14,
                     color: Colors.orangeAccent,
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: ListView(
+                children: [
+                  Container(
+                    height: 160,
+                    color: Colors.teal,
                   )
                 ],
               ),
