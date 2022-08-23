@@ -68,7 +68,10 @@ class BookingHotelMainPage extends StatelessWidget {
                   Spacer(),
                   Text(
                     "View All",
-                    style: TextStyle(color: Colors.orangeAccent),
+                    style: TextStyle(
+                      color: Colors.orangeAccent,
+                      fontSize: 12,
+                    ),
                   ),
                   Icon(
                     Icons.arrow_forward,
@@ -184,7 +187,38 @@ class BookingHotelMainPage extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 200,
+              color: Colors.indigo,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 16, right: 16, top: 24),
+              child: Row(
+                children: const [
+                  Text(
+                    "Popular Hotels",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Spacer(),
+                  Text(
+                    "View All",
+                    style: TextStyle(
+                      color: Colors.orangeAccent,
+                      fontSize: 12,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward,
+                    size: 14,
+                    color: Colors.orangeAccent,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
