@@ -373,11 +373,17 @@ class BookingHotelMainPage extends StatelessWidget {
                                     Text(
                                       "Rungkut, Surabaya",
                                     ),
+                                    Spacer(),
                                     Icon(
                                       Icons.star,
                                       size: 12,
                                     ),
-                                    Text("4.8"),
+                                    Text(
+                                      "4.8",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 Text("Hotel Suroboyo"),
