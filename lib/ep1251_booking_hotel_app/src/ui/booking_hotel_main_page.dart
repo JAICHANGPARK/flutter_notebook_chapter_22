@@ -361,22 +361,25 @@ class BookingHotelMainPage extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.only(
                               left: 16,
-                              top: 8,
-                              bottom: 8,
+                              top: 4,
+                              bottom: 4,
                               right: 8,
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
                                     Text(
                                       "Rungkut, Surabaya",
+                                      style: TextStyle(color: Colors.grey, fontSize: 12),
                                     ),
                                     Spacer(),
                                     Icon(
                                       Icons.star,
                                       size: 12,
+                                      color: Colors.orangeAccent,
                                     ),
                                     Text(
                                       "4.8",
@@ -386,7 +389,10 @@ class BookingHotelMainPage extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Text("Hotel Suroboyo"),
+                                Text(
+                                  "Hotel Suroboyo",
+                                  style: TextStyle(fontSize: 16),
+                                ),
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
