@@ -223,7 +223,29 @@ class BookingHotelMainPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const Expanded(child: Placeholder()),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Rungkut, Surabaya"),
+                              Text("Hotel Bungurasih"),
+                              Row(
+                                children: [
+                                  Text("80K"),
+                                  Text(" /Malam"),
+                                  Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(2),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   );
