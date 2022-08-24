@@ -342,6 +342,22 @@ class BookingHotelMainPage extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 84,
+                          height: 84,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
