@@ -335,10 +335,9 @@ class BookingHotelMainPage extends StatelessWidget {
                       right: 16,
                       bottom: 12,
                     ),
-                    height: 120,
-
+                    height: 100,
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      
                       border: Border.all(
                         color: Colors.grey,
                       ),
