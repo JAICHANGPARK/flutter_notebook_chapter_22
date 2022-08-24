@@ -254,10 +254,16 @@ class BookingHotelMainPage extends StatelessWidget {
                                       style: TextStyle(
                                         color: Colors.blue,
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 16
+                                        fontSize: 18,
                                       ),
                                     ),
-                                    const Text(" /Malam"),
+                                    const Text(
+                                      " /Malam",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                     Container(
                                       height: 24,
                                       width: 24,
