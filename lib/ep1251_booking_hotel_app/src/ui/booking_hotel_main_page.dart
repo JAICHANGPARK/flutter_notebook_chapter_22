@@ -248,6 +248,7 @@ class BookingHotelMainPage extends StatelessWidget {
                                 ),
                                 Spacer(),
                                 Row(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     const Text(
                                       "80K",
