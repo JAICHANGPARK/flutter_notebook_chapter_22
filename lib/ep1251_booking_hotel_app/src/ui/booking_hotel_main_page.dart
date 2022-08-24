@@ -361,8 +361,55 @@ class BookingHotelMainPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Row(
-                                
+                                children: [
+                                  Text(
+                                    "Rungkut, Surabaya",
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    size: 12,
+                                  ),
+                                  Text("4.8"),
+                                ],
+                              ),
+                              Text("Hotel Suroboyo"),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  const Text(
+                                    "80K",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  const Text(
+                                    " /Malam",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.circular(2),
+                                    ),
+                                    child: const Center(
+                                      child: Icon(
+                                        Icons.bookmark,
+                                        color: Colors.orange,
+                                        size: 14,
+                                      ),
+                                    ),
+                                  )
+                                ],
                               )
+
                             ],
                           ),
                         )
