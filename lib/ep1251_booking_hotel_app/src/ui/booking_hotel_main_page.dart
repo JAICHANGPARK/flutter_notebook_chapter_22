@@ -224,27 +224,33 @@ class BookingHotelMainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Rungkut, Surabaya"),
-                              Text("Hotel Bungurasih"),
-                              Row(
-                                children: [
-                                  Text("80K"),
-                                  Text(" /Malam"),
-                                  Container(
-                                    height: 24,
-                                    width: 24,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[200],
-                                      borderRadius: BorderRadius.circular(2),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
+                          child: 
+                          Padding(
+                            padding: EdgeInsets.all(12),
+                            child:
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Rungkut, Surabaya"),
+                                Text("Hotel Bungurasih"),
+                                Row(
+                                  children: [
+                                    Text("80K"),
+                                    Text(" /Malam"),
+                                    Container(
+                                      height: 24,
+                                      width: 24,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(2),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
+                         
                         ),
                       ],
                     ),
