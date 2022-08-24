@@ -197,7 +197,7 @@ class BookingHotelMainPage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 240,
+              height: 220,
               margin: const EdgeInsets.fromLTRB(16, 32, 0, 32),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -224,19 +224,40 @@ class BookingHotelMainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: 
-                          Padding(
-                            padding: EdgeInsets.all(12),
-                            child:
-                            Column(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Rungkut, Surabaya"),
-                                Text("Hotel Bungurasih"),
+                                const Text(
+                                  "Rungkut, Surabaya",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 4,
+                                ),
+                                const Text(
+                                  "Hotel Bungurasih",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Spacer(),
                                 Row(
                                   children: [
-                                    Text("80K"),
-                                    Text(" /Malam"),
+                                    const Text(
+                                      "80K",
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
+                                      ),
+                                    ),
+                                    const Text(" /Malam"),
                                     Container(
                                       height: 24,
                                       width: 24,
@@ -250,7 +271,6 @@ class BookingHotelMainPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                         
                         ),
                       ],
                     ),
