@@ -198,18 +198,26 @@ class BookingHotelMainPage extends StatelessWidget {
             ),
             Container(
               height: 240,
-              color: Colors.indigo,
               margin: const EdgeInsets.fromLTRB(16, 32, 0, 32),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     margin: const EdgeInsets.only(right: 16),
-                    width: 180,
+                    width: 200,
                     decoration: BoxDecoration(
-                        border: Border.all(
-                      color: Colors.grey,
-                    )),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+
+                    ),
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(child: Placeholder()),
+
+                      ],
+                    ),
                   );
                 },
               ),
