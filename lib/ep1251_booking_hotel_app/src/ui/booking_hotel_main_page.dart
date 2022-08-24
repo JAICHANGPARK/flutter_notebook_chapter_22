@@ -209,13 +209,21 @@ class BookingHotelMainPage extends StatelessWidget {
                       border: Border.all(
                         color: Colors.grey,
                       ),
-
                     ),
                     child: Column(
                       children: [
-                        Expanded(child: Placeholder()),
-                        Expanded(child: Placeholder()),
-
+                        Expanded(
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523__340.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                        const Expanded(child: Placeholder()),
                       ],
                     ),
                   );
