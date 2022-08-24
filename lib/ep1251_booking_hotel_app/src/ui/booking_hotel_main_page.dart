@@ -97,7 +97,10 @@ class BookingHotelMainPage extends StatelessWidget {
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 4,
+                    ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
@@ -197,6 +200,19 @@ class BookingHotelMainPage extends StatelessWidget {
               height: 240,
               color: Colors.indigo,
               margin: const EdgeInsets.fromLTRB(16, 32, 0, 32),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: const EdgeInsets.only(right: 16),
+                    width: 180,
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      color: Colors.grey,
+                    )),
+                  );
+                },
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 16, right: 16, top: 0, bottom: 16),
