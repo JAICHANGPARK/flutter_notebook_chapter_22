@@ -359,7 +359,11 @@ class BookingHotelMainPage extends StatelessWidget {
                         ),
                         Expanded(
                           child: Column(
-                            children: [],
+                            children: [
+                              Row(
+                                
+                              )
+                            ],
                           ),
                         )
                       ],
