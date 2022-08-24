@@ -20,7 +20,7 @@ class BookingHotelMainPage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Dreamwalker",
                         style: TextStyle(
                           color: Colors.grey,
@@ -43,7 +43,7 @@ class BookingHotelMainPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     height: 34,
                     width: 34,
@@ -56,7 +56,11 @@ class BookingHotelMainPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 16, right: 16, top: 24),
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+                top: 24,
+              ),
               child: Row(
                 children: const [
                   Text(
@@ -83,7 +87,7 @@ class BookingHotelMainPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 16, left: 16),
+              margin: const EdgeInsets.only(top: 16, left: 16),
               height: 32,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -192,10 +196,10 @@ class BookingHotelMainPage extends StatelessWidget {
             Container(
               height: 240,
               color: Colors.indigo,
-              margin: EdgeInsets.fromLTRB(16, 32, 0, 32),
+              margin: const EdgeInsets.fromLTRB(16, 32, 0, 32),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 16, right: 16, top: 0, bottom: 16),
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 0, bottom: 16),
               child: Row(
                 children: const [
                   Text(
@@ -226,7 +230,7 @@ class BookingHotelMainPage extends StatelessWidget {
                   children: List.generate(
                       10,
                       (index) => Container(
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               left: 16,
                               right: 16,
                               bottom: 12,
