@@ -347,8 +347,14 @@ class BookingHotelMainPage extends StatelessWidget {
                         Container(
                           width: 84,
                           height: 84,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.blue,
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2015/01/26/11/05/beach-612553__340.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Expanded(
