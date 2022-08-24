@@ -246,7 +246,7 @@ class BookingHotelMainPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
@@ -265,7 +265,7 @@ class BookingHotelMainPage extends StatelessWidget {
                                         fontSize: 12,
                                       ),
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     Container(
                                       height: 24,
                                       width: 24,
@@ -273,7 +273,7 @@ class BookingHotelMainPage extends StatelessWidget {
                                         color: Colors.grey[200],
                                         borderRadius: BorderRadius.circular(2),
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: Icon(
                                           Icons.bookmark,
                                           color: Colors.orange,
