@@ -358,59 +358,67 @@ class BookingHotelMainPage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    "Rungkut, Surabaya",
-                                  ),
-                                  Icon(
-                                    Icons.star,
-                                    size: 12,
-                                  ),
-                                  Text("4.8"),
-                                ],
-                              ),
-                              Text("Hotel Suroboyo"),
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: [
-                                  const Text(
-                                    "80K",
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18,
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              top: 8,
+                              bottom: 8,
+                              right: 8,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      "Rungkut, Surabaya",
                                     ),
-                                  ),
-                                  const Text(
-                                    " /Malam",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 12,
+                                    Icon(
+                                      Icons.star,
+                                      size: 12,
                                     ),
-                                  ),
-                                  const Spacer(),
-                                  Container(
-                                    height: 24,
-                                    width: 24,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[200],
-                                      borderRadius: BorderRadius.circular(2),
-                                    ),
-                                    child: const Center(
-                                      child: Icon(
-                                        Icons.bookmark,
-                                        color: Colors.orange,
-                                        size: 14,
+                                    Text("4.8"),
+                                  ],
+                                ),
+                                Text("Hotel Suroboyo"),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    const Text(
+                                      "80K",
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
                                       ),
                                     ),
-                                  )
-                                ],
-                              )
-
-                            ],
+                                    const Text(
+                                      " /Malam",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    const Spacer(),
+                                    Container(
+                                      height: 24,
+                                      width: 24,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(2),
+                                      ),
+                                      child: const Center(
+                                        child: Icon(
+                                          Icons.bookmark,
+                                          color: Colors.orange,
+                                          size: 14,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
