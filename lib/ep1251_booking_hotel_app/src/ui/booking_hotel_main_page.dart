@@ -264,12 +264,20 @@ class BookingHotelMainPage extends StatelessWidget {
                                         fontSize: 12,
                                       ),
                                     ),
+                                    Spacer(),
                                     Container(
                                       height: 24,
                                       width: 24,
                                       decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                         borderRadius: BorderRadius.circular(2),
+                                      ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.bookmark,
+                                          color: Colors.orange,
+                                          size: 14,
+                                        ),
                                       ),
                                     )
                                   ],
