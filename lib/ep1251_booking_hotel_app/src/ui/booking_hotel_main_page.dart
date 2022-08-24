@@ -22,7 +22,10 @@ class BookingHotelMainPage extends StatelessWidget {
                     children: [
                       Text(
                         "Dreamwalker",
-                        style: TextStyle(color: Colors.grey, fontSize: 12,),
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12,
+                        ),
                       ),
                       Row(
                         children: const [
