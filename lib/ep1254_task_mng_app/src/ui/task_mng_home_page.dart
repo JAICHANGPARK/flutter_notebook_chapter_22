@@ -12,6 +12,7 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueGrey[50],
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Column(
           children: [
@@ -32,7 +33,9 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                         SizedBox(
                           width: 12,
                         ),
-                        Text("Aug"),
+                        Text("Aug", style: TextStyle(
+                          fontSize: 16
+                        ),),
                         Icon(Icons.keyboard_arrow_up),
                         Spacer(),
                         CircleAvatar(
@@ -61,7 +64,9 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.blueGrey[50],
                     ),
-                    padding: EdgeInsets.symmetric(),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
                     child: TextField(
                       decoration: InputDecoration(
                         icon: Icon(
