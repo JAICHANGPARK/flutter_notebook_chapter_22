@@ -78,15 +78,24 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Friday, 19 Aug"),
+                        Text(
+                          "Friday, 19 Aug",
+                          style: TextStyle(
+                            fontSize: 16,
+                          ),
+                        ),
                         Text(
                           'Edit',
                           style: TextStyle(
                             color: Colors.blue,
                             decoration: TextDecoration.underline,
+                            fontSize: 14,
                           ),
                         )
                       ],
+                    ),
+                    SizedBox(
+                      height: 12,
                     ),
                     Expanded(child: Placeholder()),
                   ],
