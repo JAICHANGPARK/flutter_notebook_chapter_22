@@ -10,6 +10,19 @@ class TaskMngHomePage extends StatefulWidget {
 class _TaskMngHomePageState extends State<TaskMngHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 500,
+              color: Colors.white,
+            ),
+            SizedBox(height: 12,),
+            Expanded(child: Placeholder()),
+          ],
+        ),
+      ),
+    );
   }
 }
