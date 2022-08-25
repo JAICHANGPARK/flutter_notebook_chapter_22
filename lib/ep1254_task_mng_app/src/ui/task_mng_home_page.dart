@@ -61,6 +61,16 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.blueGrey[50],
                     ),
+                    padding: EdgeInsets.symmetric(),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(
+                          Icons.search,
+                        ),
+                        hintText: "Search",
+                        border: InputBorder.none,
+                      ),
+                    ),
                   ),
                   Expanded(child: Placeholder())
                 ],
