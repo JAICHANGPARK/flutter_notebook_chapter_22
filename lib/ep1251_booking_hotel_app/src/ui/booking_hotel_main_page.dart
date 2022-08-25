@@ -373,7 +373,10 @@ class BookingHotelMainPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Rungkut, Surabaya",
-                                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12,
+                                      ),
                                     ),
                                     Spacer(),
                                     Icon(
