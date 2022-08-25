@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1254_task_mng_app/src/ui/task_mng_home_page.dart';
 
 
 class TaskMngMobileApp extends StatelessWidget {
@@ -6,8 +7,8 @@ class TaskMngMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: ,
+    return const MaterialApp(
+        home: TaskMngHomePage(),
     );
   }
 }
