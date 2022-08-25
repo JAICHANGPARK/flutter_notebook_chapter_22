@@ -72,14 +72,13 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
             Expanded(
               child: Container(
                 color: Colors.white,
-                padding: EdgeInsets.fromLTRB(16, 8, 16, 0),
+                padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Friday, 19 Aug"),
-
                         Text(
                           'Edit',
                           style: TextStyle(
@@ -88,7 +87,8 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                           ),
                         )
                       ],
-                    )
+                    ),
+                    Expanded(child: Placeholder()),
                   ],
                 ),
               ),
