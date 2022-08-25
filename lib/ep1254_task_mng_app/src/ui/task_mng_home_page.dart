@@ -18,6 +18,45 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
             Container(
               height: 400,
               color: Colors.white,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                      right: 16,
+                      top: 16,
+                    ),
+                    child: Row(
+                      children: const [
+                        Icon(Icons.menu),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Text("Aug"),
+                        Icon(Icons.keyboard_arrow_up),
+                        Spacer(),
+                        CircleAvatar(
+                          radius: 10,
+                          backgroundColor: Colors.blue,
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            Icons.add,
+                            size: 14,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Icon(Icons.calendar_month_outlined),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Icon(Icons.more_vert_outlined)
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
             SizedBox(
               height: 12,
