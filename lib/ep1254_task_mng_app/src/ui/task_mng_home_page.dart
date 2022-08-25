@@ -54,7 +54,15 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                         Icon(Icons.more_vert_outlined)
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                    height: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey[50],
+                    ),
+                  ),
+                  Expanded(child: Placeholder())
                 ],
               ),
             ),
