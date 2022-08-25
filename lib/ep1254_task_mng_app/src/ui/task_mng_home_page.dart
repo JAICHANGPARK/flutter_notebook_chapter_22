@@ -11,15 +11,22 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
       body: SafeArea(
         child: Column(
           children: [
             Container(
-              height: 500,
+              height: 400,
               color: Colors.white,
             ),
-            SizedBox(height: 12,),
-            Expanded(child: Placeholder()),
+            SizedBox(
+              height: 12,
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.white,
+              ),
+            ),
           ],
         ),
       ),
