@@ -88,6 +88,12 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                       focusedDay: DateTime.now(),
                       firstDay: DateTime(2021, 1, 1),
                       lastDay: DateTime(2022, 12, 31),
+                      eventLoader: (day) {
+                        if (day.weekday == DateTime.friday) {
+                          return [day];
+                        }
+                        return [];
+                      },
                     ),
                   )
                 ],
@@ -177,13 +183,12 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                                 Spacer(),
                                 Text(
                                   "More",
-                                  style: TextStyle(
-                                    color: Colors.redAccent,
-                                  ),
+                                  style: TextStyle(color: Colors.redAccent, fontSize: 13),
                                 ),
                                 Icon(
                                   Icons.keyboard_arrow_right,
                                   color: Colors.redAccent,
+                                  size: 16,
                                 )
                               ],
                             ),
