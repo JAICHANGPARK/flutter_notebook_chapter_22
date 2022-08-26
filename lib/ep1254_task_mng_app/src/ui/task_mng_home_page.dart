@@ -79,7 +79,7 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   Expanded(
@@ -129,26 +129,47 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            height: 72,
+                            height: 68,
                             margin: const EdgeInsets.only(bottom: 12),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey[200]!),
                               borderRadius: BorderRadius.circular(4),
                             ),
-                            padding: EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(12),
                             child: Row(
                               children: [
                                 Container(
                                   width: 3,
                                   color: Colors.cyan,
                                 ),
+                                const SizedBox(
+                                  width: 6,
+                                ),
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Meeting with Gonzales"),
+                                    const Text(
+                                      "Meeting with Gonzales",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Row(
                                       children: [
-                                        Icon(Icons.access_time_outlined),
-                                        Text("16:00 - 17:30PM 1hr30m"),
+                                        const Icon(
+                                          Icons.access_time_outlined,
+                                          size: 16,
+                                        ),
+                                        const SizedBox(
+                                          width: 8,
+                                        ),
+                                        const Text(
+                                          "16:00 - 17:30PM 1hr30m",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
                                       ],
                                     )
                                   ],
