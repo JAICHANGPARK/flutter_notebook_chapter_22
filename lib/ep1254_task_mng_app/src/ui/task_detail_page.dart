@@ -55,7 +55,6 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                   ),
                   Container(
                     height: 28,
-                   
                     child: Stack(
                       children: [
                         const Positioned(
@@ -75,42 +74,177 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                IntrinsicWidth(
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          const Text(
-                                            "Comments",
-                                            style: TextStyle(fontSize: 12),
-                                          ),
-                                          const SizedBox(
-                                            width: 4,
-                                          ),
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.black,
-                                              borderRadius: BorderRadius.circular(2),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 32),
+                                  child: IntrinsicWidth(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            const Text(
+                                              "Comments",
+                                              style: TextStyle(fontSize: 12),
                                             ),
-                                            height: 16,
-                                            width: 16,
-                                            padding: const EdgeInsets.all(2),
-                                            child: const Center(
-                                              child: Text(
-                                                "4",
-                                                style: TextStyle(color: Colors.white, fontSize: 12),
+                                            const SizedBox(
+                                              width: 4,
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black,
+                                                borderRadius: BorderRadius.circular(2),
                                               ),
+                                              height: 16,
+                                              width: 16,
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Center(
+                                                child: Text(
+                                                  "4",
+                                                  style: TextStyle(color: Colors.white, fontSize: 12),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        const Divider(
+                                          color: Colors.black,
+                                          height: 0,
+                                          thickness: 1.5,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 32),
+                                  child: IntrinsicWidth(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            const Text(
+                                              "Files",
+                                              style: TextStyle(fontSize: 12),
                                             ),
-                                          )
-                                        ],
-                                      ),
-                                      const Divider(
-                                        color: Colors.black,
-                                        height: 0,
-                                        thickness: 1.5,
-                                      ),
-                                    ],
+                                            const SizedBox(
+                                              width: 4,
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey[200],
+                                                borderRadius: BorderRadius.circular(2),
+                                              ),
+                                              height: 16,
+                                              width: 16,
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Center(
+                                                child: Text(
+                                                  "2",
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        const Divider(
+                                          color: Colors.transparent,
+                                          height: 0,
+                                          thickness: 1.5,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 32),
+                                  child: IntrinsicWidth(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            const Text(
+                                              "Media",
+                                              style: TextStyle(fontSize: 12),
+                                            ),
+                                            const SizedBox(
+                                              width: 4,
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey[200],
+                                                borderRadius: BorderRadius.circular(2),
+                                              ),
+                                              height: 16,
+                                              width: 16,
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Center(
+                                                child: Text(
+                                                  "2",
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        const Divider(
+                                          color: Colors.transparent,
+                                          height: 0,
+                                          thickness: 1.5,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 32),
+                                  child: IntrinsicWidth(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            const Text(
+                                              "Links",
+                                              style: TextStyle(fontSize: 12),
+                                            ),
+                                            const SizedBox(
+                                              width: 4,
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey[200],
+                                                borderRadius: BorderRadius.circular(2),
+                                              ),
+                                              height: 16,
+                                              width: 16,
+                                              padding: const EdgeInsets.all(2),
+                                              child: const Center(
+                                                child: Text(
+                                                  "2",
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 12,
+                                                  ),
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        const Divider(
+                                          color: Colors.transparent,
+                                          height: 0,
+                                          thickness: 1.5,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
