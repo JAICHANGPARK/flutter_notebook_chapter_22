@@ -171,8 +171,19 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                                           ),
                                         ),
                                       ],
-                                    )
+                                    ),
                                   ],
+                                ),
+                                Spacer(),
+                                Text(
+                                  "More",
+                                  style: TextStyle(
+                                    color: Colors.redAccent,
+                                  ),
+                                ),
+                                Icon(
+                                  Icons.keyboard_arrow_right,
+                                  color: Colors.redAccent,
                                 )
                               ],
                             ),
