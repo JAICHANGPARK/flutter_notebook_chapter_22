@@ -18,7 +18,7 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
         child: Column(
           children: [
             Container(
-              height: 400,
+              height: 440,
               color: Colors.white,
               child: Column(
                 children: [
@@ -134,6 +134,26 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey[200]!),
                               borderRadius: BorderRadius.circular(4),
+                            ),
+                            padding: EdgeInsets.all(12),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 3,
+                                  color: Colors.cyan,
+                                ),
+                                Column(
+                                  children: [
+                                    Text("Meeting with Gonzales"),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.access_time_outlined),
+                                        Text("16:00 - 17:30PM 1hr30m"),
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
                             ),
                           );
                         },
