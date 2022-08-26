@@ -280,6 +280,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         Text("Hi gonzales, don't forget our meeting tomorrow. "
                             "I think we'll gonna talk a lot about"
                             "some new page and others"),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        
                       ],
                     ),
                   )
