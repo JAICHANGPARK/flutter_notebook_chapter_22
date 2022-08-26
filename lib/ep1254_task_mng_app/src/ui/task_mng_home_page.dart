@@ -112,7 +112,21 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                     SizedBox(
                       height: 12,
                     ),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: ListView.builder(
+                        itemCount: 10,
+                        itemBuilder: (context, index){
+                      return Container(
+                        height: 72,
+                        margin: EdgeInsets.only(bottom: 12),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[200]!
+                          ),
+                          borderRadius: BorderRadius.circular(4)
+                        ),
+                      );
+
+                    }),),
                   ],
                 ),
               ),
