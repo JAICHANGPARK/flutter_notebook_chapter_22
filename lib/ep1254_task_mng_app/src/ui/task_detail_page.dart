@@ -22,11 +22,11 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                    padding: EdgeInsets.fromLTRB(16, 16, 0, 24),
                     child: Text(
                       "Landing Page Project Meeting",
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
