@@ -143,7 +143,7 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                                   color: Colors.cyan,
                                 ),
                                 const SizedBox(
-                                  width: 6,
+                                  width: 12,
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
