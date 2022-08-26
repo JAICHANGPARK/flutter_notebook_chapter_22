@@ -75,31 +75,35 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Text("Comments"),
-                                        SizedBox(
-                                          width: 4,
-                                        ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.black,
-                                            borderRadius: BorderRadius.circular(2),
+                                IntrinsicWidth(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text("Comments"),
+                                          SizedBox(
+                                            width: 4,
                                           ),
-                                          padding: EdgeInsets.all(4),
-                                          child: Center(
-                                            child: Text("4"),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ],
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                              borderRadius: BorderRadius.circular(2),
+                                            ),
+                                            padding: EdgeInsets.all(4),
+                                            child: Center(
+                                              child: Text("4"),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      Divider(
+                                        color: Colors.black,
+                                        height: 0,
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                Divider(
-                                  color: Colors.black,
-                                )
+
                               ],
                             ))
                       ],
