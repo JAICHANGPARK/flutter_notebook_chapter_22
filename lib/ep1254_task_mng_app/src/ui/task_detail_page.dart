@@ -23,7 +23,13 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 children: [
                   const Padding(
                     padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
-                    child: Text("Landing Page Project Meeting"),
+                    child: Text(
+                      "Landing Page Project Meeting",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 0, 24),
@@ -263,7 +269,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               radius: 18,
                             ),
                             SizedBox(
-                              width: 16,
+                              width: 12,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -283,7 +289,6 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         SizedBox(
                           height: 16,
                         ),
-                        
                       ],
                     ),
                   )
