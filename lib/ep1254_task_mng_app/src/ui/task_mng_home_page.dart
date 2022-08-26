@@ -162,15 +162,15 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                                       ),
                                     ),
                                     Row(
-                                      children: [
-                                        const Icon(
+                                      children: const [
+                                        Icon(
                                           Icons.access_time_outlined,
                                           size: 16,
                                         ),
-                                        const SizedBox(
+                                        SizedBox(
                                           width: 8,
                                         ),
-                                        const Text(
+                                        Text(
                                           "16:00 - 17:30PM 1hr30m",
                                           style: TextStyle(
                                             fontSize: 12,
@@ -180,12 +180,15 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
-                                Text(
+                                const Spacer(),
+                                const Text(
                                   "More",
-                                  style: TextStyle(color: Colors.redAccent, fontSize: 13),
+                                  style: TextStyle(
+                                    color: Colors.redAccent,
+                                    fontSize: 13,
+                                  ),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.keyboard_arrow_right,
                                   color: Colors.redAccent,
                                   size: 16,
