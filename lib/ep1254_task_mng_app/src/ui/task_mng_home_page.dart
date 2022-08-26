@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1254_task_mng_app/src/ui/task_detail_page.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class TaskMngHomePage extends StatefulWidget {
@@ -134,66 +135,75 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                       child: ListView.builder(
                         itemCount: 10,
                         itemBuilder: (context, index) {
-                          return Container(
-                            height: 68,
-                            margin: const EdgeInsets.only(bottom: 12),
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey[200]!),
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            padding: const EdgeInsets.all(12),
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 3,
-                                  color: Colors.cyan,
+                          return GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => TaskDetailPage(),
                                 ),
-                                const SizedBox(
-                                  width: 12,
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    const Text(
-                                      "Meeting with Gonzales",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Row(
-                                      children: const [
-                                        Icon(
-                                          Icons.access_time_outlined,
-                                          size: 16,
-                                        ),
-                                        SizedBox(
-                                          width: 8,
-                                        ),
-                                        Text(
-                                          "16:00 - 17:30PM 1hr30m",
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                const Spacer(),
-                                const Text(
-                                  "More",
-                                  style: TextStyle(
-                                    color: Colors.redAccent,
-                                    fontSize: 13,
+                              );
+                            },
+                            child: Container(
+                              height: 68,
+                              margin: const EdgeInsets.only(bottom: 12),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey[200]!),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: const EdgeInsets.all(12),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 3,
+                                    color: Colors.cyan,
                                   ),
-                                ),
-                                const Icon(
-                                  Icons.keyboard_arrow_right,
-                                  color: Colors.redAccent,
-                                  size: 16,
-                                )
-                              ],
+                                  const SizedBox(
+                                    width: 12,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      const Text(
+                                        "Meeting with Gonzales",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Row(
+                                        children: const [
+                                          Icon(
+                                            Icons.access_time_outlined,
+                                            size: 16,
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "16:00 - 17:30PM 1hr30m",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  const Spacer(),
+                                  const Text(
+                                    "More",
+                                    style: TextStyle(
+                                      color: Colors.redAccent,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.keyboard_arrow_right,
+                                    color: Colors.redAccent,
+                                    size: 16,
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
