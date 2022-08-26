@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class TaskMngHomePage extends StatefulWidget {
   const TaskMngHomePage({Key? key}) : super(key: key);
@@ -33,9 +34,10 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                         SizedBox(
                           width: 12,
                         ),
-                        Text("Aug", style: TextStyle(
-                          fontSize: 16
-                        ),),
+                        Text(
+                          "Aug",
+                          style: TextStyle(fontSize: 16),
+                        ),
                         Icon(Icons.keyboard_arrow_up),
                         Spacer(),
                         CircleAvatar(
@@ -59,15 +61,15 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                    margin: const EdgeInsets.fromLTRB(16, 8, 16, 8),
                     height: 42,
                     decoration: BoxDecoration(
                       color: Colors.blueGrey[50],
                     ),
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 16,
                     ),
-                    child: TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                         icon: Icon(
                           Icons.search,
@@ -77,22 +79,28 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                       ),
                     ),
                   ),
-                  Expanded(child: Placeholder())
+                  Expanded(
+                    child: TableCalendar(
+                      focusedDay: DateTime.now(),
+                      firstDay: DateTime(2021, 1, 1),
+                      lastDay: DateTime(2022, 12, 31),
+                    ),
+                  )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Expanded(
               child: Container(
                 color: Colors.white,
-                padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           "Friday, 19 Aug",
                           style: TextStyle(
@@ -109,24 +117,24 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
-                    Expanded(child: ListView.builder(
+                    Expanded(
+                      child: ListView.builder(
                         itemCount: 10,
-                        itemBuilder: (context, index){
-                      return Container(
-                        height: 72,
-                        margin: EdgeInsets.only(bottom: 12),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[200]!
-                          ),
-                          borderRadius: BorderRadius.circular(4)
-                        ),
-                      );
-
-                    }),),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            height: 72,
+                            margin: const EdgeInsets.only(bottom: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey[200]!),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),
