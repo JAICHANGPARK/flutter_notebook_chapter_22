@@ -21,8 +21,8 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
                     child: Text("Landing Page Project Meeting"),
                   ),
                   Padding(
@@ -31,34 +31,34 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       children: [
                         Row(
                           children: [
-                            SizedBox(width: 100, child: Text("Participant")),
+                            const SizedBox(width: 100, child: Text("Participant")),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         Row(
                           children: [
-                            SizedBox(width: 100, child: Text("Date")),
+                            const SizedBox(width: 100, child: Text("Date")),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         Row(
                           children: [
-                            SizedBox(width: 100, child: Text("Tags")),
+                            const SizedBox(width: 100, child: Text("Tags")),
                           ],
                         ),
                       ],
                     ),
                   ),
                   Container(
-                    height: 38,
-                    color: Colors.red,
+                    height: 28,
+                   
                     child: Stack(
                       children: [
-                        Positioned(
+                        const Positioned(
                           bottom: 0,
                           left: 0,
                           right: 0,
@@ -77,11 +77,15 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               children: [
                                 IntrinsicWidth(
                                   child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Row(
                                         children: [
-                                          Text("Comments"),
-                                          SizedBox(
+                                          const Text(
+                                            "Comments",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          const SizedBox(
                                             width: 4,
                                           ),
                                           Container(
@@ -89,21 +93,26 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                               color: Colors.black,
                                               borderRadius: BorderRadius.circular(2),
                                             ),
-                                            padding: EdgeInsets.all(4),
-                                            child: Center(
-                                              child: Text("4"),
+                                            height: 16,
+                                            width: 16,
+                                            padding: const EdgeInsets.all(2),
+                                            child: const Center(
+                                              child: Text(
+                                                "4",
+                                                style: TextStyle(color: Colors.white, fontSize: 12),
+                                              ),
                                             ),
                                           )
                                         ],
                                       ),
-                                      Divider(
+                                      const Divider(
                                         color: Colors.black,
                                         height: 0,
+                                        thickness: 1.5,
                                       ),
                                     ],
                                   ),
                                 ),
-
                               ],
                             ))
                       ],
