@@ -11,6 +11,23 @@ class TaskDetailPage extends StatefulWidget {
 class _TaskDetailPageState extends State<TaskDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Text("Landing Page Project Meeting"),
+                  
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
