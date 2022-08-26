@@ -79,8 +79,12 @@ class _TaskMngHomePageState extends State<TaskMngHomePage> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Expanded(
                     child: TableCalendar(
+                      headerVisible: false,
                       focusedDay: DateTime.now(),
                       firstDay: DateTime(2021, 1, 1),
                       lastDay: DateTime(2022, 12, 31),
