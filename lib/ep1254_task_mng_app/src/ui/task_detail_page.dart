@@ -37,7 +37,62 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       children: [
                         Row(
                           children: [
-                            const SizedBox(width: 100, child: Text("Participant")),
+                            const SizedBox(
+                              width: 100,
+                              child: Text(
+                                "Participant",
+                              ),
+                            ),
+                            Expanded(
+                                child: SizedBox(
+                              height: 24,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    left: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    left: 12,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    left: 24,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    left: 36,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    left: 36,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                      child: Icon(Icons.add, size: 14,),
+                                      foregroundColor: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ))
                           ],
                         ),
                         const SizedBox(
