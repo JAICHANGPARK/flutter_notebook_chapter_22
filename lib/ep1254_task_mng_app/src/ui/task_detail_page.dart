@@ -452,6 +452,21 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                             ),
                           ],
+                        ),
+                        SizedBox(height: 16,),
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                              child: Text("👍 2"),
+                            ),
+
+                          ],
                         )
                       ],
                     ),
