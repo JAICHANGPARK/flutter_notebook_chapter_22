@@ -150,6 +150,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     ),
                                   ),
                                 ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.red[50],
@@ -174,7 +177,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: 28,
                     child: Stack(
                       children: [
@@ -404,6 +407,16 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         const SizedBox(
                           height: 16,
                         ),
+                        Container(
+                          child: Text("Content_and_modboards.fig"),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(2),
+
+                            border: Border.all(color: Colors.grey[100]!)
+                          ),
+                            
+                        )
                       ],
                     ),
                   )
