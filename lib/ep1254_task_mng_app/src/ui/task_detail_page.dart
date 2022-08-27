@@ -475,6 +475,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                               child: Text("👍 2"),
                             ),
+                            const SizedBox(
+                              width: 8,
+                            ),
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
@@ -487,6 +490,15 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 ),
                               ),
                               child: Text("💭 6"),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "Reply",
+                              style: TextStyle(
+                                color: Colors.blue,
+                              ),
                             ),
                           ],
                         )
