@@ -380,6 +380,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 24, 16, 16),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -409,13 +410,48 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         ),
                         Container(
                           child: Text("Content_and_modboards.fig"),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 2,
+                          ),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(2),
-
-                            border: Border.all(color: Colors.grey[100]!)
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
                           ),
-                            
+                        ),
+                        SizedBox(height: 8,),
+                        Row(
+                          children: [
+                            Container(
+                              child: Text("3D and other assets"),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 2,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 8,),
+                            Container(
+                              child: Text("Our timeline progress"),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 2,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                            ),
+                          ],
                         )
                       ],
                     ),
