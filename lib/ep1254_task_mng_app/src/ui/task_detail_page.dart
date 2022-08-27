@@ -421,7 +421,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 8,),
+                        const SizedBox(
+                          height: 8,
+                        ),
                         Row(
                           children: [
                             Container(
@@ -437,7 +439,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 ),
                               ),
                             ),
-                            const SizedBox(width: 8,),
+                            const SizedBox(
+                              width: 8,
+                            ),
                             Container(
                               child: const Text("Our timeline progress"),
                               padding: const EdgeInsets.symmetric(
@@ -453,10 +457,16 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           children: [
                             Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 2,
+                              ),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(2),
                                 border: Border.all(
@@ -465,7 +475,19 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                               child: Text("👍 2"),
                             ),
-
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 2,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                border: Border.all(
+                                  color: Colors.grey[200]!,
+                                ),
+                              ),
+                              child: Text("💭 6"),
+                            ),
                           ],
                         )
                       ],
