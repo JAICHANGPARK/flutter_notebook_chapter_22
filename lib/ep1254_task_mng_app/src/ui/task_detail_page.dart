@@ -41,6 +41,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               width: 100,
                               child: Text(
                                 "Participant",
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                               ),
                             ),
                             Expanded(
@@ -106,15 +107,68 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         ),
                         Row(
                           children: const [
-                            SizedBox(width: 100, child: Text("Date")),
+                            SizedBox(
+                                width: 100,
+                                child: Text(
+                                  "Date",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                )),
+                            Text("19 Aug, 2022")
                           ],
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Row(
-                          children: const [
-                            SizedBox(width: 100, child: Text("Tags")),
+                          children: [
+                            SizedBox(
+                                width: 100,
+                                child: Text(
+                                  "Tags",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                )),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration:
+                                      BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(2)),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 8,
+                                    vertical: 4,
+                                  ),
+                                  child: Text(
+                                    "Website",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red[50],
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 8,
+                                    vertical: 4,
+                                  ),
+                                  child: Text(
+                                    "High priority",
+                                    style: TextStyle(
+                                      color: Colors.red,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )
                           ],
                         ),
                       ],
