@@ -539,7 +539,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Column(
                         children: [
                           Row(
@@ -551,6 +551,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 width: 8,
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("Gonzales"),
                                   SizedBox(
@@ -561,13 +562,17 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                             ],
                           ),
-                          Text(
-                            "Hi sambo, i've donw the revision for the setting's page "
-                            "and some icon changes. Give comments straight on figma",
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            child: Text(
+                              "Hi sambo, i've donw the revision for the setting's page "
+                              "and some icon changes. Give comments straight on figma",
+                              style: TextStyle(
+                                fontSize: 12
+                              ),
+                            ),
                           ),
-                          const SizedBox(
-                            height: 16,
-                          ),
+
                           Row(
                             children: [
                               Container(
@@ -597,7 +602,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     color: Colors.grey[200]!,
                                   ),
                                 ),
-                                child: const Text("💭 6"),
+                                child: const Text("💭 1"),
                               ),
                               const SizedBox(
                                 width: 8,
