@@ -124,7 +124,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                                 width: 100,
                                 child: Text(
                                   "Tags",
@@ -138,11 +138,11 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 Container(
                                   decoration:
                                       BoxDecoration(color: Colors.blue[50], borderRadius: BorderRadius.circular(2)),
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     horizontal: 8,
                                     vertical: 4,
                                   ),
-                                  child: Text(
+                                  child: const Text(
                                     "Website",
                                     style: TextStyle(
                                       color: Colors.blue,
@@ -155,11 +155,11 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     color: Colors.red[50],
                                     borderRadius: BorderRadius.circular(2),
                                   ),
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     horizontal: 8,
                                     vertical: 4,
                                   ),
-                                  child: Text(
+                                  child: const Text(
                                     "High priority",
                                     style: TextStyle(
                                       color: Colors.red,
@@ -380,10 +380,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(
+                            const CircleAvatar(
                               radius: 18,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Column(
@@ -395,13 +395,13 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
-                        Text("Hi gonzales, don't forget our meeting tomorrow. "
+                        const Text("Hi gonzales, don't forget our meeting tomorrow. "
                             "I think we'll gonna talk a lot about"
                             "some new page and others"),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                       ],
@@ -410,7 +410,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Expanded(
