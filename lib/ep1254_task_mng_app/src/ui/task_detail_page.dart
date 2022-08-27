@@ -536,6 +536,25 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
             Expanded(
               child: Container(
                 color: Colors.white,
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Column(
+                              children: [
+                                Text("Gonzales"),
+                                Text("3d ago")
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    );
+                  },
+                ),
               ),
             )
           ],
