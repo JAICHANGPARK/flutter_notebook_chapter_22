@@ -544,15 +544,15 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 20,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text("Gonzales"),
                                   SizedBox(
                                     height: 6,
@@ -562,8 +562,8 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 12),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 12),
                             child: Text(
                               "Hi sambo, i've donw the revision for the setting's page "
                               "and some icon changes. Give comments straight on figma",
