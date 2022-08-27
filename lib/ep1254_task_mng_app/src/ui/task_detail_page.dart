@@ -457,7 +457,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Row(
@@ -473,7 +473,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                   color: Colors.grey[200]!,
                                 ),
                               ),
-                              child: Text("👍 2"),
+                              child: const Text("👍 2"),
                             ),
                             const SizedBox(
                               width: 8,
@@ -489,12 +489,12 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                   color: Colors.grey[200]!,
                                 ),
                               ),
-                              child: Text("💭 6"),
+                              child: const Text("💭 6"),
                             ),
                             const SizedBox(
                               width: 8,
                             ),
-                            Text(
+                            const Text(
                               "Reply",
                               style: TextStyle(
                                 color: Colors.blue,
@@ -504,10 +504,24 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         ),
                         Container(
                           height: 120,
-                          margin: EdgeInsets.symmetric(vertical: 8),
+                          margin: const EdgeInsets.symmetric(vertical: 8),
                           decoration: BoxDecoration(
                             color: Colors.blueGrey[50],
-                            borderRadius: BorderRadius.circular(2)
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                        Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.blueAccent,
+                          ),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: const Center(
+                            child: Text(
+                              "Send",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         )
                       ],
