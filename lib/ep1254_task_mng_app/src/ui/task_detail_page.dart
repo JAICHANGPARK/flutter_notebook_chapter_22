@@ -501,6 +501,14 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                               ),
                             ),
                           ],
+                        ),
+                        Container(
+                          height: 120,
+                          margin: EdgeInsets.symmetric(vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey[50],
+                            borderRadius: BorderRadius.circular(2)
+                          ),
                         )
                       ],
                     ),
