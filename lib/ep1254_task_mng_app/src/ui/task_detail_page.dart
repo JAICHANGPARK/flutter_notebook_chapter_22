@@ -150,7 +150,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
                                 Container(
@@ -409,8 +409,8 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                           height: 16,
                         ),
                         Container(
-                          child: Text("Content_and_modboards.fig"),
-                          padding: EdgeInsets.symmetric(
+                          child: const Text("Content_and_modboards.fig"),
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 8,
                             vertical: 2,
                           ),
@@ -421,12 +421,12 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        const SizedBox(height: 8,),
                         Row(
                           children: [
                             Container(
-                              child: Text("3D and other assets"),
-                              padding: EdgeInsets.symmetric(
+                              child: const Text("3D and other assets"),
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 2,
                               ),
@@ -437,10 +437,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 8,),
+                            const SizedBox(width: 8,),
                             Container(
-                              child: Text("Our timeline progress"),
-                              padding: EdgeInsets.symmetric(
+                              child: const Text("Our timeline progress"),
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 2,
                               ),
