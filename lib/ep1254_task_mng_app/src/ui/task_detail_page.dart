@@ -47,7 +47,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                 child: SizedBox(
                               height: 24,
                               child: Stack(
-                                children: [
+                                children: const [
                                   Positioned(
                                     left: 0,
                                     top: 0,
@@ -62,6 +62,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     bottom: 0,
                                     child: CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: Colors.orange,
                                     ),
                                   ),
                                   Positioned(
@@ -70,6 +71,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     bottom: 0,
                                     child: CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: Colors.red,
                                     ),
                                   ),
                                   Positioned(
@@ -78,6 +80,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     bottom: 0,
                                     child: CircleAvatar(
                                       radius: 12,
+                                      backgroundColor: Colors.green,
                                     ),
                                   ),
                                   Positioned(
@@ -86,7 +89,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                                     bottom: 0,
                                     child: CircleAvatar(
                                       radius: 12,
-                                      child: Icon(Icons.add, size: 14,),
+                                      child: Icon(
+                                        Icons.add,
+                                        size: 14,
+                                      ),
                                       foregroundColor: Colors.white,
                                     ),
                                   ),
@@ -99,16 +105,16 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                           height: 12,
                         ),
                         Row(
-                          children: [
-                            const SizedBox(width: 100, child: Text("Date")),
+                          children: const [
+                            SizedBox(width: 100, child: Text("Date")),
                           ],
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Row(
-                          children: [
-                            const SizedBox(width: 100, child: Text("Tags")),
+                          children: const [
+                            SizedBox(width: 100, child: Text("Tags")),
                           ],
                         ),
                       ],
@@ -328,7 +334,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text("Fer D Sambo"),
                                 Text("Yesterday"),
                               ],
