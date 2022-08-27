@@ -538,20 +538,80 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 color: Colors.white,
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Row(
-                          children: [
-                            CircleAvatar(),
-                            Column(
-                              children: [
-                                Text("Gonzales"),
-                                Text("3d ago")
-                              ],
-                            )
-                          ],
-                        )
-                      ],
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 20,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Column(
+                                children: [
+                                  Text("Gonzales"),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("3d ago")
+                                ],
+                              ),
+                            ],
+                          ),
+                          Text(
+                            "Hi sambo, i've donw the revision for the setting's page "
+                            "and some icon changes. Give comments straight on figma",
+                          ),
+                          const SizedBox(
+                            height: 16,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 2,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(2),
+                                  border: Border.all(
+                                    color: Colors.grey[200]!,
+                                  ),
+                                ),
+                                child: const Text("👍 2"),
+                              ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 2,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(2),
+                                  border: Border.all(
+                                    color: Colors.grey[200]!,
+                                  ),
+                                ),
+                                child: const Text("💭 6"),
+                              ),
+                              const SizedBox(
+                                width: 8,
+                              ),
+                              const Text(
+                                "Reply",
+                                style: TextStyle(
+                                  color: Colors.blue,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     );
                   },
                 ),
