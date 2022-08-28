@@ -16,12 +16,36 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
           children: [
             Positioned(
               left: 0,
-                right: 0,
-                bottom: 0,
-                child: Container(
-              height: 72,
-              color: Colors.blueAccent,
-            ))
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 80,
+                color: Colors.blueAccent,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      top: 0,
+                      child: CircleAvatar(
+                        radius: 28,
+                        backgroundColor: Colors.white,
+                      ),
+                    ),
+                    Positioned(
+                        right: 0,
+                        bottom: 0,
+                        left: 0,
+                        top: 12,
+                        child: Container(
+                          color: Colors.white,
+                          child: Row(
+
+                    ),))
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
