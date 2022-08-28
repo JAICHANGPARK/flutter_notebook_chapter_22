@@ -35,11 +35,20 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(Icons.home),
-                                SizedBox(
-                                  height: 8,
+                                Icon(
+                                  Icons.home,
+                                  color: Colors.indigo,
                                 ),
-                                Text("Home"),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(
+                                    color: Colors.indigo,
+                                    fontSize: 12,
+                                  ),
+                                ),
                               ],
                             )
                           ],
