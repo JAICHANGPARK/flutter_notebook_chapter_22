@@ -31,10 +31,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       child: Container(
                         color: Colors.white,
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Icon(
                                   Icons.home,
                                   color: Colors.indigo,
@@ -50,7 +51,65 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   ),
                                 ),
                               ],
-                            )
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(
+                                  Icons.sell,
+                                  color: Colors.blueGrey,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Delas",
+                                  style: TextStyle(
+                                    color: Colors.blueGrey,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(
+                                  Icons.shopping_bag,
+                                  color: Colors.blueGrey,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Cart",
+                                  style: TextStyle(
+                                    color: Colors.blueGrey,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Icon(
+                                  Icons.person,
+                                  color: Colors.blueGrey,
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Account",
+                                  style: TextStyle(
+                                    color: Colors.blueGrey,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
+
                           ],
                         ),
                       ),
@@ -63,8 +122,8 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         radius: 28,
                         backgroundColor: Colors.white,
                         child: Container(
-                          margin: EdgeInsets.all(6),
-                          decoration: BoxDecoration(
+                          margin: const EdgeInsets.all(6),
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.indigo,
                           ),
