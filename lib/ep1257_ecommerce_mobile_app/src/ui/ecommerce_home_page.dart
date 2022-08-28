@@ -11,6 +11,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
@@ -36,8 +37,19 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       left: 0,
                       top: 16,
                       child: Container(
-                        color: Colors.white,
+
                         padding: const EdgeInsets.symmetric(horizontal: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[300]!,
+                              blurRadius: 1,
+                              spreadRadius: 1
+
+                            )
+                          ]
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
