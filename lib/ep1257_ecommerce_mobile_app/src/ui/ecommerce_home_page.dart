@@ -30,6 +30,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       top: 16,
                       child: Container(
                         color: Colors.white,
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -71,6 +72,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                               ],
                             ),
+                            SizedBox(width: 58,),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
