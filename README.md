@@ -1,7 +1,15 @@
 # flutter_notebook_chapter_22
 ## S25
 
-### EP1254
+### EP1257
+
+- Ecommerce Mobile App Design
+- by Musemind Mobile
+- https://dribbble.com/shots/19238854-Ecommerce-Mobile-App-Design
+
+<img src="https://cdn.dribbble.com/userupload/3363116/file/original-aaca793421f8904cc0d4d5e298a0664f.jpg?compress=1&resize=1024x768" width="400px"/>
+
+### EP1254-1256
 
 - Yondaktaw - Task Management Mobile
 - by Habib Gilang Maulana
