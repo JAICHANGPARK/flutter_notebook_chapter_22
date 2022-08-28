@@ -127,7 +127,15 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         foregroundColor: Colors.white,
                         child: Container(
                           margin: const EdgeInsets.all(6),
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.blueGrey[200]!,
+                                offset: Offset(0, 2),
+                                blurRadius: 4,
+                                spreadRadius: 2
+                              )
+                            ],
                             shape: BoxShape.circle,
                             color: Colors.indigo,
                           ),
