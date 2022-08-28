@@ -72,7 +72,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                               ],
                             ),
-                            SizedBox(width: 58,),
+                            SizedBox(
+                              width: 48,
+                            ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
@@ -111,7 +113,6 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
@@ -123,11 +124,17 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: Colors.white,
+                        foregroundColor: Colors.white,
                         child: Container(
                           margin: const EdgeInsets.all(6),
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.indigo,
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.store,
+                            ),
                           ),
                         ),
                       ),
