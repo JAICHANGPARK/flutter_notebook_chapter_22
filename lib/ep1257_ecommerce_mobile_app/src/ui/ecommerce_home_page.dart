@@ -20,7 +20,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
               bottom: 0,
               child: Container(
                 height: 80,
-                color: Colors.blueAccent,
+              
                 child: Stack(
                   children: [
                     Positioned(
@@ -30,7 +30,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       top: 16,
                       child: Container(
                         color: Colors.white,
-                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -60,7 +60,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   Icons.sell,
                                   color: Colors.blueGrey[300],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 4,
                                 ),
                                 Text(
@@ -72,7 +72,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 48,
                             ),
                             Column(
@@ -82,7 +82,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   Icons.shopping_bag,
                                   color: Colors.blueGrey[300],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 4,
                                 ),
                                 Text(
@@ -101,7 +101,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   Icons.person,
                                   color: Colors.blueGrey[300],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 4,
                                 ),
                                 Text(
@@ -131,7 +131,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.blueGrey[200]!,
-                                offset: Offset(0, 2),
+                                offset: const Offset(0, 2),
                                 blurRadius: 4,
                                 spreadRadius: 2,
                               )
@@ -139,7 +139,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             shape: BoxShape.circle,
                             color: Colors.indigo,
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Icon(
                               Icons.store,
                             ),
