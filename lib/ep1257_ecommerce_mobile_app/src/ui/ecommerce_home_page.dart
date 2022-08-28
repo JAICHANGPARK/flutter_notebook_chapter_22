@@ -96,10 +96,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children:  [
                                 Icon(
                                   Icons.person,
-                                  color: Colors.blueGrey,
+                                  color: Colors.blueGrey[300],
                                 ),
                                 SizedBox(
                                   height: 4,
@@ -107,7 +107,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 Text(
                                   "Account",
                                   style: TextStyle(
-                                    color: Colors.blueGrey,
+                                    color: Colors.blueGrey[300],
                                     fontSize: 12,
                                   ),
                                 ),
