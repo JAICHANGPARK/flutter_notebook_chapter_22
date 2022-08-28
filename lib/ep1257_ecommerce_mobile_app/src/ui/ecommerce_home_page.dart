@@ -55,10 +55,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children:  [
                                 Icon(
                                   Icons.sell,
-                                  color: Colors.blueGrey,
+                                  color: Colors.blueGrey[300],
                                 ),
                                 SizedBox(
                                   height: 4,
@@ -66,7 +66,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 Text(
                                   "Delas",
                                   style: TextStyle(
-                                    color: Colors.blueGrey,
+                                    color: Colors.blueGrey[300],
                                     fontSize: 12,
                                   ),
                                 ),
@@ -77,10 +77,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children:  [
                                 Icon(
                                   Icons.shopping_bag,
-                                  color: Colors.blueGrey,
+                                  color: Colors.blueGrey[300],
                                 ),
                                 SizedBox(
                                   height: 4,
@@ -88,7 +88,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 Text(
                                   "Cart",
                                   style: TextStyle(
-                                    color: Colors.blueGrey,
+                                    color: Colors.blueGrey[300],
                                     fontSize: 12,
                                   ),
                                 ),
