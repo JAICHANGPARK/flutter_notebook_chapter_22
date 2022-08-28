@@ -31,7 +31,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       child: Container(
                         color: Colors.white,
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
