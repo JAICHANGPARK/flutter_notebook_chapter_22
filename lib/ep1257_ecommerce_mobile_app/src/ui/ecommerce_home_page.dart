@@ -133,7 +133,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 color: Colors.blueGrey[200]!,
                                 offset: Offset(0, 2),
                                 blurRadius: 4,
-                                spreadRadius: 2
+                                spreadRadius: 2,
                               )
                             ],
                             shape: BoxShape.circle,
