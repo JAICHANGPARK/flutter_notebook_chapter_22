@@ -15,12 +15,19 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
         child: Stack(
           children: [
             Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                top: 0,
+                child: Column(
+                  children: [],
+                )),
+            Positioned(
               left: 0,
               right: 0,
               bottom: 0,
-              child: Container(
+              child: SizedBox(
                 height: 80,
-              
                 child: Stack(
                   children: [
                     Positioned(
@@ -55,7 +62,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children:  [
+                              children: [
                                 Icon(
                                   Icons.sell,
                                   color: Colors.blueGrey[300],
@@ -77,7 +84,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children:  [
+                              children: [
                                 Icon(
                                   Icons.shopping_bag,
                                   color: Colors.blueGrey[300],
@@ -96,7 +103,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             ),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children:  [
+                              children: [
                                 Icon(
                                   Icons.person,
                                   color: Colors.blueGrey[300],
