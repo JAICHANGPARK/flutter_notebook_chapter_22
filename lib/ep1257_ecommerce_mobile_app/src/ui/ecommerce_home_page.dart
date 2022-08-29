@@ -33,8 +33,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(2),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
                             child: const TextField(
                               decoration: InputDecoration(
+                                icon: Icon(
+                                  Icons.search,
+                                  color: Colors.indigo,
+                                ),
+                                iconColor: Colors.indigo,
                                 border: InputBorder.none,
                                 hintText: "Search Shoes, Watch...",
                               ),
@@ -44,6 +50,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(Icons.qr_code_scanner),
+                          color: Colors.indigo,
                         ),
                       ],
                     ),
