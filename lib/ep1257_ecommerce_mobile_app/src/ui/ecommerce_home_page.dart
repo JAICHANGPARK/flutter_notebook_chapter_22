@@ -95,6 +95,22 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   ),
                                   margin: const EdgeInsets.only(right: 16),
                                 ),
+                                Container(
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  margin: const EdgeInsets.only(right: 16),
+                                ),
+                                Container(
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  margin: const EdgeInsets.only(right: 16),
+                                ),
                               ],
                             ),
                           ),
@@ -104,11 +120,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             decorator: DotsDecorator(
                               activeColor: Colors.indigo,
                               color: Colors.white,
-                              activeShape: RoundedRectangleBorder(
-                                  side: const BorderSide(
-                                    color: Colors.grey,
-                                  ),
-                                  borderRadius: BorderRadius.circular(16)),
+                              // activeShape: RoundedRectangleBorder(
+                              //     side: const BorderSide(
+                              //       color: Colors.grey,
+                              //     ),
+                              //     borderRadius: BorderRadius.circular(16)),
                               shape: RoundedRectangleBorder(
                                   side: const BorderSide(
                                     color: Colors.grey,
@@ -131,7 +147,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               children: [
                                 const Text(
                                   "Fla⚡h sale",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
                                 TextButton(
                                   onPressed: () {},
@@ -166,7 +185,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                           Container(
                             height: 220,
-                            margin: const EdgeInsets.only(left: 16,bottom: 72),
+                            margin: const EdgeInsets.only(left: 16, bottom: 72),
                             color: Colors.blue,
                           ),
                         ],
