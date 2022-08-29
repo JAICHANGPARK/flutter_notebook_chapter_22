@@ -16,13 +16,37 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
         child: Stack(
           children: [
             Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0,
-                child: Column(
-                  children: [],
-                )),
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: 38,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.qr_code_scanner),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Divider(
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
+            ),
             Positioned(
               left: 0,
               right: 0,
@@ -37,7 +61,6 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       left: 0,
                       top: 16,
                       child: Container(
-
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -45,10 +68,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             BoxShadow(
                               color: Colors.grey[300]!,
                               blurRadius: 1,
-                              spreadRadius: 1
-
-                            )
-                          ]
+                              spreadRadius: 1,
+                            ),
+                          ],
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
