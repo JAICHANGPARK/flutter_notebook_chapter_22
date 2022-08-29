@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceHomePage extends StatefulWidget {
@@ -8,6 +9,9 @@ class EcommerceHomePage extends StatefulWidget {
 }
 
 class _EcommerceHomePageState extends State<EcommerceHomePage> {
+  PageController pageController = PageController(initialPage: 0, viewportFraction: 0.7);
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,6 +62,34 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                   const Divider(
                     color: Colors.grey,
                   ),
+                  Container(
+                    height: 140,
+                    color: Colors.grey,
+                    child: PageView(
+                      controller: pageController,
+                      children: [
+                        Container(
+                          width: 200,
+                          margin: EdgeInsets.only(right: 16),
+                          decoration: BoxDecoration(
+
+                            color: Colors.pink,
+                          ),
+                        ),
+                        Container(
+                          width: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                          ),
+                          margin: EdgeInsets.only(right: 16),
+                        ),
+                      ],
+                    ),
+                  ),
+                  DotsIndicator(
+                    dotsCount: 4,
+                    position: pageIndex.toDouble(),
+                  )
                 ],
               ),
             ),
