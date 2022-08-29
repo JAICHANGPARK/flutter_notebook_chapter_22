@@ -31,17 +31,24 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             height: 38,
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            child: const TextField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "Search Shoes, Watch...",
+                              ),
                             ),
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.qr_code_scanner),
+                          icon: const Icon(Icons.qr_code_scanner),
                         ),
                       ],
                     ),
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.grey,
                   ),
                 ],
