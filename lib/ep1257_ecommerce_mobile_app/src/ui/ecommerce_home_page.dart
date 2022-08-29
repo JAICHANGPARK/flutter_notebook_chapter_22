@@ -62,35 +62,117 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                   const Divider(
                     color: Colors.grey,
                   ),
-                  Container(
-                    height: 140,
-                    color: Colors.grey,
-                    child: PageView(
-                      padEnds: false,
-                      controller: pageController,
-                      children: [
-                        Container(
-                          width: 160,
-                          margin: EdgeInsets.only(right: 16),
-                          decoration: BoxDecoration(
-
-                            color: Colors.pink,
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 140,
+                            margin: EdgeInsets.only(left: 16, top: 16),
+                            color: Colors.grey,
+                            child: PageView(
+                              padEnds: false,
+                              onPageChanged: (idx) {
+                                setState(() {
+                                  pageIndex = idx;
+                                });
+                              },
+                              controller: pageController,
+                              children: [
+                                Container(
+                                  width: 160,
+                                  margin: EdgeInsets.only(right: 16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                                Container(
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  margin: EdgeInsets.only(right: 16),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        Container(
-                          width: 160,
-                          decoration: BoxDecoration(
-                            color: Colors.pink,
+                          DotsIndicator(
+                            dotsCount: 4,
+                            position: pageIndex.toDouble(),
+                            decorator: DotsDecorator(
+                              activeColor: Colors.indigo,
+                              color: Colors.white,
+                              activeShape: RoundedRectangleBorder(
+                                  side: BorderSide(
+                                    color: Colors.grey,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                              shape: RoundedRectangleBorder(
+                                  side: BorderSide(
+                                    color: Colors.grey,
+                                  ),
+                                  borderRadius: BorderRadius.circular(16)),
+                            ),
                           ),
-                          margin: EdgeInsets.only(right: 16),
-                        ),
-                      ],
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Container(
+                            height: 84,
+                            color: Colors.blueGrey,
+                            margin: EdgeInsets.only(left: 16),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16, right: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Fla⚡h sale",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("View all"),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 220,
+                            margin: EdgeInsets.only(left: 16),
+                            color: Colors.blue,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16, right: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Top sellers",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("View all"),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 220,
+                            margin: EdgeInsets.only(left: 16),
+                            color: Colors.blue,
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  DotsIndicator(
-                    dotsCount: 4,
-                    position: pageIndex.toDouble(),
-                  )
                 ],
               ),
             ),
