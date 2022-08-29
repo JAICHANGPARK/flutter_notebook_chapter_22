@@ -9,7 +9,7 @@ class EcommerceHomePage extends StatefulWidget {
 }
 
 class _EcommerceHomePageState extends State<EcommerceHomePage> {
-  PageController pageController = PageController(initialPage: 0, viewportFraction: 0.7);
+  PageController pageController = PageController(initialPage: 0, viewportFraction: 0.8);
   int pageIndex = 0;
 
   @override
@@ -66,10 +66,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                     height: 140,
                     color: Colors.grey,
                     child: PageView(
+                      padEnds: false,
                       controller: pageController,
                       children: [
                         Container(
-                          width: 200,
+                          width: 160,
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
 
@@ -77,7 +78,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                         ),
                         Container(
-                          width: 200,
+                          width: 160,
                           decoration: BoxDecoration(
                             color: Colors.pink,
                           ),
