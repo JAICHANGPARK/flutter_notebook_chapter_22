@@ -166,9 +166,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                           Container(
                             height: 220,
-                            margin: EdgeInsets.only(left: 16),
+                            margin: EdgeInsets.only(left: 16,bottom: 72),
                             color: Colors.blue,
-                          )
+                          ),
                         ],
                       ),
                     ),
