@@ -37,7 +37,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(2),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: const TextField(
                               decoration: InputDecoration(
                                 icon: Icon(
@@ -68,7 +68,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                         children: [
                           Container(
                             height: 140,
-                            margin: EdgeInsets.only(left: 16, top: 16),
+                            margin: const EdgeInsets.only(left: 16, top: 16),
                             color: Colors.grey,
                             child: PageView(
                               padEnds: false,
@@ -81,7 +81,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               children: [
                                 Container(
                                   width: 160,
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
                                     color: Colors.pink,
                                     borderRadius: BorderRadius.circular(8),
@@ -93,7 +93,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                     color: Colors.pink,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                 ),
                               ],
                             ),
@@ -105,44 +105,44 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               activeColor: Colors.indigo,
                               color: Colors.white,
                               activeShape: RoundedRectangleBorder(
-                                  side: BorderSide(
+                                  side: const BorderSide(
                                     color: Colors.grey,
                                   ),
                                   borderRadius: BorderRadius.circular(16)),
                               shape: RoundedRectangleBorder(
-                                  side: BorderSide(
+                                  side: const BorderSide(
                                     color: Colors.grey,
                                   ),
                                   borderRadius: BorderRadius.circular(16)),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Container(
                             height: 84,
                             color: Colors.blueGrey,
-                            margin: EdgeInsets.only(left: 16),
+                            margin: const EdgeInsets.only(left: 16),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 16, right: 16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Fla⚡h sale",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text("View all"),
+                                  child: const Text("View all"),
                                 ),
                               ],
                             ),
                           ),
                           Container(
                             height: 220,
-                            margin: EdgeInsets.only(left: 16),
+                            margin: const EdgeInsets.only(left: 16),
                             color: Colors.blue,
                           ),
                           Padding(
@@ -150,7 +150,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Top sellers",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -159,14 +159,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text("View all"),
+                                  child: const Text("View all"),
                                 ),
                               ],
                             ),
                           ),
                           Container(
                             height: 220,
-                            margin: EdgeInsets.only(left: 16,bottom: 72),
+                            margin: const EdgeInsets.only(left: 16,bottom: 72),
                             color: Colors.blue,
                           ),
                         ],
