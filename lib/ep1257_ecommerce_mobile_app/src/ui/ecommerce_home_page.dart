@@ -199,28 +199,68 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                         top: 8,
                                         child: Column(
                                           children: [
-                                            Expanded(child: Placeholder()),
                                             Expanded(
+                                              flex: 6,
+                                              child: Image.network(
+                                                "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                                              ),
+                                            ),
+                                            SizedBox(height: 8,),
+                                            Expanded(
+                                                flex: 5,
                                                 child: Column(
-                                              children: [
-                                                Text("Apple Watch series 3 space"),
-                                                Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
-                                                    Icon(
-                                                      Icons.star,
+                                                    Text(
+                                                      "Apple Watch series 3 space",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+
+                                                      ),
                                                     ),
-                                                    Text("4.5"),
-                                                    Text("(124)"),
+                                                    Row(
+                                                      children: [
+                                                        Icon(
+                                                          Icons.star,
+                                                          size: 16,
+                                                          color: Colors.yellow,
+                                                        ),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text("4.5"),
+                                                        Text(
+                                                          "(124)",
+                                                          style: TextStyle(
+                                                            color: Colors.grey,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Text(
+                                                          "\$5.99",
+                                                          style: TextStyle(
+                                                            color: Colors.indigo,
+                                                            fontSize: 15,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                          "\$8.15",
+                                                          style: TextStyle(
+                                                            decoration: TextDecoration.lineThrough,
+                                                            color: Colors.grey,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    )
                                                   ],
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Text("\$5.99"),
-                                                    Text("\$8.15"),
-                                                  ],
-                                                )
-                                              ],
-                                            ))
+                                                ))
                                           ],
                                         ),
                                       )
