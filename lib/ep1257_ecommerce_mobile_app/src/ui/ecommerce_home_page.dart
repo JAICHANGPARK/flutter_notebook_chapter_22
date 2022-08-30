@@ -205,17 +205,19 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                 "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                                               ),
                                             ),
-                                            SizedBox(height: 8,),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
                                             Expanded(
                                                 flex: 5,
                                                 child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
                                                     Text(
-                                                      "Apple Watch series 3 space",
+                                                      "Airpods Max space",
                                                       style: TextStyle(
                                                         fontWeight: FontWeight.bold,
-
                                                       ),
                                                     ),
                                                     Row(
@@ -228,11 +230,18 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                         SizedBox(
                                                           width: 4,
                                                         ),
-                                                        Text("4.5"),
+                                                        Text(
+                                                          "4.5",
+                                                          style: TextStyle(
+                                                            fontSize: 13,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
                                                         Text(
                                                           "(124)",
                                                           style: TextStyle(
                                                             color: Colors.grey,
+                                                            fontSize: 12,
                                                           ),
                                                         ),
                                                       ],
