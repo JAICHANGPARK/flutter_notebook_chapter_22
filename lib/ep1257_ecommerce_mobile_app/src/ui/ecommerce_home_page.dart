@@ -138,20 +138,20 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           ),
                           Container(
                             height: 84,
-                            color: Colors.blueGrey,
                             margin: const EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               itemCount: 10,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Padding(
-                                  padding: EdgeInsets.only(right: 16),
+                                  padding: const EdgeInsets.only(right: 16),
                                   child: Column(
-                                    children: [
-                                      CircleAvatar(
+                                    children: const [
+                                       CircleAvatar(
                                         radius: 32,
+                                         child: Text("Image"),
                                       ),
-                                      Text("Sneakers"),
+                                       Text("Sneakers"),
                                     ],
                                   ),
                                 );
@@ -181,6 +181,18 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             height: 220,
                             margin: const EdgeInsets.only(left: 16),
                             color: Colors.blue,
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                  ),
+                                );
+                              },
+                              itemCount: 10,
+                              scrollDirection: Axis.horizontal,
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 16, right: 16),
