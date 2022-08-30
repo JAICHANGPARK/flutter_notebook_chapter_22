@@ -69,7 +69,6 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           Container(
                             height: 140,
                             margin: const EdgeInsets.only(left: 16, top: 16),
-                            color: Colors.grey,
                             child: PageView(
                               padEnds: false,
                               onPageChanged: (idx) {
@@ -83,8 +82,44 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   width: 160,
                                   margin: const EdgeInsets.only(right: 16),
                                   decoration: BoxDecoration(
-                                    color: Colors.pink,
+                                    color: Colors.yellowAccent,
                                     borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 16,
+                                        top: 16,
+                                        bottom: 16,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          children: [
+                                            const Text("CASUAL SHOE"),
+                                            Row(
+                                              children: [
+                                                const Text("40%"),
+                                                const Text("OFF"),
+                                              ],
+                                            ),
+                                            SizedBox(
+                                              height: 12,
+                                            ),
+                                            Container(
+                                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                              decoration: BoxDecoration(
+                                                color: Colors.black,
+                                                borderRadius: BorderRadius.circular(2),
+                                              ),
+                                              child: const Text(
+                                                "SHOP NOW",
+                                                style: TextStyle(color: Colors.white),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
                                 Container(
@@ -280,7 +315,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                         child: CircleAvatar(
                                           radius: 18,
                                           backgroundColor: Colors.grey[200],
-                                          child: Icon(Icons.add),
+                                          child: const Icon(Icons.add),
                                           foregroundColor: Colors.grey,
                                         ),
                                       ),
@@ -288,15 +323,12 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                           left: 8,
                                           top: 8,
                                           child: Container(
-                                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                             decoration: BoxDecoration(
                                                 color: Colors.blue[200], borderRadius: BorderRadius.circular(4)),
-                                            child: Text(
+                                            child: const Text(
                                               "25% OFF",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 12
-                                              ),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                                             ),
                                           ))
                                     ],
