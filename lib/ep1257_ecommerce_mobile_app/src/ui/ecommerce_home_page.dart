@@ -67,7 +67,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 140,
+                            height: 120,
                             margin: const EdgeInsets.only(left: 16, top: 16),
                             child: PageView(
                               padEnds: false,
@@ -88,9 +88,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        left: 16,
+                                        left: 24,
                                         top: 16,
-                                        bottom: 16,
+                                        bottom: 24,
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -98,7 +98,10 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                             const Text("CASUAL SHOE"),
                                             Row(
                                               children: [
-                                                const Text("40%"),
+                                                const Text(
+                                                  "40%",
+                                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                                ),
                                                 const Text("OFF"),
                                               ],
                                             ),
@@ -149,6 +152,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               ],
                             ),
                           ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           DotsIndicator(
                             dotsCount: 4,
                             position: pageIndex.toDouble(),
@@ -186,7 +192,16 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                         radius: 32,
                                         child: Text("Image"),
                                       ),
-                                      Text("Sneakers"),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Sneakers",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 );
