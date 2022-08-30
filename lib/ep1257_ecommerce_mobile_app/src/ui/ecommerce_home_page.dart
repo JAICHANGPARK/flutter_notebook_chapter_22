@@ -147,11 +147,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                   padding: const EdgeInsets.only(right: 16),
                                   child: Column(
                                     children: const [
-                                       CircleAvatar(
+                                      CircleAvatar(
                                         radius: 32,
-                                         child: Text("Image"),
+                                        child: Text("Image"),
                                       ),
-                                       Text("Sneakers"),
+                                      Text("Sneakers"),
                                     ],
                                   ),
                                 );
@@ -180,13 +180,51 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                           Container(
                             height: 220,
                             margin: const EdgeInsets.only(left: 16),
-                            color: Colors.blue,
                             child: ListView.builder(
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 160,
+                                  margin: EdgeInsets.only(right: 16),
+                                  width: 180,
                                   decoration: BoxDecoration(
-                                    border: Border.all(),
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(4)),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 8,
+                                        right: 8,
+                                        bottom: 8,
+                                        top: 8,
+                                        child: Column(
+                                          children: [
+                                            Expanded(child: Placeholder()),
+                                            Expanded(
+                                                child: Column(
+                                              children: [
+                                                Text("Apple Watch series 3 space"),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.star,
+                                                    ),
+                                                    Text("4.5"),
+                                                    Text("(124)"),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text("\$5.99"),
+                                                    Text("\$8.15"),
+                                                  ],
+                                                )
+                                              ],
+                                            ))
+                                          ],
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 );
                               },
