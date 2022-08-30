@@ -126,10 +126,11 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                               //     ),
                               //     borderRadius: BorderRadius.circular(16)),
                               shape: RoundedRectangleBorder(
-                                  side: const BorderSide(
-                                    color: Colors.grey,
-                                  ),
-                                  borderRadius: BorderRadius.circular(16)),
+                                side: const BorderSide(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
                             ),
                           ),
                           const SizedBox(
@@ -139,6 +140,23 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             height: 84,
                             color: Colors.blueGrey,
                             margin: const EdgeInsets.only(left: 16),
+                            child: ListView.builder(
+                              itemCount: 10,
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Padding(
+                                  padding: EdgeInsets.only(right: 16),
+                                  child: Column(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 32,
+                                      ),
+                                      Text("Sneakers"),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 16, right: 16),
