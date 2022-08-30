@@ -183,13 +183,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             child: ListView.builder(
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   width: 180,
                                   decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.grey[300]!,
-                                      ),
-                                      borderRadius: BorderRadius.circular(4)),
+                                    border: Border.all(
+                                      color: Colors.grey[300]!,
+                                    ),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                   child: Stack(
                                     children: [
                                       Positioned(
@@ -205,7 +206,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                 "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 8,
                                             ),
                                             Expanded(
@@ -214,14 +215,14 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
-                                                    Text(
+                                                    const Text(
                                                       "Airpods Max space",
                                                       style: TextStyle(
                                                         fontWeight: FontWeight.bold,
                                                       ),
                                                     ),
                                                     Row(
-                                                      children: [
+                                                      children: const [
                                                         Icon(
                                                           Icons.star,
                                                           size: 16,
@@ -247,7 +248,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                       ],
                                                     ),
                                                     Row(
-                                                      children: [
+                                                      children: const [
                                                         Text(
                                                           "\$5.99",
                                                           style: TextStyle(
