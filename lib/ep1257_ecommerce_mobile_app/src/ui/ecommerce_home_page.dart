@@ -253,7 +253,7 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                           "\$5.99",
                                                           style: TextStyle(
                                                             color: Colors.indigo,
-                                                            fontSize: 15,
+                                                            fontSize: 16,
                                                             fontWeight: FontWeight.bold,
                                                           ),
                                                         ),
@@ -263,9 +263,9 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                         Text(
                                                           "\$8.15",
                                                           style: TextStyle(
-                                                            decoration: TextDecoration.lineThrough,
-                                                            color: Colors.grey,
-                                                          ),
+                                                              decoration: TextDecoration.lineThrough,
+                                                              color: Colors.grey,
+                                                              fontSize: 12),
                                                         ),
                                                       ],
                                                     )
@@ -273,6 +273,28 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                                 ))
                                           ],
                                         ),
+                                      ),
+                                      Positioned(
+                                        right: 8,
+                                        bottom: 8,
+                                        child: CircleAvatar(
+                                          radius: 18,
+                                          backgroundColor: Colors.grey[200],
+                                          child: Icon(Icons.add),
+                                          foregroundColor: Colors.grey,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        left: 8,
+                                        top: 8,
+                                        child: Container(
+                                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[200],
+                                            borderRadius: BorderRadius.circular(4)
+                                          ),
+                                          child: Text("25% OFF", ),
+                                        )
                                       )
                                     ],
                                   ),
