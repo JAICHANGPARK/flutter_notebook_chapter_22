@@ -14,7 +14,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
         elevation: 0,
-        title: Text("Derails"),
+        title: const Text("Derails"),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.black,
@@ -39,8 +39,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             border: Border.all(color: Colors.blue),
                             shape: BoxShape.circle,
                           ),
-                          margin: EdgeInsets.only(bottom: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(bottom: 16),
+                          padding: const EdgeInsets.all(8),
                           child: Image.network(
                             "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                             color: Colors.blue.withOpacity(0.2),
@@ -55,8 +55,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             border: Border.all(color: Colors.red),
                             shape: BoxShape.circle,
                           ),
-                          margin: EdgeInsets.only(bottom: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(bottom: 16),
+                          padding: const EdgeInsets.all(8),
                           child: Image.network(
                             "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                             color: Colors.red.withOpacity(0.2),
@@ -70,8 +70,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                               color: Colors.purple[50],
                               border: Border.all(color: Colors.purple),
                               shape: BoxShape.circle),
-                          margin: EdgeInsets.only(bottom: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(bottom: 16),
+                          padding: const EdgeInsets.all(8),
                           child: Image.network(
                             "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                             color: Colors.purple.withOpacity(0.2),
@@ -86,8 +86,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             border: Border.all(color: Colors.green),
                             shape: BoxShape.circle,
                           ),
-                          margin: EdgeInsets.only(bottom: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(bottom: 16),
+                          padding: const EdgeInsets.all(8),
                           child: Image.network(
                             "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
                             color: Colors.green.withOpacity(0.2),
@@ -113,34 +113,54 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
           Expanded(
             flex: 13,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(16),
                   topRight: Radius.circular(16),
                 ),
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Text(
                         "Beats Studio Wireless\nHadphones",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 18
+                          fontSize: 18,
                         ),
                       ),
                       Spacer(),
-                      Icon(Icons.star),
-                      Text("(124)"),
+                      Icon(
+                        Icons.star,
+                        color: Colors.yellowAccent,
+                        size: 16,
+                      ),
+                      Text(
+                        "4.5",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "(124)",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12,
+                        ),
+                      ),
                     ],
                   ),
-                  SizedBox(height: 16,),
+                  const SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "\$6.99",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -148,10 +168,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           fontSize: 20,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
-                      Text(
+                      const Text(
                         "\$4.15",
                         style: TextStyle(
                           // fontWeight: FontWeight.bold,
@@ -160,14 +180,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           decoration: TextDecoration.lineThrough,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       CircleAvatar(
                         radius: 16,
                         backgroundColor: Colors.grey[200],
                         foregroundColor: Colors.black,
-                        child: Icon(Icons.remove),
+                        child: const Icon(Icons.remove),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 8),
                         child: Text("1"),
                       ),
@@ -175,7 +195,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         radius: 16,
                         backgroundColor: Colors.blue[200],
                         foregroundColor: Colors.black,
-                        child: Icon(Icons.add),
+                        child: const Icon(Icons.add),
                       ),
                     ],
                   )
