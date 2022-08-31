@@ -227,6 +227,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(height: 16,),
                   const Text.rich(
                     TextSpan(
                       children: [
@@ -239,6 +240,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ],
                     ),
                   ),
+                  SizedBox(height: 7,),
                   const Text.rich(
                     TextSpan(
                       children: [
@@ -258,8 +260,12 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.indigo,
+                      borderRadius: BorderRadius.circular(8)
                     ),
+                    padding: EdgeInsets.symmetric(vertical: 12),
+
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.shopping_bag_outlined,
