@@ -122,6 +122,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               ),
               padding: const EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: const [
@@ -199,17 +200,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ),
                     ],
                   ),
-
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 12),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(8)
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                    margin: const EdgeInsets.symmetric(vertical: 12),
+                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Special request",
                           style: TextStyle(
@@ -220,6 +217,60 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           height: 8,
                         ),
                         Text("Special request are welcome, but can't always be accommodated.")
+                      ],
+                    ),
+                  ),
+                  const Text(
+                    "Description",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "Brand:",
+                        ),
+                        TextSpan(
+                          text: "Apple",
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "Model Name:",
+                        ),
+                        TextSpan(
+                          text: "Airpods Max",
+                        ),
+                      ],
+                    ),
+                  ),
+                  Spacer(),
+                  Divider(
+                    color: Colors.grey,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.indigo,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "ADD TO CART",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
                       ],
                     ),
                   )
