@@ -125,11 +125,19 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 children: [
                   Row(
                     children: [
-                      Text("Beats Studio Wireless\neadphones"),
+                      Text(
+                        "Beats Studio Wireless\nHadphones",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        ),
+                      ),
+                      Spacer(),
                       Icon(Icons.star),
                       Text("(124)"),
                     ],
                   ),
+                  SizedBox(height: 16,),
                   Row(
                     children: [
                       Text(
