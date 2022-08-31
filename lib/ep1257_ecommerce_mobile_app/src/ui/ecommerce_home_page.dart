@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1257_ecommerce_mobile_app/src/ui/ecommerce_detail_page.dart';
 
 class EcommerceHomePage extends StatefulWidget {
   const EcommerceHomePage({Key? key}) : super(key: key);
@@ -232,129 +233,138 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                             margin: const EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               itemBuilder: (context, index) {
-                                return Container(
-                                  margin: const EdgeInsets.only(right: 16),
-                                  width: 180,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.grey[300]!,
+                                return InkWell(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => EcommerceDetailPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: const EdgeInsets.only(right: 16),
+                                    width: 180,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(4),
                                     ),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 8,
-                                        right: 8,
-                                        bottom: 8,
-                                        top: 8,
-                                        child: Column(
-                                          children: [
-                                            Expanded(
-                                              flex: 6,
-                                              child: Image.network(
-                                                "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 8,
-                                            ),
-                                            Expanded(
-                                                flex: 5,
-                                                child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                  children: [
-                                                    const Text(
-                                                      "Airpods Max space",
-                                                      style: TextStyle(
-                                                        fontWeight: FontWeight.bold,
-                                                      ),
-                                                    ),
-                                                    Row(
-                                                      children: const [
-                                                        Icon(
-                                                          Icons.star,
-                                                          size: 16,
-                                                          color: Colors.yellow,
-                                                        ),
-                                                        SizedBox(
-                                                          width: 4,
-                                                        ),
-                                                        Text(
-                                                          "4.5",
-                                                          style: TextStyle(
-                                                            fontSize: 13,
-                                                            fontWeight: FontWeight.bold,
-                                                          ),
-                                                        ),
-                                                        Text(
-                                                          "(124)",
-                                                          style: TextStyle(
-                                                            color: Colors.grey,
-                                                            fontSize: 12,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Row(
-                                                      children: const [
-                                                        Text(
-                                                          "\$5.99",
-                                                          style: TextStyle(
-                                                            color: Colors.indigo,
-                                                            fontSize: 16,
-                                                            fontWeight: FontWeight.bold,
-                                                          ),
-                                                        ),
-                                                        SizedBox(
-                                                          width: 4,
-                                                        ),
-                                                        Text(
-                                                          "\$8.15",
-                                                          style: TextStyle(
-                                                              decoration: TextDecoration.lineThrough,
-                                                              color: Colors.grey,
-                                                              fontSize: 12),
-                                                        ),
-                                                      ],
-                                                    )
-                                                  ],
-                                                ))
-                                          ],
-                                        ),
-                                      ),
-                                      Positioned(
-                                        right: 8,
-                                        bottom: 8,
-                                        child: CircleAvatar(
-                                          radius: 18,
-                                          backgroundColor: Colors.grey[200],
-                                          child: const Icon(Icons.add),
-                                          foregroundColor: Colors.grey,
-                                        ),
-                                      ),
-                                      Positioned(
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
                                           left: 8,
+                                          right: 8,
+                                          bottom: 8,
                                           top: 8,
-                                          child: Container(
-                                            padding: const EdgeInsets.symmetric(
-                                              horizontal: 12,
-                                              vertical: 4,
-                                            ),
-                                            decoration: BoxDecoration(
-                                              color: Colors.blue[200],
-                                              borderRadius: BorderRadius.circular(4),
-                                            ),
-                                            child: const Text(
-                                              "25% OFF",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 12,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 6,
+                                                child: Image.network(
+                                                  "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                                                ),
                                               ),
-                                            ),
-                                          ))
-                                    ],
+                                              const SizedBox(
+                                                height: 8,
+                                              ),
+                                              Expanded(
+                                                  flex: 5,
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                    children: [
+                                                      const Text(
+                                                        "Airpods Max space",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      Row(
+                                                        children: const [
+                                                          Icon(
+                                                            Icons.star,
+                                                            size: 16,
+                                                            color: Colors.yellow,
+                                                          ),
+                                                          SizedBox(
+                                                            width: 4,
+                                                          ),
+                                                          Text(
+                                                            "4.5",
+                                                            style: TextStyle(
+                                                              fontSize: 13,
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
+                                                          ),
+                                                          Text(
+                                                            "(124)",
+                                                            style: TextStyle(
+                                                              color: Colors.grey,
+                                                              fontSize: 12,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children: const [
+                                                          Text(
+                                                            "\$5.99",
+                                                            style: TextStyle(
+                                                              color: Colors.indigo,
+                                                              fontSize: 16,
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
+                                                          ),
+                                                          SizedBox(
+                                                            width: 4,
+                                                          ),
+                                                          Text(
+                                                            "\$8.15",
+                                                            style: TextStyle(
+                                                                decoration: TextDecoration.lineThrough,
+                                                                color: Colors.grey,
+                                                                fontSize: 12),
+                                                          ),
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ))
+                                            ],
+                                          ),
+                                        ),
+                                        Positioned(
+                                          right: 8,
+                                          bottom: 8,
+                                          child: CircleAvatar(
+                                            radius: 18,
+                                            backgroundColor: Colors.grey[200],
+                                            child: const Icon(Icons.add),
+                                            foregroundColor: Colors.grey,
+                                          ),
+                                        ),
+                                        Positioned(
+                                            left: 8,
+                                            top: 8,
+                                            child: Container(
+                                              padding: const EdgeInsets.symmetric(
+                                                horizontal: 12,
+                                                vertical: 4,
+                                              ),
+                                              decoration: BoxDecoration(
+                                                color: Colors.blue[200],
+                                                borderRadius: BorderRadius.circular(4),
+                                              ),
+                                              child: const Text(
+                                                "25% OFF",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ))
+                                      ],
+                                    ),
                                   ),
                                 );
                               },
