@@ -40,6 +40,12 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             shape: BoxShape.circle,
                           ),
                           margin: EdgeInsets.only(bottom: 16),
+                          padding: EdgeInsets.all(8),
+                          child: Image.network(
+                            "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                            color: Colors.blue.withOpacity(0.2),
+                            colorBlendMode: BlendMode.srcATop,
+                          ),
                         ),
                         Container(
                           height: 52,
@@ -50,6 +56,12 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             shape: BoxShape.circle,
                           ),
                           margin: EdgeInsets.only(bottom: 16),
+                          padding: EdgeInsets.all(8),
+                          child: Image.network(
+                            "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                            color: Colors.red.withOpacity(0.2),
+                            colorBlendMode: BlendMode.srcATop,
+                          ),
                         ),
                         Container(
                           height: 52,
@@ -59,6 +71,12 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                               border: Border.all(color: Colors.purple),
                               shape: BoxShape.circle),
                           margin: EdgeInsets.only(bottom: 16),
+                          padding: EdgeInsets.all(8),
+                          child: Image.network(
+                            "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                            color: Colors.purple.withOpacity(0.2),
+                            colorBlendMode: BlendMode.srcATop,
+                          ),
                         ),
                         Container(
                           height: 52,
@@ -69,6 +87,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             shape: BoxShape.circle,
                           ),
                           margin: EdgeInsets.only(bottom: 16),
+                          padding: EdgeInsets.all(8),
                         )
                       ],
                     ),
@@ -78,7 +97,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(24.0),
                     child: Image.network(
-                        "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png"),
+                      // "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-skyblue-witb?wid=231&hei=340&fmt=jpeg&qlt=95&.v=1603906261000"
+                      "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                    ),
                   ),
                 )
               ],
