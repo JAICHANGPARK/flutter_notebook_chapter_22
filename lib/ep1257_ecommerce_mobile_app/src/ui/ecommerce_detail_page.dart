@@ -88,6 +88,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           ),
                           margin: EdgeInsets.only(bottom: 16),
                           padding: EdgeInsets.all(8),
+                          child: Image.network(
+                            "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png",
+                            color: Colors.green.withOpacity(0.2),
+                            colorBlendMode: BlendMode.srcATop,
+                          ),
                         )
                       ],
                     ),
@@ -111,9 +116,62 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(8),
-                  topRight: Radius.circular(8),
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
                 ),
+              ),
+              padding: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Beats Studio Wireless\neadphones"),
+                      Icon(Icons.star),
+                      Text("(124)"),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "\$6.99",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.indigo,
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        "\$4.15",
+                        style: TextStyle(
+                          // fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                          fontSize: 12,
+                          decoration: TextDecoration.lineThrough,
+                        ),
+                      ),
+                      Spacer(),
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.grey[200],
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.remove),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Text("1"),
+                      ),
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.blue[200],
+                        foregroundColor: Colors.black,
+                        child: Icon(Icons.add),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           ),
