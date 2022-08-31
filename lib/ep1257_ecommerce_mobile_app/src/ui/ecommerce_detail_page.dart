@@ -22,6 +22,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       body: Column(
         children: [
           Expanded(
+            flex: 10,
             child: Row(
               children: [
                 Padding(
@@ -34,14 +35,20 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           height: 52,
                           width: 52,
                           decoration: BoxDecoration(
-                              color: Colors.blue[50], border: Border.all(color: Colors.blue), shape: BoxShape.circle),
+                            color: Colors.blue[50],
+                            border: Border.all(color: Colors.blue),
+                            shape: BoxShape.circle,
+                          ),
                           margin: EdgeInsets.only(bottom: 16),
                         ),
                         Container(
                           height: 52,
                           width: 52,
                           decoration: BoxDecoration(
-                              color: Colors.red[50], border: Border.all(color: Colors.red), shape: BoxShape.circle),
+                            color: Colors.red[50],
+                            border: Border.all(color: Colors.red),
+                            shape: BoxShape.circle,
+                          ),
                           margin: EdgeInsets.only(bottom: 16),
                         ),
                         Container(
@@ -57,7 +64,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           height: 52,
                           width: 52,
                           decoration: BoxDecoration(
-                              color: Colors.green[50], border: Border.all(color: Colors.green), shape: BoxShape.circle),
+                            color: Colors.green[50],
+                            border: Border.all(color: Colors.green),
+                            shape: BoxShape.circle,
+                          ),
                           margin: EdgeInsets.only(bottom: 16),
                         )
                       ],
@@ -68,10 +78,15 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             ),
           ),
           Expanded(
+            flex: 13,
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(8), topRight: Radius.circular(8))),
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(8),
+                  topRight: Radius.circular(8),
+                ),
+              ),
             ),
           ),
         ],
