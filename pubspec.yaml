@@ -16,6 +16,7 @@ dependencies:
   table_calendar: ^3.0.6
 
   dots_indicator: ^2.1.0
+  flutter_riverpod: any
 
 dev_dependencies:
   flutter_test:
