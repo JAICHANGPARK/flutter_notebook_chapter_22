@@ -338,12 +338,20 @@ class _EcommerceHomePageState extends State<EcommerceHomePage> {
                                           left: 8,
                                           top: 8,
                                           child: Container(
-                                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                            padding: const EdgeInsets.symmetric(
+                                              horizontal: 12,
+                                              vertical: 4,
+                                            ),
                                             decoration: BoxDecoration(
-                                                color: Colors.blue[200], borderRadius: BorderRadius.circular(4)),
+                                              color: Colors.blue[200],
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
                                             child: const Text(
                                               "25% OFF",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 12,
+                                              ),
                                             ),
                                           ))
                                     ],
