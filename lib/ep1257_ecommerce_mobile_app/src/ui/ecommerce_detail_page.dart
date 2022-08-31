@@ -198,6 +198,30 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         child: const Icon(Icons.add),
                       ),
                     ],
+                  ),
+
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Special request",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("Special request are welcome, but can't always be accommodated.")
+                      ],
+                    ),
                   )
                 ],
               ),
