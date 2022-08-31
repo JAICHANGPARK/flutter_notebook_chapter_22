@@ -73,6 +73,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ],
                     ),
                   ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Image.network(
+                        "https://help.apple.com/assets/61AFEC45FA5233173908347B/61B0509E1BF38548362237B5/ko_KR/b9f519195f84950573eea5088a49b964.png"),
+                  ),
                 )
               ],
             ),
