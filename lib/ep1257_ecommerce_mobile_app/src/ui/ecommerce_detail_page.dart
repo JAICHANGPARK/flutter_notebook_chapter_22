@@ -21,8 +21,59 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       ),
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: SizedBox(
+                    width: 52,
+                    child: ListView(
+                      children: [
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                              color: Colors.blue[50], border: Border.all(color: Colors.blue), shape: BoxShape.circle),
+                          margin: EdgeInsets.only(bottom: 16),
+                        ),
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                              color: Colors.red[50], border: Border.all(color: Colors.red), shape: BoxShape.circle),
+                          margin: EdgeInsets.only(bottom: 16),
+                        ),
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                              color: Colors.purple[50],
+                              border: Border.all(color: Colors.purple),
+                              shape: BoxShape.circle),
+                          margin: EdgeInsets.only(bottom: 16),
+                        ),
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                              color: Colors.green[50], border: Border.all(color: Colors.green), shape: BoxShape.circle),
+                          margin: EdgeInsets.only(bottom: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(8), topRight: Radius.circular(8))),
+            ),
+          ),
         ],
       ),
     );
