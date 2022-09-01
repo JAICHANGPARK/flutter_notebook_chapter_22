@@ -66,7 +66,67 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(child: Placeholder()),
+            Container(
+              height: 84,
+              child: Row(
+                children: [
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.blue),
+                      shape: BoxShape.circle,
+                      color: Colors.blue[200],
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.apps_outlined,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.blue),
+                      shape: BoxShape.circle,
+                      color: Colors.blue[200],
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.apps_outlined,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.blue),
+                      shape: BoxShape.circle,
+                      color: Colors.blue[200],
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.apps_outlined,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                  FloatingActionButton(
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.add,
+                      size: 14,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
