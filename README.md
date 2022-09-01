@@ -1,7 +1,15 @@
 # flutter_notebook_chapter_22
 ## S25
 
-### EP1257
+### EP1261
+
+- Team Management App
+- by Raju Husen
+- https://dribbble.com/shots/19273668-Team-Management-App
+
+<img src="https://cdn.dribbble.com/userupload/3398761/file/original-3a920724ad5426a6e22ac7e19b6b794c.png?compress=1&resize=1200x900" width="400px"/>
+
+### EP1257-1260
 
 - Ecommerce Mobile App Design
 - by Musemind Mobile
