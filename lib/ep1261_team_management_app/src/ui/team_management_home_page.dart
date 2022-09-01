@@ -42,6 +42,11 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       border: Border.all(color: Colors.grey[400]!),
                       shape: BoxShape.circle,
                     ),
+                    child: Center(
+                      child: Icon(
+                        Icons.calendar_today,
+                      ),
+                    ),
                   ),
                   SizedBox(
                     width: 14,
@@ -52,6 +57,11 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey[400]!),
                       shape: BoxShape.circle,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.person_add_alt_1_outlined,
+                      ),
                     ),
                   )
                 ],
