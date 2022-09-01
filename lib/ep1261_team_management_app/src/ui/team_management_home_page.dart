@@ -20,7 +20,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text("Good morning"),
                       SizedBox(
                         height: 4,
@@ -34,7 +34,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     height: 48,
                     width: 48,
@@ -42,13 +42,13 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       border: Border.all(color: Colors.grey[400]!),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.calendar_today,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 14,
                   ),
                   Container(
@@ -58,7 +58,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       border: Border.all(color: Colors.grey[400]!),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.person_add_alt_1_outlined,
                       ),
@@ -67,22 +67,22 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Container(
               height: 84,
-              margin: EdgeInsets.only(bottom: 16),
+              margin: const EdgeInsets.only(bottom: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    height: 48,
-                    width: 48,
+                    height: 54,
+                    width: 54,
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.blue),
                       shape: BoxShape.circle,
-                      color: Colors.blue[200],
+                      color: Colors.blue[100],
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.apps_outlined,
                         color: Colors.blue,
@@ -90,26 +90,26 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                     ),
                   ),
                   Container(
-                    height: 48,
-                    width: 48,
+                    height: 54,
+                    width: 54,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey[400]!),
+                      border: Border.all(color: Colors.grey[200]!),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.list_alt_outlined,
                       ),
                     ),
                   ),
                   Container(
-                    height: 48,
-                    width: 48,
+                    height: 54,
+                    width: 54,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey[400]!),
+                      border: Border.all(color: Colors.grey[200]!),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.supervisor_account_outlined,
                       ),
@@ -117,7 +117,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                   ),
                   FloatingActionButton(
                     onPressed: () {},
-                    child: Icon(
+                    child: const Icon(
                       Icons.add,
                       size: 14,
                     ),
