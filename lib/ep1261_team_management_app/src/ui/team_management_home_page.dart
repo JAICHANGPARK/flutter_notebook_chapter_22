@@ -67,31 +67,33 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 16,
+            ),
             Expanded(
                 child: Column(
               children: [
                 Container(
-                  height: 220,
-                  color: Colors.grey,
-                  padding: EdgeInsets.only(left: 16, right: 16, top: 16),
+                  height: 200,
+                  padding: EdgeInsets.only(left: 16, right: 16, top: 0),
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 16,
-                        right: 16,
+                        left: 24,
+                        right: 24,
                         top: 0,
-                        bottom: 32,
+                        bottom: 44,
                         child: Container(
-                          color: Colors.purple[50],
+                          decoration: BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(16),),
                         ),
                       ),
                       Positioned(
-                        left: 8,
-                        right: 8,
+                        left: 12,
+                        right: 12,
                         top: 0,
-                        bottom: 48,
+                        bottom: 54,
                         child: Container(
-                          color: Colors.purple[200],
+                          decoration: BoxDecoration(color: Colors.purple[200], borderRadius: BorderRadius.circular(16),),
                         ),
                       ),
                       Positioned(
@@ -100,7 +102,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                         top: 0,
                         bottom: 64,
                         child: Container(
-                          color: Colors.purple,
+                          decoration: BoxDecoration(
+                            color: Colors.purple,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
                         ),
                       )
                     ],
