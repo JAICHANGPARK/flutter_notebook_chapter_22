@@ -67,7 +67,11 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ],
               ),
             ),
-            const Expanded(child: Placeholder()),
+             Expanded(child: Column(
+              children: [
+
+              ],
+            )),
             Container(
               height: 84,
               margin: const EdgeInsets.only(bottom: 16),
