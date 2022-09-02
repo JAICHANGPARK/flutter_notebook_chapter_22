@@ -73,6 +73,38 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 Container(
                   height: 220,
                   color: Colors.grey,
+                  padding: EdgeInsets.only(left: 16, right: 16, top: 16),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 16,
+                        right: 16,
+                        top: 0,
+                        bottom: 32,
+                        child: Container(
+                          color: Colors.purple[50],
+                        ),
+                      ),
+                      Positioned(
+                        left: 8,
+                        right: 8,
+                        top: 0,
+                        bottom: 48,
+                        child: Container(
+                          color: Colors.purple[200],
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        top: 0,
+                        bottom: 64,
+                        child: Container(
+                          color: Colors.purple,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
@@ -165,10 +197,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                           width: 320,
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[200]!,
-                            ),
-                          ),
+                              border: Border.all(
+                                color: Colors.grey[400]!,
+                              ),
+                              borderRadius: BorderRadius.circular(8)),
                         );
                       },
                     ),
