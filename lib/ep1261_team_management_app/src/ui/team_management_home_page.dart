@@ -75,10 +75,28 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                   color: Colors.grey,
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 6,
+                    horizontal: 16,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text("Team Members"), TextButton(onPressed: () {}, child: Text("See All"))],
+                    children: [
+                      Text(
+                        "Team Members",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                        style: TextButton.styleFrom(
+                          primary: Colors.grey,
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 Container(
