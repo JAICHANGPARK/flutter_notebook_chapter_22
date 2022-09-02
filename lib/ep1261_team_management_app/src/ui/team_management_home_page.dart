@@ -101,8 +101,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ),
                 Container(
                   height: 84,
-                  padding: EdgeInsets.only(left: 16),
-                  color: Colors.purple,
+                  padding: const EdgeInsets.only(left: 16),
                   child: ListView.builder(
                     itemCount: 9,
                     scrollDirection: Axis.horizontal,
@@ -111,18 +110,65 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                         padding: const EdgeInsets.only(right: 16),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             CircleAvatar(
                               radius: 28,
                             ),
-                            SizedBox(height: 4,),
-                            Text("Dream"),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "Dream",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         ),
                       );
                     },
                   ),
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 6,
+                    horizontal: 16,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Team Tasks",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text("See All"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.grey,
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: 8,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 200,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey[200]!)
+                        ),
+                      );
+                    },
+                  ),
+                ),
               ],
             )),
             Container(
