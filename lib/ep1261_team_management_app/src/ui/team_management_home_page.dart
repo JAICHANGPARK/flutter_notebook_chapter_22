@@ -151,22 +151,27 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                           foregroundColor: Colors.grey,
                         ),
                       ),
-
                     ],
                   ),
                 ),
                 Expanded(
-                  child: ListView.builder(
-                    itemCount: 8,
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        width: 200,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey[200]!)
-                        ),
-                      );
-                    },
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                      itemCount: 8,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 320,
+                          margin: EdgeInsets.only(right: 16),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 ),
               ],
