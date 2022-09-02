@@ -101,18 +101,21 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ),
                 Container(
                   height: 84,
+                  padding: EdgeInsets.only(left: 16),
                   color: Colors.purple,
                   child: ListView.builder(
                     itemCount: 9,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: const EdgeInsets.only(right: 8),
+                        padding: const EdgeInsets.only(right: 16),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(
-                              radius: 24,
+                              radius: 28,
                             ),
+                            SizedBox(height: 4,),
                             Text("Dream"),
                           ],
                         ),
