@@ -71,7 +71,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 child: Column(
               children: [
                 Container(
-                  height: 240,
+                  height: 220,
                   color: Colors.grey,
                 ),
                 Padding(
@@ -82,7 +82,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Team Members",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -91,9 +91,9 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("See All"),
+                        child: const Text("See All"),
                         style: TextButton.styleFrom(
-                          primary: Colors.grey,
+                          foregroundColor: Colors.grey,
                         ),
                       )
                     ],
@@ -102,6 +102,23 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 Container(
                   height: 84,
                   color: Colors.purple,
+                  child: ListView.builder(
+                    itemCount: 9,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: Column(
+                          children: [
+                            CircleAvatar(
+                              radius: 24,
+                            ),
+                            Text("Dream"),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 )
               ],
             )),
