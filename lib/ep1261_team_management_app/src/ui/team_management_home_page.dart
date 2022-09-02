@@ -68,39 +68,45 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 24,
             ),
             Expanded(
                 child: Column(
               children: [
                 Container(
                   height: 200,
-                  padding: EdgeInsets.only(left: 16, right: 16, top: 0),
+                  padding: EdgeInsets.only(left: 16, right: 16),
                   child: Stack(
                     children: [
                       Positioned(
                         left: 24,
                         right: 24,
                         top: 0,
-                        bottom: 44,
+                        bottom: 28,
                         child: Container(
-                          decoration: BoxDecoration(color: Colors.purple[50], borderRadius: BorderRadius.circular(16),),
+                          decoration: BoxDecoration(
+                            color: Colors.purple[50],
+                            borderRadius: BorderRadius.circular(16),
+                          ),
                         ),
                       ),
                       Positioned(
                         left: 12,
                         right: 12,
                         top: 0,
-                        bottom: 54,
+                        bottom: 38,
                         child: Container(
-                          decoration: BoxDecoration(color: Colors.purple[200], borderRadius: BorderRadius.circular(16),),
+                          decoration: BoxDecoration(
+                            color: Colors.purple[200],
+                            borderRadius: BorderRadius.circular(16),
+                          ),
                         ),
                       ),
                       Positioned(
                         left: 0,
                         right: 0,
                         top: 0,
-                        bottom: 64,
+                        bottom: 48,
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.purple,
