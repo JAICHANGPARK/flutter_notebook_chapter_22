@@ -85,7 +85,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                         bottom: 28,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.purple[50],
+                            color: const Color.fromRGBO(125, 135, 245, 0.2),
                             borderRadius: BorderRadius.circular(16),
                           ),
                         ),
@@ -97,7 +97,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                         bottom: 38,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.purple[200],
+                            color: const Color.fromRGBO(125, 135, 245, 0.5),
                             borderRadius: BorderRadius.circular(16),
                           ),
                         ),
@@ -109,8 +109,60 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                         bottom: 48,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.purple,
+                            color: const Color.fromRGBO(125, 135, 245, 1),
                             borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding: EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundColor: Colors.white.withOpacity(0.4),
+                                      radius: 24,
+                                    ),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Meeting with Dribble",
+                                          style: TextStyle(color: Colors.white, fontSize: 16),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.calendar_today,
+                                              size: 12,
+                                              color: Colors.white.withOpacity(0.6),
+                                            ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
+                                            Text(
+                                              "12/06/2022",
+                                              style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 12),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Row(
+                                  children: [],
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       )
