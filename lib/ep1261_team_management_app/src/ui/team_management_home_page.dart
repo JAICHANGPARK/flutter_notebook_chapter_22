@@ -204,7 +204,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                                 bottom: 0,
                                                 child: CircleAvatar(
                                                   radius: 14,
-                                                  backgroundColor: Colors.red,
+                                                  backgroundColor: Colors.grey,
                                                 ),
                                               )
                                             ],
@@ -212,7 +212,43 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                         )
                                       ],
                                     )),
-                                    Expanded(child: Column()),
+                                    Expanded(
+                                        child: Column(
+                                      children: [
+                                        Text("Event Objective"),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.4),
+                                                  borderRadius: BorderRadius.circular(16)),
+                                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.videocam,
+                                                    color: Colors.white,
+                                                    size: 14,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 4,
+                                                  ),
+                                                  Text(
+                                                    "Zoom",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    )),
                                     Expanded(
                                         child: Row(
                                       children: [
