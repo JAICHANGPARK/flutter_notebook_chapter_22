@@ -376,7 +376,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 16, bottom: 8),
                     child: ListView.builder(
                       itemCount: 8,
                       scrollDirection: Axis.horizontal,
@@ -385,10 +385,73 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                           width: 320,
                           margin: const EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey[400]!,
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: EdgeInsets.all(12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundColor: Colors.red[400],
+                                      radius: 24,
+                                    ),
+                                    SizedBox(width: 16,),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Airbnb Branding Design", style: TextStyle(
+                                          fontSize: 16
+                                        ),),
+                                        SizedBox(height: 6,),
+                                        Text("Graphics Design", style: TextStyle(
+                                          color: Colors.teal,
+                                          fontSize: 12
+                                        ),)
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                              borderRadius: BorderRadius.circular(8)),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                child: Row(
+                                  children: const  [
+                                    Icon(
+                                      Icons.file_copy_outlined,
+                                      size: 16,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text("3 file"),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
+                                    Icon(
+                                      Icons.chat_bubble_outline_outlined,
+                                      size: 16,
+                                    ),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
+                                    Text(
+                                      "15 comments",
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                            ],
+                          ),
                         );
                       },
                     ),
@@ -396,6 +459,8 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ),
               ],
             )),
+
+            /// Bottom Nav Bar
             Container(
               height: 84,
               margin: const EdgeInsets.only(bottom: 16),
