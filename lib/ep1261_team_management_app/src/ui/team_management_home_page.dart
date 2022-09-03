@@ -401,19 +401,24 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       backgroundColor: Colors.red[400],
                                       radius: 24,
                                     ),
-                                    SizedBox(width: 16,),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("Airbnb Branding Design", style: TextStyle(
-                                          fontSize: 16
-                                        ),),
-                                        SizedBox(height: 6,),
-                                        Text("Graphics Design", style: TextStyle(
-                                          color: Colors.teal,
-                                          fontSize: 12
-                                        ),)
+                                        Text(
+                                          "Airbnb Branding Design",
+                                          style: TextStyle(fontSize: 16),
+                                        ),
+                                        SizedBox(
+                                          height: 6,
+                                        ),
+                                        Text(
+                                          "Graphics Design",
+                                          style: TextStyle(color: Colors.teal, fontSize: 12),
+                                        )
                                       ],
                                     )
                                   ],
@@ -422,33 +427,46 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
-                                  children: const  [
+                                  children: const [
                                     Icon(
                                       Icons.file_copy_outlined,
                                       size: 16,
+                                      color: Colors.grey,
                                     ),
                                     SizedBox(
                                       width: 4,
                                     ),
-                                    Text("3 file"),
+                                    Text(
+                                      "3 file",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
                                     SizedBox(
                                       width: 16,
                                     ),
                                     Icon(
                                       Icons.chat_bubble_outline_outlined,
                                       size: 16,
+                                      color: Colors.grey,
                                     ),
                                     SizedBox(
                                       width: 4,
                                     ),
                                     Text(
                                       "15 comments",
+                                      style: TextStyle(color: Colors.grey),
                                     )
                                   ],
                                 ),
                               ),
                               Expanded(
-                                child: Placeholder(),
+                                child: Row(
+                                  children: [
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+
+                                  ],
+                                ),
                               ),
                             ],
                           ),
@@ -473,7 +491,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.blue),
                       shape: BoxShape.circle,
-                      color: Colors.blue[100],
+                      color: Colors.blue[50],
                     ),
                     child: const Center(
                       child: Icon(
@@ -512,7 +530,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                     onPressed: () {},
                     child: const Icon(
                       Icons.add,
-                      size: 14,
+                      size: 18,
                     ),
                   ),
                 ],
