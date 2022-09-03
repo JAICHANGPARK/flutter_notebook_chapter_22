@@ -128,6 +128,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                     ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Text(
                                           "Meeting with Dribble",
@@ -148,7 +149,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                             ),
                                             Text(
                                               "12/06/2022",
-                                              style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 12),
+                                              style: TextStyle(
+                                                color: Colors.white.withOpacity(0.6),
+                                                fontSize: 12,
+                                              ),
                                             ),
                                           ],
                                         )
@@ -159,7 +163,32 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                               ),
                               Expanded(
                                 child: Row(
-                                  children: [],
+                                  children: [
+                                    Expanded(child: Column()),
+                                    Expanded(child: Column()),
+                                    Expanded(
+                                        child: Row(
+                                      children: [
+                                        Spacer(),
+                                        Container(
+                                          width: 52,
+                                          height: 38,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.white.withOpacity(0.4),
+                                            ),
+                                          ),
+                                          child: Center(
+                                              child: Text(
+                                            "Join",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )),
+                                        ),
+                                      ],
+                                    )),
+                                  ],
                                 ),
                               ),
                             ],
