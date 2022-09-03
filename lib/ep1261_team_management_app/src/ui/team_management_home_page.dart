@@ -161,10 +161,57 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                   ],
                                 ),
                               ),
+                              SizedBox(
+                                height: 16,
+                              ),
                               Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Column()),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Text(
+                                          "Participants",
+                                        ),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        Expanded(
+                                          child: Stack(
+                                            children: const [
+                                              Positioned(
+                                                left: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 16,
+                                                top: 0,
+                                                bottom: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: Colors.red,
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 32,
+                                                top: 0,
+                                                bottom: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: Colors.red,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    )),
                                     Expanded(child: Column()),
                                     Expanded(
                                         child: Row(
@@ -174,10 +221,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                           width: 52,
                                           height: 38,
                                           decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.white.withOpacity(0.4),
-                                            ),
-                                          ),
+                                              border: Border.all(
+                                                color: Colors.white.withOpacity(0.4),
+                                              ),
+                                              borderRadius: BorderRadius.circular(24)),
                                           child: Center(
                                               child: Text(
                                             "Join",
