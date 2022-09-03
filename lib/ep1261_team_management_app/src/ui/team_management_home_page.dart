@@ -67,7 +67,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
             Expanded(
@@ -75,7 +75,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
               children: [
                 Container(
                   height: 200,
-                  padding: EdgeInsets.only(left: 16, right: 16),
+                  padding: const EdgeInsets.only(left: 16, right: 16),
                   child: Stack(
                     children: [
                       Positioned(
@@ -112,7 +112,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                             color: const Color.fromRGBO(125, 135, 245, 1),
                             borderRadius: BorderRadius.circular(16),
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: const EdgeInsets.all(16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -123,18 +123,18 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       backgroundColor: Colors.white.withOpacity(0.4),
                                       radius: 24,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 16,
                                     ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Meeting with Dribble",
                                           style: TextStyle(color: Colors.white, fontSize: 16),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
                                         Row(
@@ -144,7 +144,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                               size: 12,
                                               color: Colors.white.withOpacity(0.6),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 4,
                                             ),
                                             Text(
@@ -161,7 +161,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 16,
                               ),
                               Expanded(
@@ -174,6 +174,9 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       children: [
                                         const Text(
                                           "Participants",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 8,
@@ -215,19 +218,28 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                     Expanded(
                                         child: Column(
                                       children: [
-                                        Text("Event Objective"),
-                                        SizedBox(
+                                        const Text(
+                                          "Event Objective",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        const SizedBox(
                                           height: 8,
                                         ),
                                         Row(
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                  color: Colors.white.withOpacity(0.4),
-                                                  borderRadius: BorderRadius.circular(16)),
-                                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                                color: Colors.white.withOpacity(0.2),
+                                                borderRadius: BorderRadius.circular(16),
+                                              ),
+                                              padding: const EdgeInsets.symmetric(
+                                                horizontal: 8,
+                                                vertical: 4,
+                                              ),
                                               child: Row(
-                                                children: [
+                                                children: const [
                                                   Icon(
                                                     Icons.videocam,
                                                     color: Colors.white,
@@ -252,16 +264,17 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                     Expanded(
                                         child: Row(
                                       children: [
-                                        Spacer(),
+                                        const Spacer(),
                                         Container(
-                                          width: 52,
-                                          height: 38,
+                                          width: 64,
+                                          height: 32,
                                           decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.white.withOpacity(0.4),
-                                              ),
-                                              borderRadius: BorderRadius.circular(24)),
-                                          child: Center(
+                                            border: Border.all(
+                                              color: Colors.white.withOpacity(0.4),
+                                            ),
+                                            borderRadius: BorderRadius.circular(24),
+                                          ),
+                                          child: const Center(
                                               child: Text(
                                             "Join",
                                             style: TextStyle(
@@ -298,10 +311,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text("See All"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.grey,
                         ),
+                        child: const Text("See All"),
                       )
                     ],
                   ),
@@ -353,10 +366,10 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text("See All"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.grey,
                         ),
+                        child: const Text("See All"),
                       ),
                     ],
                   ),
@@ -370,7 +383,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 320,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey[400]!,
