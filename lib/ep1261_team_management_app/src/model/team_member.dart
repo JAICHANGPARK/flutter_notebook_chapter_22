@@ -7,7 +7,7 @@ part 'team_member.g.dart';
 @freezed
 class Team with _$Team {
   factory Team({
-    List<TeamMember> results;
+    List<TeamMember>? results
   }) = _Team;
 
   factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);
