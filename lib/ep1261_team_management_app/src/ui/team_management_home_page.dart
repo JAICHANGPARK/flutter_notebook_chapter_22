@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1261_team_management_app/src/model/team_member.dart';
+import 'package:flutter_notebook_chapter_22/ep1261_team_management_app/src/repository/team_manage_repository.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class TeamManagementHomePage extends StatefulWidget {
   const TeamManagementHomePage({Key? key}) : super(key: key);
@@ -322,28 +325,44 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                 Container(
                   height: 84,
                   padding: const EdgeInsets.only(left: 16),
-                  child: ListView.builder(
-                    itemCount: 9,
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                            CircleAvatar(
-                              radius: 28,
-                            ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text(
-                              "Dream",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
+                  child: Consumer(
+                    builder: (context, ref, _) {
+                      AsyncValue<Team?> items = ref.watch(getTeamMembers);
+                      return items.when(
+                        data: (data) {
+                          return ListView.builder(
+                            itemCount: 9,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 28,
+                                      backgroundImage: NetworkImage(data?.results?[index].picture?.medium ?? ""),
+                                    ),
+                                    const SizedBox(
+                                      height: 4,
+                                    ),
+                                    const Text(
+                                      "Dream",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          );
+                        },
+                        error: (e, s) {
+                          return Text("$e");
+                        },
+                        loading: () => const Center(
+                          child: CircularProgressIndicator(),
                         ),
                       );
                     },
@@ -390,7 +409,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                             ),
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -401,21 +420,21 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       backgroundColor: Colors.red[400],
                                       radius: 24,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 16,
                                     ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Airbnb Branding Design",
                                           style: TextStyle(fontSize: 16),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 6,
                                         ),
-                                        Text(
+                                        const Text(
                                           "Graphics Design",
                                           style: TextStyle(color: Colors.teal, fontSize: 12),
                                         )
@@ -461,10 +480,9 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                               Expanded(
                                 child: Row(
                                   children: [
-                                    Expanded(child: Placeholder()),
-                                    Expanded(child: Placeholder()),
-                                    Expanded(child: Placeholder()),
-
+                                    const Expanded(child: Placeholder()),
+                                    const Expanded(child: Placeholder()),
+                                    const Expanded(child: Placeholder()),
                                   ],
                                 ),
                               ),
