@@ -349,7 +349,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                     ),
                                     Text(
                                       item.name?.first ?? "",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -486,17 +486,17 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Text("Status"),
+                                        const Text("Status"),
                                         Container(
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.circular(12),
                                           ),
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                             horizontal: 6,
                                             vertical: 3,
                                           ),
-                                          child: Text(
+                                          child: const Text(
                                             "In Progress",
                                             style: TextStyle(
                                               color: Colors.white,
@@ -511,17 +511,17 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Text("Deadline"),
+                                        const Text("Deadline"),
                                         Container(
                                           decoration: BoxDecoration(
                                             color: Colors.grey[200],
                                             borderRadius: BorderRadius.circular(12),
                                           ),
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                             horizontal: 6,
                                             vertical: 3,
                                           ),
-                                          child: Text(
+                                          child: const Text(
                                             "12 Aug",
                                             style: TextStyle(
                                               fontSize: 12,
@@ -535,7 +535,40 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Text("Members")
+                                          const Text("Members"),
+                                          SizedBox(
+                                            height: 28,
+                                            child: Stack(
+                                              children: const [
+                                                Positioned(
+                                                  left: 0,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 12,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                  left: 16,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 12,
+                                                    backgroundColor: Colors.pink,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                  left: 32,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 12,
+                                                    backgroundColor: Colors.blue,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          )
                                         ],
                                       ),
                                     ),
