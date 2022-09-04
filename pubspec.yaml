@@ -18,16 +18,17 @@ dependencies:
   dots_indicator: ^2.1.0
   flutter_riverpod: any
   http: any
+  freezed_annotation: any
+  json_annotation: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: any
+  json_serializable:
+  freezed: any
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+
   flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
