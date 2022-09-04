@@ -6,9 +6,7 @@ part 'team_member.g.dart';
 
 @freezed
 class Team with _$Team {
-  factory Team({
-    List<TeamMember>? results
-  }) = _Team;
+  factory Team({List<TeamMember>? results}) = _Team;
 
   factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);
 }
@@ -18,6 +16,7 @@ class TeamMember with _$TeamMember {
   factory TeamMember({
     String? gender,
     ProfilePictures? picture,
+    MemberName? name,
   }) = _TeamMember;
 
   factory TeamMember.fromJson(Map<String, dynamic> json) => _$TeamMemberFromJson(json);
@@ -31,4 +30,15 @@ class ProfilePictures with _$ProfilePictures {
   }) = _ProfilePictures;
 
   factory ProfilePictures.fromJson(Map<String, dynamic> json) => _$ProfilePicturesFromJson(json);
+}
+
+@freezed
+class MemberName with _$MemberName {
+  factory MemberName({
+    String? title,
+    String? first,
+    String? last,
+  }) = _MemberName;
+
+  factory MemberName.fromJson(Map<String, dynamic> json) => _$MemberNameFromJson(json);
 }
