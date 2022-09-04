@@ -6,20 +6,20 @@ import 'package:http/http.dart' as http;
 
 final teamManagementRepository = Provider((ref) => TeamManagementRepository());
 
-final getTeamMembers = FutureProvider((ref)async{
-
-  await ref.read(teamManagementRepository).fetchTeamMembers();
+final getTeamMembers = FutureProvider<Team?>((ref) async {
+  final result = await ref.read(teamManagementRepository).fetchTeamMembers();
+  print(result);
+  return result;
 });
 
 class TeamManagementRepository {
-  Future<TeamMember?> fetchTeamMembers() async {
+  Future<Team?> fetchTeamMembers() async {
     var response = await http.get(Uri.parse("https://randomuser.me/api/?results=10"));
     if (response.statusCode == 200) {
       final jsonBody = jsonDecode(response.body);
-      print(jsonBody);
-      if(jsonBody['results'] != null){
-        Te
-      }
+      Team team = Team.fromJson(jsonBody);
+      // print(team.toString());
+      return team;
     }
     return null;
   }
