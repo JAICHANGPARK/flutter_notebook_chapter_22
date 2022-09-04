@@ -334,6 +334,7 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                             itemCount: 9,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
+                              TeamMember item = data?.results?[index] ?? TeamMember();
                               return Padding(
                                 padding: const EdgeInsets.only(right: 16),
                                 child: Column(
@@ -341,13 +342,13 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                                   children: [
                                     CircleAvatar(
                                       radius: 28,
-                                      backgroundImage: NetworkImage(data?.results?[index].picture?.medium ?? ""),
+                                      backgroundImage: NetworkImage(item.picture?.medium ?? ""),
                                     ),
                                     const SizedBox(
                                       height: 4,
                                     ),
-                                    const Text(
-                                      "Dream",
+                                    Text(
+                                      item.name?.first ?? "",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -480,9 +481,64 @@ class _TeamManagementHomePageState extends State<TeamManagementHomePage> {
                               Expanded(
                                 child: Row(
                                   children: [
-                                    const Expanded(child: Placeholder()),
-                                    const Expanded(child: Placeholder()),
-                                    const Expanded(child: Placeholder()),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("Status"),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 6,
+                                            vertical: 3,
+                                          ),
+                                          child: Text(
+                                            "In Progress",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    )),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("Deadline"),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[200],
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 6,
+                                            vertical: 3,
+                                          ),
+                                          child: Text(
+                                            "12 Aug",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    )),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          Text("Members")
+                                        ],
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
