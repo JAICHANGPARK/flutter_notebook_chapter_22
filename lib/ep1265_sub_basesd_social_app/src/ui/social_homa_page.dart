@@ -49,6 +49,19 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 ],
               ),
             ),
+            Container(
+              height: 100,
+              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(16)
+              ),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            ),
             const Expanded(child: Placeholder()),
             Divider(
               height: 0,
