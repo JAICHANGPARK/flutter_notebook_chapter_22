@@ -83,7 +83,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 16,
                       ),
                       child: Row(
@@ -95,12 +95,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("Add Photo"),
+                            child: const Text("Add Photo"),
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.black,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           const Icon(
@@ -115,7 +115,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               foregroundColor: Colors.black,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           const Icon(
@@ -126,8 +126,38 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         ],
                       ),
                     ),
-                  )
+                  ),
                 ],
+              ),
+            ),
+            Container(
+              height: 100,
+              color: Colors.pink,
+              margin: const EdgeInsets.only(left: 16, top: 8),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Column(
+                      children: const [
+                        CircleAvatar(
+                          radius: 32,
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Dream",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        )
+                      ],
+                    ),
+                  );
+                },
               ),
             ),
             const Expanded(child: Placeholder()),
