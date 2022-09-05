@@ -12,6 +12,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
@@ -51,14 +52,37 @@ class _SocialHomePageState extends State<SocialHomePage> {
             ),
             Container(
               height: 100,
-              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              margin: EdgeInsets.symmetric(
+                horizontal: 8,
+                vertical: 8,
+              ),
               decoration: BoxDecoration(
                 color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(16)
+                borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
-                children: [
-                  
+                children:  [
+                  Expanded(
+                    child: Text(
+                      "Compose New post",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                  Divider(
+                    color: Colors.grey,
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Icon(Icons.photo),
+                        TextButton(onPressed: (){}, child: Text("Add Photo"),
+                        style: TextButton.styleFrom(primary: ),)
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
@@ -73,7 +97,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 color: Colors.white,
               ),
               child: Row(
-                children: [],
+                children: const [],
               ),
             )
           ],
