@@ -15,25 +15,48 @@ class _SocialHomePageState extends State<SocialHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Text(
-                  "CreateOne",
-                  style: GoogleFonts.notoSans(),
-                ),
-                Spacer(),
-                CircleAvatar(),
-                CircleAvatar(),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Text(
+                    "CreateOne",
+                    style: GoogleFonts.notoSans(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Spacer(),
+                  CircleAvatar(
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
+                    radius: 24,
+                    child: const Icon(
+                      Icons.mark_unread_chat_alt_rounded,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.grey[200],
+                    foregroundColor: Colors.black,
+                    radius: 24,
+                    child: const Icon(
+                      Icons.search,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Divider(
               height: 0,
               color: Colors.grey[300],
             ),
             Container(
               height: 72,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
               child: Row(
