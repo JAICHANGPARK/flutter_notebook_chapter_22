@@ -65,7 +65,10 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 children: [
                   const Expanded(
                     child: Padding(
-                      padding: EdgeInsets.only(left: 16, top: 16, ),
+                      padding: EdgeInsets.only(
+                        left: 16,
+                        top: 16,
+                      ),
                       child: Text(
                         "Compose New post",
                         style: TextStyle(
@@ -80,7 +83,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
                       child: Row(
                         children: [
                           const Icon(
@@ -95,6 +100,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               foregroundColor: Colors.black,
                             ),
                           ),
+                          SizedBox(
+                            width: 16,
+                          ),
                           const Icon(
                             Icons.videocam,
                             size: 24,
@@ -106,6 +114,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.black,
                             ),
+                          ),
+                          SizedBox(
+                            width: 8,
                           ),
                           const Icon(
                             Icons.location_on,
