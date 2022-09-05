@@ -1,7 +1,16 @@
 # flutter_notebook_chapter_22
 ## S25
 
-### EP1261
+### EP1265
+
+- Subscription Based Social App
+- by Boro | Yehor Haiduk 🇺🇦 for Ledo
+- https://dribbble.com/shots/19301570--Subscription-Based-Social-App
+
+<img src="https://cdn.dribbble.com/userupload/3489252/file/original-8bd16b1d7265e89345ed4035906b0ecd.png?compress=1&resize=1024x768" width="400px"/>
+<img src="https://cdn.dribbble.com/userupload/3489253/file/original-7d4201ee33c50c7a3b6ea20b1a82f14c.png?compress=1&resize=975x731&vertical=center" width="400px"/>
+
+### EP1261-1264
 
 - Team Management App
 - by Raju Husen
