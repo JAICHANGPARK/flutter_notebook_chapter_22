@@ -19,6 +19,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
           ),
           Container(
             height: 72,
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+            child: Row(
+              children: [],
+            ),
           )
         ],
       ),
