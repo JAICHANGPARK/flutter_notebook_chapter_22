@@ -52,61 +52,68 @@ class _SocialHomePageState extends State<SocialHomePage> {
             ),
             Container(
               height: 100,
-              margin: EdgeInsets.symmetric(
+              margin: const EdgeInsets.symmetric(
                 horizontal: 8,
                 vertical: 8,
               ),
               decoration: BoxDecoration(
-                color: Colors.grey[200],
+                color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: Text(
-                      "Compose New post",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey,
+                  const Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, top: 16, ),
+                      child: Text(
+                        "Compose New post",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.grey,
                   ),
                   Expanded(
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.videocam,
-                          size: 24,
-                          color: Colors.grey,
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("Add Photo"),
-                          style: TextButton.styleFrom(
-                            foregroundColor: Colors.black,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.image,
+                            size: 24,
+                            color: Colors.grey,
                           ),
-                        ),
-                        Icon(
-                          Icons.videocam,
-                          size: 24,
-                          color: Colors.grey,
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("Add Photo"),
-                          style: TextButton.styleFrom(
-                            foregroundColor: Colors.black,
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("Add Photo"),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.black,
+                            ),
                           ),
-                        ),
-                        Icon(
-                          Icons.location_on,
-                          color: Colors.grey,
-                          size: 24,
-                        ),
-                      ],
+                          const Icon(
+                            Icons.videocam,
+                            size: 24,
+                            color: Colors.grey,
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text("Add Video"),
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.black,
+                            ),
+                          ),
+                          const Icon(
+                            Icons.location_on,
+                            color: Colors.grey,
+                            size: 24,
+                          ),
+                        ],
+                      ),
                     ),
                   )
                 ],
