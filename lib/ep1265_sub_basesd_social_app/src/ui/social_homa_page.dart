@@ -61,7 +61,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
-                children:  [
+                children: [
                   Expanded(
                     child: Text(
                       "Compose New post",
@@ -77,9 +77,35 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(Icons.photo),
-                        TextButton(onPressed: (){}, child: Text("Add Photo"),
-                        style: TextButton.styleFrom(primary: ),)
+                        Icon(
+                          Icons.videocam,
+                          size: 24,
+                          color: Colors.grey,
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("Add Photo"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
+                        ),
+                        Icon(
+                          Icons.videocam,
+                          size: 24,
+                          color: Colors.grey,
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("Add Photo"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
+                        ),
+                        Icon(
+                          Icons.location_on,
+                          color: Colors.grey,
+                          size: 24,
+                        ),
                       ],
                     ),
                   )
