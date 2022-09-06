@@ -240,7 +240,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           child: Row(
                             children: [
                               const CircleAvatar(
-                                radius: 24,
+                                radius: 26,
                               ),
                               SizedBox(
                                 width: 8,
@@ -248,7 +248,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
-                                  Text("Dreamwalker"),
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   SizedBox(
                                     height: 6,
                                   ),
@@ -266,11 +271,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                           child: Text(
                             "Perfect Flutter Development today ",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 13
                             ),
                           ),
                         ),
