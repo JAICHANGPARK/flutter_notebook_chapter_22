@@ -191,9 +191,24 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   return Padding(
                     padding: const EdgeInsets.only(right: 8),
                     child: Column(
-                      children: const [
+                      children: [
                         CircleAvatar(
                           radius: 32,
+                          backgroundColor: const Color(0xfffece01),
+                          child: Container(
+                            margin: EdgeInsets.all(2),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Container(
+                              margin: EdgeInsets.all(3),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ),
                         ),
                         SizedBox(
                           height: 12,
