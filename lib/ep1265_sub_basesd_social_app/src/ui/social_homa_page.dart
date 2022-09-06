@@ -231,7 +231,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     // color: Colors.indigo,
-                    margin: const EdgeInsets.fromLTRB(4,0,4,16),
+                    margin: const EdgeInsets.fromLTRB(4, 0, 4, 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -270,7 +270,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         const Padding(
                           padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                           child: Text(
@@ -287,9 +289,17 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(24),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Row(
                           children: [
                             IconButton(
@@ -298,7 +308,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               color: Colors.red,
                             ),
                             const Text("154"),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.chat_rounded),
@@ -316,10 +328,17 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 horizontal: 32,
                                 vertical: 16,
                               ),
-                              decoration:
-                                  BoxDecoration(color: const Color(0xfffece01), borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(
+                                color: const Color(0xfffece01),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
                               child: const Center(
-                                child: Text("Tip Post"),
+                                child: Text(
+                                  "Tip Post",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             )
                           ],
