@@ -274,13 +274,19 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                           child: Text(
                             "Perfect Flutter Development today ",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
+                            ),
                           ),
                         ),
                         Container(
                           height: 240,
                           margin: EdgeInsets.symmetric(vertical: 4),
-                          decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(24),
+                          ),
                         ),
                         Row(
                           children: [
@@ -298,6 +304,14 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               onPressed: () {},
                               icon: Icon(Icons.bookmark),
                             ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: const Color(0xfffece01),
+                              ),
+                              child: Center(
+                                child: Text("Tip Post"),
+                              ),
+                            )
                           ],
                         )
                       ],
