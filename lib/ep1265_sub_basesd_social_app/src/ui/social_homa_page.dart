@@ -231,7 +231,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     color: Colors.indigo,
-                    margin: EdgeInsets.symmetric(horizontal: 4),
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -242,7 +242,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               const CircleAvatar(
                                 radius: 26,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               Column(
@@ -260,7 +260,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                   Text("2 days ago"),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
                                 icon: const Icon(
@@ -270,8 +270,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             ],
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                           child: Text(
                             "Perfect Flutter Development today ",
                             style: TextStyle(
@@ -282,7 +282,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         ),
                         Container(
                           height: 240,
-                          margin: EdgeInsets.symmetric(vertical: 4),
+                          margin: const EdgeInsets.symmetric(vertical: 4),
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(24),
@@ -292,23 +292,27 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           children: [
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.favorite),
+                              icon: const Icon(Icons.favorite),
                             ),
-                            Text("154"),
+                            const Text("154"),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.chat_rounded),
+                              icon: const Icon(Icons.chat_rounded),
                             ),
-                            Text("40"),
+                            const Text("40"),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.bookmark),
+                              icon: const Icon(Icons.bookmark),
                             ),
+                            const Spacer(),
                             Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xfffece01),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 24,
+                                vertical: 16,
                               ),
-                              child: Center(
+                              decoration:
+                                  BoxDecoration(color: const Color(0xfffece01), borderRadius: BorderRadius.circular(8)),
+                              child: const Center(
                                 child: Text("Tip Post"),
                               ),
                             )
