@@ -230,8 +230,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    color: Colors.indigo,
-                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    // color: Colors.indigo,
+                    margin: const EdgeInsets.fromLTRB(4,0,4,16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -282,33 +282,38 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                         Container(
-                          height: 260,
+                          height: 250,
                           margin: const EdgeInsets.symmetric(vertical: 4),
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(24),
                           ),
                         ),
+                        SizedBox(height: 8,),
                         Row(
                           children: [
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.favorite),
+                              color: Colors.red,
                             ),
                             const Text("154"),
+                            SizedBox(width: 8,),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.chat_rounded),
+                              color: Colors.grey,
                             ),
                             const Text("40"),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.bookmark),
+                              color: Colors.grey,
                             ),
                             const Spacer(),
                             Container(
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 24,
+                                horizontal: 32,
                                 vertical: 16,
                               ),
                               decoration:
