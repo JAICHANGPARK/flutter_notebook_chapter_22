@@ -271,15 +271,15 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 4,
                         ),
                         const Padding(
-                          padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                          padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                           child: Text(
                             "Perfect Flutter Development today ",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 13,
+                              fontSize: 14,
                             ),
                           ),
                         ),
@@ -317,6 +317,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               color: Colors.grey,
                             ),
                             const Text("40"),
+                            SizedBox(
+                              width: 8,
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.bookmark),
