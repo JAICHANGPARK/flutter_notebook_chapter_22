@@ -147,26 +147,26 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               child: Stack(
                                 children: [
                                   const Positioned(
-                                    left: 0,
-                                    bottom: 0,
-                                    top: 0,
-                                    right: 0,
+                                    left: 4,
+                                    bottom: 4,
+                                    top: 4,
+                                    right: 4,
                                     child: CircleAvatar(
                                       radius: 32,
                                     ),
                                   ),
                                   Positioned(
-                                    right: 0,
-                                    bottom: 0,
+                                    right: 4,
+                                    bottom: 4,
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: const Color(0xfffece01),
                                         borderRadius: BorderRadius.circular(2),
                                       ),
-                                      padding: const EdgeInsets.all(2),
+                                      padding: const EdgeInsets.all(1),
                                       child: const Icon(
                                         Icons.add,
-                                        size: 16,
+                                        size: 14,
                                       ),
                                     ),
                                   )
@@ -196,24 +196,24 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           radius: 32,
                           backgroundColor: (index == 1 || index == 2) ? const Color(0xfffece01) : Colors.white,
                           child: Container(
-                            margin: EdgeInsets.all(2),
-                            decoration: BoxDecoration(
+                            margin: const EdgeInsets.all(2),
+                            decoration: const BoxDecoration(
                               color: Colors.white,
                               shape: BoxShape.circle,
                             ),
                             child: Container(
-                              margin: EdgeInsets.all(3),
-                              decoration: BoxDecoration(
+                              margin: const EdgeInsets.all(3),
+                              decoration: const BoxDecoration(
                                 color: Colors.red,
                                 shape: BoxShape.circle,
                               ),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
-                        Text(
+                        const Text(
                           "Dream",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
