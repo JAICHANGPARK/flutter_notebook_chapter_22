@@ -132,7 +132,6 @@ class _SocialHomePageState extends State<SocialHomePage> {
             ),
             Container(
               height: 100,
-              color: Colors.pink,
               margin: const EdgeInsets.only(left: 16, top: 8),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -147,7 +146,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               width: 64,
                               child: Stack(
                                 children: [
-                                  Positioned(
+                                  const Positioned(
                                     left: 0,
                                     bottom: 0,
                                     top: 0,
@@ -156,15 +155,30 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                       radius: 32,
                                     ),
                                   ),
+                                  Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xfffece01),
+                                        borderRadius: BorderRadius.circular(2),
+                                      ),
+                                      padding: const EdgeInsets.all(2),
+                                      child: const Icon(
+                                        Icons.add,
+                                        size: 16,
+                                      ),
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 12,
                           ),
-                          Text(
-                            "Dream",
+                          const Text(
+                            "You",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
