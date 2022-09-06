@@ -226,7 +226,36 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 },
               ),
             ),
-            const Expanded(child: Placeholder()),
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.indigo,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            const CircleAvatar(),
+                            Column(
+                              children: const [
+                                Text("Dreamwalker"),
+                                Text("2 days ago"),
+                              ],
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.more_vert_outlined,
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
             Divider(
               height: 0,
               color: Colors.grey[300],
