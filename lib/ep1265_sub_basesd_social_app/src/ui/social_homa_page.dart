@@ -232,16 +232,24 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   return Container(
                     color: Colors.indigo,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
                             const CircleAvatar(),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Column(
                               children: const [
                                 Text("Dreamwalker"),
+                                SizedBox(
+                                  height: 6,
+                                ),
                                 Text("2 days ago"),
                               ],
                             ),
+                            Spacer(),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(
@@ -249,7 +257,16 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               ),
                             ),
                           ],
-                        )
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Text(
+                            "Perfect Flutter Development today ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   );
