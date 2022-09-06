@@ -270,6 +270,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             ],
                           ),
                         ),
+                        SizedBox(height: 8,),
                         const Padding(
                           padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                           child: Text(
@@ -281,7 +282,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                         Container(
-                          height: 240,
+                          height: 260,
                           margin: const EdgeInsets.symmetric(vertical: 4),
                           decoration: BoxDecoration(
                             color: Colors.blue,
