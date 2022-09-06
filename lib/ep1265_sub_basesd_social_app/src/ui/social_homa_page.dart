@@ -137,6 +137,35 @@ class _SocialHomePageState extends State<SocialHomePage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
+                  if(index == 0){
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: Column(
+                        children:  [
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Positioned(child:  CircleAvatar(
+                                  radius: 32,
+                                ),)
+                               
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text(
+                            "Dream",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),
+                          )
+                        ],
+                      ),
+                    );
+                  }
                   return Padding(
                     padding: const EdgeInsets.only(right: 8),
                     child: Column(
