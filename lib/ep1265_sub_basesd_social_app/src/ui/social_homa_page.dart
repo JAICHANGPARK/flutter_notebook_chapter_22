@@ -271,15 +271,35 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                           child: Text(
                             "Perfect Flutter Development today ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                           ),
                         ),
+                        Container(
+                          height: 240,
+                          margin: EdgeInsets.symmetric(vertical: 4),
+                          decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
+                        ),
+                        Row(
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.favorite),
+                            ),
+                            Text("154"),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.chat_rounded),
+                            ),
+                            Text("40"),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.bookmark),
+                            ),
+                          ],
+                        )
                       ],
                     ),
                   );
