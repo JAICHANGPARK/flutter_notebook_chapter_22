@@ -231,32 +231,39 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     color: Colors.indigo,
+                    margin: EdgeInsets.symmetric(horizontal: 4),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            const CircleAvatar(),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Column(
-                              children: const [
-                                Text("Dreamwalker"),
-                                SizedBox(
-                                  height: 6,
-                                ),
-                                Text("2 days ago"),
-                              ],
-                            ),
-                            Spacer(),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.more_vert_outlined,
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              const CircleAvatar(
+                                radius: 24,
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text("Dreamwalker"),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("2 days ago"),
+                                ],
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: const Icon(
+                                  Icons.more_vert_outlined,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
