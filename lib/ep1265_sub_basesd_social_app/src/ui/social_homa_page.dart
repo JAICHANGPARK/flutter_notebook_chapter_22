@@ -194,7 +194,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       children: [
                         CircleAvatar(
                           radius: 32,
-                          backgroundColor: const Color(0xfffece01),
+                          backgroundColor: (index == 1 || index == 2) ? const Color(0xfffece01) : Colors.white,
                           child: Container(
                             margin: EdgeInsets.all(2),
                             decoration: BoxDecoration(
