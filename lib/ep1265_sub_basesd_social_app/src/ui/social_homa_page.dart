@@ -362,7 +362,25 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 color: Colors.white,
               ),
               child: Row(
-                children: const [],
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 28,
+                        color: const Color(0xfffece01),
+                      ),
+
+                      Icon(
+                        Icons.home_filled,
+                        color: const Color(0xfffece01),
+                      ),
+
+                      Text("Home",)
+                    ],
+                  )
+                ],
               ),
             )
           ],
