@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1265_sub_basesd_social_app/src/ui/social_profile_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SocialHomePage extends StatefulWidget {
@@ -137,54 +138,61 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   if (index == 0) {
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 8, bottom: 8),
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: SizedBox(
-                              width: 64,
-                              child: Stack(
-                                children: [
-                                  const Positioned(
-                                    left: 4,
-                                    bottom: 4,
-                                    top: 4,
-                                    right: 4,
-                                    child: CircleAvatar(
-                                      radius: 32,
-                                    ),
-                                  ),
-                                  Positioned(
-                                    right: 4,
-                                    bottom: 4,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xfffece01),
-                                        borderRadius: BorderRadius.circular(2),
-                                      ),
-                                      padding: const EdgeInsets.all(1),
-                                      child: const Icon(
-                                        Icons.add,
-                                        size: 14,
+                    return InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SocialProfilePage(),
+                        ));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 8, bottom: 8),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: SizedBox(
+                                width: 64,
+                                child: Stack(
+                                  children: [
+                                    const Positioned(
+                                      left: 4,
+                                      bottom: 4,
+                                      top: 4,
+                                      right: 4,
+                                      child: CircleAvatar(
+                                        radius: 32,
                                       ),
                                     ),
-                                  )
-                                ],
+                                    Positioned(
+                                      right: 4,
+                                      bottom: 4,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: const Color(0xfffece01),
+                                          borderRadius: BorderRadius.circular(2),
+                                        ),
+                                        padding: const EdgeInsets.all(1),
+                                        child: const Icon(
+                                          Icons.add,
+                                          size: 14,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                          const SizedBox(
-                            height: 12,
-                          ),
-                          const Text(
-                            "You",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                            const SizedBox(
+                              height: 12,
                             ),
-                          )
-                        ],
+                            const Text(
+                              "You",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     );
                   }
