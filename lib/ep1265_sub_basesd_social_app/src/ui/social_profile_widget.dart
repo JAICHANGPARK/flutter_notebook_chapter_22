@@ -44,10 +44,12 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                         CircleAvatar(
                           radius: 24,
                           backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
                           child: Icon(Icons.keyboard_arrow_left),
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
                           radius: 24,
                           child: Icon(Icons.more_vert_outlined),
                         ),
