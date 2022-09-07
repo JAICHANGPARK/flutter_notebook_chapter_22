@@ -361,6 +361,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
+              padding: EdgeInsets.only(
+                bottom: 12,
+                left: 16,
+                right: 16,
+              ),
               child: Row(
                 children: [
                   Column(
@@ -371,13 +376,13 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         width: 28,
                         color: const Color(0xfffece01),
                       ),
-
                       Icon(
                         Icons.home_filled,
                         color: const Color(0xfffece01),
                       ),
-
-                      Text("Home",)
+                      Text(
+                        "Home",
+                      )
                     ],
                   )
                 ],
