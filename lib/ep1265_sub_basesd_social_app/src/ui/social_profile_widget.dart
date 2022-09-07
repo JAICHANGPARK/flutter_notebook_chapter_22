@@ -70,6 +70,21 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 28),
+              child: Column(
+                children: [
+
+                  Text("Dream"),
+                  SizedBox(height: 16,),
+                  Text("Your newest developer here to play game and coding with something flutter application",
+                  style: TextStyle(
+                    height: 2
+                  ),),
+                ],
+              ),
+            ),
           ],
         ),
       ),
