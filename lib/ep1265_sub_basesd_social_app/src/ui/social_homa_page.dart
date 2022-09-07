@@ -367,6 +367,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 right: 16,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
