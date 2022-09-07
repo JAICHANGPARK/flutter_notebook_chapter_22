@@ -270,7 +270,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         const Padding(
@@ -289,7 +289,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(24),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
                               ),
@@ -297,7 +297,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         Row(
@@ -308,7 +308,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               color: Colors.red,
                             ),
                             const Text("154"),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                             IconButton(
@@ -317,7 +317,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               color: Colors.grey,
                             ),
                             const Text("40"),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
                             IconButton(
