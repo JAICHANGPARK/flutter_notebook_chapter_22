@@ -412,18 +412,62 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         color: Colors.transparent,
                       ),
                       Container(
+                        color: const Color(0xfffece01),
                         child: Center(
-                          child:  Icon(
+                          child: Icon(
                             Icons.add,
-                            color: Colors.grey,
+
                             // color: const Color(0xfffece01)
                           ),
                         ),
                       ),
-
                       Text(
-                        "Explore",
-                      )
+                        "Create",
+                      ),
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 28,
+                        color: Colors.transparent,
+                      ),
+                      SizedBox(
+                        width: 64,
+                        child: Expanded(
+                            child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              top: 0,
+                              child: Container(
+                                color: Colors.blue,
+                              ),
+                              // child: Column(
+                              //   children: [
+                              //     Container(
+                              //       color: const Color(0xfffece01),
+                              //       child: Center(
+                              //         child: Icon(
+                              //           Icons.add,
+                              //
+                              //           // color: const Color(0xfffece01)
+                              //         ),
+                              //       ),
+                              //     ),
+                              //     Text(
+                              //       "Create",
+                              //     ),
+                              //   ],
+                              // ),
+                            ),
+                          ],
+                        )),
+                      ),
                     ],
                   )
                 ],
