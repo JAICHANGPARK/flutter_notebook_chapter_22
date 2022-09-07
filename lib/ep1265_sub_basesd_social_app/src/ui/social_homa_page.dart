@@ -95,10 +95,10 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: const Text("Add Photo"),
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.black,
                             ),
+                            child: const Text("Add Photo"),
                           ),
                           const SizedBox(
                             width: 16,
@@ -110,10 +110,10 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: const Text("Add Video"),
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.black,
                             ),
+                            child: const Text("Add Video"),
                           ),
                           const SizedBox(
                             width: 8,
@@ -361,7 +361,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 bottom: 12,
                 left: 16,
                 right: 16,
@@ -377,11 +377,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         width: 28,
                         color: const Color(0xfffece01),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.home_filled,
-                        color: const Color(0xfffece01),
+                        color: Color(0xfffece01),
                       ),
-                      Text(
+                      const Text(
                         "Home",
                       )
                     ],
@@ -394,12 +394,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         width: 28,
                         color: Colors.transparent,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.explore,
                         color: Colors.grey,
                         // color: const Color(0xfffece01)
                       ),
-                      Text(
+                      const Text(
                         "Explore",
                       )
                     ],
@@ -414,7 +414,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       ),
                       Container(
                         color: const Color(0xfffece01),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.add,
 
@@ -422,7 +422,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           ),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Create",
                       ),
                     ],
@@ -435,12 +435,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         width: 28,
                         color: Colors.transparent,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.notifications,
                         color: Colors.grey,
                         // color: const Color(0xfffece01)
                       ),
-                      Text(
+                      const Text(
                         "Activity",
                       )
                     ],
@@ -453,12 +453,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         width: 28,
                         color: Colors.transparent,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.menu,
                         color: Colors.grey,
                         // color: const Color(0xfffece01)
                       ),
-                      Text(
+                      const Text(
                         "Menu",
                       )
                     ],
