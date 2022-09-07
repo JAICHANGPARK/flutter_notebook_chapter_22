@@ -116,6 +116,9 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 color: Colors.grey,
               ),
               TabBar(
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
+                indicatorColor: const Color(0xfffece01),
                 tabs: [
                   Tab(
                     icon: Icon(Icons.memory),
@@ -131,12 +134,15 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   )
                 ],
               ),
-              TabBarView(
-                children: [
-                  Text("Tab1"),
-                  Text("Tab2"),
-                  Text("Tab3"),
-                ],
+              SizedBox(
+                height: 200,
+                child: TabBarView(
+                  children: [
+                    Text("Tab1"),
+                    Text("Tab2"),
+                    Text("Tab3"),
+                  ],
+                ),
               )
             ],
           ),
