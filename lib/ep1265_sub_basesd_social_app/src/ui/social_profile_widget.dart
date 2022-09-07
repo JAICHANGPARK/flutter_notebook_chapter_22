@@ -70,21 +70,53 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            const SizedBox(
+              height: 16,
+            ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 28),
+              padding: const EdgeInsets.symmetric(horizontal: 28),
               child: Column(
-                children: [
-
+                children: const [
                   Text("Dream"),
-                  SizedBox(height: 16,),
-                  Text("Your newest developer here to play game and coding with something flutter application",
-                  style: TextStyle(
-                    height: 2
-                  ),),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Text(
+                    "Your newest developer here to play game and coding with something flutter application",
+                    style: TextStyle(height: 2),
+                  ),
                 ],
               ),
             ),
+            Container(
+              height: 100,
+              margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+              decoration: const BoxDecoration(
+                color: Colors.grey,
+              ),
+            ),
+            Container(
+              width: 200,
+              height: 64,
+              decoration: BoxDecoration(
+                color: const Color(0xfffece01),
+                borderRadius: BorderRadius.circular(
+                  16,
+                ),
+              ),
+              child: const Center(
+                child: Text(
+                  "Become a Fan for \$50.00",
+                ),
+              ),
+            ),
+            Divider(color: Colors.grey,),
+            TabBar(tabs: [
+              Tab(
+                icon: Icon(Icons.memory),
+                text: "Ports",
+              )
+            ], )
           ],
         ),
       ),
