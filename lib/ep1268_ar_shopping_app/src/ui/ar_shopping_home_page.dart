@@ -34,7 +34,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.home_filled,
                           size: 34,
@@ -51,7 +51,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.explore_outlined,
                           size: 34,
@@ -66,7 +66,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                         ),
                       ],
                     ),
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 32,
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
@@ -77,7 +77,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.favorite_border,
                           size: 34,
@@ -88,13 +88,16 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                         ),
                         Text(
                           "WISHLIST",
-                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12,
+                          ),
                         ),
                       ],
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.menu,
                           size: 34,
@@ -105,7 +108,10 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                         ),
                         Text(
                           "MORE",
-                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12,
+                          ),
                         ),
                       ],
                     ),
