@@ -56,8 +56,42 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       radius: 32,
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
-                      child: Icon(Icons.view_in_ar,),
-                    )
+                      child: Icon(
+                        Icons.view_in_ar,
+                        size: 34,
+                      ),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.favorite_border,
+                          size: 34,
+                        ),
+                        Text(
+                          "WISHLIST",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.menu,
+                          size: 34,
+                        ),
+                        Text(
+                          "MORE",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
