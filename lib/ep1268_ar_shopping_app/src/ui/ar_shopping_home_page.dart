@@ -14,12 +14,24 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
+            const Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: Placeholder(),
+            ),
             Positioned(
-              left: 16,
-              bottom: 12,
-              right: 16,
+              left: 0,
+              bottom: 0,
+              right: 0,
               child: Container(
                 height: 100,
+                margin: const EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  bottom: 12,
+                ),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
