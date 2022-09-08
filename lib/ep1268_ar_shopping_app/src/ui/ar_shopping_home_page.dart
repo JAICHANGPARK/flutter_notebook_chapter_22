@@ -53,8 +53,10 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ],
                     ),
                     CircleAvatar(
-                      radius: 36,
+                      radius: 32,
                       backgroundColor: Colors.black,
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.view_in_ar,),
                     )
                   ],
                 ),
