@@ -39,7 +39,11 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                           Icons.home_filled,
                           size: 34,
                         ),
-                        Text("HOME"),
+                        Text("HOME",
+                          style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12
+                          ),),
                       ],
                     ),
                     Column(
@@ -49,7 +53,11 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                           Icons.explore_outlined,
                           size: 34,
                         ),
-                        Text("EXPLORE"),
+                        Text("EXPLORE",
+                          style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12
+                          ),),
                       ],
                     ),
                     CircleAvatar(
@@ -88,6 +96,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                           "MORE",
                           style: TextStyle(
                             color: Colors.grey,
+                              fontSize: 12
                           ),
                         ),
                       ],
