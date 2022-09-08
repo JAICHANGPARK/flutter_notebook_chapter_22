@@ -37,7 +37,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       children: [
                         Icon(
                           Icons.home_filled,
-                          size: 34,
+                          size: 34,color: Colors.deepPurple,
                         ),
                         Text("HOME",
                           style: TextStyle(
