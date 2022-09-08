@@ -1,7 +1,15 @@
 # flutter_notebook_chapter_22
 ## S25
 
-### EP1265
+### EP1268-
+
+- AR Shopping
+- by Lukas Buzga for STRV
+- https://dribbble.com/shots/19326562-AR-Shopping
+
+<img src="https://cdn.dribbble.com/users/149173/screenshots/19326562/media/150950da4d752ca58263d7ab9a927253.png?compress=1&resize=1000x750&vertical=top" width="400px"/>
+
+### EP1265-1267
 
 - Subscription Based Social App
 - by Boro | Yehor Haiduk 🇺🇦 for Ledo
