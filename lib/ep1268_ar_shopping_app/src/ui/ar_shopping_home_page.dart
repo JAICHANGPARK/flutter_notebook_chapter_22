@@ -19,13 +19,44 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               bottom: 0,
               right: 0,
               child: Container(
+                height: 100,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [],
+                    colors: [
+                      Colors.white,
+                      Colors.white.withOpacity(0.4),
+                      Colors.white.withOpacity(0.2),
+                    ],
                   ),
                 ),
                 child: Row(
-                  children: [],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          size: 34,
+                        ),
+                        Text("HOME"),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.explore_outlined,
+                          size: 34,
+                        ),
+                        Text("EXPLORE"),
+                      ],
+                    ),
+                    CircleAvatar(
+                      radius: 36,
+                      backgroundColor: Colors.black,
+                    )
+                  ],
                 ),
               ),
             )
