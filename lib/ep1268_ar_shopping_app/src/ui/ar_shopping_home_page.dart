@@ -27,16 +27,19 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               right: 0,
               child: Container(
                 height: 100,
-                margin: const EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 16,
                   right: 16,
                   bottom: 12,
                 ),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
                     colors: [
                       Colors.white,
-                      Colors.white.withOpacity(0.4),
+                      Colors.white,
+                      Colors.white.withOpacity(0.5),
                       Colors.white.withOpacity(0.2),
                     ],
                   ),
