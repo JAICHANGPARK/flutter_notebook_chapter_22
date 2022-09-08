@@ -14,7 +14,11 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned(
+              child: Row(
+                children: [],
+              ),
+            )
           ],
         ),
       ),
