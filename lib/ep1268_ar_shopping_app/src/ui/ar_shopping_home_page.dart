@@ -19,74 +19,97 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               right: 0,
               bottom: 0,
               top: 24,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text(
-                          "HI, DREAM",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: const [
+                          Text(
+                            "HI, DREAM",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
                           ),
-                        ),
-                        CircleAvatar(
-                          radius: 24,
-                        ),
-                      ],
+                          CircleAvatar(
+                            radius: 24,
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                    child: SizedBox(
-                      height: 350,
-                      child: Container(
-                        color: Colors.blue,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              width: 220,
-                              margin: const EdgeInsets.only(right: 12),
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                            );
-                          },
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      child: SizedBox(
+                        height: 320,
+                        child: Container(
+                          color: Colors.blue,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 220,
+                                margin: const EdgeInsets.only(right: 12),
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              );
+                            },
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Most Favorite brands".toUpperCase(),
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Most Favorite brands".toUpperCase(),
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 16,),
-                        Container(
-                          height: 120,
-                          color: Colors.deepPurple,
-                        )
-
-                      ],
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Container(
+                            height: 120,
+                            color: Colors.deepPurple,
+                          )
+                        ],
+                      ),
                     ),
-                  )
-
-                ],
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16, top: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "deals for you".toUpperCase(),
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Container(
+                            height: 400,
+                            color: Colors.deepPurple,
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             Positioned(
