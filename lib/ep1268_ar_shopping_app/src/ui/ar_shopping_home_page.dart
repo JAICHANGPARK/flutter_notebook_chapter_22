@@ -54,15 +54,20 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                             return Container(
                               width: 220,
                               margin: EdgeInsets.only(right: 12),
-                              
                               decoration: BoxDecoration(
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(8)
+                                borderRadius: BorderRadius.circular(8),
                               ),
                             );
                           },
                         ),
                       ),
+                    ),
+                  ),
+                  Text(
+                    "Most Favorite brands".toUpperCase(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
                   )
                 ],
