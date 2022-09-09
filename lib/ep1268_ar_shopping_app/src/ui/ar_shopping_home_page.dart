@@ -92,11 +92,20 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "deals for you".toUpperCase(),
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "deals for you".toUpperCase(),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              TextButton(onPressed: (){}, child: Text("SHOW ALL"),
+                              style: TextButton.styleFrom(
+                                foregroundColor: Colors.blueGrey
+                              ),)
+                            ],
                           ),
                           SizedBox(
                             height: 16,
