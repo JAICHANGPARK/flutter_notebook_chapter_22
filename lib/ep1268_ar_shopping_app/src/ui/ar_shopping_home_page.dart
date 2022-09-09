@@ -88,7 +88,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 16, top: 16),
+                      padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -101,18 +101,23 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              TextButton(onPressed: (){}, child: Text("SHOW ALL"),
-                              style: TextButton.styleFrom(
-                                foregroundColor: Colors.blueGrey
-                              ),)
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("SHOW ALL"),
+                                style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
+                              )
                             ],
                           ),
                           SizedBox(
-                            height: 16,
+                            height: 8,
                           ),
                           Container(
                             height: 400,
-                            color: Colors.deepPurple,
+                            color: Colors.grey,
+                            child: GridView.count(
+                              crossAxisCount: 2,
+                              children: [],
+                            ),
                           )
                         ],
                       ),
