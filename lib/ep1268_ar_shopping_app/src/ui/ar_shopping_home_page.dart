@@ -14,12 +14,19 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            const Positioned(
+             Positioned(
               left: 0,
               right: 0,
               bottom: 0,
-              top: 0,
-              child: Placeholder(),
+              top: 24,
+              child: Column(
+                children: [
+                  Row(children: [
+                    Text("HI, DREAM"),
+                    CircleAvatar(),
+                  ],)
+                ],
+              ),
             ),
             Positioned(
               left: 0,
