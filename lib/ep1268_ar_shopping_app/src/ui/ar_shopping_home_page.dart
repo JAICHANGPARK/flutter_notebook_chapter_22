@@ -24,13 +24,32 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("HI, DREAM", style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                      ),),
-                      CircleAvatar(),
+                      const Text(
+                        "HI, DREAM",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      const CircleAvatar(),
                     ],
+                  ),
+                  SizedBox(
+                    height: 300,
+                    child: Container(
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 160,
+                            margin: EdgeInsets.only(right: 12),
+                            color: Colors.black,
+                          );
+                        },
+                      ),
+                    ),
                   )
                 ],
               ),
