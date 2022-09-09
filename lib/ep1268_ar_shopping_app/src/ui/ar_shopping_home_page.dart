@@ -42,19 +42,26 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 300,
-                    child: Container(
-                      color: Colors.blue,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 160,
-                            margin: EdgeInsets.only(right: 12),
-                            color: Colors.black,
-                          );
-                        },
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 24),
+                    child: SizedBox(
+                      height: 350,
+                      child: Container(
+                        color: Colors.blue,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 220,
+                              margin: EdgeInsets.only(right: 12),
+                              
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                   )
