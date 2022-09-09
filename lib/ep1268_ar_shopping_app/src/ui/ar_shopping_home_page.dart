@@ -14,17 +14,24 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-             Positioned(
-              left: 0,
+            Positioned(
+              left: 16,
               right: 0,
               bottom: 0,
               top: 24,
               child: Column(
                 children: [
-                  Row(children: [
-                    Text("HI, DREAM"),
-                    CircleAvatar(),
-                  ],)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("HI, DREAM", style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),),
+                      CircleAvatar(),
+                    ],
+                  )
                 ],
               ),
             ),
