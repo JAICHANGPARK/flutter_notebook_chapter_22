@@ -15,25 +15,32 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
         child: Stack(
           children: [
             Positioned(
-              left: 16,
+              left: 0,
               right: 0,
               bottom: 0,
               top: 24,
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "HI, DREAM",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text(
+                          "HI, DREAM",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
-                      const CircleAvatar(),
-                    ],
+                        CircleAvatar(
+                          radius: 24,
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 300,
