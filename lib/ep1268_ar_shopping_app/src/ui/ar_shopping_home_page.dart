@@ -20,9 +20,10 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               bottom: 0,
               top: 24,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 16,
                     ),
                     child: Row(
@@ -43,7 +44,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 24),
+                    padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                     child: SizedBox(
                       height: 350,
                       child: Container(
@@ -53,7 +54,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 220,
-                              margin: EdgeInsets.only(right: 12),
+                              margin: const EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(8),
@@ -64,12 +65,27 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ),
                     ),
                   ),
-                  Text(
-                    "Most Favorite brands".toUpperCase(),
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Most Favorite brands".toUpperCase(),
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 16,),
+                        Container(
+                          height: 120,
+                          color: Colors.deepPurple,
+                        )
+
+                      ],
                     ),
                   )
+
                 ],
               ),
             ),
