@@ -159,7 +159,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                               const SizedBox(
                                 height: 8,
                               ),
-                              Container(
+                              SizedBox(
                                 height: 400,
                                 child: GridView.count(
                                   crossAxisCount: 2,
