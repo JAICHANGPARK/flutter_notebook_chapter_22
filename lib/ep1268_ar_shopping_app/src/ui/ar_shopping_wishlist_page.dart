@@ -39,7 +39,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
               length: 3,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children:  [
                   TabBar(
                     indicatorColor: Colors.deepPurpleAccent,
                     labelColor: Colors.black,
@@ -59,7 +59,11 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                   ),
                   Expanded(
                     child: TabBarView(
-                      children: [],
+                      children: [
+                        Container(color: Colors.red,),
+                        Container(color: Colors.pink,),
+                        Container(color: Colors.green,)
+                      ],
                     ),
                   ),
                 ],
