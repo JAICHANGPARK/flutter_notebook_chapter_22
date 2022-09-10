@@ -45,44 +45,54 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        top: 16,
+                        bottom: 16,
+                      ),
                       child: SizedBox(
                         height: 320,
-                        child: Container(
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                              return Container(
-                                width: 220,
-                                margin: const EdgeInsets.only(right: 12),
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                padding: const EdgeInsets.all(16),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    Text(
-                                      "GAMING",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 220,
+                              margin: const EdgeInsets.only(right: 12),
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "GAMING",
+                                    style: TextStyle(
+                                      color: Colors.white,
                                     ),
-                                    Spacer(),
-                                    Text(
-                                      "PRO X GAMING",
-                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "PRO X GAMING",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
                                     ),
-                                    Text(
-                                      "HEADSET",
-                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
-                                    )
-                                  ],
-                                ),
-                              );
-                            },
-                          ),
+                                  ),
+                                  Text(
+                                    "HEADSET",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),
