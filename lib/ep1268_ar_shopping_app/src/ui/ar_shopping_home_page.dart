@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1268_ar_shopping_app/src/ui/ar_shopping_wishlist_page.dart';
 
 class ArShoppingHomePage extends StatefulWidget {
   const ArShoppingHomePage({Key? key}) : super(key: key);
@@ -201,9 +202,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                   Container(
                     child: Text("Page3"),
                   ),
-                  Container(
-                    child: Text("Page4"),
-                  ),
+                  ArShoppingWishlistPage(),
                 ],
               ),
             ),
@@ -233,22 +232,32 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children:  [
-                        Icon(
-                          Icons.home_filled,
-                          size: 34,
-                          color: _pageIndex == 0 ? Colors.deepPurple : Colors.grey,
-                        ),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        Text(
-                          "HOME",
-                          style: TextStyle(color: Colors.grey, fontSize: 12),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 0;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.home_filled,
+                            size: 34,
+                            color: _pageIndex == 0 ? Colors.deepPurple : Colors.grey,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "HOME",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -263,7 +272,10 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                         ),
                         Text(
                           "EXPLORE",
-                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12,
+                          ),
                         ),
                       ],
                     ),
