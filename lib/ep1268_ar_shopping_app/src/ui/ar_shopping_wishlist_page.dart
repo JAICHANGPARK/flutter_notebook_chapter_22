@@ -38,7 +38,8 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
             child: DefaultTabController(
               length: 3,
               child: Column(
-                children: [
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
                   TabBar(
                     indicatorColor: Colors.deepPurpleAccent,
                     labelColor: Colors.black,
@@ -55,7 +56,12 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                         text: "COLLECTIONS",
                       )
                     ],
-                  )
+                  ),
+                  Expanded(
+                    child: TabBarView(
+                      children: [],
+                    ),
+                  ),
                 ],
               ),
             ),
