@@ -59,7 +59,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                padding: EdgeInsets.all(16),
+                                padding: const EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: const [
@@ -97,7 +97,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Container(
@@ -107,11 +107,11 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 8),
-                                  width: 120,
-
+                                  margin: const EdgeInsets.only(right: 12),
+                                  width: 140,
                                   decoration: BoxDecoration(
                                     color: Colors.green[200]!,
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
                                 );
                               },
@@ -136,12 +136,12 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text("SHOW ALL"),
+                                child: const Text("SHOW ALL"),
                                 style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Container(
