@@ -17,7 +17,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              const Text(
                 "WISHLIST",
                 style: TextStyle(
                   fontSize: 24,
@@ -27,7 +27,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
               CircleAvatar(
                 backgroundColor: Colors.grey[200],
                 foregroundColor: Colors.black,
-                child: Icon(
+                child: const Icon(
                   Icons.add,
                   size: 24,
                 ),
@@ -40,7 +40,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TabBar(
+                  const TabBar(
                     indicatorColor: Colors.deepPurpleAccent,
                     labelColor: Colors.black,
                     unselectedLabelColor: Colors.grey,
@@ -57,7 +57,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                       )
                     ],
                   ),
-                  SizedBox(height: 16,),
+                  const SizedBox(height: 16,),
                   Expanded(
                     child: TabBarView(
                       children: [
@@ -75,10 +75,10 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                                       color: Colors.blue,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
-                                  Text("APPLE"),
+                                  const Text("APPLE"),
                                 ],
                               ),
                               Column(
@@ -88,10 +88,10 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                                       color: Colors.blue,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
-                                  Text("OUTFITS"),
+                                  const Text("OUTFITS"),
                                 ],
                               ),
                               Column(
@@ -101,10 +101,10 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                                       color: Colors.blue,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
-                                  Text("PS4 GAMES"),
+                                  const Text("PS4 GAMES"),
                                 ],
                               )
                             ],
