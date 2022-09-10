@@ -165,6 +165,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                   crossAxisCount: 2,
                                   mainAxisSpacing: 16,
                                   crossAxisSpacing: 16,
+                                  childAspectRatio: 0.7,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
