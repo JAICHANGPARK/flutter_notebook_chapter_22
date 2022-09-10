@@ -62,30 +62,21 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                 padding: EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children:const  [
+                                  children: const [
                                     Text(
                                       "GAMING",
                                       style: TextStyle(
                                         color: Colors.white,
-
                                       ),
                                     ),
                                     Spacer(),
                                     Text(
                                       "PRO X GAMING",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                          fontSize: 15
-                                      ),
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                                     ),
                                     Text(
                                       "HEADSET",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15
-                                      ),
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                                     )
                                   ],
                                 ),
@@ -110,8 +101,21 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                             height: 16,
                           ),
                           Container(
-                            height: 120,
+                            height: 80,
                             color: Colors.deepPurple,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(right: 8),
+                                  width: 120,
+
+                                  decoration: BoxDecoration(
+                                    color: Colors.green[200]!,
+                                  ),
+                                );
+                              },
+                            ),
                           )
                         ],
                       ),
