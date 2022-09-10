@@ -49,7 +49,6 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       child: SizedBox(
                         height: 320,
                         child: Container(
-                          color: Colors.blue,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
@@ -59,6 +58,31 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(8),
+                                ),
+                                padding: EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children:const  [
+                                    Text(
+                                      "GAMING",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Text(
+                                      "PRO X GAMING",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "HEADSET",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  ],
                                 ),
                               );
                             },
