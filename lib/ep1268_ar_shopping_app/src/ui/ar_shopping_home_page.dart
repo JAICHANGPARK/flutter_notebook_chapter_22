@@ -67,6 +67,7 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                       "GAMING",
                                       style: TextStyle(
                                         color: Colors.white,
+
                                       ),
                                     ),
                                     Spacer(),
@@ -74,12 +75,16 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                       "PRO X GAMING",
                                       style: TextStyle(
                                         color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                          fontSize: 15
                                       ),
                                     ),
                                     Text(
                                       "HEADSET",
                                       style: TextStyle(
                                         color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15
                                       ),
                                     )
                                   ],
