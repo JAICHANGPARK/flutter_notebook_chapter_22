@@ -8,6 +8,8 @@ class ArShoppingHomePage extends StatefulWidget {
 }
 
 class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,175 +21,189 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               right: 0,
               bottom: 0,
               top: 24,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: IndexedStack(
+                index: _pageIndex,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text(
-                          "HI, DREAM",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                          ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
                         ),
-                        CircleAvatar(
-                          radius: 24,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                      child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 16,
-                            top: 16,
-                            bottom: 16,
-                          ),
-                          child: SizedBox(
-                            height: 320,
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  width: 220,
-                                  margin: const EdgeInsets.only(right: 12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  padding: const EdgeInsets.all(16),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "GAMING",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      Spacer(),
-                                      Text(
-                                        "PRO X GAMING",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                        ),
-                                      ),
-                                      Text(
-                                        "HEADSET",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 15,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                );
-                              },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              "HI, DREAM",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
                             ),
-                          ),
+                            CircleAvatar(
+                              radius: 24,
+                            ),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Most Favorite brands".toUpperCase(),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                      ),
+                      Expanded(
+                          child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                                top: 16,
+                                bottom: 16,
                               ),
-                              const SizedBox(
-                                height: 16,
-                              ),
-                              Container(
-                                height: 80,
-                                // color: Colors.deepPurple,
+                              child: SizedBox(
+                                height: 320,
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Container(
+                                      width: 220,
                                       margin: const EdgeInsets.only(right: 12),
-                                      width: 140,
                                       decoration: BoxDecoration(
-                                        color: Colors.green[200]!,
-                                        borderRadius: BorderRadius.circular(4),
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      padding: const EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
+                                          Text(
+                                            "GAMING",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Text(
+                                            "PRO X GAMING",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                          Text(
+                                            "HEADSET",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 15,
+                                            ),
+                                          )
+                                        ],
                                       ),
                                     );
                                   },
                                 ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "deals for you".toUpperCase(),
+                                    "Most Favorite brands".toUpperCase(),
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  TextButton(
-                                    onPressed: () {},
-                                    style: TextButton.styleFrom(
-                                      foregroundColor: Colors.blueGrey,
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  Container(
+                                    height: 80,
+                                    // color: Colors.deepPurple,
+                                    child: ListView.builder(
+                                      scrollDirection: Axis.horizontal,
+                                      itemBuilder: (context, index) {
+                                        return Container(
+                                          margin: const EdgeInsets.only(right: 12),
+                                          width: 140,
+                                          decoration: BoxDecoration(
+                                            color: Colors.green[200]!,
+                                            borderRadius: BorderRadius.circular(4),
+                                          ),
+                                        );
+                                      },
                                     ),
-                                    child: const Text("SHOW ALL"),
                                   )
                                 ],
                               ),
-                              const SizedBox(
-                                height: 8,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "deals for you".toUpperCase(),
+                                        style: const TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      TextButton(
+                                        onPressed: () {},
+                                        style: TextButton.styleFrom(
+                                          foregroundColor: Colors.blueGrey,
+                                        ),
+                                        child: const Text("SHOW ALL"),
+                                      )
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  SizedBox(
+                                    height: 400,
+                                    child: GridView.count(
+                                      crossAxisCount: 2,
+                                      mainAxisSpacing: 16,
+                                      crossAxisSpacing: 16,
+                                      childAspectRatio: 0.7,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(4),
+                                          ),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(4),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
                               ),
-                              SizedBox(
-                                height: 400,
-                                child: GridView.count(
-                                  crossAxisCount: 2,
-                                  mainAxisSpacing: 16,
-                                  crossAxisSpacing: 16,
-                                  childAspectRatio: 0.7,
-                                  children: [
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                    ),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ))
+                            )
+                          ],
+                        ),
+                      ))
+                    ],
+                  ),
+                  Container(
+                    child: Text("Page2"),
+                  ),
+                  Container(
+                    child: Text("Page3"),
+                  ),
+                  Container(
+                    child: Text("Page4"),
+                  ),
                 ],
               ),
             ),
