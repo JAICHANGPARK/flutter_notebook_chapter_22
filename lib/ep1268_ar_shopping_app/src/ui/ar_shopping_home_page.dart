@@ -161,14 +161,22 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                               ),
                               Container(
                                 height: 400,
-                                color: Colors.grey,
                                 child: GridView.count(
                                   crossAxisCount: 2,
                                   mainAxisSpacing: 16,
                                   crossAxisSpacing: 16,
                                   children: [
                                     Container(
-                                      color: Colors.grey,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
                                     ),
                                   ],
                                 ),
