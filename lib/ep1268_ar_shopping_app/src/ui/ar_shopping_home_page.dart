@@ -235,11 +235,11 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children:  [
                         Icon(
                           Icons.home_filled,
                           size: 34,
-                          color: Colors.deepPurple,
+                          color: _pageIndex == 0 ? Colors.deepPurple : Colors.grey,
                         ),
                         SizedBox(
                           height: 4,
