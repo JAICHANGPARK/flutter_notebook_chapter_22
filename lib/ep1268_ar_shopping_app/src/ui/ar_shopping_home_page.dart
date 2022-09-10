@@ -276,25 +276,32 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                         size: 34,
                       ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.favorite_border,
-                          size: 34,
-                          color: Colors.grey,
-                        ),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        Text(
-                          "WISHLIST",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 12,
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 3;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            _pageIndex == 3 ? Icons.favorite : Icons.favorite_border,
+                            size: 34,
+                            color: _pageIndex == 3 ? Colors.deepPurpleAccent : Colors.grey,
                           ),
-                        ),
-                      ],
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "WISHLIST",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
