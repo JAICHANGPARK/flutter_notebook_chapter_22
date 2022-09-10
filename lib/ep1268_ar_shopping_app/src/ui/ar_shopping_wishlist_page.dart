@@ -10,22 +10,58 @@ class ArShoppingWishlistPage extends StatefulWidget {
 class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Text("WISHLIST"),
-            CircleAvatar(
-              backgroundColor: Colors.grey[200],
-              foregroundColor: Colors.black,
-              child: Icon(
-                Icons.add,
-                size: 24,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "WISHLIST",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            )
-          ],
-        )
-      ],
+              CircleAvatar(
+                backgroundColor: Colors.grey[200],
+                foregroundColor: Colors.black,
+                child: Icon(
+                  Icons.add,
+                  size: 24,
+                ),
+              )
+            ],
+          ),
+          Expanded(
+            child: DefaultTabController(
+              length: 3,
+              child: Column(
+                children: [
+                  TabBar(
+                    indicatorColor: Colors.deepPurpleAccent,
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey,
+                    isScrollable: true,
+                    tabs: [
+                      Tab(
+                        text: "LIKED PRODUCTS",
+                      ),
+                      Tab(
+                        text: "DEALS",
+                      ),
+                      Tab(
+                        text: "COLLECTIONS",
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
