@@ -43,7 +43,8 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ],
                     ),
                   ),
-                  Expanded(child: SingleChildScrollView(
+                  Expanded(
+                      child: SingleChildScrollView(
                     child: Column(
                       children: [
                         Padding(
@@ -148,8 +149,10 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                   ),
                                   TextButton(
                                     onPressed: () {},
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: Colors.blueGrey,
+                                    ),
                                     child: const Text("SHOW ALL"),
-                                    style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
                                   )
                                 ],
                               ),
@@ -161,7 +164,13 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                                 color: Colors.grey,
                                 child: GridView.count(
                                   crossAxisCount: 2,
-                                  children: [],
+                                  mainAxisSpacing: 16,
+                                  crossAxisSpacing: 16,
+                                  children: [
+                                    Container(
+                                      color: Colors.grey,
+                                    ),
+                                  ],
                                 ),
                               )
                             ],
@@ -170,7 +179,6 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
                       ],
                     ),
                   ))
-
                 ],
               ),
             ),
