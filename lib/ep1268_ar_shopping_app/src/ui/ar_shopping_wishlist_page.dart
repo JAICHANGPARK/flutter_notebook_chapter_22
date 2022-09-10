@@ -39,7 +39,7 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
               length: 3,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children:  [
+                children: [
                   TabBar(
                     indicatorColor: Colors.deepPurpleAccent,
                     labelColor: Colors.black,
@@ -57,12 +57,65 @@ class _ArShoppingWishlistPageState extends State<ArShoppingWishlistPage> {
                       )
                     ],
                   ),
+                  SizedBox(height: 16,),
                   Expanded(
                     child: TabBarView(
                       children: [
-                        Container(color: Colors.red,),
-                        Container(color: Colors.pink,),
-                        Container(color: Colors.green,)
+                        Container(
+                          color: Colors.red,
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                            children: [
+                              Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("APPLE"),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("OUTFITS"),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text("PS4 GAMES"),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          color: Colors.pink,
+                        ),
+                        Container(
+                          color: Colors.green,
+                        )
                       ],
                     ),
                   ),
