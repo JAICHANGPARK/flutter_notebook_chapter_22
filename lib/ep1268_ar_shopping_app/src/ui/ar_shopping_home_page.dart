@@ -19,154 +19,159 @@ class _ArShoppingHomePageState extends State<ArShoppingHomePage> {
               right: 0,
               bottom: 0,
               top: 24,
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 16,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            "HI, DREAM",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                            ),
-                          ),
-                          CircleAvatar(
-                            radius: 24,
-                          ),
-                        ],
-                      ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: 16,
-                        top: 16,
-                        bottom: 16,
-                      ),
-                      child: SizedBox(
-                        height: 320,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              width: 220,
-                              margin: const EdgeInsets.only(right: 12),
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              padding: const EdgeInsets.all(16),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    "GAMING",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Spacer(),
-                                  Text(
-                                    "PRO X GAMING",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                  Text(
-                                    "HEADSET",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            );
-                          },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text(
+                          "HI, DREAM",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
+                        CircleAvatar(
+                          radius: 24,
+                        ),
+                      ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Most Favorite brands".toUpperCase(),
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                  ),
+                  Expanded(child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 16,
+                            top: 16,
+                            bottom: 16,
                           ),
-                          const SizedBox(
-                            height: 16,
-                          ),
-                          Container(
-                            height: 80,
-                            color: Colors.deepPurple,
+                          child: SizedBox(
+                            height: 320,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
+                                  width: 220,
                                   margin: const EdgeInsets.only(right: 12),
-                                  width: 140,
                                   decoration: BoxDecoration(
-                                    color: Colors.green[200]!,
-                                    borderRadius: BorderRadius.circular(4),
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: const EdgeInsets.all(16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        "GAMING",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "PRO X GAMING",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),
+                                      ),
+                                      Text(
+                                        "HEADSET",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 );
                               },
                             ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "deals for you".toUpperCase(),
+                                "Most Favorite brands".toUpperCase(),
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              TextButton(
-                                onPressed: () {},
-                                child: const Text("SHOW ALL"),
-                                style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
+                              const SizedBox(
+                                height: 16,
+                              ),
+                              Container(
+                                height: 80,
+                                // color: Colors.deepPurple,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      margin: const EdgeInsets.only(right: 12),
+                                      width: 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.green[200]!,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    );
+                                  },
+                                ),
                               )
                             ],
                           ),
-                          const SizedBox(
-                            height: 8,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "deals for you".toUpperCase(),
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: const Text("SHOW ALL"),
+                                    style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Container(
+                                height: 400,
+                                color: Colors.grey,
+                                child: GridView.count(
+                                  crossAxisCount: 2,
+                                  children: [],
+                                ),
+                              )
+                            ],
                           ),
-                          Container(
-                            height: 400,
-                            color: Colors.grey,
-                            child: GridView.count(
-                              crossAxisCount: 2,
-                              children: [],
-                            ),
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                        )
+                      ],
+                    ),
+                  ))
+
+                ],
               ),
             ),
             Positioned(
