@@ -24,6 +24,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
           IconButton(onPressed: () {}, icon: Icon(Icons.shopping_bag_outlined)),
         ],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
     );
   }
 }
