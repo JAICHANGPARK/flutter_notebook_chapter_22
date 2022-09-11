@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FashionHomePage extends StatefulWidget {
   const FashionHomePage({Key? key}) : super(key: key);
 
@@ -16,9 +15,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
       appBar: AppBar(
         leading: Icon(Icons.apps),
         title: Text("Collections"),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_bag_outlined)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.notifications_none)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_bag_outlined)),
         ],
       ),
     );
