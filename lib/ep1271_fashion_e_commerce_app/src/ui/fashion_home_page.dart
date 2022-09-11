@@ -11,6 +11,16 @@ class FashionHomePage extends StatefulWidget {
 class _FashionHomePageState extends State<FashionHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        leading: Icon(Icons.apps),
+        title: Text("Collections"),
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.notifications_none)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_bag_outlined)),
+        ],
+      ),
+    );
   }
 }
