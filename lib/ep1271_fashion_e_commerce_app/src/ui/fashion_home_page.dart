@@ -34,7 +34,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 height: 120,
                 color: Colors.red[50],
                 child: Stack(
-                  children: [
+                  children: const [
                     Positioned(
                       right: 32,
                       top: 16,
@@ -57,7 +57,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 height: 120,
                 color: Colors.green[50],
                 child: Stack(
-                  children: [
+                  children: const [
                     Positioned(
                       left: 32,
                       top: 16,
@@ -84,7 +84,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       child: Container(
                         color: Colors.orange[50],
                         child: Stack(
-                          children: [
+                          children: const [
                             Positioned(
                               left: 16,
                               top: 48,
@@ -103,7 +103,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
                     Expanded(
@@ -114,7 +114,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                             color: Colors.indigo[50],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Expanded(
