@@ -42,12 +42,34 @@ class _FashionHomePageState extends State<FashionHomePage> {
               Container(
                 margin: const EdgeInsets.only(bottom: 16),
                 height: 320,
-                color: Colors.green[50],
                 child: Row(
                   children: [
-                    Expanded(child: Placeholder()),
-                    SizedBox(width: 16,),
-                    Expanded(child: Placeholder())
+                    Expanded(
+                      child: Container(
+                        color: Colors.orange[50],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            color: Colors.indigo[50],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Expanded(
+                          child: Container(
+                            color: Colors.green[50],
+                          ),
+                        ),
+                      ],
+                    ))
                   ],
                 ),
               ),
