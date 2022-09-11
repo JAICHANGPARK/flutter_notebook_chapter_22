@@ -33,11 +33,47 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 margin: const EdgeInsets.only(bottom: 16),
                 height: 120,
                 color: Colors.red[50],
+                child: Stack(
+                  children: [
+                    Positioned(
+                      right: 32,
+                      top: 16,
+                      bottom: 16,
+                      child: Center(
+                        child: Text(
+                          "WOMEN",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 margin: const EdgeInsets.only(bottom: 16),
                 height: 120,
                 color: Colors.green[50],
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 32,
+                      top: 16,
+                      bottom: 16,
+                      child: Center(
+                        child: Text(
+                          "MEN",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 margin: const EdgeInsets.only(bottom: 16),
@@ -47,6 +83,24 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     Expanded(
                       child: Container(
                         color: Colors.orange[50],
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 16,
+                              top: 48,
+                              right: 16,
+                              child: Center(
+                                child: Text(
+                                  "KIDS",
+                                  style: TextStyle(
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -76,7 +130,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
               Container(
                 margin: const EdgeInsets.only(bottom: 16),
                 height: 120,
-                color: Colors.red[50],
+                color: Colors.red[100],
               ),
             ],
           ),
