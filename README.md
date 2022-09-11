@@ -1,7 +1,16 @@
 # flutter_notebook_chapter_22
+
 ## S25
 
-### EP1268-
+### EP1268-1270
+
+- Fashion E-comerce App
+- by Sara Nazari
+- https://dribbble.com/shots/19345633/attachments/14488449?mode=media
+
+<img src="https://cdn.dribbble.com/users/10306490/screenshots/19345633/media/9669fd3bd95118be066d608725f26628.png" width="400px"/>
+
+### EP1268-1270
 
 - AR Shopping
 - by Lukas Buzga for STRV
@@ -51,7 +60,6 @@
 <img src="https://cdn.dribbble.com/users/5687397/screenshots/19180282/media/26fe2e4c0c83b11012a2fffa8fd474e3.png" width="400px"/>
 <img src="https://cdn.dribbble.com/users/5687397/screenshots/19180282/media/5d2a017bea1244f64e7731fd93bd22b7.png" width="400px"/>
 
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -62,5 +70,5 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on
+mobile development, and a full API reference.
