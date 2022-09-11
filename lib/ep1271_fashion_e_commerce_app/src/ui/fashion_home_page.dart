@@ -25,10 +25,22 @@ class _FashionHomePageState extends State<FashionHomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            
-          ],
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 16,16,0),
+          child: Column(
+            children: [
+                Container(
+                  margin: EdgeInsets.only(bottom: 16),
+                  height: 120,
+                  color: Colors.red[50],
+                ),
+              Container(
+                margin: EdgeInsets.only(bottom: 16),
+                height: 120,
+                color: Colors.green[50],
+              )
+            ],
+          ),
         ),
       ),
     );
