@@ -21,6 +21,7 @@ dependencies:
   freezed_annotation: any
   json_annotation: any
   google_fonts: any
+  flutter_staggered_grid_view: any
 
 dev_dependencies:
   flutter_test:
