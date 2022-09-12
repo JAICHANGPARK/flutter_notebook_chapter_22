@@ -31,52 +31,63 @@ class _WomenDressPageState extends State<WomenDressPage> {
       ),
       body: DefaultTabController(
         length: 6,
-        child: Column(
-          children: [
-            TabBar(labelColor: Colors.black, unselectedLabelColor: Colors.grey,
-                indicatorColor: Colors.black,
-                tabs: [
-              Tab(
-                text: "Basic",
-              ),
-              Tab(
-                text: "Cocktail",
-              ),
-              Tab(
-                text: "Evening Gown",
-              ),
-              Tab(
-                text: "Babydoll",
-              ),
-              Tab(
-                text: "Maxi",
-              ),
-              Tab(
-                text: "Slip",
-              ),
-            ]),
-            Expanded(
-                child: TabBarView(
-              children: [
-                Container(),
-                Center(
-                  child: Text("2"),
-                ),
-                Center(
-                  child: Text("3"),
-                ),
-                Center(
-                  child: Text("4"),
-                ),
-                Center(
-                  child: Text("5"),
-                ),
-                Center(
-                  child: Text("6"),
-                )
-              ],
-            ))
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(
+            left: 16,
+            top: 16,
+          ),
+          child: Column(
+            children: [
+              TabBar(
+                  indicatorSize: TabBarIndicatorSize.label,
+                  isScrollable: true,
+                  labelColor: Colors.black,
+                  unselectedLabelColor: Colors.grey,
+                  indicatorColor: Colors.black,
+                  indicatorWeight: 2.5,
+                  tabs: [
+                    Tab(
+                      text: "Basic",
+                    ),
+                    Tab(
+                      text: "Cocktail",
+                    ),
+                    Tab(
+                      text: "Evening Gown",
+                    ),
+                    Tab(
+                      text: "Babydoll",
+                    ),
+                    Tab(
+                      text: "Maxi",
+                    ),
+                    Tab(
+                      text: "Slip",
+                    ),
+                  ]),
+              Expanded(
+                  child: TabBarView(
+                children: [
+                  Container(),
+                  Center(
+                    child: Text("2"),
+                  ),
+                  Center(
+                    child: Text("3"),
+                  ),
+                  Center(
+                    child: Text("4"),
+                  ),
+                  Center(
+                    child: Text("5"),
+                  ),
+                  Center(
+                    child: Text("6"),
+                  )
+                ],
+              ))
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
