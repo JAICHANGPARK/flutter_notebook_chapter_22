@@ -112,6 +112,27 @@ class _FashionHomePageState extends State<FashionHomePage> {
                         Expanded(
                           child: Container(
                             color: Colors.indigo[50],
+                            child: Stack(
+                              children: const [
+                                Positioned(
+                                    left: 16,
+                                    top: 0,
+                                    // right: 0,
+                                    bottom: 0,
+                                    child: RotatedBox(
+                                      quarterTurns: 3,
+                                      child: Center(
+                                        child: Text(
+                                          "SPORTS",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ))
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(
@@ -120,6 +141,27 @@ class _FashionHomePageState extends State<FashionHomePage> {
                         Expanded(
                           child: Container(
                             color: Colors.green[50],
+                            child: Stack(
+                              children: const [
+                                Positioned(
+                                    left: 16,
+                                    top: 0,
+                                    // right: 0,
+                                    bottom: 0,
+                                    child: RotatedBox(
+                                      quarterTurns: 3,
+                                      child: Center(
+                                        child: Text(
+                                          "DAILY\nDEALS",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ))
+                              ],
+                            ),
                           ),
                         ),
                       ],
