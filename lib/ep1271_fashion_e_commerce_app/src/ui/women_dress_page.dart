@@ -11,6 +11,7 @@ class _WomenDressPageState extends State<WomenDressPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Women's Dress"),
         centerTitle: true,
@@ -24,7 +25,8 @@ class _WomenDressPageState extends State<WomenDressPage> {
           },
         ),
         actions: [
-
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications_none)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_bag_outlined)),
         ],
       ),
       body: Column(
