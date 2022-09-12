@@ -14,8 +14,21 @@ class _WomenDressPageState extends State<WomenDressPage> {
       body: Column(
         children: [],
       ),
-      persistentFooterButtons: [
 
+      persistentFooterButtons: [
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border.all(),
+            ),
+          ),
+        ),
+        IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.filter_list,
+          ),
+        )
       ],
     );
   }
