@@ -11,25 +11,37 @@ class _WomenDressPageState extends State<WomenDressPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      appBar: AppBar(
+        title: Text("Women's Dress"),
       ),
+      body: Column(
+        children: [
 
-      persistentFooterButtons: [
-        Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              border: Border.all(),
-            ),
+        ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                  ),
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.filter_list,
+                ),
+              )
+            ],
           ),
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.filter_list,
-          ),
-        )
-      ],
+      ),
+
+
     );
   }
 }
