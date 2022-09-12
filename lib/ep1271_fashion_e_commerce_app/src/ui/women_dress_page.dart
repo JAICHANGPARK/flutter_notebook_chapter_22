@@ -12,30 +12,45 @@ class _WomenDressPageState extends State<WomenDressPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Women's Dress"),
+        title: const Text("Women's Dress"),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.apps),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
       ),
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
+        child: SizedBox(
           height: 68,
           child: Row(
             children: [
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.all(16),
+                  margin: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    border: Border.all(),
-                    borderRadius: BorderRadius.circular(4)
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: const TextField(
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.search),
+                      hintText: "Search",
+                      border: InputBorder.none,
+                    ),
                   ),
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.filter_list,
                 ),
               )
@@ -43,8 +58,6 @@ class _WomenDressPageState extends State<WomenDressPage> {
           ),
         ),
       ),
-
-
     );
   }
 }
