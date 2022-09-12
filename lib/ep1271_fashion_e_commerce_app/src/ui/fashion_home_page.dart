@@ -34,7 +34,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => WomenDressPage(),
+                      builder: (context) => const WomenDressPage(),
                     ),
                   );
                 },
