@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1271_fashion_e_commerce_app/src/ui/women_dress_page.dart';
 
 class FashionHomePage extends StatefulWidget {
   const FashionHomePage({Key? key}) : super(key: key);
@@ -29,27 +30,36 @@ class _FashionHomePageState extends State<FashionHomePage> {
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
           child: Column(
             children: [
-              Container(
-                margin: const EdgeInsets.only(bottom: 16),
-                height: 120,
-                color: Colors.red[50],
-                child: Stack(
-                  children: const [
-                    Positioned(
-                      right: 32,
-                      top: 16,
-                      bottom: 16,
-                      child: Center(
-                        child: Text(
-                          "WOMEN",
-                          style: TextStyle(
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => WomenDressPage(),
+                    ),
+                  );
+                },
+                child: Container(
+                  margin: const EdgeInsets.only(bottom: 16),
+                  height: 120,
+                  color: Colors.red[50],
+                  child: Stack(
+                    children: const [
+                      Positioned(
+                        right: 32,
+                        top: 16,
+                        bottom: 16,
+                        child: Center(
+                          child: Text(
+                            "WOMEN",
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
