@@ -38,7 +38,7 @@ class _WomenDressPageState extends State<WomenDressPage> {
           ),
           child: Column(
             children: [
-              TabBar(
+              const TabBar(
                   indicatorSize: TabBarIndicatorSize.label,
                   isScrollable: true,
                   labelColor: Colors.black,
@@ -65,23 +65,39 @@ class _WomenDressPageState extends State<WomenDressPage> {
                       text: "Slip",
                     ),
                   ]),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                   child: TabBarView(
                 children: [
-                  Container(),
-                  Center(
+                  Container(
+                    margin: EdgeInsets.only(right: 16),
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      children: List.generate(
+                        10,
+                        (index) => Container(
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Center(
                     child: Text("2"),
                   ),
-                  Center(
+                  const Center(
                     child: Text("3"),
                   ),
-                  Center(
+                  const Center(
                     child: Text("4"),
                   ),
-                  Center(
+                  const Center(
                     child: Text("5"),
                   ),
-                  Center(
+                  const Center(
                     child: Text("6"),
                   )
                 ],
