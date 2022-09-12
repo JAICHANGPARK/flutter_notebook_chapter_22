@@ -14,12 +14,18 @@ class _WomenDressPageState extends State<WomenDressPage> {
       appBar: AppBar(
         title: const Text("Women's Dress"),
         centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.apps),
           onPressed: () {
             Navigator.of(context).pop();
           },
         ),
+        actions: [
+
+        ],
       ),
       body: Column(
         children: [],
