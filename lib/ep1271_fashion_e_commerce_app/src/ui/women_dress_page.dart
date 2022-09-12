@@ -21,12 +21,15 @@ class _WomenDressPageState extends State<WomenDressPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
+          height: 68,
           child: Row(
             children: [
               Expanded(
                 child: Container(
+                  margin: EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     border: Border.all(),
+                    borderRadius: BorderRadius.circular(4)
                   ),
                 ),
               ),
