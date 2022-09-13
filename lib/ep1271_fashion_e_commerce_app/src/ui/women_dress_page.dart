@@ -82,24 +82,36 @@ class _WomenDressPageState extends State<WomenDressPage> {
                       itemBuilder: (context, index) {
                         return Container(
                             color: Colors.blue,
-                            height: index % 2 == 0 ? 200 : 180,
+                            height: index % 4 == 0 ? 220 : 200,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Expanded(
-                                  child: Placeholder(),
+                                Expanded(
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.brown,
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/11/21/16/01/woman-1846127__340.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 8,
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
+                                  children: const [
+                                    Text(
                                       "Strap Neck Bodycon",
                                       style: TextStyle(fontSize: 13),
                                     ),
-                                    const SizedBox(
+                                    SizedBox(
                                       height: 8,
                                     ),
-                                    const Text.rich(
+                                    Text.rich(
                                       TextSpan(
                                         children: [
                                           TextSpan(
