@@ -81,7 +81,7 @@ class _WomenDressPageState extends State<WomenDressPage> {
                       mainAxisSpacing: 12,
                       itemBuilder: (context, index) {
                         return Container(
-                            height: index % 4 == 0 ? 220 : 200,
+                            height: index % 4 == 0 ? 240 : 200,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
