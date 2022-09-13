@@ -91,7 +91,7 @@ class _WomenDressPageState extends State<WomenDressPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Strap Neck Bodycon", style: TextStyle(
-                                      fontSize: 12
+                                      fontSize: 13
                                     ),),
                                     SizedBox(height: 8,),
                                     Text.rich(
