@@ -84,20 +84,27 @@ class _WomenDressPageState extends State<WomenDressPage> {
                             color: Colors.blue,
                             height: index % 2 == 0 ? 200 : 180,
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(child: Placeholder()),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Strap Neck Bodycon"),
+                                    Text("Strap Neck Bodycon", style: TextStyle(
+                                      fontSize: 12
+                                    ),),
+                                    SizedBox(height: 8,),
                                     Text.rich(
                                       TextSpan(
                                         children: [
                                           TextSpan(
-                                            text: "\$",
+                                            text: "\$ ",
                                           ),
                                           TextSpan(
                                             text: "64",
+                                            style: TextStyle(
+                                              fontSize: 18
+                                            )
                                           ),
                                           TextSpan(
                                             text: ".00",
