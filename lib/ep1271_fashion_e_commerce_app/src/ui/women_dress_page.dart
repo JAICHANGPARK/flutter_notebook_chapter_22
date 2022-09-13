@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class WomenDressPage extends StatefulWidget {
   const WomenDressPage({Key? key}) : super(key: key);
@@ -39,51 +40,66 @@ class _WomenDressPageState extends State<WomenDressPage> {
           child: Column(
             children: [
               const TabBar(
-                  indicatorSize: TabBarIndicatorSize.label,
-                  isScrollable: true,
-                  labelColor: Colors.black,
-                  unselectedLabelColor: Colors.grey,
-                  indicatorColor: Colors.black,
-                  indicatorWeight: 2.5,
-                  tabs: [
-                    Tab(
-                      text: "Basic",
-                    ),
-                    Tab(
-                      text: "Cocktail",
-                    ),
-                    Tab(
-                      text: "Evening Gown",
-                    ),
-                    Tab(
-                      text: "Babydoll",
-                    ),
-                    Tab(
-                      text: "Maxi",
-                    ),
-                    Tab(
-                      text: "Slip",
-                    ),
-                  ]),
-              SizedBox(
+                indicatorSize: TabBarIndicatorSize.label,
+                isScrollable: true,
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
+                indicatorColor: Colors.black,
+                indicatorWeight: 2.5,
+                tabs: [
+                  Tab(
+                    text: "Basic",
+                  ),
+                  Tab(
+                    text: "Cocktail",
+                  ),
+                  Tab(
+                    text: "Evening Gown",
+                  ),
+                  Tab(
+                    text: "Babydoll",
+                  ),
+                  Tab(
+                    text: "Maxi",
+                  ),
+                  Tab(
+                    text: "Slip",
+                  ),
+                ],
+              ),
+              const SizedBox(
                 height: 16,
               ),
               Expanded(
                   child: TabBarView(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 16),
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 12,
-                      mainAxisSpacing: 12,
-                      children: List.generate(
-                        10,
-                        (index) => Container(
-                          color: Colors.blue,
-                        ),
-                      ),
-                    ),
+                    margin: const EdgeInsets.only(right: 16),
+                    child: MasonryGridView.count(crossAxisCount: 2,
+                        crossAxisSpacing: 8,
+                        mainAxisSpacing: 8,
+                        itemBuilder: (context, index) {
+                      return Container(
+                        color: Colors.blue,
+                      );
+
+                    }),
+                    // child: StaggeredGrid.count(
+                    //   crossAxisCount: 2,
+                    //   crossAxisSpacing: 12,
+                    //   mainAxisSpacing: 12,
+                    //   children: List.generate(
+                    //     10,
+                    //     (index) => StaggeredGridTile.count(
+                    //       crossAxisCellCount: 2,
+                    //       mainAxisCellCount: 2,
+                    //       child: Container(
+                    //         color: Colors.blue,
+                    //         child: Text("$index"),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                   ),
                   const Center(
                     child: Text("2"),
