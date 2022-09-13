@@ -75,15 +75,42 @@ class _WomenDressPageState extends State<WomenDressPage> {
                 children: [
                   Container(
                     margin: const EdgeInsets.only(right: 16),
-                    child: MasonryGridView.count(crossAxisCount: 2,
-                        crossAxisSpacing: 8,
-                        mainAxisSpacing: 8,
-                        itemBuilder: (context, index) {
-                      return Container(
-                        color: Colors.blue,
-                      );
-
-                    }),
+                    child: MasonryGridView.count(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 12,
+                      mainAxisSpacing: 12,
+                      itemBuilder: (context, index) {
+                        return Container(
+                            color: Colors.blue,
+                            height: index % 2 == 0 ? 200 : 180,
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Strap Neck Bodycon"),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "\$",
+                                          ),
+                                          TextSpan(
+                                            text: "64",
+                                          ),
+                                          TextSpan(
+                                            text: ".00",
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ));
+                      },
+                    ),
                     // child: StaggeredGrid.count(
                     //   crossAxisCount: 2,
                     //   crossAxisSpacing: 12,
