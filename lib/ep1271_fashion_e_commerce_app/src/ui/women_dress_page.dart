@@ -107,6 +107,7 @@ class _WomenDressPageState extends State<WomenDressPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
         child: SizedBox(
           height: 68,
           child: Row(
@@ -119,12 +120,17 @@ class _WomenDressPageState extends State<WomenDressPage> {
                       color: Colors.grey,
                     ),
                     borderRadius: BorderRadius.circular(4),
+                    color: Colors.white,
                   ),
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: const TextField(
                     decoration: InputDecoration(
                       icon: Icon(Icons.search),
                       hintText: "Search",
+                      hintStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12,
+                      ),
                       border: InputBorder.none,
                     ),
                   ),
