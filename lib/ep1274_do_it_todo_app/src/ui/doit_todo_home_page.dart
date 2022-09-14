@@ -17,19 +17,19 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.grey,
-        leading: Icon(Icons.arrow_back_ios_new),
+        leading: const Icon(Icons.arrow_back_ios_new),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_horiz),
+            icon: const Icon(Icons.more_horiz),
           )
         ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(16, 24, 16, 24),
             child: Text(
               "😎 Personal",
               style: TextStyle(
@@ -45,19 +45,32 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
               var taskGroupItem = taskGroupItems[index];
               return Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("${taskGroupItem.groupTitle}"),
-                      Text("${taskGroupItem.todoTask?.length ?? 0}"),
-                      Spacer(),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.more_horiz,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Row(
+                      children: [
+                        Text(
+                          "${taskGroupItem.groupTitle}",
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      )
-                    ],
+                        Text(" ${taskGroupItem.todoTask?.length ?? 0}"),
+                        const Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.more_horiz,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
+                  const Divider(
+                    indent: 16,
+                    color: Colors.grey,
+                  )
                 ],
               );
             },
@@ -66,7 +79,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
