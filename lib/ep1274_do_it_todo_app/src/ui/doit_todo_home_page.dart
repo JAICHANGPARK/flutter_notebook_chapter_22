@@ -82,8 +82,11 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                     children: taskGroupItem.todoTask
                             ?.map(
                               (e) => CheckboxListTile(
-                                  controlAffinity: ListTileControlAffinity.leading,
-                                  value: (e.isDone ?? false), onChanged: (b) {}),
+                                controlAffinity: ListTileControlAffinity.leading,
+                                value: (e.isDone ?? false),
+                                title: Text(e.task ?? "-"),
+                                onChanged: (b) {},
+                              ),
                             )
                             .toList() ??
                         [],
