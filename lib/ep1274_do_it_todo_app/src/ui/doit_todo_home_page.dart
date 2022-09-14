@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1274_do_it_todo_app/src/data/todo_data.dart';
 
 class DoitTodoHomePage extends StatefulWidget {
   const DoitTodoHomePage({Key? key}) : super(key: key);
@@ -38,7 +39,11 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
           ),
           Expanded(
               child: ListView.builder(
-            itemBuilder: (context, index) {},
+            itemCount: taskGroupItems.length,
+            itemBuilder: (context, index) {
+              var taskGroupItem = taskGroupItems[index];
+              return Container();
+            },
           )),
         ],
       ),
