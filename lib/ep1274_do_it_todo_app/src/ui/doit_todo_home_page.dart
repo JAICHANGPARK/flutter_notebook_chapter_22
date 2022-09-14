@@ -63,13 +63,30 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                           icon: const Icon(
                             Icons.more_horiz,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
+
                   const Divider(
                     indent: 16,
                     color: Colors.grey,
+                  ),
+                  // ListView.builder(
+                  //   itemCount: taskGroupItem.todoTask?.length ?? 0,
+                  //   itemBuilder: (context, index2) {
+                  //
+                  //   },
+                  // )
+                  Column(
+                    children: taskGroupItem.todoTask
+                            ?.map(
+                              (e) => CheckboxListTile(
+                                  controlAffinity: ListTileControlAffinity.leading,
+                                  value: (e.isDone ?? false), onChanged: (b) {}),
+                            )
+                            .toList() ??
+                        [],
                   )
                 ],
               );
