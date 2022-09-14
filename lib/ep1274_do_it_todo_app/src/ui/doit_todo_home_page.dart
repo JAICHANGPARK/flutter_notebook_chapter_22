@@ -26,6 +26,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
@@ -42,7 +43,23 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
             itemCount: taskGroupItems.length,
             itemBuilder: (context, index) {
               var taskGroupItem = taskGroupItems[index];
-              return Container();
+              return Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("${taskGroupItem.groupTitle}"),
+                      Text("${taskGroupItem.todoTask?.length ?? 0}"),
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.more_horiz,
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              );
             },
           )),
         ],
