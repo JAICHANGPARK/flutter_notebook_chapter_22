@@ -1,5 +1,4 @@
-
-class TaskGroup{
+class TaskGroup {
   String? groupTitle;
   List<TodoTask>? todoTask;
 
