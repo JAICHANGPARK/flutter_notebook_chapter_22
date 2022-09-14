@@ -2,7 +2,15 @@
 
 ## S25
 
-### EP1268-1270
+### EP1274
+
+- Do it - To Do List Mobile App
+- by Rayfan Tio Saputro
+- https://dribbble.com/shots/19369901-Do-it-To-Do-List-Mobile-App/attachments/14510923?mode=media
+
+<img src="https://cdn.dribbble.com/users/5084254/screenshots/19369901/media/eab9bc7ce72e25ccdf82c854284e4d11.jpg" width="400px"/>
+
+### EP1271-1273
 
 - Fashion E-comerce App
 - by Sara Nazari
