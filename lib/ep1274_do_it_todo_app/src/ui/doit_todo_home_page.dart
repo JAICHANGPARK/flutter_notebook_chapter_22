@@ -25,7 +25,22 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
+            child: Text(
+              "😎 Personal",
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          Expanded(
+              child: ListView.builder(
+            itemBuilder: (context, index) {},
+          )),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
