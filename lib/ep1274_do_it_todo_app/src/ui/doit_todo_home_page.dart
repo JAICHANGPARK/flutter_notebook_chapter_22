@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_22/ep1274_do_it_todo_app/src/data/todo_data.dart';
+import 'package:flutter_notebook_chapter_22/ep1274_do_it_todo_app/src/model/todo_task.dart';
 
 class DoitTodoHomePage extends StatefulWidget {
   const DoitTodoHomePage({Key? key}) : super(key: key);
@@ -9,6 +10,8 @@ class DoitTodoHomePage extends StatefulWidget {
 }
 
 class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
+  List<TaskGroup> taskGroupItemsState = taskGroupItems;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +43,9 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
           ),
           Expanded(
               child: ListView.builder(
-            itemCount: taskGroupItems.length,
+            itemCount: taskGroupItemsState.length,
             itemBuilder: (context, index) {
-              var taskGroupItem = taskGroupItems[index];
+              var taskGroupItem = taskGroupItemsState[index];
               return Column(
                 children: [
                   Padding(
@@ -119,8 +122,11 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                     const Icon(Icons.refresh),
                                   ],
                                 ),
-                                onChanged: (b) {},
-                                tileColor: Colors.grey[100],
+                                onChanged: (b) {
+
+                                },
+                                tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
+                                // selectedTileColor: Colors.red,
                               ),
                             )
                             .toList() ??
