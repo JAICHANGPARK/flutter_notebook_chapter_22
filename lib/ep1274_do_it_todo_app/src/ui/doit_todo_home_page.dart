@@ -87,7 +87,9 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                 title: Row(
                                   children: [
                                     Text(e.task ?? "-"),
-                                    SizedBox(width: 8,),
+                                    const SizedBox(
+                                      width: 8,
+                                    ),
                                     if (e.dateString?.isNotEmpty ?? false)
                                       Container(
                                         decoration: BoxDecoration(
@@ -105,7 +107,16 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                             fontSize: 12,
                                           ),
                                         ),
-                                      )
+                                      ),
+                                    const Spacer(),
+                                    if (e.subTasks.isNotEmpty)
+                                      const Icon(
+                                        Icons.account_tree,
+                                      ),
+                                    const SizedBox(
+                                      width: 4,
+                                    ),
+                                    const Icon(Icons.refresh),
                                   ],
                                 ),
                                 onChanged: (b) {},
