@@ -124,7 +124,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                           if (e.subTasks.isNotEmpty) {
                             showModalBottomSheet(
                               context: context,
-                              shape: RoundedRectangleBorder(
+                              shape: const RoundedRectangleBorder(
                                 borderRadius: BorderRadius.only(
                                   topRight: Radius.circular(16),
                                   topLeft: Radius.circular(16),
@@ -133,9 +133,9 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                               // backgroundColor: Colors.transparent,
 
                               builder: (context) => Container(
-                                height: 400,
-                                decoration: BoxDecoration(),
-                                padding: EdgeInsets.only(top: 8, right: 8, left: 8),
+                                height: 600,
+                                decoration: const BoxDecoration(),
+                                padding: const EdgeInsets.only(top: 8, right: 8, left: 8),
                                 child: Column(
                                   children: [
                                     Container(
@@ -147,7 +147,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                       alignment: Alignment.centerRight,
                                       child: IconButton(
                                         onPressed: () {},
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.more_horiz,
                                         ),
                                       ),
@@ -155,30 +155,58 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                     Row(
                                       children: [
                                         Checkbox(value: false, onChanged: (b) {}),
-                                        Column(
-                                          children: [
-                                            Text(e.task ?? ""),
-                                            Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-                                            Row(
-                                              children: [
-                                                
-                                              ],
-                                            )
-                                          ],
+                                        Expanded(
+                                          child: Column(
+                                            children: [
+                                              Text(e.task ?? ""),
+                                              const Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+                                              Row(
+                                                children: [
+                                                  if (e.dateString?.isNotEmpty ?? false)
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                                                        borderRadius: BorderRadius.circular(4),
+                                                      ),
+                                                      padding: const EdgeInsets.symmetric(
+                                                        horizontal: 4,
+                                                        vertical: 4,
+                                                      ),
+                                                      child: Text(
+                                                        "${e.dateString}",
+                                                        style: TextStyle(
+                                                          color: e.dateString == "Today" ? Colors.green : Colors.grey,
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                    ),
+
+                                                  Icon(
+                                                    Icons.rebase_edit,
+                                                  ),
+                                                  Text("2/4"),
+                                                  Icon(
+                                                    Icons.refresh,
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),
-                                    Expanded(child: Placeholder()),
-                                    Divider(),
+                                    const Expanded(child: Placeholder()),
+                                    const Divider(),
                                     Row(
                                       children: [
-                                        IconButton(onPressed: () {}, icon: Icon(Icons.add)),
-                                        Text("Add Sub-task"),
-                                        Spacer(),
-                                        IconButton(onPressed: () {}, icon: Icon(Icons.calendar_month_outlined)),
-                                        IconButton(onPressed: () {}, icon: Icon(Icons.tag_outlined)),
-                                        IconButton(onPressed: () {}, icon: Icon(Icons.flag)),
+                                        IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
+                                        const Text("Add Sub-task"),
+                                        const Spacer(),
+                                        IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_month_outlined)),
+                                        IconButton(onPressed: () {}, icon: const Icon(Icons.tag_outlined)),
+                                        IconButton(onPressed: () {}, icon: const Icon(Icons.flag)),
                                       ],
                                     )
                                   ],
