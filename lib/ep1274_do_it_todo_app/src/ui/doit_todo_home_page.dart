@@ -119,7 +119,18 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                           ],
                         ),
                         onChanged: (b) {
-                          print(b);
+                          print("$index | ${index2} : $b");
+                          var oldTaskItems = taskGroupItem.todoTask;
+                          oldTaskItems![index2] = TodoTask(
+                            subTasks: e.subTasks,
+                            isDone: b,
+                            task: e.task,
+                            dateString: e.dateString,
+                          );
+                          setState(() {
+                            taskGroupItemsState[index].todoTask = oldTaskItems;
+                          });
+
                           //we  need to get index
                         },
                         tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
