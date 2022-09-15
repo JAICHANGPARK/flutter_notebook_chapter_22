@@ -162,20 +162,24 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                             children: [
                                               Text(
                                                 e.task ?? "",
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
-                                              SizedBox(height: 8,),
+                                              const SizedBox(
+                                                height: 8,
+                                              ),
                                               const Text(
                                                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                                                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ",
+                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ",
                                                 style: TextStyle(
                                                   color: Colors.grey,
                                                 ),
                                               ),
-                                              SizedBox(height: 8,),
+                                              const SizedBox(
+                                                height: 8,
+                                              ),
                                               Row(
                                                 children: [
                                                   if (e.dateString?.isNotEmpty ?? false)
@@ -198,15 +202,15 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                         ),
                                                       ),
                                                     ),
-                                                  Spacer(),
-                                                  Icon(
+                                                  const Spacer(),
+                                                  const Icon(
                                                     Icons.rebase_edit,
                                                   ),
-                                                  Padding(
-                                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                  const Padding(
+                                                    padding: EdgeInsets.symmetric(horizontal: 8),
                                                     child: Text("2/4"),
                                                   ),
-                                                  Icon(
+                                                  const Icon(
                                                     Icons.refresh,
                                                   )
                                                 ],
