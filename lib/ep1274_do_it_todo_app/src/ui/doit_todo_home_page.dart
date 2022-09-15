@@ -75,63 +75,112 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                     indent: 16,
                     color: Colors.grey,
                   ),
-                  // ListView.builder(
-                  //   itemCount: taskGroupItem.todoTask?.length ?? 0,
-                  //   itemBuilder: (context, index2) {
-                  //
-                  //   },
-                  // )
-                  Column(
-                    children: taskGroupItem.todoTask
-                            ?.map(
-                              (e) => CheckboxListTile(
-                                controlAffinity: ListTileControlAffinity.leading,
-                                value: (e.isDone ?? false),
-                                title: Row(
-                                  children: [
-                                    Text(e.task ?? "-"),
-                                    const SizedBox(
-                                      width: 8,
-                                    ),
-                                    if (e.dateString?.isNotEmpty ?? false)
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
-                                          borderRadius: BorderRadius.circular(4),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(
-                                          horizontal: 4,
-                                          vertical: 4,
-                                        ),
-                                        child: Text(
-                                          "${e.dateString}",
-                                          style: TextStyle(
-                                            color: e.dateString == "Today" ? Colors.green : Colors.grey,
-                                            fontSize: 12,
-                                          ),
-                                        ),
-                                      ),
-                                    const Spacer(),
-                                    if (e.subTasks.isNotEmpty)
-                                      const Icon(
-                                        Icons.account_tree,
-                                      ),
-                                    const SizedBox(
-                                      width: 4,
-                                    ),
-                                    const Icon(Icons.refresh),
-                                  ],
+                  ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: taskGroupItem.todoTask?.length ?? 0,
+                    itemBuilder: (context, index2) {
+                      var e = taskGroupItem.todoTask![index2];
+                      return CheckboxListTile(
+                        controlAffinity: ListTileControlAffinity.leading,
+                        value: (e.isDone ?? false),
+                        title: Row(
+                          children: [
+                            Text(e.task ?? "-"),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            if (e.dateString?.isNotEmpty ?? false)
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(4),
                                 ),
-                                onChanged: (b) {
-
-                                },
-                                tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
-                                // selectedTileColor: Colors.red,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                  vertical: 4,
+                                ),
+                                child: Text(
+                                  "${e.dateString}",
+                                  style: TextStyle(
+                                    color: e.dateString == "Today" ? Colors.green : Colors.grey,
+                                    fontSize: 12,
+                                  ),
+                                ),
                               ),
-                            )
-                            .toList() ??
-                        [],
-                  )
+                            const Spacer(),
+                            if (e.subTasks.isNotEmpty)
+                              const Icon(
+                                Icons.account_tree,
+                              ),
+                            const SizedBox(
+                              width: 4,
+                            ),
+                            const Icon(Icons.refresh),
+                          ],
+                        ),
+                        onChanged: (b) {
+                          print(b);
+                          //we  need to get index
+                        },
+                        tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
+                        // selectedTileColor: Colors.red,
+                      );
+                    },
+                  ),
+
+                  // Column(
+                  //   children: taskGroupItem.todoTask
+                  //           ?.map(
+                  //             (e) => CheckboxListTile(
+                  //               controlAffinity: ListTileControlAffinity.leading,
+                  //               value: (e.isDone ?? false),
+                  //               title: Row(
+                  //                 children: [
+                  //                   Text(e.task ?? "-"),
+                  //                   const SizedBox(
+                  //                     width: 8,
+                  //                   ),
+                  //                   if (e.dateString?.isNotEmpty ?? false)
+                  //                     Container(
+                  //                       decoration: BoxDecoration(
+                  //                         color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                  //                         borderRadius: BorderRadius.circular(4),
+                  //                       ),
+                  //                       padding: const EdgeInsets.symmetric(
+                  //                         horizontal: 4,
+                  //                         vertical: 4,
+                  //                       ),
+                  //                       child: Text(
+                  //                         "${e.dateString}",
+                  //                         style: TextStyle(
+                  //                           color: e.dateString == "Today" ? Colors.green : Colors.grey,
+                  //                           fontSize: 12,
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   const Spacer(),
+                  //                   if (e.subTasks.isNotEmpty)
+                  //                     const Icon(
+                  //                       Icons.account_tree,
+                  //                     ),
+                  //                   const SizedBox(
+                  //                     width: 4,
+                  //                   ),
+                  //                   const Icon(Icons.refresh),
+                  //                 ],
+                  //               ),
+                  //               onChanged: (b) {
+                  //                 print(b);
+                  //                 //we  need to get index
+                  //
+                  //               },
+                  //               tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
+                  //               // selectedTileColor: Colors.red,
+                  //             ),
+                  //           )
+                  //           .toList() ??
+                  //       [],
+                  // )
                 ],
               );
             },
