@@ -118,18 +118,81 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                             const Icon(Icons.refresh),
                           ],
                         ),
+
                         onChanged: (b) {
                           print("$index | ${index2} : $b");
-                          var oldTaskItems = taskGroupItem.todoTask;
-                          oldTaskItems![index2] = TodoTask(
-                            subTasks: e.subTasks,
-                            isDone: b,
-                            task: e.task,
-                            dateString: e.dateString,
-                          );
-                          setState(() {
-                            taskGroupItemsState[index].todoTask = oldTaskItems;
-                          });
+                          if (e.subTasks.isNotEmpty) {
+                            showModalBottomSheet(
+                              context: context,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(16),
+                                  topLeft: Radius.circular(16),
+                                ),
+                              ),
+                              // backgroundColor: Colors.transparent,
+
+                              builder: (context) => Container(
+                                height: 400,
+                                decoration: BoxDecoration(),
+                                padding: EdgeInsets.only(top: 8, right: 8, left: 8),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 3,
+                                      width: 48,
+                                      color: Colors.grey,
+                                    ),
+                                    Align(
+                                      alignment: Alignment.centerRight,
+                                      child: IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                        ),
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Checkbox(value: false, onChanged: (b) {}),
+                                        Column(
+                                          children: [
+                                            Text(e.task),
+                                            Text("")
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    Expanded(child: Placeholder()),
+                                    Divider(),
+                                    Row(
+                                      children: [
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+                                        Text("Add Sub-task"),
+                                        Spacer(),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.calendar_month_outlined)),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.tag_outlined)),
+                                        IconButton(onPressed: () {}, icon: Icon(Icons.flag)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          } else {
+                            var oldTaskItems = taskGroupItem.todoTask;
+                            oldTaskItems![index2] = TodoTask(
+                              subTasks: e.subTasks,
+                              isDone: b,
+                              task: e.task,
+                              dateString: e.dateString,
+                            );
+                            setState(
+                              () {
+                                taskGroupItemsState[index].todoTask = oldTaskItems;
+                              },
+                            );
+                          }
 
                           //we  need to get index
                         },
