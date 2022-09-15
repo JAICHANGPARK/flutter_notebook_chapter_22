@@ -3,7 +3,24 @@ import 'package:flutter_notebook_chapter_22/ep1274_do_it_todo_app/src/model/todo
 List<TaskGroup> taskGroupItems = [
   TaskGroup(groupTitle: "Skincare", todoTask: [
     TodoTask(
-      subTasks: [],
+      subTasks: [
+        SubTask(
+          subTask: "Eye Cream",
+          isDone: false,
+        ),
+        SubTask(
+          subTask: "Moisturizer",
+          isDone: false,
+        ),
+        SubTask(
+          subTask: "Sunscreen",
+          isDone: true,
+        ),
+        SubTask(
+          subTask: "Facial Cleanser",
+          isDone: true,
+        )
+      ],
       task: "Daily Routine",
       dateString: "Today",
       isDone: false,
