@@ -157,8 +157,14 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                         Checkbox(value: false, onChanged: (b) {}),
                                         Column(
                                           children: [
-                                            Text(e.task),
-                                            Text("")
+                                            Text(e.task ?? ""),
+                                            Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+                                            Row(
+                                              children: [
+                                                
+                                              ],
+                                            )
                                           ],
                                         )
                                       ],
