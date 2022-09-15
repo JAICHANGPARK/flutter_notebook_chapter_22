@@ -84,7 +84,23 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                               (e) => CheckboxListTile(
                                 controlAffinity: ListTileControlAffinity.leading,
                                 value: (e.isDone ?? false),
-                                title: Text(e.task ?? "-"),
+                                title: Row(
+                                  children: [
+                                    Text(e.task ?? "-"),
+                                    if (e.dateString?.isNotEmpty ?? false)
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                        child: Text("${e.dateString}",
+                                        style: TextStyle(
+                                          color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                                        ),),
+                                      )
+                                  ],
+                                ),
                                 onChanged: (b) {},
                               ),
                             )
