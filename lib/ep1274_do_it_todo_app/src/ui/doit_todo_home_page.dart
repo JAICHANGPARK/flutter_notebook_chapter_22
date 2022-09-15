@@ -120,6 +120,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                   ],
                                 ),
                                 onChanged: (b) {},
+                                tileColor: Colors.grey[100],
                               ),
                             )
                             .toList() ??
