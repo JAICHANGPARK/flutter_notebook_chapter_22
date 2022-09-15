@@ -87,17 +87,24 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                 title: Row(
                                   children: [
                                     Text(e.task ?? "-"),
+                                    SizedBox(width: 8,),
                                     if (e.dateString?.isNotEmpty ?? false)
                                       Container(
                                         decoration: BoxDecoration(
                                           color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
                                           borderRadius: BorderRadius.circular(4),
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                                        child: Text("${e.dateString}",
-                                        style: TextStyle(
-                                          color: e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
-                                        ),),
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 4,
+                                          vertical: 4,
+                                        ),
+                                        child: Text(
+                                          "${e.dateString}",
+                                          style: TextStyle(
+                                            color: e.dateString == "Today" ? Colors.green : Colors.grey,
+                                            fontSize: 12,
+                                          ),
+                                        ),
                                       )
                                   ],
                                 ),
