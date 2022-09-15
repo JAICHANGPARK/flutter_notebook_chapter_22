@@ -135,7 +135,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                               builder: (context) => Container(
                                 height: 600,
                                 decoration: const BoxDecoration(),
-                                padding: const EdgeInsets.only(top: 8, right: 8, left: 8),
+                                padding: const EdgeInsets.only(top: 12, right: 8, left: 8),
                                 child: Column(
                                   children: [
                                     Container(
@@ -163,13 +163,14 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                               Text(
                                                 e.task ?? "",
                                                 style: TextStyle(
-                                                  fontSize: 16,
+                                                  fontSize: 18,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
                                               SizedBox(height: 8,),
                                               const Text(
-                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                                                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ",
                                                 style: TextStyle(
                                                   color: Colors.grey,
                                                 ),
