@@ -153,21 +153,36 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                       ),
                                     ),
                                     Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Checkbox(value: false, onChanged: (b) {}),
                                         Expanded(
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text(e.task ?? ""),
-                                              const Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+                                              Text(
+                                                e.task ?? "",
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              SizedBox(height: 8,),
+                                              const Text(
+                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                              SizedBox(height: 8,),
                                               Row(
                                                 children: [
                                                   if (e.dateString?.isNotEmpty ?? false)
                                                     Container(
                                                       decoration: BoxDecoration(
-                                                        color:
-                                                            e.dateString == "Today" ? Colors.green[50] : Colors.grey[200],
+                                                        color: e.dateString == "Today"
+                                                            ? Colors.green[50]
+                                                            : Colors.grey[200],
                                                         borderRadius: BorderRadius.circular(4),
                                                       ),
                                                       padding: const EdgeInsets.symmetric(
@@ -182,11 +197,14 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                         ),
                                                       ),
                                                     ),
-
+                                                  Spacer(),
                                                   Icon(
                                                     Icons.rebase_edit,
                                                   ),
-                                                  Text("2/4"),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                                    child: Text("2/4"),
+                                                  ),
                                                   Icon(
                                                     Icons.refresh,
                                                   )
