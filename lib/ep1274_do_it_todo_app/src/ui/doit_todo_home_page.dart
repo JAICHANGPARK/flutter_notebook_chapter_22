@@ -237,7 +237,6 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                 child: Transform.scale(
                                                   scale: 1.4,
                                                   child: Checkbox(
-
                                                     value: item.isDone,
                                                     onChanged: (b) {},
                                                     shape: RoundedRectangleBorder(
