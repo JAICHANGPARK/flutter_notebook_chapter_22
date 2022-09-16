@@ -234,11 +234,10 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                             children: [
                                               Icon(Icons.drag_indicator),
                                               SizedBox(
-                                                height: 42,
-                                                width: 42,
                                                 child: Transform.scale(
-                                                  scale: 1.2,
+                                                  scale: 1.4,
                                                   child: Checkbox(
+
                                                     value: item.isDone,
                                                     onChanged: (b) {},
                                                     shape: RoundedRectangleBorder(
@@ -260,8 +259,10 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                         fontWeight: FontWeight.bold,
                                                       ),
                                                     ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
                                                     Divider(
-                                                      height: 24,
                                                       color: Colors.grey,
                                                     )
                                                   ],
