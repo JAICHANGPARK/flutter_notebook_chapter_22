@@ -251,6 +251,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                   child: Padding(
                                                     padding: const EdgeInsets.all(8.0),
                                                     child: Column(
+                                                      mainAxisAlignment: MainAxisAlignment.center,
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                     Text("${item.subTask}"),
