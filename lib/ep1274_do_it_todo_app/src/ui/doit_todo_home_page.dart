@@ -226,32 +226,43 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                       height: 16,
                                     ),
                                     Expanded(
-                                        child: ReorderableListView.builder(
-                                            itemBuilder: (context, index3) {
-                                              var item = e.subTasks[index3];
-                                              return Row(
-                                                key: Key("subtask_$index3"),
-                                                children: [
-                                                  Icon(Icons.drag_indicator),
-                                                  SizedBox(
-                                                    height: 42,
-                                                    width: 42,
-                                                    child: Transform.scale(
-                                                      scale: 1.2,
-                                                      child: Checkbox(
-                                                        value: item.isDone,
-                                                        onChanged: (b) {},
-                                                        shape: RoundedRectangleBorder(
-                                                          borderRadius: BorderRadius.circular(24),
-                                                        ),
-                                                      ),
+                                      child: ReorderableListView.builder(
+                                        itemBuilder: (context, index3) {
+                                          var item = e.subTasks[index3];
+                                          return Row(
+                                            key: Key("subtask_$index3"),
+                                            children: [
+                                              Icon(Icons.drag_indicator),
+                                              SizedBox(
+                                                height: 42,
+                                                width: 42,
+                                                child: Transform.scale(
+                                                  scale: 1.2,
+                                                  child: Checkbox(
+                                                    value: item.isDone,
+                                                    onChanged: (b) {},
+                                                    shape: RoundedRectangleBorder(
+                                                      borderRadius: BorderRadius.circular(24),
                                                     ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(child:   Column(
+                                                children: [
+                                                  Text("${item.subTask}"),
+                                                  Divider(
+                                                    color: Colors.grey,
                                                   )
                                                 ],
-                                              );
-                                            },
-                                            itemCount: e.subTasks.length,
-                                            onReorder: (oldIndex, newIndex) {})),
+                                              ))
+
+                                            ],
+                                          );
+                                        },
+                                        itemCount: e.subTasks.length,
+                                        onReorder: (oldIndex, newIndex) {},
+                                      ),
+                                    ),
                                     const Divider(),
                                     Row(
                                       children: [
