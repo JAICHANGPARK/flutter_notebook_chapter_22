@@ -291,7 +291,6 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                               ],
                                             );
                                           },
-
                                         ),
                                       ),
                                       const Divider(),
