@@ -224,9 +224,16 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                     ),
                                     Expanded(
                                         child: ReorderableListView.builder(
-                                            itemBuilder: (context, index) {},
+                                            itemBuilder: (context, index3) {
+                                              return Row(
+                                                key: Key("subtask_$index3"),
+                                                children: [
+                                                  
+                                                ],
+                                              );
+                                            },
                                             itemCount: e.subTasks.length,
-                                            onReorder: onReorder)),
+                                            onReorder: (oldIndex, newIndex) {})),
                                     const Divider(),
                                     Row(
                                       children: [
