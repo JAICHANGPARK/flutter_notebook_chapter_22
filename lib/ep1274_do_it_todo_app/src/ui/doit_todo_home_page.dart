@@ -222,7 +222,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                         )
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                     ),
                                     Expanded(
@@ -232,7 +232,9 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                           return Row(
                                             key: Key("subtask_$index3"),
                                             children: [
-                                              Icon(Icons.drag_indicator),
+                                              Container(
+                                                child: item.isDone != true ? const Icon(Icons.drag_indicator) : null,
+                                              ),
                                               SizedBox(
                                                 child: Transform.scale(
                                                   scale: 1.4,
@@ -254,14 +256,14 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                   children: [
                                                     Text(
                                                       "${item.subTask}",
-                                                      style: TextStyle(
+                                                      style: const TextStyle(
                                                         fontWeight: FontWeight.bold,
                                                       ),
                                                     ),
-                                                    SizedBox(
+                                                    const SizedBox(
                                                       height: 8,
                                                     ),
-                                                    Divider(
+                                                    const Divider(
                                                       color: Colors.grey,
                                                     )
                                                   ],
@@ -271,7 +273,10 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                           );
                                         },
                                         itemCount: e.subTasks.length,
-                                        onReorder: (oldIndex, newIndex) {},
+                                        onReorder: (oldIndex, newIndex) {
+                                          print("oldindex: $oldIndex | newIndex : $newIndex");
+                                          setState(() {});
+                                        },
                                       ),
                                     ),
                                     const Divider(),
