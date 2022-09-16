@@ -81,6 +81,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                     itemBuilder: (context, index2) {
                       var e = taskGroupItem.todoTask![index2];
                       return CheckboxListTile(
+                        tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
                         controlAffinity: ListTileControlAffinity.leading,
                         value: (e.isDone ?? false),
                         title: Row(
@@ -132,167 +133,182 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                               ),
                               // backgroundColor: Colors.transparent,
 
-                              builder: (context) => Container(
-                                height: 600,
-                                decoration: const BoxDecoration(),
-                                padding: const EdgeInsets.only(top: 12, right: 8, left: 8),
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      height: 3,
-                                      width: 48,
-                                      color: Colors.grey,
-                                    ),
-                                    Align(
-                                      alignment: Alignment.centerRight,
-                                      child: IconButton(
-                                        onPressed: () {},
-                                        icon: const Icon(
-                                          Icons.more_horiz,
+                              builder: (context) => StatefulBuilder(builder: (context, ss) {
+                                List<SubTask> subtaskItems = e.subTasks;
+                                return Container(
+                                  height: 600,
+                                  decoration: const BoxDecoration(),
+                                  padding: const EdgeInsets.only(top: 12, right: 8, left: 8),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 3,
+                                        width: 48,
+                                        color: Colors.grey,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.centerRight,
+                                        child: IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                            Icons.more_horiz,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Checkbox(value: false, onChanged: (b) {}),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                e.task ?? "",
-                                                style: const TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
+                                      Row(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Checkbox(value: false, onChanged: (b) {}),
+                                          Expanded(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  e.task ?? "",
+                                                  style: const TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                                 ),
-                                              ),
-                                              const SizedBox(
-                                                height: 8,
-                                              ),
-                                              const Text(
-                                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                                                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ",
-                                                style: TextStyle(
-                                                  color: Colors.grey,
+                                                const SizedBox(
+                                                  height: 8,
                                                 ),
-                                              ),
-                                              const SizedBox(
-                                                height: 8,
-                                              ),
-                                              Row(
-                                                children: [
-                                                  if (e.dateString?.isNotEmpty ?? false)
-                                                    Container(
-                                                      decoration: BoxDecoration(
-                                                        color: e.dateString == "Today"
-                                                            ? Colors.green[50]
-                                                            : Colors.grey[200],
-                                                        borderRadius: BorderRadius.circular(4),
-                                                      ),
-                                                      padding: const EdgeInsets.symmetric(
-                                                        horizontal: 4,
-                                                        vertical: 4,
-                                                      ),
-                                                      child: Text(
-                                                        "${e.dateString}",
-                                                        style: TextStyle(
-                                                          color: e.dateString == "Today" ? Colors.green : Colors.grey,
-                                                          fontSize: 12,
+                                                const Text(
+                                                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                                                  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                const SizedBox(
+                                                  height: 8,
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    if (e.dateString?.isNotEmpty ?? false)
+                                                      Container(
+                                                        decoration: BoxDecoration(
+                                                          color: e.dateString == "Today"
+                                                              ? Colors.green[50]
+                                                              : Colors.grey[200],
+                                                          borderRadius: BorderRadius.circular(4),
+                                                        ),
+                                                        padding: const EdgeInsets.symmetric(
+                                                          horizontal: 4,
+                                                          vertical: 4,
+                                                        ),
+                                                        child: Text(
+                                                          "${e.dateString}",
+                                                          style: TextStyle(
+                                                            color: e.dateString == "Today" ? Colors.green : Colors.grey,
+                                                            fontSize: 12,
+                                                          ),
                                                         ),
                                                       ),
+                                                    const Spacer(),
+                                                    const Icon(
+                                                      Icons.rebase_edit,
+                                                      size: 18,
                                                     ),
-                                                  const Spacer(),
-                                                  const Icon(
-                                                    Icons.rebase_edit,
-                                                    size: 18,
-                                                  ),
-                                                  const Padding(
-                                                    padding: EdgeInsets.symmetric(horizontal: 8),
-                                                    child: Text("2/4"),
-                                                  ),
-                                                  const Icon(
-                                                    Icons.refresh,
-                                                    size: 18,
-                                                  )
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 16,
-                                    ),
-                                    Expanded(
-                                      child: ReorderableListView.builder(
-                                        itemBuilder: (context, index3) {
-                                          var item = e.subTasks[index3];
-                                          return Row(
-                                            key: Key("subtask_$index3"),
-                                            children: [
-                                              Container(
-                                                child: item.isDone != true ? const Icon(Icons.drag_indicator) : null,
-                                              ),
-                                              SizedBox(
-                                                child: Transform.scale(
-                                                  scale: 1.4,
-                                                  child: Checkbox(
-                                                    value: item.isDone,
-                                                    onChanged: (b) {},
-                                                    shape: RoundedRectangleBorder(
-                                                      borderRadius: BorderRadius.circular(24),
+                                                    const Padding(
+                                                      padding: EdgeInsets.symmetric(horizontal: 8),
+                                                      child: Text("2/4"),
                                                     ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Expanded(
-                                                  child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Column(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      "${item.subTask}",
-                                                      style: const TextStyle(
-                                                        fontWeight: FontWeight.bold,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(
-                                                      height: 8,
-                                                    ),
-                                                    const Divider(
-                                                      color: Colors.grey,
+                                                    const Icon(
+                                                      Icons.refresh,
+                                                      size: 18,
                                                     )
                                                   ],
                                                 ),
-                                              ))
-                                            ],
-                                          );
-                                        },
-                                        itemCount: e.subTasks.length,
-                                        onReorder: (oldIndex, newIndex) {
-                                          print("oldindex: $oldIndex | newIndex : $newIndex");
-                                          setState(() {});
-                                        },
+                                              ],
+                                            ),
+                                          )
+                                        ],
                                       ),
-                                    ),
-                                    const Divider(),
-                                    Row(
-                                      children: [
-                                        IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
-                                        const Text("Add Sub-task"),
-                                        const Spacer(),
-                                        IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_month_outlined)),
-                                        IconButton(onPressed: () {}, icon: const Icon(Icons.tag_outlined)),
-                                        IconButton(onPressed: () {}, icon: const Icon(Icons.flag)),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
+                                      const SizedBox(
+                                        height: 16,
+                                      ),
+                                      Expanded(
+                                        child: ReorderableListView.builder(
+                                          itemCount: subtaskItems.length,
+                                          onReorder: (oldIndex, newIndex) {
+                                            print("oldindex: $oldIndex | newIndex : $newIndex");
+
+                                            ss(() {
+                                              if (oldIndex < newIndex) {
+                                                newIndex -= 1;
+                                              }
+                                              final SubTask removedItem = subtaskItems.removeAt(oldIndex);
+                                              subtaskItems.insert(newIndex, removedItem);
+                                            });
+                                          },
+                                          itemBuilder: (context, index3) {
+                                            var item = subtaskItems[index3];
+                                            return Row(
+                                              key: Key("subtask_$index3"),
+                                              children: [
+                                                Container(
+                                                  child: item.isDone != true
+                                                      ? const Icon(Icons.drag_indicator)
+                                                      : const SizedBox(
+                                                          width: 24,
+                                                        ),
+                                                ),
+                                                SizedBox(
+                                                  child: Transform.scale(
+                                                    scale: 1.4,
+                                                    child: Checkbox(
+                                                      value: item.isDone,
+                                                      onChanged: (b) {},
+                                                      shape: RoundedRectangleBorder(
+                                                        borderRadius: BorderRadius.circular(24),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text(
+                                                        "${item.subTask}",
+                                                        style: const TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      const SizedBox(
+                                                        height: 8,
+                                                      ),
+                                                      const Divider(
+                                                        color: Colors.grey,
+                                                      )
+                                                    ],
+                                                  ),
+                                                ))
+                                              ],
+                                            );
+                                          },
+
+                                        ),
+                                      ),
+                                      const Divider(),
+                                      Row(
+                                        children: [
+                                          IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
+                                          const Text("Add Sub-task"),
+                                          const Spacer(),
+                                          IconButton(onPressed: () {}, icon: const Icon(Icons.calendar_month_outlined)),
+                                          IconButton(onPressed: () {}, icon: const Icon(Icons.tag_outlined)),
+                                          IconButton(onPressed: () {}, icon: const Icon(Icons.flag)),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                );
+                              }),
                             );
                           } else {
                             var oldTaskItems = taskGroupItem.todoTask;
@@ -311,7 +327,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
 
                           //we  need to get index
                         },
-                        tileColor: (e.isDone ?? false) ? Colors.grey[100] : Colors.white,
+
                         // selectedTileColor: Colors.red,
                       );
                     },
