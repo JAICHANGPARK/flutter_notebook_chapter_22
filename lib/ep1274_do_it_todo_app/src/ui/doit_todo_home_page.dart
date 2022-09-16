@@ -231,13 +231,17 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                 children: [
                                                   Icon(Icons.drag_indicator),
                                                   SizedBox(
-                                                    height: 28,
-                                                    width: 28,
-                                                    child: Checkbox(
-                                                      value: item.isDone,
-                                                      onChanged: (b) {},
-                                                      shape: RoundedRectangleBorder(
-                                                        borderRadius: BorderRadius.circular(24)
+                                                    height: 42,
+                                                    width: 42,
+                                                    child: Transform.scale(
+                                                      scale: 1.2,
+                                                      child: Checkbox(
+                                                        value: item.isDone,
+                                                        onChanged: (b) {},
+                                                        shape: RoundedRectangleBorder(
+                                                          borderRadius: BorderRadius.circular(24),
+                                                        ),
+
                                                       ),
                                                     ),
                                                   )
