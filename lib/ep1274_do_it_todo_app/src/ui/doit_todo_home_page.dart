@@ -222,7 +222,11 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                         )
                                       ],
                                     ),
-                                    const Expanded(child: Placeholder()),
+                                    Expanded(
+                                        child: ReorderableListView.builder(
+                                            itemBuilder: (context, index) {},
+                                            itemCount: e.subTasks.length,
+                                            onReorder: onReorder)),
                                     const Divider(),
                                     Row(
                                       children: [
