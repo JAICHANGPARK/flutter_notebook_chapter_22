@@ -247,15 +247,20 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                   ),
                                                 ),
                                               ),
-                                              Expanded(child:   Column(
+                                              Expanded(
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.all(8.0),
+                                                    child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text("${item.subTask}"),
-                                                  Divider(
-                                                    color: Colors.grey,
-                                                  )
+                                                    Text("${item.subTask}"),
+                                                    Divider(
+                                                      height: 24,
+                                                      color: Colors.grey,
+                                                    )
                                                 ],
-                                              ))
-
+                                              ),
+                                                  ))
                                             ],
                                           );
                                         },
