@@ -225,10 +225,22 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                     Expanded(
                                         child: ReorderableListView.builder(
                                             itemBuilder: (context, index3) {
+                                              var item = e.subTasks[index3];
                                               return Row(
                                                 key: Key("subtask_$index3"),
                                                 children: [
-                                                  
+                                                  Icon(Icons.drag_indicator),
+                                                  SizedBox(
+                                                    height: 28,
+                                                    width: 28,
+                                                    child: Checkbox(
+                                                      value: item.isDone,
+                                                      onChanged: (b) {},
+                                                      shape: RoundedRectangleBorder(
+                                                        borderRadius: BorderRadius.circular(24)
+                                                      ),
+                                                    ),
+                                                  )
                                                 ],
                                               );
                                             },
