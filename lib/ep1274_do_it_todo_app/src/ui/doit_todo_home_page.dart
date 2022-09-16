@@ -205,6 +205,7 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                   const Spacer(),
                                                   const Icon(
                                                     Icons.rebase_edit,
+                                                    size: 18,
                                                   ),
                                                   const Padding(
                                                     padding: EdgeInsets.symmetric(horizontal: 8),
@@ -212,9 +213,10 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                   ),
                                                   const Icon(
                                                     Icons.refresh,
+                                                    size: 18,
                                                   )
                                                 ],
-                                              )
+                                              ),
                                             ],
                                           ),
                                         )
