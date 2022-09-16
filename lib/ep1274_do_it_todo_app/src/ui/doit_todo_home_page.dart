@@ -222,6 +222,9 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                         )
                                       ],
                                     ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
                                     Expanded(
                                         child: ReorderableListView.builder(
                                             itemBuilder: (context, index3) {
@@ -241,7 +244,6 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                                         shape: RoundedRectangleBorder(
                                                           borderRadius: BorderRadius.circular(24),
                                                         ),
-
                                                       ),
                                                     ),
                                                   )
