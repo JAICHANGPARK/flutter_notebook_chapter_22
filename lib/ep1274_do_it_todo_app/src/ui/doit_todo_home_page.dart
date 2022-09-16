@@ -249,19 +249,24 @@ class _DoitTodoHomePageState extends State<DoitTodoHomePage> {
                                               ),
                                               Expanded(
                                                   child: Padding(
-                                                    padding: const EdgeInsets.all(8.0),
-                                                    child: Column(
-                                                      mainAxisAlignment: MainAxisAlignment.center,
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                    Text("${item.subTask}"),
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "${item.subTask}",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
                                                     Divider(
                                                       height: 24,
                                                       color: Colors.grey,
                                                     )
-                                                ],
-                                              ),
-                                                  ))
+                                                  ],
+                                                ),
+                                              ))
                                             ],
                                           );
                                         },
