@@ -77,6 +77,16 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   ),
                 ],
               ),
+              Column(
+                children: List.generate(
+                  6,
+                  (index) => Container(
+                    height: 120,
+                    color: Colors.black,
+                    margin: EdgeInsets.only(bottom: 8),
+                  ),
+                ),
+              )
             ],
           ),
         ),
