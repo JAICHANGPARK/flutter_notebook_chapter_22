@@ -41,7 +41,10 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hot topic"),
+                  Text(
+                    "Hot topic",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text("See all"),
@@ -61,7 +64,10 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("For you"),
+                  Text(
+                    "For you",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text("See all"),
