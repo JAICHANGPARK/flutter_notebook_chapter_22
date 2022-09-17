@@ -19,8 +19,10 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.white,
         destinations: [
-          NavigationDestination(icon: Icon(Icons.home), label: ""),
-          NavigationDestination(icon: Icon(Icons.home), label: ""),
+          NavigationDestination(icon: Icon(Icons.home_filled), label: ""),
+          NavigationDestination(icon: Icon(Icons.search), label: ""),
+          NavigationDestination(icon: Icon(Icons.bookmark_border), label: ""),
+          NavigationDestination(icon: Icon(Icons.perm_identity), label: ""),
         ],
       ),
     );
