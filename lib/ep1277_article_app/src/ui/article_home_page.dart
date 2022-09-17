@@ -28,10 +28,25 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children:  [
+          children: [
+            SizedBox(
+              height: 16,
+            ),
             Container(
-              height: 48,
+              height: 52,
               color: Colors.pink,
+            ),
+            Row(
+              children: [
+                Text("Hot topic"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See all"),
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.grey,
+                  ),
+                ),
+              ],
             )
           ],
         ),
