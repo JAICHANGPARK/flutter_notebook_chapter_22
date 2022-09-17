@@ -13,10 +13,15 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
+      ),
+      bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.white,
+        destinations: [
+          NavigationDestination(icon: Icon(Icons.home), label: ""),
+          NavigationDestination(icon: Icon(Icons.home), label: ""),
+        ],
       ),
     );
   }
