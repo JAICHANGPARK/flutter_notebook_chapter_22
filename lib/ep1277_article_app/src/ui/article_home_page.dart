@@ -13,6 +13,16 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text("Home"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notifications_none),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: const [],
