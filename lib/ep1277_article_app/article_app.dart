@@ -6,8 +6,8 @@ class ArticleApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Articel App",
+    return const MaterialApp(
+      title: "Article App",
       home: ArticleHomePage(),
     );
   }
