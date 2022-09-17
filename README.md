@@ -2,7 +2,15 @@
 
 ## S25
 
-### EP1274
+### EP1277-
+
+- Baca.In - Article App
+- by Rizal🔥
+- https://dribbble.com/shots/19396751-Baca-In-Article-App/attachments/14535581?mode=media
+
+<img src="https://cdn.dribbble.com/users/10221461/screenshots/19396751/media/6d44ac8ddaf6ea6844bcff7dd09475c8.png" width="400px"/>
+
+### EP1274-1276
 
 - Do it - To Do List Mobile App
 - by Rayfan Tio Saputro
