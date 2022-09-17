@@ -27,28 +27,52 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 16,
-            ),
-            Container(
-              height: 52,
-              color: Colors.pink,
-            ),
-            Row(
-              children: [
-                Text("Hot topic"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text("See all"),
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.grey,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                height: 52,
+                color: Colors.pink,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Hot topic"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("See all"),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.grey,
+                    ),
                   ),
-                ),
-              ],
-            )
-          ],
+                ],
+              ),
+              Container(
+                height: 300,
+                color: Colors.black,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("For you"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("See all"),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: NavigationBar(
