@@ -13,8 +13,11 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
         title: Text("Home"),
         actions: [
           IconButton(
@@ -25,7 +28,12 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: const [],
+          children:  [
+            Container(
+              height: 48,
+              color: Colors.pink,
+            )
+          ],
         ),
       ),
       bottomNavigationBar: NavigationBar(
