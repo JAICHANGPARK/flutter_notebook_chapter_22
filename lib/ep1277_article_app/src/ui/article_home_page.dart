@@ -8,6 +8,8 @@ class ArticleHomePage extends StatefulWidget {
 }
 
 class _ArticleHomePageState extends State<ArticleHomePage> {
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +20,12 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
       ),
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.white,
+        selectedIndex: _pageIndex,
+        onDestinationSelected: (idx) {
+          setState(() {
+            _pageIndex = idx;
+          });
+        },
         destinations: [
           NavigationDestination(icon: Icon(Icons.home_filled), label: ""),
           NavigationDestination(icon: Icon(Icons.search), label: ""),
