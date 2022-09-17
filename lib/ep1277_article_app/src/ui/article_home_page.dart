@@ -26,6 +26,9 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
             _pageIndex = idx;
           });
         },
+        surfaceTintColor: Colors.pink,
+        elevation: 8,
+        shadowColor: Colors.pink,
         destinations: [
           NavigationDestination(icon: Icon(Icons.home_filled), label: ""),
           NavigationDestination(icon: Icon(Icons.search), label: ""),
