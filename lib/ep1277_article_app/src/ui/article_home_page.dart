@@ -15,7 +15,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: const [],
         ),
       ),
       bottomNavigationBar: NavigationBar(
@@ -26,10 +26,8 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
             _pageIndex = idx;
           });
         },
-        surfaceTintColor: Colors.pink,
         elevation: 8,
-        shadowColor: Colors.pink,
-        destinations: [
+        destinations: const [
           NavigationDestination(icon: Icon(Icons.home_filled), label: ""),
           NavigationDestination(icon: Icon(Icons.search), label: ""),
           NavigationDestination(icon: Icon(Icons.bookmark_border), label: ""),
