@@ -43,14 +43,21 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   itemCount: menuItems.length,
                   itemBuilder: (context, index) {
                     var item = menuItems[index];
-                    return Container(
-                      margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(24),
+                    return GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _menuIndex = index;
+                        });
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                        padding: const EdgeInsets.symmetric(horizontal: 24),
+                        decoration: BoxDecoration(
+                          color: _menuIndex == index ? Colors.blueAccent : Colors.grey,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: Center(child: Text("$item")),
                       ),
-                      child: Center(child: Text("$item")),
                     );
                   },
                 ),
