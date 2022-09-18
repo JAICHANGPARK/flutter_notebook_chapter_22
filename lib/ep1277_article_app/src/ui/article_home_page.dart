@@ -98,6 +98,15 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         color: Colors.pink,
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      child: Column(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [],
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
