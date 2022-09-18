@@ -100,7 +100,23 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                       ),
                       child: Column(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Positioned(child: Container()),
+                                Positioned(
+                                  right: 12,
+                                  bottom: 0,
+                                  child: CircleAvatar(
+                                    radius: 18,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
