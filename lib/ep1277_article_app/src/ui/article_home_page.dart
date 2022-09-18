@@ -94,16 +94,27 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                     return Container(
                       width: 200,
                       margin: const EdgeInsets.only(top: 8, bottom: 4, right: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.pink,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
+                      // decoration: BoxDecoration(
+                      //   color: Colors.pink,
+                      //   borderRadius: BorderRadius.circular(4),
+                      // ),
                       child: Column(
                         children: [
                           Expanded(
                             child: Stack(
                               children: [
-                                Positioned(child: Container()),
+                                Positioned(
+                                  left: 0,
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 18,
+                                    child: Container(
+                                      
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(4)
+                                  ),
+                                )),
                                 Positioned(
                                   right: 12,
                                   bottom: 0,
