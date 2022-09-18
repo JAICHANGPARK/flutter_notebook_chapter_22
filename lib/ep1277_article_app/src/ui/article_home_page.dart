@@ -10,7 +10,8 @@ class ArticleHomePage extends StatefulWidget {
 class _ArticleHomePageState extends State<ArticleHomePage> {
   int _pageIndex = 0;
   int _menuIndex = 0;
-  List<String> menuItems = [""];
+  List<String> menuItems = ["All", "For You", "Following", "News"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,13 +40,19 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                 height: 52,
                 color: Colors.pink,
                 child: ListView.builder(
-
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index){
-                  return Container(
-                    child: Text("Test"),
-                  );
-                },),
+                  itemBuilder: (context, index) {
+                    var item = menuItems[index];
+                    return Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Text("$item"),
+                    );
+                  },
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
