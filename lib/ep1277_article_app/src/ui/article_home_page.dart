@@ -50,7 +50,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         });
                       },
                       child: Container(
-                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                        margin: const EdgeInsets.only(top: 8, bottom: 8, right: 8),
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         decoration: BoxDecoration(
                           color: _menuIndex == index ? Colors.blueAccent : Colors.grey[200],
@@ -93,12 +93,13 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 200,
-                      margin: EdgeInsets.only(top: 8, bottom: 4, right: 16),
-                      color: Colors.pink,
+                      margin: const EdgeInsets.only(top: 8, bottom: 4, right: 16),
+                      decoration: BoxDecoration(
+                        color: Colors.pink,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
                     );
                   },
-
-
                 ),
               ),
               const SizedBox(
