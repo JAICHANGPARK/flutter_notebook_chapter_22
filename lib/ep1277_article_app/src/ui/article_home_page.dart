@@ -56,7 +56,13 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           color: _menuIndex == index ? Colors.blueAccent : Colors.grey,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        child: Center(child: Text("$item")),
+                        child: Center(
+                            child: Text(
+                          "$item",
+                          style: TextStyle(
+                            color: _menuIndex == index ? Colors.white : Colors.black,
+                          ),
+                        )),
                       ),
                     );
                   },
