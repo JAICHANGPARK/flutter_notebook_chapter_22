@@ -87,6 +87,19 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               Container(
                 height: 300,
                 color: Colors.black,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 6,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 200,
+                      margin: EdgeInsets.only(top: 8, bottom: 4, right: 16),
+                      color: Colors.pink,
+                    );
+                  },
+
+
+                ),
               ),
               const SizedBox(
                 height: 16,
