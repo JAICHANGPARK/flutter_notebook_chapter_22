@@ -133,7 +133,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                             BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                         child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
+                                          children: const [
                                             Text(
                                               "Hot 🔥",
                                               style: TextStyle(
@@ -162,13 +162,21 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
-                              Text("Aug 20, 2022"),
+                              Text(
+                                "Aug 20, 2022",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               SizedBox(
                                 height: 8,
                               ),
                               Text(
                                 "Lorem ipsum dolor sit amet, "
                                 "consectetur adipisicing elit, sed do eiusmod tempor",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               )
                             ],
                           )
