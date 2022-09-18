@@ -18,11 +18,11 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
-        title: Text("Home"),
+        title: const Text("Home"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.notifications_none),
+            icon: const Icon(Icons.notifications_none),
           ),
         ],
       ),
@@ -31,7 +31,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
           padding: const EdgeInsets.only(left: 16),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
@@ -41,13 +41,13 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Hot topic",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("See all"),
+                    child: const Text("See all"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
@@ -58,19 +58,19 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                 height: 300,
                 color: Colors.black,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "For you",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("See all"),
+                    child: const Text("See all"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
@@ -83,7 +83,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   (index) => Container(
                     height: 120,
                     color: Colors.black,
-                    margin: EdgeInsets.only(bottom: 8),
+                    margin: const EdgeInsets.only(bottom: 8),
                   ),
                 ),
               )
