@@ -10,7 +10,7 @@ class ArticleHomePage extends StatefulWidget {
 class _ArticleHomePageState extends State<ArticleHomePage> {
   int _pageIndex = 0;
   int _menuIndex = 0;
-  List<String> menuItems = ["All", "For You", "Following", "News"];
+  List<String> menuItems = ["All", "For You", "Following", "News", "Global", "Finance"];
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         decoration: BoxDecoration(
-                          color: _menuIndex == index ? Colors.blueAccent : Colors.grey,
+                          color: _menuIndex == index ? Colors.blueAccent : Colors.grey[200],
                           borderRadius: BorderRadius.circular(24),
                         ),
                         child: Center(
