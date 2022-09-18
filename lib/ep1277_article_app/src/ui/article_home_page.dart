@@ -103,7 +103,16 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           Expanded(child: Placeholder()),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [],
+                            children: [
+                              Text("Aug 20, 2022"),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Lorem ipsum dolor sit amet, "
+                                "consectetur adipisicing elit, sed do eiusmod tempor",
+                              )
+                            ],
                           )
                         ],
                       ),
