@@ -38,18 +38,19 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               ),
               Container(
                 height: 52,
-                color: Colors.pink,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
+                  itemCount: menuItems.length,
                   itemBuilder: (context, index) {
                     var item = menuItems[index];
                     return Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      child: Text("$item"),
+                      child: Center(child: Text("$item")),
                     );
                   },
                 ),
