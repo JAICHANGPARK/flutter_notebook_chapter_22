@@ -9,7 +9,8 @@ class ArticleHomePage extends StatefulWidget {
 
 class _ArticleHomePageState extends State<ArticleHomePage> {
   int _pageIndex = 0;
-
+  int _menuIndex = 0;
+  List<String> menuItems = [""];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +38,14 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               Container(
                 height: 52,
                 color: Colors.pink,
+                child: ListView.builder(
+
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index){
+                  return Container(
+                    child: Text("Test"),
+                  );
+                },),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
