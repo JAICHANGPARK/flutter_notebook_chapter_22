@@ -86,7 +86,6 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               ),
               Container(
                 height: 300,
-                color: Colors.black,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 6,
@@ -105,17 +104,49 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                               children: [
                                 Positioned(
                                   left: 0,
-                                    right: 0,
-                                    top: 0,
-                                    bottom: 18,
-                                    child: Container(
-                                      
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    borderRadius: BorderRadius.circular(4)
+                                  right: 0,
+                                  top: 0,
+                                  bottom: 18,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(4),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/12/13/22/15/chart-1905225__340.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    padding: EdgeInsets.only(
+                                      right: 8,
+                                      top: 8,
+                                    ),
+                                    child: Align(
+                                      alignment: Alignment.topRight,
+                                      child: Container(
+                                        width: 64,
+                                        padding: EdgeInsets.symmetric(
+                                          vertical: 4,
+                                        ),
+                                        decoration:
+                                            BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              "Hot 🔥",
+                                              style: TextStyle(
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   ),
-                                )),
-                                Positioned(
+                                ),
+                                const Positioned(
                                   right: 12,
                                   bottom: 0,
                                   child: CircleAvatar(
@@ -125,12 +156,12 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text("Aug 20, 2022"),
                               SizedBox(
                                 height: 8,
