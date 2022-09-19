@@ -12,6 +12,14 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
+        actions: [
+          IconButton(onPressed: (){}, icon:  Icon(Icons.bookmark_border),)
+
+
+        ],
 
       ),
     );
