@@ -118,7 +118,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                         fit: BoxFit.cover,
                                       ),
                                     ),
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 8,
                                       top: 8,
                                     ),
@@ -126,7 +126,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                       alignment: Alignment.topRight,
                                       child: Container(
                                         width: 64,
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                           vertical: 4,
                                         ),
                                         decoration:
@@ -210,7 +210,6 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   6,
                   (index) => Container(
                     height: 110,
-                    color: Colors.black,
                     margin: const EdgeInsets.only(bottom: 8),
                     child: Row(
                       children: [
@@ -219,15 +218,30 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             color: Colors.pink,
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2014/11/07/00/00/volleyball-520093__340.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('What Training Do Volleyball Players Need?'),
-                              Text("2h ago - 8k read"),
-                            ],
+                          child: Container(
+                            padding: EdgeInsets.only(right: 32),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'What Training Do Volleyball Players Need?',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+
+                                  ),
+                                ),
+                                Text("2h ago - 8k read"),
+                              ],
+                            ),
                           ),
                         )
                       ],
