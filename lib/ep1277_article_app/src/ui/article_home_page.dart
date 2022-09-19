@@ -229,18 +229,21 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         Expanded(
                           child: Container(
                             padding: EdgeInsets.only(right: 32),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'What Training Do Volleyball Players Need?',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    'What Training Do Volleyball Players Need?',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                ),
-                                Text("2h ago - 8k read"),
-                              ],
+                                  Text("2h ago - 8k read"),
+                                ],
+                              ),
                             ),
                           ),
                         )
