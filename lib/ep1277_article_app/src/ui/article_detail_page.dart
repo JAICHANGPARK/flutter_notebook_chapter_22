@@ -19,15 +19,15 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.bookmark_border),
+            icon: const Icon(Icons.bookmark_border),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.more_horiz,
             ),
           ),
@@ -55,35 +55,35 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   width: 170,
                   height: 42,
                   decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(32)),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.thumb_up_alt_outlined,
                         color: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 4,
                       ),
-                      Text(
+                      const Text(
                         "1.2k",
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
-                      VerticalDivider(
+                      const VerticalDivider(
                         color: Colors.white,
                         width: 24,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.chat_outlined,
                         color: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 4,
                       ),
-                      Text(
+                      const Text(
                         "120",
                         style: TextStyle(
                           color: Colors.white,
