@@ -51,21 +51,42 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
               right: 0,
               child: Center(
                 child: Container(
-                  width: 160,
+                  width: 170,
                   height: 42,
                   decoration: BoxDecoration(
                     color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(32)
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.thumb_up_alt_outlined,),
-                      Text("1.2k"),
-                      VerticalDivider(
+                      Icon(
+                        Icons.thumb_up_alt_outlined,
                         color: Colors.white,
                       ),
-                      Icon(Icons.chat_outlined),
-                      Text("120")
+                      SizedBox(width: 4,),
+                      Text(
+                        "1.2k",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      VerticalDivider(
+                        color: Colors.white,
+                        width: 24,
+                      ),
+                      Icon(
+                        Icons.chat_outlined,
+                        color: Colors.white,
+                      ),
+                      SizedBox(width: 4,),
+                      Text(
+                        "120",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )
                     ],
                   ),
                 ),
