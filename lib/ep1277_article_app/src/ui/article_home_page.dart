@@ -205,16 +205,17 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   ),
                 ],
               ),
+              SizedBox(height: 16,),
               Column(
                 children: List.generate(
                   6,
                   (index) => Container(
-                    height: 100,
+                    height: 80,
                     margin: const EdgeInsets.only(bottom: 16),
                     child: Row(
                       children: [
                         Container(
-                          width: 120,
+                          width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             color: Colors.pink,
@@ -230,16 +231,17 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           child: Container(
                             padding: EdgeInsets.only(right: 32),
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
                                   Text(
                                     'What Training Do Volleyball Players Need?',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
+                                  ),
+                                  SizedBox(
+                                    height: 16,
                                   ),
                                   Text("2h ago - 8k read"),
                                 ],
