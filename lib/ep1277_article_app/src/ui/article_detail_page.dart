@@ -11,6 +11,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -53,10 +54,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                 child: Container(
                   width: 170,
                   height: 42,
-                  decoration: BoxDecoration(
-                    color: Colors.blueAccent,
-                    borderRadius: BorderRadius.circular(32)
-                  ),
+                  decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(32)),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +63,9 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                         Icons.thumb_up_alt_outlined,
                         color: Colors.white,
                       ),
-                      SizedBox(width: 4,),
+                      SizedBox(
+                        width: 4,
+                      ),
                       Text(
                         "1.2k",
                         style: TextStyle(
@@ -80,7 +80,9 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                         Icons.chat_outlined,
                         color: Colors.white,
                       ),
-                      SizedBox(width: 4,),
+                      SizedBox(
+                        width: 4,
+                      ),
                       Text(
                         "120",
                         style: TextStyle(
