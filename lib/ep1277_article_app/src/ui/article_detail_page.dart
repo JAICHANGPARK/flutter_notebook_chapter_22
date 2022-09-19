@@ -42,27 +42,36 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
             top: 16,
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Sport"),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Text("10 Focus Exercises To Help Improve Concertraintion Skills"),
+                  const Text(
+                    "Sport",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: Text(
+                      "10 Focus Exercises To Help Improve Concertraintion Skills",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, height: 1.6),
+                    ),
                   ),
                   Row(
                     children: [
-                      Text("Aug 10, 2022 by"),
-                      Text(
-                        "Esther Howard",
+                      const Text("Aug 10, 2022 by"),
+                      const Text(
+                        " Esther Howard",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text("Sport"),
                         ),
                       ),
@@ -70,11 +79,20 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                         decoration: BoxDecoration(
                           border: Border.all(),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text("Health"),
                         ),
                       )
                     ],
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 160,
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.blue,
+                    ),
                   )
                 ],
               ),
