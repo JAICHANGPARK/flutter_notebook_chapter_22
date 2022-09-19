@@ -95,7 +95,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                       onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (context) => ArticleDetailPage(),
+                            builder: (context) => const ArticleDetailPage(),
                           ),
                         );
                       },
@@ -215,7 +215,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Column(
@@ -241,7 +241,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         ),
                         Expanded(
                           child: Container(
-                            padding: EdgeInsets.only(right: 32),
+                            padding: const EdgeInsets.only(right: 32),
                             child: Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                               child: Column(
