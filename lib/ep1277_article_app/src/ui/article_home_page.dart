@@ -209,9 +209,21 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                 children: List.generate(
                   6,
                   (index) => Container(
-                    height: 120,
+                    height: 110,
                     color: Colors.black,
                     margin: const EdgeInsets.only(bottom: 8),
+                    child: Row(
+                      children: [
+                        Container(
+
+                          width: 140,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4),
+                            color: Colors.pink,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               )
