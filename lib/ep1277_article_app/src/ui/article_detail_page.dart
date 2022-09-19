@@ -42,7 +42,41 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
             top: 16,
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                children: [
+                  Text("Sport"),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text("10 Focus Exercises To Help Improve Concertraintion Skills"),
+                  ),
+                  Row(
+                    children: [
+                      Text("Aug 10, 2022 by"),
+                      Text(
+                        "Esther Howard",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                        ),
+                        child: Center(
+                          child: Text("Sport"),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                        ),
+                        child: Center(
+                          child: Text("Health"),
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
           ),
