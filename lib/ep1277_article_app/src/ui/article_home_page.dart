@@ -231,7 +231,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                           child: Container(
                             padding: EdgeInsets.only(right: 32),
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -241,7 +241,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                     style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
                                   ),
                                   SizedBox(
-                                    height: 16,
+                                    height: 12,
                                   ),
                                   Text("2h ago - 8k read"),
                                 ],
