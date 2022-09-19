@@ -32,6 +32,41 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
           ),
         ],
       ),
+      body: Stack(
+        children: [
+          Positioned(
+            left: 16,
+            right: 16,
+            bottom: 0,
+            top: 16,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ),
+          Positioned(
+              bottom: 42,
+              left: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.thumb_up_alt_outlined),
+                    Text("1.2k"),
+                    VerticalDivider(
+                      color: Colors.white,
+                    ),
+                    Icon(Icons.chat_outlined),
+                    Text("120")
+                  ],
+                ),
+              ))
+        ],
+      ),
     );
   }
 }
