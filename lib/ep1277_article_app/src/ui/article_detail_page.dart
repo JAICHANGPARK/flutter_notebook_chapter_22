@@ -16,11 +16,21 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
         elevation: 0,
         foregroundColor: Colors.black,
         actions: [
-          IconButton(onPressed: (){}, icon:  Icon(Icons.bookmark_border),)
-
-
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.bookmark_border),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.share),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.more_horiz,
+            ),
+          ),
         ],
-
       ),
     );
   }
