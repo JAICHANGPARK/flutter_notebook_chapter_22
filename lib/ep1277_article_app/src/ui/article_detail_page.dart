@@ -49,20 +49,25 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
               bottom: 42,
               left: 0,
               right: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                ),
-                child: Row(
-                  children: [
-                    Icon(Icons.thumb_up_alt_outlined),
-                    Text("1.2k"),
-                    VerticalDivider(
-                      color: Colors.white,
-                    ),
-                    Icon(Icons.chat_outlined),
-                    Text("120")
-                  ],
+              child: Center(
+                child: Container(
+                  width: 160,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color: Colors.blueAccent,
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Row(
+                    children: [
+                      Icon(Icons.thumb_up_alt_outlined,),
+                      Text("1.2k"),
+                      VerticalDivider(
+                        color: Colors.white,
+                      ),
+                      Icon(Icons.chat_outlined),
+                      Text("120")
+                    ],
+                  ),
                 ),
               ))
         ],
