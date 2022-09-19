@@ -77,10 +77,10 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: const Text("See all"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
+                    child: const Text("See all"),
                   ),
                 ],
               ),
@@ -198,10 +198,10 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: const Text("See all"),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.grey,
                     ),
+                    child: const Text("See all"),
                   ),
                 ],
               ),
