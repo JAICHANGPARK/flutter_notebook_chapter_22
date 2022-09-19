@@ -86,7 +86,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 160,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
@@ -95,24 +95,24 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   ),
                   Row(
                     children: [
-                      CircleAvatar(),
+                      const CircleAvatar(),
                       Column(
                         children: [
-                          Text("Esther Howard"),
-                          Text("Aug 10, 2022"),
+                          const Text("Esther Howard"),
+                          const Text("Aug 10, 2022"),
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.blueAccent,
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 24,
                           vertical: 12,
                         ),
-                        child: Text(
+                        child: const Text(
                           'Follow',
                           style: TextStyle(
                             color: Colors.white,
@@ -121,7 +121,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       )
                     ],
                   ),
-                  Text(
+                  const Text(
                       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
@@ -133,17 +133,19 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                             height: 72,
                             color: Colors.blueAccent,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
-                          Expanded(
+                          const Expanded(
                             child: Text(
                                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
                           ),
                         ],
                       ),
                     ),
-                  )
+                  ),
+                  const Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
                 ],
               ),
             ),
