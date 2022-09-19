@@ -88,11 +88,37 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
                     height: 160,
-
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blue,
                     ),
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [
+                          Text("Esther Howard"),
+                          Text("Aug 10, 2022"),
+                        ],
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blueAccent,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 24,
+                          vertical: 12,
+                        ),
+                        child: Text(
+                          'Follow',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
