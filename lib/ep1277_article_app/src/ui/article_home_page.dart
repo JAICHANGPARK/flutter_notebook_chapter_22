@@ -215,11 +215,19 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                     child: Row(
                       children: [
                         Container(
-
                           width: 140,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(4),
                             color: Colors.pink,
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('What Training Do Volleyball Players Need?'),
+                              Text("2h ago - 8k read"),
+                            ],
                           ),
                         )
                       ],
