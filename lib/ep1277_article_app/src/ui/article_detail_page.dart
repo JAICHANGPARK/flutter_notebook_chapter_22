@@ -111,11 +111,27 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   ),
                   Row(
                     children: [
-                      const CircleAvatar(),
+                      const CircleAvatar(
+                        radius: 24,
+                      ),
+                      SizedBox(
+                        width: 16,
+                      ),
                       Column(
                         children: [
-                          const Text("Esther Howard"),
-                          const Text("Aug 10, 2022"),
+                          const Text(
+                            "Esther Howard",
+                            style: TextStyle(fontSize: 12),
+                          ),
+                          SizedBox(
+                            height: 12,
+                          ),
+                          const Text(
+                            "Aug 10, 2022",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                       const Spacer(),
@@ -125,8 +141,8 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 24,
-                          vertical: 12,
+                          horizontal: 28,
+                          vertical: 8,
                         ),
                         child: const Text(
                           'Follow',
@@ -137,8 +153,20 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       )
                     ],
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   const Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, '
+                    'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                    ' Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi '
+                    'ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit '
+                    'in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+                    style: TextStyle(
+                      fontSize: 12,
+                      height: 1.2,
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     child: IntrinsicHeight(
