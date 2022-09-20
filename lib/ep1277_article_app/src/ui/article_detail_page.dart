@@ -111,7 +111,9 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blue,
                       image: const DecorationImage(
-                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825__340.jpg"),
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825__340.jpg",
+                        ),
                         fit: BoxFit.cover,
                       ),
                     ),
