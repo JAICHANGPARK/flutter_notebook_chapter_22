@@ -186,7 +186,16 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                           ),
                           const Expanded(
                             child: Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                              "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                              " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut "
+                              "aliquip ex ea commodo consequat.",
+                              style: TextStyle(
+                                fontSize: 12,
+                                height: 1.6,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ],
                       ),
