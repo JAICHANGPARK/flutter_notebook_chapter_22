@@ -101,7 +101,9 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 16,),
+                  const SizedBox(
+                    height: 12,
+                  ),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 160,
