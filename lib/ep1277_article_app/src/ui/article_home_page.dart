@@ -11,7 +11,14 @@ class ArticleHomePage extends StatefulWidget {
 class _ArticleHomePageState extends State<ArticleHomePage> {
   int _pageIndex = 0;
   int _menuIndex = 0;
-  List<String> menuItems = ["All", "For You", "Following", "News", "Global", "Finance"];
+  List<String> menuItems = [
+    "All",
+    "For You",
+    "Following",
+    "News",
+    "Global",
+    "Finance",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -149,7 +156,8 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                                           vertical: 4,
                                                         ),
                                                         decoration: BoxDecoration(
-                                                            color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                                            color: Colors.white,
+                                                            borderRadius: BorderRadius.circular(16)),
                                                         child: Row(
                                                           mainAxisAlignment: MainAxisAlignment.center,
                                                           children: const [
@@ -285,13 +293,13 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                         ),
                       ),
                       Container(
-                        child: Text("Menu 2"),
+                        child: const Text("Menu 2"),
                       ),
                       Container(
-                        child: Text("Menu 3"),
+                        child: const Text("Menu 3"),
                       ),
                       Container(
-                        child: Text("Menu 4"),
+                        child: const Text("Menu 4"),
                       ),
                     ],
                   ),
@@ -299,9 +307,15 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
               ],
             ),
           ),
-          Container(),
-          Container(),
-          Container(),
+          Container(
+            child: const Center(child: Text("Page 1")),
+          ),
+          Container(
+            child: const Center(child: Text("Page 2")),
+          ),
+          Container(
+            child: Center(child: const Text("Page 3")),
+          ),
         ],
       ),
       bottomNavigationBar: NavigationBar(
