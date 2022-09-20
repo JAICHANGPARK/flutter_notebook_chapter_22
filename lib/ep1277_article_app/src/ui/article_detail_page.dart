@@ -125,10 +125,13 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                         children: const [
                           Text(
                             "Esther Howard",
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                           SizedBox(
-                            height: 12,
+                            height: 8,
                           ),
                           Text(
                             "Aug 10, 2022",
