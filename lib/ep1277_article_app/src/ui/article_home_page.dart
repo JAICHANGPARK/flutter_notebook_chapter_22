@@ -32,52 +32,52 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
       body: IndexedStack(
         index: _pageIndex,
         children: [
-          SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 16),
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  SizedBox(
-                    height: 52,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: menuItems.length,
-                      itemBuilder: (context, index) {
-                        var item = menuItems[index];
-                        return GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _menuIndex = index;
-                            });
-                          },
-                          child: Container(
-                            margin: const EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                            padding: const EdgeInsets.symmetric(horizontal: 24),
-                            decoration: BoxDecoration(
-                              color: _menuIndex == index ? Colors.blueAccent : Colors.grey[200],
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            child: Center(
-                              child: Text(
-                                item,
-                                style: TextStyle(
-                                  color: _menuIndex == index ? Colors.white : Colors.black,
-                                ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 16,
+                ),
+                SizedBox(
+                  height: 52,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: menuItems.length,
+                    itemBuilder: (context, index) {
+                      var item = menuItems[index];
+                      return GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _menuIndex = index;
+                          });
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
+                          decoration: BoxDecoration(
+                            color: _menuIndex == index ? Colors.blueAccent : Colors.grey[200],
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              item,
+                              style: TextStyle(
+                                color: _menuIndex == index ? Colors.white : Colors.black,
                               ),
                             ),
                           ),
-                        );
-                      },
-                    ),
+                        ),
+                      );
+                    },
                   ),
-                  Expanded(
-                    child: IndexedStack(
-                      index: _menuIndex,
-                      children: [
-                        Column(
+                ),
+                Expanded(
+                  child: IndexedStack(
+                    index: _menuIndex,
+                    children: [
+                      SingleChildScrollView(
+                        child: Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -149,8 +149,7 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                                                           vertical: 4,
                                                         ),
                                                         decoration: BoxDecoration(
-                                                            color: Colors.white,
-                                                            borderRadius: BorderRadius.circular(16)),
+                                                            color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                                         child: Row(
                                                           mainAxisAlignment: MainAxisAlignment.center,
                                                           children: const [
@@ -284,14 +283,20 @@ class _ArticleHomePageState extends State<ArticleHomePage> {
                             )
                           ],
                         ),
-                        Container(),
-                        Container(),
-                        Container(),
-                      ],
-                    ),
-                  )
-                ],
-              ),
+                      ),
+                      Container(
+                        child: Text("Menu 2"),
+                      ),
+                      Container(
+                        child: Text("Menu 3"),
+                      ),
+                      Container(
+                        child: Text("Menu 4"),
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
           ),
           Container(),
