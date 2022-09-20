@@ -59,7 +59,12 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   ),
                   Row(
                     children: [
-                      const Text("Aug 10, 2022 by"),
+                      const Text(
+                        "Aug 10, 2022 by",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
                       const Text(
                         " Esther Howard",
                         style: TextStyle(
@@ -69,20 +74,31 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       const Spacer(),
                       Container(
                         decoration: BoxDecoration(
-                          border: Border.all(),
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                          borderRadius: BorderRadius.circular(24),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                         child: const Center(
                           child: Text("Sport"),
                         ),
                       ),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Container(
                         decoration: BoxDecoration(
-                          border: Border.all(),
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                          borderRadius: BorderRadius.circular(24),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                         child: const Center(
                           child: Text("Health"),
                         ),
-                      )
+                      ),
                     ],
                   ),
                   Container(
