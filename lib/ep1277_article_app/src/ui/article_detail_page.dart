@@ -177,7 +177,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       child: Row(
                         children: [
                           Container(
-                            width: 4,
+                            width: 2,
                             height: 72,
                             color: Colors.blueAccent,
                           ),
