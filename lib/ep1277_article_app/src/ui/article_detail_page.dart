@@ -79,12 +79,12 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                           ),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                         child: const Center(
                           child: Text("Sport"),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Container(
@@ -94,7 +94,7 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                           ),
                           borderRadius: BorderRadius.circular(24),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                         child: const Center(
                           child: Text("Health"),
                         ),
@@ -107,6 +107,10 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       color: Colors.blue,
+                      image: const DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825__340.jpg"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   Row(
@@ -114,19 +118,19 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       const CircleAvatar(
                         radius: 24,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       Column(
-                        children: [
-                          const Text(
+                        children: const [
+                          Text(
                             "Esther Howard",
                             style: TextStyle(fontSize: 12),
                           ),
                           SizedBox(
                             height: 12,
                           ),
-                          const Text(
+                          Text(
                             "Aug 10, 2022",
                             style: TextStyle(
                               color: Colors.grey,
@@ -153,18 +157,18 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   const Text(
                     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, '
                     'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                     ' Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi '
-                    'ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit '
-                    'in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+                    'ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ',
                     style: TextStyle(
                       fontSize: 12,
-                      height: 1.2,
+                      height: 1.6,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Padding(
@@ -206,32 +210,32 @@ class _ArticleDetailPageState extends State<ArticleDetailPage> {
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(
+                    children: const [
+                      Icon(
                         Icons.thumb_up_alt_outlined,
                         color: Colors.white,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 4,
                       ),
-                      const Text(
+                      Text(
                         "1.2k",
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
-                      const VerticalDivider(
+                      VerticalDivider(
                         color: Colors.white,
                         width: 24,
                       ),
-                      const Icon(
+                      Icon(
                         Icons.chat_outlined,
                         color: Colors.white,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 4,
                       ),
-                      const Text(
+                      Text(
                         "120",
                         style: TextStyle(
                           color: Colors.white,
