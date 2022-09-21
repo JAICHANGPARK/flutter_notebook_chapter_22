@@ -14,6 +14,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.only(
@@ -89,6 +90,17 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   Icon(Ionicons.logo_linkedin),
                 ],
               ),
+            ),
+            Text("CEO @FlutterDevCompany"),
+            Text("www.flutterlivecoding.com"),
+            Row(
+              children: [
+                Icon(
+                  Icons.location_pin,
+                  size: 15,
+                ),
+                Text("Seoul, Republic of Korea")
+              ],
             )
           ],
         ),
