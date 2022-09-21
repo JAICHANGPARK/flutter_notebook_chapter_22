@@ -101,7 +101,18 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 ),
                 Text("Seoul, Republic of Korea")
               ],
-            )
+            ),
+            Divider(),
+            Container(
+              height: 140,
+              color: Colors.pink,
+            ),
+            Divider(),
+            Container(
+              height: 100,
+              color: Colors.pink,
+            ),
+            Expanded(child: Placeholder())
           ],
         ),
       ),
