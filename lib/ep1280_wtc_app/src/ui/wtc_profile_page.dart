@@ -24,14 +24,13 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 children: [
                   const Icon(Icons.arrow_back_ios_new),
                   SizedBox(
-                    width: 24,
+                    width: 32,
                   ),
                   Expanded(
                     child: const CircleAvatar(
                       radius: 24,
                     ),
                   ),
-
                   Container(
                     padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(
@@ -50,9 +49,22 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   Icon(
                     Icons.settings_outlined,
                     size: 28,
-                  )
+                  ),
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Text("Dream Walker"),
+                CircleAvatar(
+                  radius: 8,
+                  child: Icon(
+                    Icons.check,
+                  ),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.blue,
+                )
+              ],
             )
           ],
         ),
