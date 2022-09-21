@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class WTCProfilePage extends StatefulWidget {
   const WTCProfilePage({Key? key}) : super(key: key);
@@ -53,18 +54,41 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Text("Dream Walker"),
-                CircleAvatar(
-                  radius: 8,
-                  child: Icon(
-                    Icons.check,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Dream Walker",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
-                  foregroundColor: Colors.white,
-                  backgroundColor: Colors.blue,
-                )
-              ],
+                  SizedBox(
+                    width: 4,
+                  ),
+                  CircleAvatar(
+                    radius: 8,
+                    child: Icon(
+                      Icons.check,
+                      size: 12,
+                    ),
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.blue,
+                  ),
+                  Spacer(),
+                  Icon(Ionicons.logo_instagram),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Icon(Ionicons.logo_twitter),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Icon(Ionicons.logo_linkedin),
+                ],
+              ),
             )
           ],
         ),
