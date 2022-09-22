@@ -120,7 +120,8 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             ),
             const Divider(),
             Container(
-              height: 140,
+              height: 120,
+              margin: EdgeInsets.only(left: 16),
               color: Colors.pink,
               child: Column(
                 children: [
@@ -155,16 +156,24 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       child: ListView.builder(
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                      return Column(
-                        children: [
-                          CircleAvatar(),
-                          Text(
-                            "Flutter",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          children: [
+                            CircleAvatar(
+                              radius: 20,
                             ),
-                          )
-                        ],
+                            SizedBox(
+                              height: 6,
+                            ),
+                            Text(
+                              "Flutter",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
+                        ),
                       );
                     },
                     scrollDirection: Axis.horizontal,
