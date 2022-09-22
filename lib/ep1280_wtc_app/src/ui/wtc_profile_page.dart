@@ -136,7 +136,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             const Divider(),
             Container(
               height: 120,
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               // color: Colors.pink,
               child: Column(
                 children: [
@@ -199,46 +199,47 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             const Divider(),
             Container(
               height: 72,
-              margin: EdgeInsets.all(16),
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              margin: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
               decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
               child: Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(32),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.4),
-                          blurRadius: 2,
-                          spreadRadius: 2,
-                          offset: Offset(2, 2),
-                        )
-                      ],
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Profile",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.4),
+                            blurRadius: 2,
+                            spreadRadius: 2,
+                            offset: const Offset(2, 2),
+                          )
+                        ],
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Profile",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
-                  )),
-                  SizedBox(
+                  ),
+                  const SizedBox(
                     width: 8,
                   ),
-                  Expanded(child: Placeholder()),
-                  SizedBox(
+                  const Expanded(child: Placeholder()),
+                  const SizedBox(
                     width: 8,
                   ),
-                  Expanded(child: Placeholder()),
-                  SizedBox(
+                  const Expanded(child: Placeholder()),
+                  const SizedBox(
                     width: 8,
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                 ],
               ),
             ),
