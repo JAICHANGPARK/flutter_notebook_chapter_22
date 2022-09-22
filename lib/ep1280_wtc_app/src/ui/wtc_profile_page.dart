@@ -198,18 +198,18 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             ),
             const Divider(),
             Container(
-              height: 80,
+              height: 72,
               margin: EdgeInsets.all(16),
-              padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
               decoration: BoxDecoration(color: Colors.grey[200]),
               child: Row(
                 children: [
                   Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
                     child: Center(
                       child: Text(
                         "Profile",
@@ -219,8 +219,11 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       ),
                     ),
                   )),
+                  SizedBox(width: 8,),
                   Expanded(child: Placeholder()),
+                  SizedBox(width: 8,),
                   Expanded(child: Placeholder()),
+                  SizedBox(width: 8,),
                   Expanded(child: Placeholder()),
                 ],
               ),
