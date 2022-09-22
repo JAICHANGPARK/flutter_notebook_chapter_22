@@ -167,38 +167,47 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     ],
                   ),
                   Expanded(
-                      child: ListView.builder(
-                    itemCount: 10,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Column(
-                          children: const [
-                            CircleAvatar(
-                              radius: 20,
-                            ),
-                            SizedBox(
-                              height: 6,
-                            ),
-                            Text(
-                              "Flutter",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                    child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Column(
+                            children: const [
+                              CircleAvatar(
+                                radius: 24,
                               ),
-                            )
-                          ],
-                        ),
-                      );
-                    },
-                    scrollDirection: Axis.horizontal,
-                  ))
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "Flutter",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      scrollDirection: Axis.horizontal,
+                    ),
+                  )
                 ],
               ),
             ),
             const Divider(),
             Container(
               height: 100,
-              color: Colors.pink,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.grey[100]
+              ),
+              child: Row(
+                children: [
+                  
+                ],
+              ),
             ),
             const Expanded(child: Placeholder())
           ],
