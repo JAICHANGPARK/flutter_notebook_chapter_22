@@ -96,7 +96,16 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("CEO @FlutterDevCompany"),
+                  const Text(
+                    "CEO @FlutterDevCompany",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w200,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 4,
+                  ),
                   const Text(
                     "www.flutterlivecoding.com",
                     style: TextStyle(
