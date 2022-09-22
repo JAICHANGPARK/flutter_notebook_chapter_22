@@ -277,10 +277,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 "About Me",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
             ),
             Expanded(
@@ -290,6 +287,11 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 child: Column(
                   children: [
                     Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                      ),
                       child: Column(
                         children: [
                           Text("PAST JOBS"),
