@@ -58,18 +58,18 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
-                children: [
-                  const Text(
+                children: const [
+                  Text(
                     "Dream Walker",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 4,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 8,
                     child: Icon(
                       Icons.check,
@@ -78,16 +78,16 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.blue,
                   ),
-                  const Spacer(),
-                  const Icon(Ionicons.logo_instagram),
-                  const SizedBox(
+                  Spacer(),
+                  Icon(Ionicons.logo_instagram),
+                  SizedBox(
                     width: 12,
                   ),
-                  const Icon(Ionicons.logo_twitter),
-                  const SizedBox(
+                  Icon(Ionicons.logo_twitter),
+                  SizedBox(
                     width: 12,
                   ),
-                  const Icon(Ionicons.logo_linkedin),
+                  Icon(Ionicons.logo_linkedin),
                 ],
               ),
             ),
@@ -116,12 +116,18 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     height: 16,
                   ),
                   Row(
-                    children: [
-                      const Icon(
+                    children: const [
+                      Icon(
                         Icons.location_pin,
                         size: 15,
                       ),
-                      const Text("Seoul, Republic of Korea")
+                      Text(
+                        "Seoul, Republic of Korea",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
                     ],
                   ),
                 ],
@@ -131,16 +137,14 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             Container(
               height: 120,
               margin: EdgeInsets.only(left: 16),
-              color: Colors.pink,
+              // color: Colors.pink,
               child: Column(
                 children: [
                   Row(
                     children: [
                       const Text(
                         "Dream Walker",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                       ),
                       const Spacer(),
                       TextButton(
@@ -158,6 +162,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       const Icon(
                         Icons.arrow_forward,
                         color: Colors.grey,
+                        size: 16,
                       )
                     ],
                   ),
@@ -168,7 +173,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       return Padding(
                         padding: const EdgeInsets.only(right: 16),
                         child: Column(
-                          children: [
+                          children: const [
                             CircleAvatar(
                               radius: 20,
                             ),
