@@ -25,16 +25,16 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               child: Row(
                 children: [
                   const Icon(Icons.arrow_back_ios_new),
-                  SizedBox(
+                  const SizedBox(
                     width: 32,
                   ),
-                  Expanded(
-                    child: const CircleAvatar(
+                  const Expanded(
+                    child: CircleAvatar(
                       radius: 24,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
                       color: Colors.orange[200],
                       borderRadius: BorderRadius.circular(4),
@@ -45,10 +45,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       color: Colors.deepOrange,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.settings_outlined,
                     size: 28,
                   ),
@@ -59,17 +59,17 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Dream Walker",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 4,
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 8,
                     child: Icon(
                       Icons.check,
@@ -78,16 +78,16 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.blue,
                   ),
-                  Spacer(),
-                  Icon(Ionicons.logo_instagram),
-                  SizedBox(
+                  const Spacer(),
+                  const Icon(Ionicons.logo_instagram),
+                  const SizedBox(
                     width: 12,
                   ),
-                  Icon(Ionicons.logo_twitter),
-                  SizedBox(
+                  const Icon(Ionicons.logo_twitter),
+                  const SizedBox(
                     width: 12,
                   ),
-                  Icon(Ionicons.logo_linkedin),
+                  const Icon(Ionicons.logo_linkedin),
                 ],
               ),
             ),
@@ -96,29 +96,29 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("CEO @FlutterDevCompany"),
-                  Text(
+                  const Text("CEO @FlutterDevCompany"),
+                  const Text(
                     "www.flutterlivecoding.com",
                     style: TextStyle(
                       color: Colors.blue,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.location_pin,
                         size: 15,
                       ),
-                      Text("Seoul, Republic of Korea")
+                      const Text("Seoul, Republic of Korea")
                     ],
                   ),
                 ],
               ),
             ),
-            Divider(),
+            const Divider(),
             Container(
               height: 140,
               color: Colors.pink,
@@ -126,35 +126,40 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 children: [
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         "Dream Walker",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "See more",
-                            style: TextStyle(
-                              fontSize: 12,
-                            ),
-                          )),
-                      Icon(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.grey,
+                        ),
+                        onPressed: () {},
+                        child: const Text(
+                          "See more",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                      const Icon(
                         Icons.arrow_forward,
+                        color: Colors.grey,
                       )
                     ],
                   )
                 ],
               ),
             ),
-            Divider(),
+            const Divider(),
             Container(
               height: 100,
               color: Colors.pink,
             ),
-            Expanded(child: Placeholder())
+            const Expanded(child: Placeholder())
           ],
         ),
       ),
