@@ -201,14 +201,15 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               height: 72,
               margin: EdgeInsets.all(16),
               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-              decoration: BoxDecoration(color: Colors.grey[200]),
+              decoration: BoxDecoration(color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(32)),
               child: Row(
                 children: [
                   Expanded(
                       child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(24),
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     child: Center(
                       child: Text(
