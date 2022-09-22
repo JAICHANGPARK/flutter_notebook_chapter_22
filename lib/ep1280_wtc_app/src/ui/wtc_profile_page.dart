@@ -277,7 +277,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 "About Me",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
             ),
             Expanded(
@@ -292,9 +295,34 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                           color: Colors.grey[400]!,
                         ),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("PAST JOBS"),
+                          Text(
+                            "PAST JOBS",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Text("Product Manager @ A Company"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Text("Flutter Developer @ B Company"),
+                            ],
+                          )
                         ],
                       ),
                     )
