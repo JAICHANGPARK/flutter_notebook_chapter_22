@@ -232,13 +232,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     width: 8,
                   ),
                   const Expanded(
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         "Posts",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -246,13 +243,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     width: 8,
                   ),
                   const Expanded(
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         "Videos",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                            color: Colors.grey
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -260,14 +254,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     width: 8,
                   ),
                   const Expanded(
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         "Events",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                            color: Colors.grey
-                        ),
-
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                       ),
                     ),
                   ),
