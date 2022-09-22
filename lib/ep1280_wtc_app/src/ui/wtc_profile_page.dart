@@ -274,26 +274,30 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(16.0),
               child: Text(
                 "About Me",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 18
                 ),
               ),
             ),
             Expanded(
                 child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        Text("PAST JOBS"),
-                      ],
-                    ),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16, right: 16),
+                child: Column(
+                  children: [
+                    Container(
+                      child: Column(
+                        children: [
+                          Text("PAST JOBS"),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ))
           ],
