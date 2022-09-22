@@ -198,7 +198,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             ),
             const Divider(),
             Container(
-              height: 100,
+              height: 80,
               margin: EdgeInsets.all(16),
               padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
               decoration: BoxDecoration(color: Colors.grey[200]),
@@ -206,6 +206,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 children: [
                   Expanded(
                       child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(24)
+                        ),
                     child: Center(
                       child: Text(
                         "Profile",
