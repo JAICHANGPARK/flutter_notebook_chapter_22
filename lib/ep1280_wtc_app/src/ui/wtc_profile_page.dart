@@ -292,8 +292,9 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.grey[400]!,
+                          color: Colors.grey[300]!,
                         ),
+                        borderRadius: BorderRadius.circular(4)
                       ),
                       padding: EdgeInsets.all(16),
                       child: Column(
@@ -305,6 +306,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                          SizedBox(height: 12,),
                           Row(
                             children: [
                               CircleAvatar(),
@@ -314,6 +316,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                               Text("Product Manager @ A Company"),
                             ],
                           ),
+                          SizedBox(height: 12,),
                           Row(
                             children: [
                               CircleAvatar(),
