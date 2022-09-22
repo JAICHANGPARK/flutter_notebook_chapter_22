@@ -92,7 +92,12 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               ),
             ),
             Text("CEO @FlutterDevCompany"),
-            Text("www.flutterlivecoding.com"),
+            Text(
+              "www.flutterlivecoding.com",
+              style: TextStyle(
+                color: Colors.blue,
+              ),
+            ),
             Row(
               children: [
                 Icon(
