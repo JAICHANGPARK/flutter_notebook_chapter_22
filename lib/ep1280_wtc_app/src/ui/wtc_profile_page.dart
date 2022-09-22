@@ -231,15 +231,46 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   const SizedBox(
                     width: 8,
                   ),
-                  const Expanded(child: Placeholder()),
+                  const Expanded(
+                    child: const Center(
+                      child: Text(
+                        "Posts",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey
+                        ),
+                      ),
+                    ),
+                  ),
                   const SizedBox(
                     width: 8,
                   ),
-                  const Expanded(child: Placeholder()),
+                  const Expanded(
+                    child: const Center(
+                      child: Text(
+                        "Videos",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                            color: Colors.grey
+                        ),
+                      ),
+                    ),
+                  ),
                   const SizedBox(
                     width: 8,
                   ),
-                  const Expanded(child: Placeholder()),
+                  const Expanded(
+                    child: const Center(
+                      child: Text(
+                        "Events",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                            color: Colors.grey
+                        ),
+
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
