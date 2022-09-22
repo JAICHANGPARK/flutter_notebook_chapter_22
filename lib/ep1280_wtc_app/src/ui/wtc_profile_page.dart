@@ -91,22 +91,32 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 ],
               ),
             ),
-            Text("CEO @FlutterDevCompany"),
-            Text(
-              "www.flutterlivecoding.com",
-              style: TextStyle(
-                color: Colors.blue,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("CEO @FlutterDevCompany"),
+                  Text(
+                    "www.flutterlivecoding.com",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  SizedBox(height: 16,),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.location_pin,
+                        size: 15,
+                      ),
+                      Text("Seoul, Republic of Korea")
+                    ],
+                  ),
+                ],
               ),
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.location_pin,
-                  size: 15,
-                ),
-                Text("Seoul, Republic of Korea")
-              ],
-            ),
+            )
+
             Divider(),
             Container(
               height: 140,
