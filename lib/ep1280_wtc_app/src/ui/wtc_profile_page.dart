@@ -273,8 +273,11 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 24,
+              ),
               child: Text(
                 "About Me",
                 style: TextStyle(
@@ -291,24 +294,26 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[300]!,
-                        ),
-                        borderRadius: BorderRadius.circular(4)
-                      ),
-                      padding: EdgeInsets.all(16),
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                          borderRadius: BorderRadius.circular(4)),
+                      margin: const EdgeInsets.only(bottom: 16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "PAST JOBS",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(height: 12,),
+                          const SizedBox(
+                            height: 12,
+                          ),
                           Row(
-                            children: [
+                            children: const [
                               CircleAvatar(),
                               SizedBox(
                                 width: 16,
@@ -316,9 +321,11 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                               Text("Product Manager @ A Company"),
                             ],
                           ),
-                          SizedBox(height: 12,),
+                          const SizedBox(
+                            height: 12,
+                          ),
                           Row(
-                            children: [
+                            children: const [
                               CircleAvatar(),
                               SizedBox(
                                 width: 16,
@@ -326,6 +333,39 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                               Text("Flutter Developer @ B Company"),
                             ],
                           )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                          ),
+                          borderRadius: BorderRadius.circular(4)),
+                      margin: const EdgeInsets.only(bottom: 16),
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "EDUCATION",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          Row(
+                            children: const [
+                              Text(
+                                "Flutter University / 2015-2020",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     )
