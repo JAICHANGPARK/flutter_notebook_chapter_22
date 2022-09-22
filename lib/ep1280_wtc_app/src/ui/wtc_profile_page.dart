@@ -201,8 +201,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               height: 72,
               margin: EdgeInsets.all(16),
               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-              decoration: BoxDecoration(color: Colors.grey[200],
-              borderRadius: BorderRadius.circular(32)),
+              decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
               child: Row(
                 children: [
                   Expanded(
@@ -210,6 +209,14 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(.4),
+                          blurRadius: 2,
+                          spreadRadius: 2,
+                          offset: Offset(2, 2),
+                        )
+                      ],
                     ),
                     child: Center(
                       child: Text(
@@ -220,11 +227,17 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       ),
                     ),
                   )),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Expanded(child: Placeholder()),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Expanded(child: Placeholder()),
-                  SizedBox(width: 8,),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Expanded(child: Placeholder()),
                 ],
               ),
