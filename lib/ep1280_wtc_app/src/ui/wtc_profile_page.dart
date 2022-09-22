@@ -200,12 +200,24 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             Container(
               height: 100,
               margin: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[100]
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+              decoration: BoxDecoration(color: Colors.grey[200]),
               child: Row(
                 children: [
-                  
+                  Expanded(
+                      child: Container(
+                    child: Center(
+                      child: Text(
+                        "Profile",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  )),
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
