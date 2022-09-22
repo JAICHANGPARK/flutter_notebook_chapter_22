@@ -103,7 +103,9 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                       color: Colors.blue,
                     ),
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
                       Icon(
@@ -115,8 +117,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   ),
                 ],
               ),
-            )
-
+            ),
             Divider(),
             Container(
               height: 140,
