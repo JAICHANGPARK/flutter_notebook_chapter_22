@@ -362,6 +362,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                                 "Flutter University / 2015-2020",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  color: Colors.grey,
                                 ),
                               ),
                             ],
