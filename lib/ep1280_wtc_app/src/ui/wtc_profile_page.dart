@@ -122,6 +122,32 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
             Container(
               height: 140,
               color: Colors.pink,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Spacer(),
+                      TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See more",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          )),
+                      Icon(
+                        Icons.arrow_forward,
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
             Divider(),
             Container(
