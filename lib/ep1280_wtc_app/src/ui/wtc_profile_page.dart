@@ -235,7 +235,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     child: Center(
                       child: Text(
                         "Posts",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
@@ -246,7 +249,10 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     child: Center(
                       child: Text(
                         "Videos",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
@@ -257,14 +263,39 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                     child: Center(
                       child: Text(
                         "Events",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
             ),
-            const Expanded(child: Placeholder())
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "About Me",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    child: Column(
+                      children: [
+                        Text("PAST JOBS"),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ))
           ],
         ),
       ),
