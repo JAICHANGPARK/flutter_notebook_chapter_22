@@ -150,7 +150,25 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                         color: Colors.grey,
                       )
                     ],
-                  )
+                  ),
+                  Expanded(
+                      child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) {
+                      return Column(
+                        children: [
+                          CircleAvatar(),
+                          Text(
+                            "Flutter",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      );
+                    },
+                    scrollDirection: Axis.horizontal,
+                  ))
                 ],
               ),
             ),
