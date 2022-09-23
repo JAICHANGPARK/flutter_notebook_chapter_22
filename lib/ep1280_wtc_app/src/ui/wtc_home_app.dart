@@ -16,10 +16,14 @@ class _WTCHomePageState extends State<WTCHomePage> {
         children: [
           Expanded(
             child: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
                       "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg",
+                    ),
+                    colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.2),
+                      BlendMode.darken,
                     ),
                     fit: BoxFit.cover,
                   ),
