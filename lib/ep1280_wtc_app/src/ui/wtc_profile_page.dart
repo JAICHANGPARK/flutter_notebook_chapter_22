@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1280_wtc_app/src/ui/wtc_home_app.dart';
 import 'package:ionicons/ionicons.dart';
 
 class WTCProfilePage extends StatefulWidget {
@@ -28,9 +29,20 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   const SizedBox(
                     width: 32,
                   ),
-                  const Expanded(
-                    child: CircleAvatar(
-                      radius: 24,
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return WTCHomePage();
+                            },
+                          ),
+                        );
+                      },
+                      child: CircleAvatar(
+                        radius: 24,
+                      ),
                     ),
                   ),
                   Container(
