@@ -71,12 +71,12 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                   ),
                   CircleAvatar(
                     radius: 8,
+                    foregroundColor: Colors.white,
+                    backgroundColor: Colors.blue,
                     child: Icon(
                       Icons.check,
                       size: 12,
                     ),
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.blue,
                   ),
                   Spacer(),
                   Icon(Ionicons.logo_instagram),
