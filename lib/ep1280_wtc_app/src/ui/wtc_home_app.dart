@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class WTCHomePage extends StatefulWidget {
   const WTCHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,12 @@ class WTCHomePage extends StatefulWidget {
 class _WTCHomePageState extends State<WTCHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
