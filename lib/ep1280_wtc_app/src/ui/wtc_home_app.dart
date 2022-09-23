@@ -40,11 +40,14 @@ class _WTCHomePageState extends State<WTCHomePage> {
                       Row(
                         children: [
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
                             icon: const Icon(
                               Icons.keyboard_arrow_left,
                             ),
                             color: Colors.white,
+                            iconSize: 28,
                           ),
                           const Expanded(
                               child: Center(
@@ -107,7 +110,7 @@ class _WTCHomePageState extends State<WTCHomePage> {
                           Text(
                             "Seoul, Republic of Korea",
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           )
