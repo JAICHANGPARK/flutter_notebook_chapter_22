@@ -94,7 +94,25 @@ class _WTCHomePageState extends State<WTCHomePage> {
                       const Text(
                         "Flutter - Developer",
                         style: TextStyle(fontSize: 16, color: Colors.white),
-                      )
+                      ),
+                      Spacer(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.location_pin,
+                            size: 15,
+                            color: Colors.orange,
+                          ),
+                          Text(
+                            "Seoul, Republic of Korea",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      ),
                     ],
                   ),
                 )),
