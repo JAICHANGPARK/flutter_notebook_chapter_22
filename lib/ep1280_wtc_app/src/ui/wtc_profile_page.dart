@@ -35,12 +35,12 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return WTCHomePage();
+                              return const WTCHomePage();
                             },
                           ),
                         );
                       },
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         radius: 24,
                       ),
                     ),
