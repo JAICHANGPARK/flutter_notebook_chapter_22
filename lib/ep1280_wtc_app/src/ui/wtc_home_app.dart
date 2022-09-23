@@ -14,7 +14,51 @@ class _WTCHomePageState extends State<WTCHomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.keyboard_arrow_left,
+                        ),
+                        color: Colors.white,
+                      ),
+                      Expanded(
+                          child: Center(
+                        child: Text("@dreamwalker"),
+                      )),
+                      Container(
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.orange[200],
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: const Icon(
+                          Icons.add,
+                          size: 12,
+                          color: Colors.deepOrange,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      const Icon(
+                        Icons.settings_outlined,
+                        size: 28,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
           const WtcUserListComponent(),
         ],
       ),
