@@ -16,8 +16,13 @@ class _WTCHomePageState extends State<WTCHomePage> {
         children: [
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
-
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
               child: Column(
                 children: [
@@ -30,7 +35,7 @@ class _WTCHomePageState extends State<WTCHomePage> {
                         ),
                         color: Colors.white,
                       ),
-                      Expanded(
+                      const Expanded(
                           child: Center(
                         child: Text("@dreamwalker"),
                       )),
