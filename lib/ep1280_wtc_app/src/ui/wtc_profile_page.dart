@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_22/ep1280_wtc_app/src/ui/wtc_home_app.dart';
 import 'package:ionicons/ionicons.dart';
 
+import 'wtc_user_list_component.dart';
+
 class WTCProfilePage extends StatefulWidget {
   const WTCProfilePage({Key? key}) : super(key: key);
 
@@ -146,68 +148,7 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               ),
             ),
             const Divider(),
-            Container(
-              height: 120,
-              margin: const EdgeInsets.only(left: 16),
-              // color: Colors.pink,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      const Text(
-                        "Dream Walker",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                      ),
-                      const Spacer(),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.grey,
-                        ),
-                        onPressed: () {},
-                        child: const Text(
-                          "See more",
-                          style: TextStyle(
-                            fontSize: 12,
-                          ),
-                        ),
-                      ),
-                      const Icon(
-                        Icons.arrow_forward,
-                        color: Colors.grey,
-                        size: 16,
-                      )
-                    ],
-                  ),
-                  Expanded(
-                    child: ListView.builder(
-                      itemCount: 10,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16),
-                          child: Column(
-                            children: const [
-                              CircleAvatar(
-                                radius: 24,
-                              ),
-                              SizedBox(
-                                height: 6,
-                              ),
-                              Text(
-                                "Flutter",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      },
-                      scrollDirection: Axis.horizontal,
-                    ),
-                  )
-                ],
-              ),
-            ),
+            WtcUserListComponent(),
             const Divider(),
             Container(
               height: 72,
