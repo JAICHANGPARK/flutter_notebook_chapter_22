@@ -42,9 +42,16 @@ class _WTCHomePageState extends State<WTCHomePage> {
                             ),
                             color: Colors.white,
                           ),
-                          const Expanded(
+                          Expanded(
                               child: Center(
-                            child: Text("@dreamwalker"),
+                            child: Text(
+                              "@dreamwalker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
                           )),
                           Container(
                             padding: const EdgeInsets.all(4),
@@ -64,6 +71,7 @@ class _WTCHomePageState extends State<WTCHomePage> {
                           const Icon(
                             Icons.settings_outlined,
                             size: 28,
+                            color: Colors.white,
                           ),
                         ],
                       )
