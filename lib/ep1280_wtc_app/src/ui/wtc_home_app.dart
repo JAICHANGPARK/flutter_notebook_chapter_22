@@ -13,7 +13,10 @@ class _WTCHomePageState extends State<WTCHomePage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Expanded(child: Placeholder()),
+          Container(
+            height: 160,
+          )
         ],
       ),
     );
