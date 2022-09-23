@@ -16,53 +16,60 @@ class _WTCHomePageState extends State<WTCHomePage> {
         children: [
           Expanded(
             child: Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                    "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg",
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg",
+                    ),
+                    fit: BoxFit.cover,
                   ),
-                  fit: BoxFit.cover,
                 ),
-              ),
-              child: Column(
-                children: [
-                  Row(
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    left: 16,
+                    right: 16,
+                    top: 32,
+                    bottom: 42,
+                  ),
+                  child: Column(
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.keyboard_arrow_left,
-                        ),
-                        color: Colors.white,
-                      ),
-                      const Expanded(
-                          child: Center(
-                        child: Text("@dreamwalker"),
-                      )),
-                      Container(
-                        padding: const EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          color: Colors.orange[200],
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: const Icon(
-                          Icons.add,
-                          size: 12,
-                          color: Colors.deepOrange,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 16,
-                      ),
-                      const Icon(
-                        Icons.settings_outlined,
-                        size: 28,
-                      ),
+                      Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.keyboard_arrow_left,
+                            ),
+                            color: Colors.white,
+                          ),
+                          const Expanded(
+                              child: Center(
+                            child: Text("@dreamwalker"),
+                          )),
+                          Container(
+                            padding: const EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              color: Colors.orange[200],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Icon(
+                              Icons.add,
+                              size: 12,
+                              color: Colors.deepOrange,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 16,
+                          ),
+                          const Icon(
+                            Icons.settings_outlined,
+                            size: 28,
+                          ),
+                        ],
+                      )
                     ],
-                  )
-                ],
-              ),
-            ),
+                  ),
+                )),
           ),
           const WtcUserListComponent(),
         ],
