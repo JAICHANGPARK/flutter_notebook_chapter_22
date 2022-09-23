@@ -148,13 +148,16 @@ class _WTCProfilePageState extends State<WTCProfilePage> {
               ),
             ),
             const Divider(),
-            WtcUserListComponent(),
+            const WtcUserListComponent(),
             const Divider(),
             Container(
               height: 72,
               margin: const EdgeInsets.all(16),
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-              decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(32),
+              ),
               child: Row(
                 children: [
                   Expanded(
