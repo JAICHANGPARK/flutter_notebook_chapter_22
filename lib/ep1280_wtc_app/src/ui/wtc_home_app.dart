@@ -25,7 +25,7 @@ class _WTCHomePageState extends State<WTCHomePage> {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     left: 16,
                     right: 16,
                     top: 32,
@@ -42,7 +42,7 @@ class _WTCHomePageState extends State<WTCHomePage> {
                             ),
                             color: Colors.white,
                           ),
-                          Expanded(
+                          const Expanded(
                               child: Center(
                             child: Text(
                               "@dreamwalker",
@@ -74,6 +74,22 @@ class _WTCHomePageState extends State<WTCHomePage> {
                             color: Colors.white,
                           ),
                         ],
+                      ),
+                      const Spacer(),
+                      const Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          fontSize: 48,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 24,
+                      ),
+                      const Text(
+                        "Flutter - Developer",
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       )
                     ],
                   ),
