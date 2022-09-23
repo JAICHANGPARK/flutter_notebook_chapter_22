@@ -6,8 +6,8 @@ class WtcUserListComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
-      margin: const EdgeInsets.only(left: 16),
+      height: 140,
+      margin: const EdgeInsets.only(left: 16, bottom: 8),
       // color: Colors.pink,
       child: Column(
         children: [
