@@ -16,26 +16,25 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
         elevation: 0,
         backgroundColor: Colors.grey[100],
         foregroundColor: Colors.black,
-        leading: Icon(Icons.arrow_back_ios_new),
-        title: Text("Category"),
+        leading: const Icon(Icons.arrow_back_ios_new),
+        title: const Text("Category"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.tune,
             ),
           )
         ],
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(16),
           topRight: Radius.circular(16),
         ),
         child: BottomNavigationBar(
-
           type: BottomNavigationBarType.fixed,
-          items: [
+          items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.map_rounded), label: "Explore"),
             BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: "Bookmarks"),
