@@ -12,6 +12,9 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.grey[50],
+        foregroundColor: Colors.black,
         leading: Icon(Icons.arrow_back_ios_new),
         title: Text("Category"),
         actions: [
