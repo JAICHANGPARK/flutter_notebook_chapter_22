@@ -11,9 +11,10 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.grey[50],
+        backgroundColor: Colors.grey[100],
         foregroundColor: Colors.black,
         leading: Icon(Icons.arrow_back_ios_new),
         title: Text("Category"),
@@ -32,7 +33,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
           topRight: Radius.circular(16),
         ),
         child: BottomNavigationBar(
-          
+
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
