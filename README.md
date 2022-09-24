@@ -2,7 +2,15 @@
 
 ## S25
 
-### EP1281
+### EP1284-
+
+- Travelling UI Kit Apps
+- by Mahbub Rahman
+- https://dribbble.com/shots/19481319-Travelling-UI-Kit-Apps/attachments/14615052?mode=media
+
+<img src="https://cdn.dribbble.com/users/3496468/screenshots/19481319/media/5c903d886797035cf0fe2b5ee27c38ef.png" width="400px"/>
+
+### EP1281-1283
 
 - Women in Tech Community App
 - by Risang Kuncoro for Plainthing Studi
