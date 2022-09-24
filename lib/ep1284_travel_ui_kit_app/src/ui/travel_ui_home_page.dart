@@ -36,16 +36,28 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: const TextField(
+                          decoration: InputDecoration(
+                        icon: Icon(
+                          Icons.search,
+                        ),
+                        border: InputBorder.none,
+                      )),
                     ),
-                    child: TextField(),
-                  )),
-                  SizedBox(
+                  ),
+                  const SizedBox(
                     width: 8,
                   ),
-                  TextButton(onPressed: () {}, child: Text("Cancel"))
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text("Cancel"),
+                  )
                 ],
               ),
             ),
