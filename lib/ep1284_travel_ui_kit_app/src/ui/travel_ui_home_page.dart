@@ -43,12 +43,15 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: const TextField(
-                          decoration: InputDecoration(
-                        icon: Icon(
-                          Icons.search,
+                        decoration: InputDecoration(
+                          icon: Icon(
+                            Icons.search,
+                          ),
+                          border: InputBorder.none,
+                          hintText: "Search",
+                          // labelText: "Search"
                         ),
-                        border: InputBorder.none,
-                      )),
+                      ),
                     ),
                   ),
                   const SizedBox(
