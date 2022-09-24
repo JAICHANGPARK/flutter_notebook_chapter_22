@@ -26,6 +26,15 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
           )
         ],
       ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(16),
+          topRight: Radius.circular(16),
+        ),
+        child: BottomNavigationBar(
+          items: [],
+        ),
+      ),
     );
   }
 }
