@@ -32,7 +32,13 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
           topRight: Radius.circular(16),
         ),
         child: BottomNavigationBar(
-          items: [],
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.map_rounded), label: "Explore"),
+            BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: "Bookmarks"),
+            BottomNavigationBarItem(icon: Icon(Icons.person_2), label: "Profile"),
+          ],
         ),
       ),
     );
