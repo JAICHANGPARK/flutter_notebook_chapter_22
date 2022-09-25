@@ -74,14 +74,23 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 28),
-                    child: Center(
-                      child: Text("${_tabItems[index]}"),
+                  return GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _pageTab = index;
+                      });
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: _pageTab == index ? Colors.blue : Colors.grey[400]!,
+                        ),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 28),
+                      child: Center(
+                        child: Text("${_tabItems[index]}"),
+                      ),
                     ),
                   );
                 },
