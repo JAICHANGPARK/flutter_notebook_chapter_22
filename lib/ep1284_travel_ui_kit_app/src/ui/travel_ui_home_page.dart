@@ -8,6 +8,8 @@ class TravelUIHomePage extends StatefulWidget {
 }
 
 class _TravelUIHomePageState extends State<TravelUIHomePage> {
+  int _pageTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +70,10 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 0),
               height: 64,
               color: Colors.blue,
+              child: ListView.builder(itemBuilder: (context, index){
+                return Container();
+              },
+              itemCount: 10,),
             ),
             const SizedBox(
               height: 16,
