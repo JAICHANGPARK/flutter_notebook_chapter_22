@@ -146,7 +146,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                               )
                             ],
                           ),
-                          padding: EdgeInsets.all(8),
+                          padding: EdgeInsets.all(12),
                           child: Column(
                             children: [
                               Expanded(child: Placeholder()),
