@@ -112,8 +112,9 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Explore Cities",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -122,11 +123,24 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text("See all"),
+                        child: const Text("See all"),
                       )
                     ],
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.only(right: 16),
+                          width: 200,
+                          color: Colors.white,
+                        );
+                      },
+
+                    ),
+                  ),
                 ],
               ),
             ),
