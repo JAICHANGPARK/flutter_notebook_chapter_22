@@ -161,7 +161,31 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  child: Stack(),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                          right: 12,
+                                          top: 12,
+                                          bottom: 12,
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    child: Row(
+                                                      children: [
+                                                        Icon(Icons.star),
+                                                        Text("5.0"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Icon(Icons.bookmark_border),
+                                                ],
+                                              )
+                                            ],
+                                          ))
+                                    ],
+                                  ),
                                 ),
                               ),
                               SizedBox(
