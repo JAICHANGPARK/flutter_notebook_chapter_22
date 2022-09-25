@@ -164,9 +164,9 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        right: 12,
-                                        top: 12,
-                                        bottom: 12,
+                                        right: 8,
+                                        top: 8,
+                                        bottom: 8,
                                         child: Column(
                                           children: [
                                             Row(
@@ -181,7 +181,10 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                                   ),
                                                   child: Row(
                                                     children: [
-                                                      Icon(Icons.star),
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                      ),
                                                       Text("5.0"),
                                                     ],
                                                   ),
@@ -189,6 +192,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                                 Icon(
                                                   Icons.bookmark_border,
                                                   color: Colors.white,
+                                                  size: 16,
                                                 ),
                                               ],
                                             ),
