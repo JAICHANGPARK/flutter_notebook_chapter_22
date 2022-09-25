@@ -68,16 +68,18 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 0),
-              height: 64,
+              margin: const EdgeInsets.only(left: 16),
+              height: 58,
               color: Colors.blue,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
+                    margin: EdgeInsets.only(right: 16),
                     decoration: BoxDecoration(
                       border: Border.all(),
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 24),
                     child: Center(
                       child: Text("${_tabItems[index]}"),
                     ),
