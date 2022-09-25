@@ -164,26 +164,44 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                          right: 12,
-                                          top: 12,
-                                          bottom: 12,
-                                          child: Column(
-                                            children: [
-                                              Row(
-                                                children: [
-                                                  Container(
-                                                    child: Row(
-                                                      children: [
-                                                        Icon(Icons.star),
-                                                        Text("5.0"),
-                                                      ],
-                                                    ),
+                                        right: 12,
+                                        top: 12,
+                                        bottom: 12,
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
                                                   ),
-                                                  Icon(Icons.bookmark_border),
-                                                ],
-                                              )
-                                            ],
-                                          ))
+                                                  padding: EdgeInsets.symmetric(
+                                                    horizontal: 8,
+                                                    vertical: 2,
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(Icons.star),
+                                                      Text("5.0"),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Icon(
+                                                  Icons.bookmark_border,
+                                                  color: Colors.white,
+                                                ),
+                                              ],
+                                            ),
+                                            Text(
+                                              "\$350",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Text("1Night")
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
