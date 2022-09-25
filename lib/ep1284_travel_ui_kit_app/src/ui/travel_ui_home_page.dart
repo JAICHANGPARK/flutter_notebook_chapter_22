@@ -146,12 +146,26 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                               )
                             ],
                           ),
-                          padding: EdgeInsets.all(12),
+                          padding: EdgeInsets.all(10),
                           child: Column(
                             children: [
-                              Expanded(child: Placeholder()),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2020/03/22/10/57/thailand-4956718_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Stack(),
+                                ),
+                              ),
                               SizedBox(
-                                height: 8,
+                                height: 12,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,7 +177,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 4,
+                                    height: 12,
                                   ),
                                   Row(
                                     children: [
