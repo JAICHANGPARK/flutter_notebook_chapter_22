@@ -146,8 +146,8 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black.withOpacity(0.1),
-                                spreadRadius: 1,
-                                blurRadius: 1,
+                                spreadRadius: 0.5,
+                                blurRadius: 0.5,
                               )
                             ],
                           ),
