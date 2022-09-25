@@ -133,12 +133,26 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                            bottom: 2,
+                            top: 2,
+                            left: 2
+                          ),
                           width: 200,
-                          color: Colors.white,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                spreadRadius: 1,
+                                blurRadius: 1,
+                              )
+                            ],
+                          ),
                         );
                       },
-
                     ),
                   ),
                 ],
