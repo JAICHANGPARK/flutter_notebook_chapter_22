@@ -133,12 +133,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(
-                            right: 16,
-                            bottom: 2,
-                            top: 2,
-                            left: 2
-                          ),
+                          margin: EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
                           width: 200,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -148,6 +143,43 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                 color: Colors.black.withOpacity(0.1),
                                 spreadRadius: 0.5,
                                 blurRadius: 0.5,
+                              )
+                            ],
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Column(
+                            children: [
+                              Expanded(child: Placeholder()),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Lalakhal Resort",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_pin,
+                                        size: 14,
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text(
+                                        "Sythet, Zindabazar",
+                                      )
+                                    ],
+                                  )
+                                ],
                               )
                             ],
                           ),
