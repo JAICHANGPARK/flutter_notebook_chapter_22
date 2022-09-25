@@ -109,14 +109,16 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                 left: 16,
               ),
               height: 320,
-              color: Colors.blue,
               child: Column(
                 children: [
                   Row(
                     children: [
                       Text(
                         "Explore Cities",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
                       ),
                       TextButton(
                         onPressed: () {},
