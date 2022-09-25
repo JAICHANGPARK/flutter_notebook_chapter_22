@@ -75,11 +75,11 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    margin: EdgeInsets.only(right: 16),
+                    margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
                     decoration: BoxDecoration(
                       border: Border.all(),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    padding: EdgeInsets.symmetric(horizontal: 28),
                     child: Center(
                       child: Text("${_tabItems[index]}"),
                     ),
