@@ -118,7 +118,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                         "Explore Cities",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                          fontSize: 20,
                         ),
                       ),
                       TextButton(
@@ -133,7 +133,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
+                          margin: const EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
                           width: 200,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -146,7 +146,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                               )
                             ],
                           ),
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Column(
                             children: [
                               Expanded(
@@ -154,7 +154,7 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image: NetworkImage(
                                         "https://cdn.pixabay.com/photo/2020/03/22/10/57/thailand-4956718_960_720.jpg",
                                       ),
@@ -168,41 +168,45 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                         top: 8,
                                         bottom: 8,
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.end,
                                           children: [
                                             Row(
                                               children: [
                                                 Container(
-                                                  decoration: BoxDecoration(
+                                                  decoration:  BoxDecoration(
                                                     color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(12)
                                                   ),
-                                                  padding: EdgeInsets.symmetric(
+                                                  padding: const EdgeInsets.symmetric(
                                                     horizontal: 8,
                                                     vertical: 2,
                                                   ),
                                                   child: Row(
-                                                    children: [
+                                                    children: const [
                                                       Icon(
                                                         Icons.star,
                                                         size: 16,
+                                                        color: Colors.orange,
                                                       ),
                                                       Text("5.0"),
                                                     ],
                                                   ),
                                                 ),
-                                                Icon(
+                                                const Icon(
                                                   Icons.bookmark_border,
                                                   color: Colors.white,
                                                   size: 16,
                                                 ),
                                               ],
                                             ),
-                                            Text(
+                                            const Spacer(),
+                                            const Text(
                                               "\$350",
                                               style: TextStyle(
                                                 color: Colors.white,
                                               ),
                                             ),
-                                            Text("1Night")
+                                            const Text("1Night")
                                           ],
                                         ),
                                       )
@@ -210,23 +214,23 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 12,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Lalakhal Resort",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                   Row(
-                                    children: [
+                                    children: const [
                                       Icon(
                                         Icons.location_pin,
                                         size: 14,
@@ -254,10 +258,155 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               height: 16,
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 0),
+              margin: const EdgeInsets.only(
+                left: 16,
+              ),
               height: 320,
-              color: Colors.blue,
-            )
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Top Destination",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text("See all"),
+                      )
+                    ],
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: const EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
+                          width: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                spreadRadius: 0.5,
+                                blurRadius: 0.5,
+                              )
+                            ],
+                          ),
+                          padding: const EdgeInsets.all(10),
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2020/03/22/10/57/thailand-4956718_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        right: 8,
+                                        top: 8,
+                                        bottom: 8,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.end,
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  decoration:  BoxDecoration(
+                                                      color: Colors.white,
+                                                      borderRadius: BorderRadius.circular(12)
+                                                  ),
+                                                  padding: const EdgeInsets.symmetric(
+                                                    horizontal: 8,
+                                                    vertical: 2,
+                                                  ),
+                                                  child: Row(
+                                                    children: const [
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orange,
+                                                      ),
+                                                      Text("5.0"),
+                                                    ],
+                                                  ),
+                                                ),
+                                                const Icon(
+                                                  Icons.bookmark_border,
+                                                  color: Colors.white,
+                                                  size: 16,
+                                                ),
+                                              ],
+                                            ),
+                                            const Spacer(),
+                                            const Text(
+                                              "\$350",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const Text("1Night")
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Text(
+                                    "Lalakhal Resort",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 12,
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.location_pin,
+                                        size: 14,
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text(
+                                        "Sythet, Zindabazar",
+                                      )
+                                    ],
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
