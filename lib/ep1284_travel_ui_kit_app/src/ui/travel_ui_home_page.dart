@@ -105,9 +105,28 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               height: 16,
             ),
             Container(
-              margin: const EdgeInsets.symmetric(vertical: 0),
+              margin: const EdgeInsets.only(
+                left: 16,
+              ),
               height: 320,
               color: Colors.blue,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Explore Cities",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See all"),
+                      )
+                    ],
+                  ),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
             ),
             const SizedBox(
               height: 16,
