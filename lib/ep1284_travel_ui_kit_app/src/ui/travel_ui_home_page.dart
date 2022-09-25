@@ -9,6 +9,7 @@ class TravelUIHomePage extends StatefulWidget {
 
 class _TravelUIHomePageState extends State<TravelUIHomePage> {
   int _pageTab = 0;
+  List<String> _tabItems = ["All", "Beach", "Mountain", "River"];
 
   @override
   Widget build(BuildContext context) {
@@ -70,10 +71,20 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
               margin: const EdgeInsets.symmetric(vertical: 0),
               height: 64,
               color: Colors.blue,
-              child: ListView.builder(itemBuilder: (context, index){
-                return Container();
-              },
-              itemCount: 10,),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                    child: Center(
+                      child: Text("${_tabItems[index]}"),
+                    ),
+                  );
+                },
+                itemCount: _tabItems.length,
+              ),
             ),
             const SizedBox(
               height: 16,
