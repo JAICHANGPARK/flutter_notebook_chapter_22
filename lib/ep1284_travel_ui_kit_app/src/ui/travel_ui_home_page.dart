@@ -70,7 +70,6 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
             Container(
               margin: const EdgeInsets.only(left: 16),
               height: 58,
-              color: Colors.blue,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
@@ -81,13 +80,13 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       });
                     },
                     child: Container(
-                      margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                      margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: _pageTab == index ? Colors.blue : Colors.grey[400]!,
                         ),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 28),
+                      padding: const EdgeInsets.symmetric(horizontal: 28),
                       child: Center(
                         child: Text("${_tabItems[index]}"),
                       ),
