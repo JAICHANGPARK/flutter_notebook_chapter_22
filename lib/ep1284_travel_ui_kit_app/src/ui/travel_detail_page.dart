@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TravelUiDetailPage extends StatefulWidget {
   const TravelUiDetailPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,30 @@ class TravelUiDetailPage extends StatefulWidget {
 class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 300,
+            color: Colors.blue,
+          ),
+          Expanded(child: Placeholder()),
+          Container(
+            margin: EdgeInsets.all(16),
+            height: 58,
+            decoration: BoxDecoration(
+              color: Colors.blueAccent,
+              borderRadius: BorderRadius.circular(32)
+            ),
+            child: Center(
+              child: Text(
+                "Book Now",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
