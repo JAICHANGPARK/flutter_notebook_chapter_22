@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class TravelUiDetailPage extends StatefulWidget {
   const TravelUiDetailPage({Key? key}) : super(key: key);
@@ -14,8 +15,21 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
       body: Column(
         children: [
           Container(
-            height: 300,
+            height: 350,
             color: Colors.blue,
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 8,
+                    top: 32,
+                    child: IconButton(
+                  onPressed: () {
+                    context.pop();
+                  },
+                  icon: Icon(Icons.arrow_back_ios_new),
+                ))
+              ],
+            ),
           ),
           const Expanded(child: Placeholder()),
           Container(
