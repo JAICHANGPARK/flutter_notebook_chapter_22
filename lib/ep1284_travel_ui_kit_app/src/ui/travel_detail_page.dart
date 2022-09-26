@@ -17,18 +17,21 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
             height: 300,
             color: Colors.blue,
           ),
-          Expanded(child: Placeholder()),
+          const Expanded(child: Placeholder()),
           Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             height: 58,
             decoration: BoxDecoration(
               color: Colors.blueAccent,
-              borderRadius: BorderRadius.circular(32)
+              borderRadius: BorderRadius.circular(32),
             ),
-            child: Center(
+            child: const Center(
               child: Text(
                 "Book Now",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
               ),
             ),
           )
