@@ -35,7 +35,16 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                     },
                     icon: const Icon(Icons.arrow_back_ios_new),
                   ),
-                )
+                ),
+                Positioned(
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+
+                    },
+                    itemCount: 10,
+                  ),
+                ),
               ],
             ),
           ),
