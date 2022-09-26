@@ -221,6 +221,11 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   freezed:
     dependency: "direct dev"
     description:
@@ -249,6 +254,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  go_router:
+    dependency: "direct main"
+    description:
+      name: go_router
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.1"
   google_fonts:
     dependency: "direct main"
     description:
@@ -641,4 +653,4 @@ packages:
     version: "3.1.1"
 sdks:
   dart: ">=2.19.0-120.0.dev <3.0.0"
-  flutter: ">=3.0.0"
+  flutter: ">=3.3.0"
