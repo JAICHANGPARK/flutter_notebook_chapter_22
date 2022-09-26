@@ -9,6 +9,15 @@ class TravelUiDetailPage extends StatefulWidget {
 }
 
 class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
+  List<String> imgItems = [
+    "https://cdn.pixabay.com/photo/2015/11/27/10/38/hotel-swimming-pool-1065275_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2014/09/26/04/59/holiday-complex-461633_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/05/09/20/56/vacation-4192123__340.jpg",
+    "https://cdn.pixabay.com/photo/2017/03/27/07/27/republic-of-the-philippines-2177616__340.jpg",
+    "https://cdn.pixabay.com/photo/2015/11/24/12/35/bungalow-1059931_960_720.jpg",
+  ];
+  String currentImageUrl = "https://cdn.pixabay.com/photo/2015/11/27/10/38/hotel-swimming-pool-1065275_960_720.jpg";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,11 +25,10 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
         children: [
           Container(
             height: 350,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(
-                image:
-                    NetworkImage("https://cdn.pixabay.com/photo/2015/11/27/10/38/hotel-swimming-pool-1065275__340.jpg"),
+                image: NetworkImage("$currentImageUrl"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -37,12 +45,36 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                   ),
                 ),
                 Positioned(
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index) {
-
-                    },
-                    itemCount: 10,
+                  bottom: 8,
+                  left: 8,
+                  right: 0,
+                  child: Container(
+                    height: 96,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              currentImageUrl = imgItems[index];
+                            });
+                          },
+                          child: Container(
+                            width: 96,
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: BoxDecoration(
+                                color: Colors.purple,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    imgItems[index],
+                                  ),
+                                  fit: BoxFit.cover,
+                                )),
+                          ),
+                        );
+                      },
+                      itemCount: imgItems.length,
+                    ),
                   ),
                 ),
               ],
