@@ -89,9 +89,13 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
             child: Column(
               children: [
                 Container(
+                  margin: EdgeInsets.all(16),
                   height: 64,
                   color: Colors.pink,
-                )
+                ),
+                Expanded(
+                  child: Placeholder(),
+                ),
               ],
             ),
           ),
