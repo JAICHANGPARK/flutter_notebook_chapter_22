@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class TravelUIHomePage extends StatefulWidget {
   const TravelUIHomePage({Key? key}) : super(key: key);
@@ -132,120 +133,123 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                       itemCount: 10,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          margin: const EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
-                          width: 200,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.1),
-                                spreadRadius: 0.5,
-                                blurRadius: 0.5,
-                              )
-                            ],
-                          ),
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: const DecorationImage(
-                                      image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2020/03/22/10/57/thailand-4956718_960_720.jpg",
-                                      ),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        bottom: 8,
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.end,
-                                          children: [
-                                            Row(
-                                              children: [
-                                                Container(
-                                                  decoration:  BoxDecoration(
-                                                    color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(12)
-                                                  ),
-                                                  padding: const EdgeInsets.symmetric(
-                                                    horizontal: 8,
-                                                    vertical: 2,
-                                                  ),
-                                                  child: Row(
-                                                    children: const [
-                                                      Icon(
-                                                        Icons.star,
-                                                        size: 16,
-                                                        color: Colors.orange,
-                                                      ),
-                                                      Text("5.0"),
-                                                    ],
-                                                  ),
-                                                ),
-                                                const Icon(
-                                                  Icons.bookmark_border,
-                                                  color: Colors.white,
-                                                  size: 16,
-                                                ),
-                                              ],
-                                            ),
-                                            const Spacer(),
-                                            const Text(
-                                              "\$350",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                            const Text("1Night")
-                                          ],
+                        return GestureDetector(
+                          onTap: () {
+                            context.push("/detail");
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(right: 16, bottom: 2, top: 2, left: 2),
+                            width: 200,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.1),
+                                  spreadRadius: 0.5,
+                                  blurRadius: 0.5,
+                                )
+                              ],
+                            ),
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2020/03/22/10/57/thailand-4956718_960_720.jpg",
                                         ),
-                                      )
-                                    ],
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          bottom: 8,
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.end,
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                                                    padding: const EdgeInsets.symmetric(
+                                                      horizontal: 8,
+                                                      vertical: 2,
+                                                    ),
+                                                    child: Row(
+                                                      children: const [
+                                                        Icon(
+                                                          Icons.star,
+                                                          size: 16,
+                                                          color: Colors.orange,
+                                                        ),
+                                                        Text("5.0"),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  const Icon(
+                                                    Icons.bookmark_border,
+                                                    color: Colors.white,
+                                                    size: 16,
+                                                  ),
+                                                ],
+                                              ),
+                                              const Spacer(),
+                                              const Text(
+                                                "\$350",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              const Text("1Night")
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 12,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    "Lalakhal Resort",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      "Lalakhal Resort",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
-                                  ),
-                                  const SizedBox(
-                                    height: 12,
-                                  ),
-                                  Row(
-                                    children: const [
-                                      Icon(
-                                        Icons.location_pin,
-                                        size: 14,
-                                      ),
-                                      SizedBox(
-                                        width: 8,
-                                      ),
-                                      Text(
-                                        "Sythet, Zindabazar",
-                                      )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
+                                    const SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: const [
+                                        Icon(
+                                          Icons.location_pin,
+                                          size: 14,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "Sythet, Zindabazar",
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         );
                       },
@@ -326,10 +330,8 @@ class _TravelUIHomePageState extends State<TravelUIHomePage> {
                                             Row(
                                               children: [
                                                 Container(
-                                                  decoration:  BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius: BorderRadius.circular(12)
-                                                  ),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white, borderRadius: BorderRadius.circular(12)),
                                                   padding: const EdgeInsets.symmetric(
                                                     horizontal: 8,
                                                     vertical: 2,
