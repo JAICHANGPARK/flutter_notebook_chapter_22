@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    const ProviderScope(
+    ProviderScope(
       child: TravelUiKitApp(),
     ),
   );
