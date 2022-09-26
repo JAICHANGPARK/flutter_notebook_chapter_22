@@ -1,14 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_22/ep1284_travel_ui_kit_app/src/ui/travel_detail_page.dart';
 import 'package:flutter_notebook_chapter_22/ep1284_travel_ui_kit_app/src/ui/travel_ui_home_page.dart';
-
+import 'package:go_router/go_router.dart';
 
 class TravelUiKitApp extends StatelessWidget {
-  const TravelUiKitApp({Key? key}) : super(key: key);
+  TravelUiKitApp({Key? key}) : super(key: key);
+
+  final _router = GoRouter(
+    routes: [
+      GoRoute(
+        path: "/",
+        builder: (context, state) => TravelUIHomePage(),
+      ),
+      GoRoute(
+          path: "/detail",
+          builder: (context, state) {
+            return TravelUiDetailPage();
+          })
+    ],
+  );
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: TravelUIHomePage(),
+    return MaterialApp.router(
+      routerConfig: _router,
     );
   }
 }
