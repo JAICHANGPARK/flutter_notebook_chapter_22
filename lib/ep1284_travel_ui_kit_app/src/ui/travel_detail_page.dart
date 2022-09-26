@@ -16,18 +16,26 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
         children: [
           Container(
             height: 350,
-            color: Colors.blue,
+            decoration: const BoxDecoration(
+              color: Colors.blue,
+              image: DecorationImage(
+                image:
+                    NetworkImage("https://cdn.pixabay.com/photo/2015/11/27/10/38/hotel-swimming-pool-1065275__340.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
             child: Stack(
               children: [
                 Positioned(
                   left: 8,
-                    top: 32,
-                    child: IconButton(
-                  onPressed: () {
-                    context.pop();
-                  },
-                  icon: Icon(Icons.arrow_back_ios_new),
-                ))
+                  top: 32,
+                  child: IconButton(
+                    onPressed: () {
+                      context.pop();
+                    },
+                    icon: const Icon(Icons.arrow_back_ios_new),
+                  ),
+                )
               ],
             ),
           ),
