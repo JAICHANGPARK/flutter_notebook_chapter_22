@@ -10,12 +10,12 @@ class TravelUiKitApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: "/",
-        builder: (context, state) => TravelUIHomePage(),
+        builder: (context, state) => const TravelUIHomePage(),
       ),
       GoRoute(
           path: "/detail",
           builder: (context, state) {
-            return TravelUiDetailPage();
+            return const TravelUiDetailPage();
           })
     ],
   );
