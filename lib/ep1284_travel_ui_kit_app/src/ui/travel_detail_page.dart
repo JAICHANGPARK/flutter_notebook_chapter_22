@@ -48,7 +48,7 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                   bottom: 8,
                   left: 8,
                   right: 0,
-                  child: Container(
+                  child: SizedBox(
                     height: 96,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -63,13 +63,18 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                             width: 96,
                             margin: EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
-                                color: Colors.purple,
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    imgItems[index],
-                                  ),
-                                  fit: BoxFit.cover,
-                                )),
+                              color: Colors.purple,
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: currentImageUrl == imgItems[index] ? Colors.blueAccent : Colors.white,
+                              ),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  imgItems[index],
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         );
                       },
@@ -80,7 +85,16 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
               ],
             ),
           ),
-          const Expanded(child: Placeholder()),
+          Expanded(
+            child: Column(
+              children: [
+                Container(
+                  height: 64,
+                  color: Colors.pink,
+                )
+              ],
+            ),
+          ),
           Container(
             margin: const EdgeInsets.all(16),
             height: 58,
