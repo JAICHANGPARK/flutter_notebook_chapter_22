@@ -134,9 +134,9 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                           children: [
                             Row(
                               children: [
-                                Text("Lalakhal Najimagor Resort"),
+                                const Text("Lalakhal Najimagor Resort"),
                                 Column(
-                                  children: [
+                                  children: const [
                                     Text("\$350"),
                                     Text("1 Night"),
                                   ],
@@ -146,25 +146,30 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                             Row(
                               children: [
                                 ...List.generate(
-                                    5,
-                                    (index) => Icon(
-                                          Icons.star,
-                                          color: Colors.orange,
-                                        )),
-                                Text("5.0"),
+                                  5,
+                                  (index) => const Padding(
+                                    padding: EdgeInsets.only(right: 8),
+                                    child: Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 18,
+                                    ),
+                                  ),
+                                ),
+                                const Text("5.0"),
                               ],
                             ),
                             Padding(
                               padding: const EdgeInsets.fromLTRB(16, 8, 0, 0),
                               child: Row(
-                                children: [
+                                children: const [
                                   Icon(Icons.location_on_outlined),
                                   Text("Sylthet, Zindabazar"),
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
+                            const Padding(
+                              padding: EdgeInsets.symmetric(
                                 vertical: 16,
                                 horizontal: 16,
                               ),
@@ -173,7 +178,7 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text("Availability"),
                                 Text(
                                   "MON - SAT * 10:00 - 17:00",
