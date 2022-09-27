@@ -132,32 +132,48 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                       SingleChildScrollView(
                         child: Column(
                           children: [
-                            Row(
-                              children: [
-                                const Text("Lalakhal Najimagor Resort"),
-                                Column(
-                                  children: const [
-                                    Text("\$350"),
-                                    Text("1 Night"),
-                                  ],
-                                )
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                              child: Row(
+                                children: [
+                                  const Text(
+                                    "Lalakhal Najimagor Resort",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  ),
+                                  Column(
+                                    children: const [
+                                      Text(
+                                        "\$350",
+                                        style: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.blueAccent,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text("1 Night"),
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
-                            Row(
-                              children: [
-                                ...List.generate(
-                                  5,
-                                  (index) => const Padding(
-                                    padding: EdgeInsets.only(right: 8),
-                                    child: Icon(
-                                      Icons.star,
-                                      color: Colors.orange,
-                                      size: 18,
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 8, 0, 8),
+                              child: Row(
+                                children: [
+                                  ...List.generate(
+                                    5,
+                                    (index) => const Padding(
+                                      padding: EdgeInsets.only(right: 8),
+                                      child: Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 18,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                const Text("5.0"),
-                              ],
+                                  const Text("5.0"),
+                                ],
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.fromLTRB(16, 8, 0, 0),
@@ -176,18 +192,26 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                               child: Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu"),
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
-                                Text("Availability"),
-                                Text(
-                                  "MON - SAT * 10:00 - 17:00",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blueAccent,
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: const [
+                                  Text(
+                                    "Availability",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                )
-                              ],
+                                  Text(
+                                    "MON - SAT * 10:00 - 17:00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blueAccent,
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
