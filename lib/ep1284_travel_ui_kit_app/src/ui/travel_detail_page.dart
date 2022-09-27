@@ -133,13 +133,14 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
                               child: Row(
                                 children: [
                                   const Text(
                                     "Lalakhal Najimagor Resort",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                   ),
+                                  Spacer(),
                                   Column(
                                     children: const [
                                       Text(
@@ -163,7 +164,7 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                                   ...List.generate(
                                     5,
                                     (index) => const Padding(
-                                      padding: EdgeInsets.only(right: 8),
+                                      padding: EdgeInsets.only(right: 4),
                                       child: Icon(
                                         Icons.star,
                                         color: Colors.orange,
@@ -179,7 +180,13 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                               padding: const EdgeInsets.fromLTRB(16, 8, 0, 0),
                               child: Row(
                                 children: const [
-                                  Icon(Icons.location_on_outlined),
+                                  Icon(
+                                    Icons.location_on_outlined,
+                                    size: 16,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Text("Sylthet, Zindabazar"),
                                 ],
                               ),
