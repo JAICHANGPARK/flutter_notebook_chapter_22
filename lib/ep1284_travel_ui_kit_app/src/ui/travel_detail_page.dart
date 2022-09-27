@@ -125,8 +125,70 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                         );
                       }),
                 ),
-                const Expanded(
-                  child: Placeholder(),
+                Expanded(
+                  child: IndexedStack(
+                    index: selectedTabIndex,
+                    children: [
+                      SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("Lalakhal Najimagor Resort"),
+                                Column(
+                                  children: [
+                                    Text("\$350"),
+                                    Text("1 Night"),
+                                  ],
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                ...List.generate(
+                                    5,
+                                    (index) => Icon(
+                                          Icons.star,
+                                          color: Colors.orange,
+                                        )),
+                                Text("5.0"),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 8, 0, 0),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.location_on_outlined),
+                                  Text("Sylthet, Zindabazar"),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 16,
+                                horizontal: 16,
+                              ),
+                              child: Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu"),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Availability"),
+                                Text(
+                                  "MON - SAT * 10:00 - 17:00",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blueAccent,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
