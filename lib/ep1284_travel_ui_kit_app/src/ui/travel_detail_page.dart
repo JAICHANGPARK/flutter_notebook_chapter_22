@@ -17,6 +17,7 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
     "https://cdn.pixabay.com/photo/2015/11/24/12/35/bungalow-1059931_960_720.jpg",
   ];
   String currentImageUrl = "https://cdn.pixabay.com/photo/2015/11/27/10/38/hotel-swimming-pool-1065275_960_720.jpg";
+  int selectedTabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -96,16 +97,29 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                       itemCount: 3,
                       itemBuilder: (context, index) {
                         var items = ["Overview", "Promo & Discount", "Review"];
-                        return Container(
-                          margin: const EdgeInsets.only(right: 16),
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
-                            border: Border.all(),
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "${items[index]}",
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedTabIndex = index;
+                            });
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: selectedTabIndex == index ? Colors.blue : Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "${items[index]}",
+                                style: TextStyle(
+                                  color: selectedTabIndex == index ? Colors.blue : Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
                         );
