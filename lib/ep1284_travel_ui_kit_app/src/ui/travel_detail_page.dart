@@ -61,7 +61,7 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
                           },
                           child: Container(
                             width: 96,
-                            margin: EdgeInsets.only(right: 12),
+                            margin: const EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(16),
@@ -89,11 +89,29 @@ class _TravelUiDetailPageState extends State<TravelUiDetailPage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.all(16),
-                  height: 64,
-                  color: Colors.pink,
+                  margin: const EdgeInsets.all(16),
+                  height: 42,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 3,
+                      itemBuilder: (context, index) {
+                        var items = ["Overview", "Promo & Discount", "Review"];
+                        return Container(
+                          margin: const EdgeInsets.only(right: 16),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "${items[index]}",
+                            ),
+                          ),
+                        );
+                      }),
                 ),
-                Expanded(
+                const Expanded(
                   child: Placeholder(),
                 ),
               ],
