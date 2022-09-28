@@ -2,7 +2,15 @@
 
 ## S25
 
-### EP1284-
+### EP1288
+
+- Eventzine - Event Booking Mobile App Design
+- by Musfiqur Rahman
+- https://dribbble.com/shots/19512121-Eventzine-Event-Booking-Mobile-App-Design
+
+<img src="https://cdn.dribbble.com/userupload/3679196/file/original-6262c88ba18b60eefadabd1f5ce7ad7c.png?compress=1&resize=1200x1019" width="400px"/>
+
+### EP1284-1287
 
 - Travelling UI Kit Apps
 - by Mahbub Rahman
