@@ -50,11 +50,13 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                     width: 32,
                     child: Stack(
                       children: [
-                        Positioned(
-                            child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.notifications_none),
-                        )),
+                        Positioned.fill(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.notifications_none),
+                            color: Colors.cyan,
+                          ),
+                        ),
                         const Positioned(
                             right: 0,
                             top: 8,
@@ -64,10 +66,11 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                             ))
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
+            Text("")
           ],
         ),
       ),
