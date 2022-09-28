@@ -17,7 +17,7 @@ class EventBookingApp extends StatelessWidget {
       routerConfig: _router,
       theme: ThemeData.light(
       ).copyWith(
-        scaffoldBackgroundColor: Colors.orange[50]
+        scaffoldBackgroundColor: Colors.orange[100]
       ),
 
     );
