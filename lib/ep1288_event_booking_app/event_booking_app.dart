@@ -7,12 +7,19 @@ class EventBookingApp extends StatelessWidget {
   final _router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => EventBookingHomePage(),
+      builder: (context, state) => const EventBookingHomePage(),
     ),
   ]);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router();
+    return MaterialApp.router(
+      routerConfig: _router,
+      theme: ThemeData.light(
+      ).copyWith(
+        scaffoldBackgroundColor: Colors.orange[50]
+      ),
+
+    );
   }
 }
