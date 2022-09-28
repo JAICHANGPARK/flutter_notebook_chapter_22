@@ -106,7 +106,15 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
             SizedBox(
               height: 16,
             ),
-            Expanded(child: Placeholder()),
+            Expanded(child: Container(
+              decoration: BoxDecoration(
+                color: Colors.orange[50],
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16)
+                )
+              ),
+            )),
           ],
         ),
       ),
