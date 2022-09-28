@@ -13,13 +13,14 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
                   const CircleAvatar(),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
                   Column(
@@ -33,13 +34,13 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                         ),
                       ),
                       Row(
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.location_on_outlined,
                             color: Colors.cyan,
                             size: 14,
                           ),
-                          const Text("New York")
+                          Text("New York")
                         ],
                       ),
                     ],
@@ -70,7 +71,42 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                 ],
               ),
             ),
-            Text("")
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Find Amazing Events Near You",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.location_on,
+                        color: Colors.orange,
+                        size: 14,
+                      ),
+                      Text(
+                        "258 Events Around You",
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+              height: 64,
+              color: Colors.white,
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
