@@ -102,11 +102,12 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
               // height: 54,
               color: Colors.white,
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: const TextField(
                 decoration: InputDecoration(
                   hintText: "Search Events",
                   border: InputBorder.none,
+                  suffixIcon: Icon(Icons.search),
                 ),
               ),
             ),
@@ -120,6 +121,16 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                   borderRadius: const BorderRadius.only(
                     topRight: Radius.circular(16),
                     topLeft: Radius.circular(16),
+                  ),
+
+                ),
+                child: SingleChildScrollView(
+
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+
+                    ],
                   ),
                 ),
               ),
