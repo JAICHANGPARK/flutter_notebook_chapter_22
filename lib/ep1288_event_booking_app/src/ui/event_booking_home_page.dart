@@ -137,7 +137,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 16, right: 16),
+                        padding: const EdgeInsets.only(left: 16, right: 16, top: 8),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -190,6 +190,75 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                 ),
                               );
                             }),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, right: 16, top: 8),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Nearest Event",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: const Text("See all"),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(left: 16),
+                        height: 240,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 200,
+                                margin: const EdgeInsets.only(
+                                  right: 16,
+                                ),
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              );
+                            }),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, right: 16, top: 8),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              "Trending Event",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: const Text("See all"),
+                            ),
+                          ],
+                        ),
+                      ),
+                      ...List.generate(
+                        4,
+                        (index) => Container(
+                          height: 120,
+                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          decoration: const BoxDecoration(
+                            color: Colors.white,
+
+                          ),
+                        ),
                       )
                     ],
                   ),
