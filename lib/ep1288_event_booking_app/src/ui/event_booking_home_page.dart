@@ -132,7 +132,27 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [],
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, right: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Category",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("See all"),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ),
