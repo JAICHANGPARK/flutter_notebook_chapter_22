@@ -173,7 +173,10 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                 ),
                                 child: Row(
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.white,
+                                      child: Text("💿"),
+                                    ),
                                     SizedBox(
                                       width: 8,
                                     ),
