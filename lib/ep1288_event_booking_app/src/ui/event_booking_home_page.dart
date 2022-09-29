@@ -156,23 +156,23 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 16),
+                        margin: const EdgeInsets.only(left: 16),
                         height: 54,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
-                                margin: EdgeInsets.only(
+                                margin: const EdgeInsets.only(
                                   right: 16,
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                 decoration: BoxDecoration(
                                   color: Colors.indigo[50],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
                                 child: Row(
-                                  children: [
+                                  children: const [
                                     CircleAvatar(
                                       backgroundColor: Colors.white,
                                       child: Text("💿"),
@@ -180,7 +180,12 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                     SizedBox(
                                       width: 8,
                                     ),
-                                    Text('Music'),
+                                    Text(
+                                      'Music',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               );
