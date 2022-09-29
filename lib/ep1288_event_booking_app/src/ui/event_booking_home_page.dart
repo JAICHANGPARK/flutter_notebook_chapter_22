@@ -103,18 +103,21 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
               height: 64,
               color: Colors.white,
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
+
             ),
-            Expanded(child: Container(
-              decoration: BoxDecoration(
-                color: Colors.orange[50],
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(16),
-                  topLeft: Radius.circular(16)
-                )
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.orange[50],
+                  borderRadius: const BorderRadius.only(
+                    topRight: Radius.circular(16),
+                    topLeft: Radius.circular(16),
+                  ),
+                ),
               ),
-            )),
+            ),
           ],
         ),
       ),
