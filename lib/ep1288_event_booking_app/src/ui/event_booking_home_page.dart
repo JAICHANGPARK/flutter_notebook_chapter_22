@@ -156,13 +156,26 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                         ),
                       ),
                       Container(
+                        margin: EdgeInsets.only(left: 16),
                         height: 72,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
-                          return SizedBox();
-                        }),
+                              return Container(
+                                margin: EdgeInsets.only(right: 16,),
+                                decoration: BoxDecoration(
+                                  color: Colors.indigo[50],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Text('Music'),
+                                  ],
+                                ),
+                              );
+                            }),
                       )
                     ],
                   ),
