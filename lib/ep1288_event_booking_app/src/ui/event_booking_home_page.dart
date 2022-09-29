@@ -100,9 +100,9 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
-              height: 54,
+              // height: 54,
               color: Colors.white,
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Search Events",
