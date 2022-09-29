@@ -83,6 +83,9 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(
+                    height: 8,
+                  ),
                   Row(
                     children: const [
                       Icon(
@@ -142,7 +145,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                               "Category",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 18,
                               ),
                             ),
                             TextButton(
