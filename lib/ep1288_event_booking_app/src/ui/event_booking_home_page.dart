@@ -83,7 +83,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   Row(
@@ -141,7 +141,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "Category",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -150,10 +150,19 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                             ),
                             TextButton(
                               onPressed: () {},
-                              child: Text("See all"),
+                              child: const Text("See all"),
                             ),
                           ],
                         ),
+                      ),
+                      Container(
+                        height: 72,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                          return SizedBox();
+                        }),
                       )
                     ],
                   ),
