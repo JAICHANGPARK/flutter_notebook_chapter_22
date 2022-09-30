@@ -249,16 +249,15 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                                 color: Colors.white,
                                                 borderRadius: BorderRadius.circular(16),
                                               ),
-                                              padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
-
+                                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
                                                 children: [
-                                                  Icon(
+                                                  const Icon(
                                                     Icons.calendar_today,
                                                     size: 12,
                                                   ),
-                                                  Text(
+                                                  const Text(
                                                     "10:00~12:00",
                                                     style: TextStyle(
                                                       fontSize: 12,
@@ -316,8 +315,27 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                       height: 32,
                                       child: Row(
                                         children: [
-                                          const Expanded(child: Placeholder()),
-                                          const Expanded(child: Placeholder()),
+                                          Expanded(
+                                            flex: 3,
+                                            child: Stack(
+                                              children: List.generate(
+                                                4,
+                                                (index) => Positioned(
+                                                  left: index * 12,
+                                                  child: CircleAvatar(
+                                                    radius: 16,
+                                                    backgroundColor: Colors.indigo.withOpacity(0.2 * index),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          const Expanded(
+                                            flex: 4,
+                                            child: Text(
+                                              "200/134 joined",
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
