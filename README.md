@@ -2,7 +2,15 @@
 
 ## S25
 
-### EP1288
+### EP1291
+
+- Renting App
+- by Alexander Kontsevoy for Ronas IT | UI/UX Team
+- https://dribbble.com/shots/19524278-Renting-App
+
+<img src="https://cdn.dribbble.com/userupload/3687345/file/original-dc3ae9f421643d293ed75c6d3f841a54.png?compress=1&resize=1200x900" width="400px"/>
+
+### EP1288-1290
 
 - Eventzine - Event Booking Mobile App Design
 - by Musfiqur Rahman
