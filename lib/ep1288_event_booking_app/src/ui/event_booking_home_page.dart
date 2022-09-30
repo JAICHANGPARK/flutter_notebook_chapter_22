@@ -405,7 +405,15 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                         color: Colors.cyan,
                                         size: 12,
                                       ),
-                                      Text("Flutter, Island")
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Text(
+                                        "Flutter, Island",
+                                        style: TextStyle(
+                                          color: Colors.cyan,
+                                        ),
+                                      )
                                     ],
                                   ),
                                   Row(
@@ -414,6 +422,9 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                         Icons.calendar_today,
                                         color: Colors.grey,
                                         size: 12,
+                                      ),
+                                      SizedBox(
+                                        width: 4,
                                       ),
                                       Text(
                                         "17 Oct. 2022 - 07:30 PM",
