@@ -31,8 +31,6 @@ dev_dependencies:
   build_runner: any
   json_serializable:
   freezed: any
-
-
   flutter_lints: ^2.0.1
 
 flutter:
