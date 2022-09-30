@@ -378,63 +378,72 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                               Container(
                                 height: 100,
                                 width: 100,
-                                color: Colors.blue,
+
+                                decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(16)
+                                ),
                               ),
                               SizedBox(
                                 width: 8,
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: const [
-                                      Text("Pool Party"),
-                                      Text(
-                                        "\$140",
-                                        style:
-                                            TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.orange),
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: const [
-                                      Icon(
-                                        Icons.location_on_outlined,
-                                        color: Colors.cyan,
-                                        size: 12,
-                                      ),
-                                      SizedBox(
-                                        width: 4,
-                                      ),
-                                      Text(
-                                        "Flutter, Island",
-                                        style: TextStyle(
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: const [
+                                        Text("Pool Party"),
+                                        Text(
+                                          "\$140",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.orange,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: const [
+                                        Icon(
+                                          Icons.location_on_outlined,
                                           color: Colors.cyan,
+                                          size: 12,
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    children: const [
-                                      Icon(
-                                        Icons.calendar_today,
-                                        color: Colors.grey,
-                                        size: 12,
-                                      ),
-                                      SizedBox(
-                                        width: 4,
-                                      ),
-                                      Text(
-                                        "17 Oct. 2022 - 07:30 PM",
-                                        style: TextStyle(
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "Flutter, Island",
+                                          style: TextStyle(
+                                            color: Colors.cyan,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: const [
+                                        Icon(
+                                          Icons.calendar_today,
                                           color: Colors.grey,
+                                          size: 12,
                                         ),
-                                      ),
-                                    ],
-                                  )
-                                ],
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "17 Oct. 2022 - 07:30 PM",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
                               )
                             ],
                           ),
