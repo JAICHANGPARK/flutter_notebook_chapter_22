@@ -26,7 +26,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
           onTap: (i) {
             ref.read(rentingPageIndex.notifier).state = i;
           },
-          type: BottomNavigationBarType.shifting,
+          type: BottomNavigationBarType.fixed,
           selectedItemColor: Color(0xff264c86),
           unselectedItemColor: Colors.black,
           items: [
