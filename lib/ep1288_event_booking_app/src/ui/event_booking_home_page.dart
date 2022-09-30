@@ -222,10 +222,61 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                 margin: const EdgeInsets.only(
                                   right: 16,
                                 ),
-                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Expanded(child: Placeholder()),
+                                    Column(
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "Rock Music Concert",
+                                              style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "\$120",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.orange,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 16,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              color: Colors.cyan,
+                                              size: 12,
+                                            ),
+                                            Text("Flutter, Island")
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    Divider(),
+                                    SizedBox(
+                                      height: 32,
+                                      child: Row(
+                                        children: [
+                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Placeholder()),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               );
                             }),
@@ -256,7 +307,6 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: const BoxDecoration(
                             color: Colors.white,
-
                           ),
                         ),
                       )
