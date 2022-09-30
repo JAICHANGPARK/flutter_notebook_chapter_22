@@ -229,20 +229,65 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                 ),
                                 child: Column(
                                   children: [
-                                    Expanded(child: Placeholder()),
+                                    Expanded(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          color: Colors.blue,
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2022/08/09/13/38/fish-7375042_960_720.jpg"),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        padding: const EdgeInsets.all(8),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(16),
+                                              ),
+                                              padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: [
+                                                  Icon(
+                                                    Icons.calendar_today,
+                                                    size: 12,
+                                                  ),
+                                                  Text(
+                                                    "10:00~12:00",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(child: Container()),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
                                     Column(
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "Rock Music Concert",
                                               style: TextStyle(
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            Text(
+                                            const Text(
                                               "\$120",
                                               style: TextStyle(
                                                 fontSize: 16,
@@ -251,28 +296,28 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 4,
                                         ),
                                         Row(
                                           children: [
-                                            Icon(
+                                            const Icon(
                                               Icons.location_on_outlined,
                                               color: Colors.cyan,
                                               size: 12,
                                             ),
-                                            Text("Flutter, Island")
+                                            const Text("Flutter, Island")
                                           ],
                                         )
                                       ],
                                     ),
-                                    Divider(),
+                                    const Divider(),
                                     SizedBox(
                                       height: 32,
                                       child: Row(
                                         children: [
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
+                                          const Expanded(child: Placeholder()),
+                                          const Expanded(child: Placeholder()),
                                         ],
                                       ),
                                     ),
@@ -304,7 +349,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                         4,
                         (index) => Container(
                           height: 120,
-                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: const BoxDecoration(
                             color: Colors.white,
                           ),
