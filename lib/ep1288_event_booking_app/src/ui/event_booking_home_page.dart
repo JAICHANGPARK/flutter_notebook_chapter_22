@@ -252,12 +252,12 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
-                                                children: [
-                                                  const Icon(
+                                                children: const [
+                                                  Icon(
                                                     Icons.calendar_today,
                                                     size: 12,
                                                   ),
-                                                  const Text(
+                                                  Text(
                                                     "10:00~12:00",
                                                     style: TextStyle(
                                                       fontSize: 12,
@@ -278,15 +278,15 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            const Text(
+                                          children: const [
+                                            Text(
                                               "Rock Music Concert",
                                               style: TextStyle(
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            const Text(
+                                            Text(
                                               "\$120",
                                               style: TextStyle(
                                                 fontSize: 16,
@@ -299,13 +299,13 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                           height: 4,
                                         ),
                                         Row(
-                                          children: [
-                                            const Icon(
+                                          children: const [
+                                            Icon(
                                               Icons.location_on_outlined,
                                               color: Colors.cyan,
                                               size: 12,
                                             ),
-                                            const Text("Flutter, Island")
+                                            Text("Flutter, Island")
                                           ],
                                         )
                                       ],
@@ -334,9 +334,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                             flex: 4,
                                             child: Text(
                                               "200/134 joined",
-                                              style: TextStyle(
-                                                fontSize: 12
-                                              ),
+                                              style: TextStyle(fontSize: 12),
                                             ),
                                           ),
                                         ],
@@ -373,6 +371,61 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                           margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: const BoxDecoration(
                             color: Colors.white,
+                          ),
+                          padding: EdgeInsets.all(12),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 100,
+                                width: 100,
+                                color: Colors.blue,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Text("Pool Party"),
+                                      Text(
+                                        "\$140",
+                                        style:
+                                            TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.orange),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.location_on_outlined,
+                                        color: Colors.cyan,
+                                        size: 12,
+                                      ),
+                                      Text("Flutter, Island")
+                                    ],
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.calendar_today,
+                                        color: Colors.grey,
+                                        size: 12,
+                                      ),
+                                      Text(
+                                        "17 Oct. 2022 - 07:30 PM",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              )
+                            ],
                           ),
                         ),
                       )
