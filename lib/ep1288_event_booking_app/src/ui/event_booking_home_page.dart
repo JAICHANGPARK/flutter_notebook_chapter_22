@@ -252,7 +252,7 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                           ],
                                         ),
                                         SizedBox(
-                                          height: 16,
+                                          height: 4,
                                         ),
                                         Row(
                                           children: [
