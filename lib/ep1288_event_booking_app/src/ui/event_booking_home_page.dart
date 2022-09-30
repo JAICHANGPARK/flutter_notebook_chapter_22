@@ -334,6 +334,9 @@ class _EventBookingHomePageState extends State<EventBookingHomePage> {
                                             flex: 4,
                                             child: Text(
                                               "200/134 joined",
+                                              style: TextStyle(
+                                                fontSize: 12
+                                              ),
                                             ),
                                           ),
                                         ],
