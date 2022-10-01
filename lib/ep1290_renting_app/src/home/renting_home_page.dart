@@ -92,6 +92,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
                             ],
                           ),
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 16),
                             height: 300,
                             color: Colors.blue,
                           ),
