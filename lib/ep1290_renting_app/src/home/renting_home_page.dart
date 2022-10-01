@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final rentingPageIndex = StateProvider((ref) => 0);
+final rentingHomeTabIndex = StateProvider((ref) => 0);
 
 class RentingHomePage extends StatefulWidget {
   const RentingHomePage({Key? key}) : super(key: key);
@@ -16,20 +17,40 @@ class _RentingHomePageState extends State<RentingHomePage> {
   Widget build(BuildContext context) {
     return Consumer(builder: (context, ref, _) {
       final index = ref.watch(rentingPageIndex);
+      final tabIndex = ref.watch(rentingHomeTabIndex);
+
       return Scaffold(
-        body: Column(
-          children: [
-            Row(
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 24, left: 16),
+            child: Column(
               children: [
-                Text(
-                  "Discover",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 24,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Discover",
+                      style: GoogleFonts.montserrat(
+                        fontSize: 32,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
+                      iconSize: 34,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  height: 84,
+                  color: Colors.purple,
                 )
               ],
-            )
-          ],
+            ),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
