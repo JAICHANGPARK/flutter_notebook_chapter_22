@@ -21,88 +21,99 @@ class _RentingHomePageState extends State<RentingHomePage> {
 
       return Scaffold(
         body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 24, left: 16),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: IndexedStack(
+            index: index,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 24, left: 16),
+                child: Column(
                   children: [
-                    Text(
-                      "Discover",
-                      style: GoogleFonts.montserrat(
-                        fontSize: 32,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Discover",
+                          style: GoogleFonts.montserrat(
+                            fontSize: 32,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            showSearch(
+                              context: context,
+                              delegate: _SearchDelegate(),
+                              useRootNavigator: true,
+                            );
+                          },
+                          icon: Icon(Icons.search),
+                          iconSize: 34,
+                        ),
+                      ],
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.search),
-                      iconSize: 34,
+                    SizedBox(
+                      height: 16,
                     ),
-                  ],
-                ),
-                SizedBox(
-                  height: 16,
-                ),
-                Container(
-                  height: 84,
-                  color: Colors.purple,
-                ),
-                Expanded(
-                    child: IndexedStack(
-                  index: tabIndex,
-                  children: [
-                    SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Container(
+                      height: 84,
+                      color: Colors.purple,
+                    ),
+                    Expanded(
+                        child: IndexedStack(
+                      index: tabIndex,
+                      children: [
+                        SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                'Popular',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 28,
-                                ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Popular',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 28,
+                                    ),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: Text("See all"),
+                                  ),
+                                ],
                               ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text("See all"),
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 16),
+                                height: 300,
+                                color: Colors.blue,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'New offers',
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 28,
+                                    ),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: Text("See all"),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 16),
+                                height: 300,
+                                color: Colors.blue,
                               ),
                             ],
                           ),
-                          Container(
-                            margin: EdgeInsets.symmetric(vertical: 16),
-                            height: 300,
-                            color: Colors.blue,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'New offers',
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 28,
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text("See all"),
-                              ),
-                            ],
-                          ),
-                          Container(
-                            margin: EdgeInsets.symmetric(vertical: 16),
-                            height: 300,
-                            color: Colors.blue,
-                          ),
-                        ],
-                      ),
-                    )
+                        )
+                      ],
+                    ))
                   ],
-                ))
-              ],
-            ),
+                ),
+              ),
+            ],
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -144,5 +155,33 @@ class _RentingHomePageState extends State<RentingHomePage> {
         ),
       );
     });
+  }
+}
+
+class _SearchDelegate extends SearchDelegate {
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    return [
+      IconButton(onPressed: (){}, icon: Icon(Icons.clear))
+    ];
+  }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    // TODO: implement buildLeading
+    return Text("Loading");
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    return Text("buildResults");
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    return Text("buildSuggestions");
   }
 }
