@@ -57,23 +57,44 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Popular'),
+                              Text(
+                                'Popular',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 28,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text("See all"),
                               ),
                             ],
                           ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 16),
+                            height: 300,
+                            color: Colors.blue,
+                          ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('New offers'),
+                              Text(
+                                'New offers',
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 28,
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text("See all"),
                               ),
                             ],
-                          )
+                          ),
+                          Container(
+                            height: 300,
+                            color: Colors.blue,
+                          ),
                         ],
                       ),
                     )
