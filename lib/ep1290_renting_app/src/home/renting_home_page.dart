@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final rentingPageIndex = StateProvider((ref) => 0);
 
@@ -17,7 +18,18 @@ class _RentingHomePageState extends State<RentingHomePage> {
       final index = ref.watch(rentingPageIndex);
       return Scaffold(
         body: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Text(
+                  "Discover",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 24,
+                  ),
+                )
+              ],
+            )
+          ],
         ),
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
@@ -29,7 +41,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Color(0xff264c86),
           unselectedItemColor: Colors.black,
-          items: [
+          items: const [
             BottomNavigationBarItem(
               label: "Home",
               icon: Icon(
