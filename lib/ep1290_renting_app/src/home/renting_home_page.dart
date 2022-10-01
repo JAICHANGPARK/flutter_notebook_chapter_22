@@ -47,7 +47,38 @@ class _RentingHomePageState extends State<RentingHomePage> {
                 Container(
                   height: 84,
                   color: Colors.purple,
-                )
+                ),
+                Expanded(
+                    child: IndexedStack(
+                  index: tabIndex,
+                  children: [
+                    SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text('Popular'),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See all"),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text('New offers'),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See all"),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ))
               ],
             ),
           ),
