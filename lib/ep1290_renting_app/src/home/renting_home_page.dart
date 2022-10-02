@@ -132,12 +132,32 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                             children: [
                                               Expanded(
                                                 child: Container(
+                                                  decoration: BoxDecoration(
+                                                    image: const DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2014/12/27/14/37/living-room-581073__340.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
                                                   child: Stack(
-                                                    children: [],
+                                                    children: [
+                                                      Positioned(
+                                                        right: 8,
+                                                        top: 8,
+                                                        child: CircleAvatar(
+                                                          backgroundColor: Colors.white.withOpacity(0.3),
+                                                          foregroundColor: Colors.white,
+                                                          child: Icon(
+                                                            Icons.favorite_border,
+                                                          ),
+                                                        ),
+                                                      )
+                                                    ],
                                                   ),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 12,
                                               ),
                                               Column(
@@ -150,19 +170,19 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                         style: GoogleFonts.montserrat(
                                                             fontWeight: FontWeight.bold, fontSize: 16),
                                                       ),
-                                                      Spacer(),
-                                                      Icon(
+                                                      const Spacer(),
+                                                      const Icon(
                                                         Icons.star,
                                                         size: 16,
                                                         color: Colors.orange,
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         width: 4,
                                                       ),
-                                                      Text("4.7"),
+                                                      const Text("4.7"),
                                                     ],
                                                   ),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     height: 8,
                                                   ),
                                                   Row(
@@ -242,7 +262,131 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               Container(
                                 margin: const EdgeInsets.symmetric(vertical: 16),
                                 height: 300,
-                                color: Colors.blue,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 260,
+                                      margin: const EdgeInsets.only(right: 16),
+                                      child: Card(
+                                        elevation: 3,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    image: const DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2014/12/27/14/37/living-room-581073__340.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
+                                                  child: Stack(
+                                                    children: [
+                                                      Positioned(
+                                                        right: 8,
+                                                        top: 8,
+                                                        child: CircleAvatar(
+                                                          backgroundColor: Colors.white.withOpacity(0.3),
+                                                          foregroundColor: Colors.white,
+                                                          child: Icon(
+                                                            Icons.favorite_border,
+                                                          ),
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                              const SizedBox(
+                                                height: 12,
+                                              ),
+                                              Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Text(
+                                                        "Flutter House",
+                                                        style: GoogleFonts.montserrat(
+                                                            fontWeight: FontWeight.bold, fontSize: 16),
+                                                      ),
+                                                      const Spacer(),
+                                                      const Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orange,
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 4,
+                                                      ),
+                                                      const Text("4.7"),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 8,
+                                                  ),
+                                                  Row(
+                                                    children: const [
+                                                      Icon(
+                                                        Icons.location_on_outlined,
+                                                        size: 16,
+                                                      ),
+                                                      Text(
+                                                        "Paris, France",
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 12),
+                                                    child: Text(
+                                                      "The room is located in the center of Paris. "
+                                                          "There is a terrace on site.",
+                                                      style: GoogleFonts.montserrat(
+                                                        fontSize: 12,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  const Text.rich(
+                                                    TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: "\$38",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: '/person',
+                                                          style: TextStyle(
+                                                            fontSize: 12,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      // decoration: BoxDecoration(
+                                      //   color: Colors.white,
+                                      //   borderRadius: BorderRadius.circular(8),
+                                      //   boxShadow: [
+                                      //     BoxShadow(
+                                      //       color: Colors.black.withOpacity(0.1)
+                                      //     )
+                                      //   ]
+                                      // ),1
+                                    );
+                                  },
+                                ),
                               ),
                             ],
                           ),
