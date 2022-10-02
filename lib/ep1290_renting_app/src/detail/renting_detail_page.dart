@@ -97,13 +97,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             ),
           ),
           SizedBox(
-            height: 24,
+            height: 8,
           ),
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -141,7 +142,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Text(
                         "The room is located in the center of Paris. "
                         "There is a terrace on site."
@@ -150,7 +151,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         "The room is located in the center of Paris. "
                         "There is a terrace on site.",
                         style: GoogleFonts.montserrat(
-                          fontSize: 12,
+                          fontSize: 14,
                         ),
                       ),
                     ),
@@ -160,7 +161,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           TextSpan(
                             text: "\$38",
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -172,6 +173,23 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           )
                         ],
                       ),
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Text(
+                      "Location",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.grey,
                     )
                   ],
                 ),
