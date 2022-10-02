@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,6 +10,9 @@ class RentingDetailPage extends StatefulWidget {
 }
 
 class _RentingDetailPageState extends State<RentingDetailPage> {
+  int pageIndex = 0;
+  PageController pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +24,36 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
             child: Stack(
               children: [
                 Positioned(
-                  child: PageView(),
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  top: 0,
+                  child: PageView(
+                    onPageChanged: (i) {
+                      setState(() {
+                        pageIndex = i;
+                      });
+                    },
+                    controller: pageController,
+                    children: [
+                      Image.network(
+                        "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                      Image.network(
+                        "https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_960_720.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                      Image.network(
+                        "https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_960_720.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                      Image.network(
+                        "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
                 ),
                 Positioned(
                   left: 16,
@@ -57,6 +90,10 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           Container(
             height: 32,
             color: Colors.orange,
+            child: DotsIndicator(
+              position: pageIndex.toDouble(),
+              dotsCount: 4,
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(
