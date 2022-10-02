@@ -65,8 +65,30 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 100,
+          height: 84,
           color: Colors.blueGrey,
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              SizedBox(
+                height: 64,
+                width: 64,
+                child: Card(),
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              Expanded(
+                child: Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
