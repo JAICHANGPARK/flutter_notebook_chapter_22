@@ -28,8 +28,20 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.arrow_back,
+                        ),
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.white.withOpacity(0.2),
+                      ),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.share,
+                        ),
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.white.withOpacity(0.2),
+                      ),
                     ],
                   ),
                 )
