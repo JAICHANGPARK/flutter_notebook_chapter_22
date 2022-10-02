@@ -130,7 +130,16 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                           padding: const EdgeInsets.all(12.0),
                                           child: Column(
                                             children: [
-                                              const Expanded(child: Placeholder()),
+                                              Expanded(
+                                                child: Container(
+                                                  child: Stack(
+                                                    children: [],
+                                                  ),
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
                                               Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
@@ -146,6 +155,9 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                         Icons.star,
                                                         size: 16,
                                                         color: Colors.orange,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 4,
                                                       ),
                                                       Text("4.7"),
                                                     ],
@@ -171,7 +183,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                       "There is a terrace on site.",
                                                       style: GoogleFonts.montserrat(
                                                         fontSize: 12,
-
                                                       ),
                                                     ),
                                                   ),
