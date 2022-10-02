@@ -135,21 +135,35 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
-                                                    children: [
-                                                      const Text("Flutter House"),
-                                                      const Spacer(),
-                                                      const Icon(
+                                                    children:  [
+                                                      Text(
+                                                        "Flutter House",
+                                                        style: GoogleFonts.montserrat(
+                                                          fontWeight: FontWeight.bold,
+                                                          fontSize: 16
+                                                        ),
+                                                      ),
+                                                      Spacer(),
+                                                      Icon(
                                                         Icons.star,
                                                         size: 16,
                                                         color: Colors.orange,
                                                       ),
-                                                      const Text("4.7"),
+                                                      Text("4.7"),
                                                     ],
                                                   ),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Row(
-                                                    children: [
-                                                      const Icon(Icons.location_on_outlined),
-                                                      const Text("Paris, France"),
+                                                    children: const [
+                                                      Icon(
+                                                        Icons.location_on_outlined,
+                                                        size: 16,
+                                                      ),
+                                                      Text(
+                                                        "Paris, France",
+                                                      ),
                                                     ],
                                                   ),
                                                   Padding(
