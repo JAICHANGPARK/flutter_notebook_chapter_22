@@ -142,11 +142,30 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               ),
                             ],
                           ),
+                        ),
+                        Center(
+                          child: Text("$tabIndex"),
+                        ),
+                        Center(
+                          child: Text("$tabIndex"),
+                        ),
+                        Center(
+                          child: Text("$tabIndex"),
                         )
+
                       ],
                     ))
                   ],
                 ),
+              ),
+              Center(
+                child: Text("$index"),
+              ),
+              Center(
+                child: Text("$index"),
+              ),
+              Center(
+                child: Text("$index"),
               ),
             ],
           ),
