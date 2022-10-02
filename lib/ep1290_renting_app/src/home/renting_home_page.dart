@@ -55,30 +55,36 @@ class _RentingHomePageState extends State<RentingHomePage> {
                     const SizedBox(
                       height: 16,
                     ),
-                    Container(
+                    SizedBox(
                       height: 72,
                       child: ListView.builder(
                         itemCount: menuItems.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return Container(
-                            margin: const EdgeInsets.only(
-                              right: 16,
-                              top: 8,
-                              bottom: 8,
-                            ),
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 24,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.blueGrey[50],
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "${menuItems[index]}",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                          return GestureDetector(
+                            onTap: () {
+                              ref.read(rentingHomeTabIndex.notifier).state = index;
+                            },
+                            child: Container(
+                              margin: const EdgeInsets.only(
+                                right: 16,
+                                top: 8,
+                                bottom: 8,
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 24,
+                              ),
+                              decoration: BoxDecoration(
+                                color: tabIndex == index ? const Color(0xff264c86) : Colors.blueGrey[50],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "${menuItems[index]}",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: tabIndex == index ? Colors.white : Colors.black,
+                                  ),
                                 ),
                               ),
                             ),
