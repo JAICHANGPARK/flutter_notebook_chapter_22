@@ -125,9 +125,33 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       width: 260,
                                       margin: EdgeInsets.only(right: 16),
                                       child: Card(
+                                        elevation: 3,
                                         child: Column(
                                           children: [
-                                            
+                                            Expanded(child: Placeholder()),
+                                            Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text("Flutter House"),
+                                                    Spacer(),
+                                                    Icon(
+                                                      Icons.star,
+                                                      size: 16,
+                                                      color: Colors.orange,
+                                                    ),
+                                                    Text("4.7"),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(Icons.location_on_outlined),
+                                                  ],
+                                                )
+
+
+                                              ],
+                                            )
                                           ],
                                         ),
                                       ),
