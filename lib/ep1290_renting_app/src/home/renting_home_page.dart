@@ -146,10 +146,28 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                 Row(
                                                   children: [
                                                     Icon(Icons.location_on_outlined),
+                                                    Text("Paris, France"),
                                                   ],
+                                                ),
+                                                Text(
+                                                  "The room is located in the center of Paris. "
+                                                  "There is a terrace on site.",
+                                                ),
+                                                Text.rich(
+                                                  TextSpan(
+                                                    children: [
+                                                      TextSpan(
+                                                        text: "\$38",
+                                                      ),
+                                                      TextSpan(
+                                                        text: '/person',
+                                                        style: TextStyle(
+                                                          fontSize: 12,
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
                                                 )
-
-
                                               ],
                                             )
                                           ],
