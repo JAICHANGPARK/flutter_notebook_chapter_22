@@ -89,7 +89,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
           ),
           Container(
             height: 32,
-            color: Colors.orange,
+            // color: Colors.orange,
             child: DotsIndicator(
               position: pageIndex.toDouble(),
               dotsCount: 4,
@@ -116,7 +116,12 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               SizedBox(
                 height: 64,
                 width: 64,
-                child: Card(),
+                child: Card(
+                  child: IconButton(
+                    icon: Icon(Icons.favorite_border),
+                    onPressed: () {},
+                  ),
+                ),
               ),
               SizedBox(
                 width: 8,
@@ -127,6 +132,14 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "BOOK NOW",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
               ),
