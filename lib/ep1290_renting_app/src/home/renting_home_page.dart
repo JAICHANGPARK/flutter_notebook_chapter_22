@@ -123,40 +123,43 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 260,
-                                      margin: EdgeInsets.only(right: 16),
+                                      margin: const EdgeInsets.only(right: 16),
                                       child: Card(
                                         elevation: 3,
                                         child: Padding(
                                           padding: const EdgeInsets.all(12.0),
                                           child: Column(
                                             children: [
-                                              Expanded(child: Placeholder()),
+                                              const Expanded(child: Placeholder()),
                                               Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
                                                     children: [
-                                                      Text("Flutter House"),
-                                                      Spacer(),
-                                                      Icon(
+                                                      const Text("Flutter House"),
+                                                      const Spacer(),
+                                                      const Icon(
                                                         Icons.star,
                                                         size: 16,
                                                         color: Colors.orange,
                                                       ),
-                                                      Text("4.7"),
+                                                      const Text("4.7"),
                                                     ],
                                                   ),
                                                   Row(
                                                     children: [
-                                                      Icon(Icons.location_on_outlined),
-                                                      Text("Paris, France"),
+                                                      const Icon(Icons.location_on_outlined),
+                                                      const Text("Paris, France"),
                                                     ],
                                                   ),
-                                                  Text(
-                                                    "The room is located in the center of Paris. "
-                                                    "There is a terrace on site.",
+                                                  Padding(
+                                                    padding: const EdgeInsets.symmetric(vertical: 12),
+                                                    child: const Text(
+                                                      "The room is located in the center of Paris. "
+                                                      "There is a terrace on site.",
+                                                    ),
                                                   ),
-                                                  Text.rich(
+                                                  const Text.rich(
                                                     TextSpan(
                                                       children: [
                                                         TextSpan(
