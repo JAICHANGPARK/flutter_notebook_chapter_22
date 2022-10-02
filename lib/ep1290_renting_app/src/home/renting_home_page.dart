@@ -118,7 +118,31 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               Container(
                                 margin: const EdgeInsets.symmetric(vertical: 16),
                                 height: 300,
-                                color: Colors.blue,
+                                child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 260,
+                                      margin: EdgeInsets.only(right: 16),
+                                      child: Card(
+                                        child: Column(
+                                          children: [
+                                            
+                                          ],
+                                        ),
+                                      ),
+                                      // decoration: BoxDecoration(
+                                      //   color: Colors.white,
+                                      //   borderRadius: BorderRadius.circular(8),
+                                      //   boxShadow: [
+                                      //     BoxShadow(
+                                      //       color: Colors.black.withOpacity(0.1)
+                                      //     )
+                                      //   ]
+                                      // ),1
+                                    );
+                                  },
+                                ),
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -152,7 +176,6 @@ class _RentingHomePageState extends State<RentingHomePage> {
                         Center(
                           child: Text("$tabIndex"),
                         )
-
                       ],
                     ))
                   ],
