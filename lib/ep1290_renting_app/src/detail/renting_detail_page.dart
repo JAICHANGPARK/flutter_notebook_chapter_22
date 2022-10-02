@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RentingDetailPage extends StatefulWidget {
   const RentingDetailPage({Key? key}) : super(key: key);
@@ -67,7 +68,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           context.go("/");
                         },
                         child: CircleAvatar(
-                          child: Icon(
+                          child: const Icon(
                             Icons.arrow_back,
                           ),
                           foregroundColor: Colors.white,
@@ -75,7 +76,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         ),
                       ),
                       CircleAvatar(
-                        child: Icon(
+                        child: const Icon(
                           Icons.share,
                         ),
                         foregroundColor: Colors.white,
@@ -95,12 +96,85 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               dotsCount: 4,
             ),
           ),
+          SizedBox(
+            height: 24,
+          ),
           Expanded(
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Placeholder(),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "Flutter House",
+                          style: GoogleFonts.montserrat(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
+                        const Spacer(),
+                        const Icon(
+                          Icons.star,
+                          size: 16,
+                          color: Colors.orange,
+                        ),
+                        const SizedBox(
+                          width: 4,
+                        ),
+                        const Text("4.7"),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    Row(
+                      children: const [
+                        Icon(
+                          Icons.location_on_outlined,
+                          size: 16,
+                        ),
+                        Text(
+                          "Paris, France",
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Text(
+                        "The room is located in the center of Paris. "
+                        "There is a terrace on site."
+                        "The room is located in the center of Paris. "
+                        "There is a terrace on site."
+                        "The room is located in the center of Paris. "
+                        "There is a terrace on site.",
+                        style: GoogleFonts.montserrat(
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                    const Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "\$38",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                            text: '/person',
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           )
@@ -110,7 +184,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
         child: Container(
           height: 84,
           color: Colors.white,
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             children: [
               SizedBox(
@@ -118,12 +192,12 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                 width: 64,
                 child: Card(
                   child: IconButton(
-                    icon: Icon(Icons.favorite_border),
+                    icon: const Icon(Icons.favorite_border),
                     onPressed: () {},
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 8,
               ),
               Expanded(
@@ -133,7 +207,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "BOOK NOW",
                       style: TextStyle(
