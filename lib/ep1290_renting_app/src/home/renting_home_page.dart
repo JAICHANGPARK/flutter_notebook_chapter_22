@@ -135,13 +135,11 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
-                                                    children:  [
+                                                    children: [
                                                       Text(
                                                         "Flutter House",
                                                         style: GoogleFonts.montserrat(
-                                                          fontWeight: FontWeight.bold,
-                                                          fontSize: 16
-                                                        ),
+                                                            fontWeight: FontWeight.bold, fontSize: 16),
                                                       ),
                                                       Spacer(),
                                                       Icon(
@@ -168,9 +166,13 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                                   ),
                                                   Padding(
                                                     padding: const EdgeInsets.symmetric(vertical: 12),
-                                                    child: const Text(
+                                                    child: Text(
                                                       "The room is located in the center of Paris. "
                                                       "There is a terrace on site.",
+                                                      style: GoogleFonts.montserrat(
+                                                        fontSize: 12,
+
+                                                      ),
                                                     ),
                                                   ),
                                                   const Text.rich(
