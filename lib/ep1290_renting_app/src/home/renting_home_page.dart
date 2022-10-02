@@ -126,51 +126,59 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                       margin: EdgeInsets.only(right: 16),
                                       child: Card(
                                         elevation: 3,
-                                        child: Column(
-                                          children: [
-                                            Expanded(child: Placeholder()),
-                                            Column(
-                                              children: [
-                                                Row(
-                                                  children: [
-                                                    Text("Flutter House"),
-                                                    Spacer(),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 16,
-                                                      color: Colors.orange,
-                                                    ),
-                                                    Text("4.7"),
-                                                  ],
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Icon(Icons.location_on_outlined),
-                                                    Text("Paris, France"),
-                                                  ],
-                                                ),
-                                                Text(
-                                                  "The room is located in the center of Paris. "
-                                                  "There is a terrace on site.",
-                                                ),
-                                                Text.rich(
-                                                  TextSpan(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            children: [
+                                              Expanded(child: Placeholder()),
+                                              Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
                                                     children: [
-                                                      TextSpan(
-                                                        text: "\$38",
+                                                      Text("Flutter House"),
+                                                      Spacer(),
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                        color: Colors.orange,
                                                       ),
-                                                      TextSpan(
-                                                        text: '/person',
-                                                        style: TextStyle(
-                                                          fontSize: 12,
-                                                        ),
-                                                      )
+                                                      Text("4.7"),
                                                     ],
                                                   ),
-                                                )
-                                              ],
-                                            )
-                                          ],
+                                                  Row(
+                                                    children: [
+                                                      Icon(Icons.location_on_outlined),
+                                                      Text("Paris, France"),
+                                                    ],
+                                                  ),
+                                                  Text(
+                                                    "The room is located in the center of Paris. "
+                                                    "There is a terrace on site.",
+                                                  ),
+                                                  Text.rich(
+                                                    TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: "\$38",
+                                                          style: TextStyle(
+                                                            fontSize: 16,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: '/person',
+                                                          style: TextStyle(
+                                                            fontSize: 12,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       // decoration: BoxDecoration(
