@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class RentingDetailPage extends StatefulWidget {
   const RentingDetailPage({Key? key}) : super(key: key);
@@ -28,12 +29,17 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(
-                        child: Icon(
-                          Icons.arrow_back,
+                      GestureDetector(
+                        onTap: () {
+                          context.go("/");
+                        },
+                        child: CircleAvatar(
+                          child: Icon(
+                            Icons.arrow_back,
+                          ),
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.white.withOpacity(0.2),
                         ),
-                        foregroundColor: Colors.white,
-                        backgroundColor: Colors.white.withOpacity(0.2),
                       ),
                       CircleAvatar(
                         child: Icon(
@@ -80,7 +86,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               ),
               Expanded(
                 child: Container(
-                  height: 64-4,
+                  height: 64 - 4,
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(8),
