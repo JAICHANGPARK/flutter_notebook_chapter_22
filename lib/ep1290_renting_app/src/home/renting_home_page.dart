@@ -13,6 +13,8 @@ class RentingHomePage extends StatefulWidget {
 }
 
 class _RentingHomePageState extends State<RentingHomePage> {
+  List<String> menuItems = ["All", "Apartments", "Houses", "Hotels"];
+
   @override
   Widget build(BuildContext context) {
     return Consumer(builder: (context, ref, _) {
@@ -45,17 +47,44 @@ class _RentingHomePageState extends State<RentingHomePage> {
                               useRootNavigator: true,
                             );
                           },
-                          icon: Icon(Icons.search),
+                          icon: const Icon(Icons.search),
                           iconSize: 34,
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Container(
-                      height: 84,
-                      color: Colors.purple,
+                      height: 72,
+                      child: ListView.builder(
+                        itemCount: menuItems.length,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: const EdgeInsets.only(
+                              right: 16,
+                              top: 8,
+                              bottom: 8,
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 24,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.blueGrey[50],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "${menuItems[index]}",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                     Expanded(
                         child: IndexedStack(
@@ -76,12 +105,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   ),
                                   TextButton(
                                     onPressed: () {},
-                                    child: Text("See all"),
+                                    child: const Text("See all"),
                                   ),
                                 ],
                               ),
                               Container(
-                                margin: EdgeInsets.symmetric(vertical: 16),
+                                margin: const EdgeInsets.symmetric(vertical: 16),
                                 height: 300,
                                 color: Colors.blue,
                               ),
@@ -96,12 +125,12 @@ class _RentingHomePageState extends State<RentingHomePage> {
                                   ),
                                   TextButton(
                                     onPressed: () {},
-                                    child: Text("See all"),
+                                    child: const Text("See all"),
                                   ),
                                 ],
                               ),
                               Container(
-                                margin: EdgeInsets.symmetric(vertical: 16),
+                                margin: const EdgeInsets.symmetric(vertical: 16),
                                 height: 300,
                                 color: Colors.blue,
                               ),
@@ -124,7 +153,7 @@ class _RentingHomePageState extends State<RentingHomePage> {
             ref.read(rentingPageIndex.notifier).state = i;
           },
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Color(0xff264c86),
+          selectedItemColor: const Color(0xff264c86),
           unselectedItemColor: Colors.black,
           items: const [
             BottomNavigationBarItem(
@@ -162,26 +191,24 @@ class _SearchDelegate extends SearchDelegate {
   @override
   List<Widget>? buildActions(BuildContext context) {
     // TODO: implement buildActions
-    return [
-      IconButton(onPressed: (){}, icon: Icon(Icons.clear))
-    ];
+    return [IconButton(onPressed: () {}, icon: const Icon(Icons.clear))];
   }
 
   @override
   Widget? buildLeading(BuildContext context) {
     // TODO: implement buildLeading
-    return Text("Loading");
+    return const Text("Loading");
   }
 
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
-    return Text("buildResults");
+    return const Text("buildResults");
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
     // TODO: implement buildSuggestions
-    return Text("buildSuggestions");
+    return const Text("buildSuggestions");
   }
 }
