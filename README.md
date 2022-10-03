@@ -1,5 +1,9 @@
 # flutter_notebook_chapter_22
 
+## How to run 
+
+> flutter run -d
+
 ## S25
 
 ### EP1291
