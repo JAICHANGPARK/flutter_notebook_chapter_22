@@ -17,7 +17,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(
-                vertical: 16,
+                vertical: 24,
                 horizontal: 16,
               ),
               child: Row(
@@ -37,6 +37,9 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         const Text(
                           "Nov, 13-16 - 3 guests",
                           style: TextStyle(
@@ -46,8 +49,22 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    width: 32,
+                  ),
                 ],
+              ),
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                ),
               ),
             )
           ],
