@@ -83,31 +83,45 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                     ),
                     const Expanded(child: Placeholder()),
                     Container(
-                        height: 62,
-                        color: Colors.blue,
-                        child: Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Preliminary Cost"),
-                                Text(
-                                  "\$350",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                  ),
-                                )
-                              ],
-                            ),
-                            SizedBox(width: 15,),
-                            Expanded(child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.black
+                      height: 62,
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text("Preliminary Cost"),
+                              SizedBox(
+                                height: 8,
                               ),
-                            )),
-                          ],
-                        ))
+                              const Text(
+                                "\$350",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              )
+                            ],
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.symmetric(vertical: 4),
+                              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(12)),
+                              child: Center(
+                                child: Text(
+                                  "BOOK NOW",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
