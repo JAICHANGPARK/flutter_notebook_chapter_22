@@ -10,6 +10,21 @@ class RentingBookingPage extends StatefulWidget {
 class _RentingBookingPageState extends State<RentingBookingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.arrow_back),
+                color: Colors.white,
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
