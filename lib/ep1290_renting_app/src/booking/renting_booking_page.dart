@@ -10,6 +10,6 @@ class RentingBookingPage extends StatefulWidget {
 class _RentingBookingPageState extends State<RentingBookingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
