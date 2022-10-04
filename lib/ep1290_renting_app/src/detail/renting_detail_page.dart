@@ -219,17 +219,22 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                 width: 8,
               ),
               Expanded(
-                child: Container(
-                  height: 64 - 4,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: const Center(
-                    child: Text(
-                      "BOOK NOW",
-                      style: TextStyle(
-                        color: Colors.white,
+                child: GestureDetector(
+                  onTap: (){
+                    context.push("/book");
+                  },
+                  child: Container(
+                    height: 64 - 4,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "BOOK NOW",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
