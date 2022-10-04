@@ -99,7 +99,13 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                                   ),
                                 )
                               ],
-                            )
+                            ),
+                            SizedBox(width: 15,),
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black
+                              ),
+                            )),
                           ],
                         ))
                   ],
