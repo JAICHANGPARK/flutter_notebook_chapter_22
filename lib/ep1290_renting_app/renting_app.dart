@@ -14,7 +14,7 @@ class RentingApp extends StatelessWidget {
         GoRoute(
             path: "detail",
             builder: (context, state) {
-              return RentingDetailPage();
+              return const RentingDetailPage();
             }),
       ]),
     ],
