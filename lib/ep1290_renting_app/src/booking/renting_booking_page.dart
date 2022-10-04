@@ -29,18 +29,19 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                   ),
                   Expanded(
                     child: Column(
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Flutter House",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
+                            fontSize: 15,
                           ),
                         ),
                         SizedBox(
                           height: 8,
                         ),
-                        const Text(
+                        Text(
                           "Nov, 13-16 - 3 guests",
                           style: TextStyle(
                             color: Colors.white,
@@ -50,7 +51,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 32,
                   ),
                 ],
@@ -58,12 +59,32 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                   ),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Dates"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("Clear"),
+                        ),
+                      ],
+                    ),
+                    Expanded(child: Placeholder()),
+                    Container(
+                      height: 62,
+                      color: Colors.blue,
+                    )
+                  ],
                 ),
               ),
             )
