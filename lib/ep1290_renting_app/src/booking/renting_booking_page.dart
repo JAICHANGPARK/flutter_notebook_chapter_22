@@ -84,6 +84,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                     const Expanded(child: Placeholder()),
                     Container(
                       height: 62,
+                      margin: EdgeInsets.only(bottom: 16),
                       child: Row(
                         children: [
                           Column(
