@@ -66,24 +66,42 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                     topRight: Radius.circular(16),
                   ),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Dates"),
+                        const Text("Dates"),
                         TextButton(
                           onPressed: () {},
-                          child: Text("Clear"),
+                          child: const Text("Clear"),
                         ),
                       ],
                     ),
-                    Expanded(child: Placeholder()),
+                    const Expanded(child: Placeholder()),
                     Container(
-                      height: 62,
-                      color: Colors.blue,
-                    )
+                        height: 62,
+                        color: Colors.blue,
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Preliminary Cost"),
+                                Text(
+                                  "\$350",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ))
                   ],
                 ),
               ),
