@@ -89,12 +89,27 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                             height: 300,
                             color: Colors.blue,
                             child: Card(
-                              child: DateTimeRange(start: DateTime.now(), end: DateTime.now(),),
-                              // child: DateRangePickerDialog(
-                              //   firstDate: DateTime.now().add(Duration(days: -100)),
-                              //   lastDate: DateTime.now(),
+                              // child: DateTimeRange(start: DateTime.now(), end: DateTime.now(),),
+                              child: DateRangePickerDialog(
+                                firstDate: DateTime.now().add(Duration(days: -100)),
+                                lastDate: DateTime.now(),
                               ),
                             ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Guest",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("Clear"),
+                              ),
+                            ],
                           )
                         ],
                       ),
