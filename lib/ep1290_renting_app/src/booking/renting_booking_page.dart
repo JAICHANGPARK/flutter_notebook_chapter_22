@@ -81,16 +81,24 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                         ),
                       ],
                     ),
-                     Expanded(child: SingleChildScrollView(
-                       child: Column(
-                         children: [
-                           Container(
-                             height: 300,
-                             color: Colors.blue,
-                           )
-                         ],
-                       ),
-                     )),
+                    Expanded(
+                        child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 300,
+                            color: Colors.blue,
+                            child: Card(
+                              child: DateTimeRange(start: DateTime.now(), end: DateTime.now(),),
+                              // child: DateRangePickerDialog(
+                              //   firstDate: DateTime.now().add(Duration(days: -100)),
+                              //   lastDate: DateTime.now(),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    )),
                     Container(
                       height: 62,
                       margin: const EdgeInsets.only(bottom: 16),
