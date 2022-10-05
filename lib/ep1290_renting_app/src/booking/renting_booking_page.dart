@@ -84,17 +84,17 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                     const Expanded(child: Placeholder()),
                     Container(
                       height: 62,
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       child: Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text("Preliminary Cost"),
+                            children: const [
+                              Text("Preliminary Cost"),
                               SizedBox(
                                 height: 8,
                               ),
-                              const Text(
+                              Text(
                                 "\$350",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -108,9 +108,9 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                           ),
                           Expanded(
                             child: Container(
-                              margin: EdgeInsets.symmetric(vertical: 4),
+                              margin: const EdgeInsets.symmetric(vertical: 4),
                               decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(12)),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "BOOK NOW",
                                   style: TextStyle(
