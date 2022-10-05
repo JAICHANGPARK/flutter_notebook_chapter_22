@@ -103,6 +103,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                                 "Guest",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 18
                                 ),
                               ),
                               TextButton(
@@ -110,6 +111,21 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                                 child: Text("Clear"),
                               ),
                             ],
+                          ),
+                          Container(
+                            height: 100,
+                            child: Card(
+                              child: Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text("Adults"),
+                                      Text("ofter 12")
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
                           )
                         ],
                       ),
