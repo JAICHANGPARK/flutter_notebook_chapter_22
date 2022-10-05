@@ -220,7 +220,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               ),
               Expanded(
                 child: GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     context.push("/book");
                   },
                   child: Container(
