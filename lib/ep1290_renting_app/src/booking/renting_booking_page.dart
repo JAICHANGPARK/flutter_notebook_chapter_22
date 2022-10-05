@@ -79,10 +79,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                       children: [
                         const Text(
                           "Dates",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                         TextButton(
                           onPressed: () {},
