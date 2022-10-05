@@ -101,10 +101,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                             children: [
                               Text(
                                 "Guest",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                               TextButton(
                                 onPressed: () {},
@@ -113,17 +110,34 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                             ],
                           ),
                           Container(
-                            height: 100,
+                            height: 84,
+
                             child: Card(
-                              child: Row(
-                                children: [
-                                  Column(
-                                    children: [
-                                      Text("Adults"),
-                                      Text("ofter 12")
-                                    ],
-                                  )
-                                ],
+                              child: Padding(
+                                padding: const EdgeInsets.all(16),
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Adults"),
+                                        Text("ofter 12"),
+                                      ],
+                                    ),
+                                    Spacer(),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.remove,
+                                      ),
+                                    ),
+                                    Text("2"),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.add),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           )
