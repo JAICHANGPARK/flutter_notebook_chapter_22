@@ -81,7 +81,16 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                         ),
                       ],
                     ),
-                    const Expanded(child: Placeholder()),
+                     Expanded(child: SingleChildScrollView(
+                       child: Column(
+                         children: [
+                           Container(
+                             height: 300,
+                             color: Colors.blue,
+                           )
+                         ],
+                       ),
+                     )),
                     Container(
                       height: 62,
                       margin: const EdgeInsets.only(bottom: 16),
