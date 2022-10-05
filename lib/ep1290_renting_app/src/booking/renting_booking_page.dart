@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class RentingBookingPage extends StatefulWidget {
   const RentingBookingPage({Key? key}) : super(key: key);
@@ -23,7 +24,9 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
               child: Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.pop();
+                    },
                     icon: const Icon(Icons.arrow_back),
                     color: Colors.white,
                   ),
