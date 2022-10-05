@@ -74,7 +74,13 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text("Dates"),
+                        const Text(
+                          "Dates",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: const Text("Clear"),
