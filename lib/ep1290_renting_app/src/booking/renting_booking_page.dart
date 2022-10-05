@@ -91,7 +91,7 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                             child: Card(
                               // child: DateTimeRange(start: DateTime.now(), end: DateTime.now(),),
                               child: DateRangePickerDialog(
-                                firstDate: DateTime.now().add(Duration(days: -100)),
+                                firstDate: DateTime.now().add(const Duration(days: -100)),
                                 lastDate: DateTime.now(),
                               ),
                             ),
@@ -99,19 +99,18 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 "Guest",
                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text("Clear"),
+                                child: const Text("Clear"),
                               ),
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 84,
-
                             child: Card(
                               child: Padding(
                                 padding: const EdgeInsets.all(16),
@@ -119,22 +118,31 @@ class _RentingBookingPageState extends State<RentingBookingPage> {
                                   children: [
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Adults"),
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "Adults",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Text("ofter 12"),
                                       ],
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.remove,
                                       ),
                                     ),
-                                    Text("2"),
+                                    const Text("2"),
                                     IconButton(
                                       onPressed: () {},
-                                      icon: Icon(Icons.add),
+                                      icon: const Icon(Icons.add),
                                     ),
                                   ],
                                 ),
