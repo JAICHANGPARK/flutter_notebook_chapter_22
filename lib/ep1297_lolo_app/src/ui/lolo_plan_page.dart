@@ -38,8 +38,9 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               child: Text(
                 "Sign Up For Pro",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
