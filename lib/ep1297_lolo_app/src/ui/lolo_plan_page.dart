@@ -13,21 +13,19 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){}, icon: Icon(Icons.cancel_outlined),
-
+          onPressed: () {},
+          icon: Icon(Icons.cancel_outlined),
         ),
         centerTitle: true,
         title: Text("Pick Your Plan"),
-        titleTextStyle: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 20
-        ),
+        // titleTextStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
       ),
       body: SafeArea(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
