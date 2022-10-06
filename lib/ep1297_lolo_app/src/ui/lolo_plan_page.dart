@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LoloPlanPage extends StatefulWidget {
   const LoloPlanPage({Key? key}) : super(key: key);
 
@@ -16,11 +15,29 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
         child: Column(
           children: [
             Row(
-              children: [
-                
-              ],
+              children: [],
             )
           ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          padding: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.purple,
+            ),
+            child: Center(
+              child: Text(
+                "Sign Up For Pro",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
