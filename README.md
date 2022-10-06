@@ -12,7 +12,7 @@
 - by Mahima Mahajan
 - https://dribbble.com/shots/19577929-Lolo-Mobile-Design-for-Dating-App
 
-<img src="https://cdn.dribbble.com/userupload/3687345/file/original-dc3ae9f421643d293ed75c6d3f841a54.png?compress=1&resize=1200x900" width="400px"/>
+<img src="https://cdn.dribbble.com/userupload/3738726/file/original-51e18604da66f4f6b925116e2fd5d631.jpg?compress=1&resize=2048x1536" width="400px"/>
 
 
 ### EP1291-1296
