@@ -68,19 +68,19 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                           context.go("/");
                         },
                         child: CircleAvatar(
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.white.withOpacity(0.2),
                           child: const Icon(
                             Icons.arrow_back,
                           ),
-                          foregroundColor: Colors.white,
-                          backgroundColor: Colors.white.withOpacity(0.2),
                         ),
                       ),
                       CircleAvatar(
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.white.withOpacity(0.2),
                         child: const Icon(
                           Icons.share,
                         ),
-                        foregroundColor: Colors.white,
-                        backgroundColor: Colors.white.withOpacity(0.2),
                       ),
                     ],
                   ),
@@ -96,7 +96,7 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
               dotsCount: 4,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Expanded(
@@ -174,17 +174,17 @@ class _RentingDetailPageState extends State<RentingDetailPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
-                    Text(
+                    const Text(
                       "Location",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Container(
