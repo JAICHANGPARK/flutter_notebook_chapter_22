@@ -11,12 +11,18 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: (){}, icon: Icon(Icons.cancel_outlined),
+
+        ),
+        centerTitle: true,
+        title: Text("Pick Your Plan"),
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [],
-            )
+
           ],
         ),
       ),
