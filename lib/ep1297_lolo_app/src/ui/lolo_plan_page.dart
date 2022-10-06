@@ -23,10 +23,16 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+          padding: EdgeInsets.only(
+            left: 16,
+            right: 16,
+            top: 8,
+            bottom: 8,
+          ),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.purple,
+              borderRadius: BorderRadius.circular(32),
             ),
             child: Center(
               child: Text(
