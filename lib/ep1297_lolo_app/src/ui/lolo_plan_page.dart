@@ -18,6 +18,10 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
         ),
         centerTitle: true,
         title: Text("Pick Your Plan"),
+        titleTextStyle: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 20
+        ),
       ),
       body: SafeArea(
         child: Column(
