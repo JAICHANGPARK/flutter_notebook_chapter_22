@@ -11,6 +11,18 @@ class LoloPlanPage extends StatefulWidget {
 class _LoloPlanPageState extends State<LoloPlanPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
