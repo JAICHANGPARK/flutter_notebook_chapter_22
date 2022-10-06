@@ -6,7 +6,16 @@
 
 ## S25
 
-### EP1291
+### EP1297
+
+- Lolo - Mobile Design for Dating App
+- by Mahima Mahajan
+- https://dribbble.com/shots/19577929-Lolo-Mobile-Design-for-Dating-App
+
+<img src="https://cdn.dribbble.com/userupload/3687345/file/original-dc3ae9f421643d293ed75c6d3f841a54.png?compress=1&resize=1200x900" width="400px"/>
+
+
+### EP1291-1296
 
 - Renting App
 - by Alexander Kontsevoy for Ronas IT | UI/UX Team
