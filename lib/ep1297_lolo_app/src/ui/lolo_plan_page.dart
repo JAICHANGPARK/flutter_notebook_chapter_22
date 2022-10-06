@@ -23,7 +23,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 16,
             right: 16,
             top: 8,
@@ -34,7 +34,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               color: Colors.purple,
               borderRadius: BorderRadius.circular(32),
             ),
-            child: Center(
+            child: const Center(
               child: Text(
                 "Sign Up For Pro",
                 style: TextStyle(
