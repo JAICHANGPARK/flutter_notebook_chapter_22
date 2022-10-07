@@ -105,6 +105,20 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   color: Colors.grey,
                 ),
               ),
+              Expanded(
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),
