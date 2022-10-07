@@ -93,12 +93,18 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               ),
               Text(
                 "Get Lolo Plus",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                "Swipe right on as many peaple you like",
                 style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey,
                 ),
               ),
-              Text("Swipe right on as many peaple you like"),
             ],
           ),
         ),
