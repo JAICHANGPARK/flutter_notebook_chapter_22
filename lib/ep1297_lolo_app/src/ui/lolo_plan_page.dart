@@ -15,10 +15,10 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.cancel_outlined),
+          icon: const Icon(Icons.cancel_outlined),
         ),
         centerTitle: true,
-        title: Text("Pick Your Plan"),
+        title: const Text("Pick Your Plan"),
         // titleTextStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         backgroundColor: Colors.white,
         elevation: 0,
