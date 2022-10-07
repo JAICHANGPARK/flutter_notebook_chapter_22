@@ -28,6 +28,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -45,6 +46,9 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  width: 16,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -56,7 +60,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     child: Text(
                       "Premium",
                       style: TextStyle(
-                        color: Colors.white,
+                        // color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
