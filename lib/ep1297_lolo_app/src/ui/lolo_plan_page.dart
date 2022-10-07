@@ -123,9 +123,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                             right: 0,
                             bottom: 0,
                             child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all()
-                              ),
+                              decoration: BoxDecoration(border: Border.all()),
                             ),
                           )
                         ],
