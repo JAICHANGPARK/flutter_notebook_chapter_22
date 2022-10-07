@@ -8,6 +8,8 @@ class LoloPlanPage extends StatefulWidget {
 }
 
 class _LoloPlanPageState extends State<LoloPlanPage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,50 +27,62 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
         foregroundColor: Colors.black,
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                  child: const Center(
-                    child: Text(
-                      "Monthly",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.only(
+            top: 16,
+          ),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageIndex = 0;
+                      });
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      child: const Center(
+                        child: Text(
+                          "Monthly",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  width: 16,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(24),
+                  SizedBox(
+                    width: 16,
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                  child: const Center(
-                    child: Text(
-                      "Premium",
-                      style: TextStyle(
-                        // color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                    child: const Center(
+                      child: Text(
+                        "Premium",
+                        style: TextStyle(
+                          // color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  ),
-                )
-              ],
-            )
-          ],
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
