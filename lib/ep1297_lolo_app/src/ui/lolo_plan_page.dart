@@ -30,8 +30,9 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
             Row(
               children: [
                 Container(
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Colors.black,
+                    borderRadius: BorderRadius.circular(24),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: const Center(
