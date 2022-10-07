@@ -88,32 +88,40 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 42,
               ),
-              Text(
+              const Text(
                 "Get Lolo Plus",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              Text(
+              const Text(
                 "Swipe right on as many peaple you like",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.grey,
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                 child: ListView.builder(
+                  itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: Colors.grey,
-                        ),
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      height: 160,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 8,
+                            child: Container(),
+                          )
+                        ],
                       ),
                     );
                   },
