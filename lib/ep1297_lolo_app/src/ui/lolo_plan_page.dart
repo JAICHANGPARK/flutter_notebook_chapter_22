@@ -87,7 +87,18 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     ),
                   )
                 ],
-              )
+              ),
+              SizedBox(
+                height: 42,
+              ),
+              Text(
+                "Get Lolo Plus",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800
+                ),
+              ),
+              Text("Swipe right on as many peaple you like"),
             ],
           ),
         ),
