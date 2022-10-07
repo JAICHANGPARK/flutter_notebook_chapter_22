@@ -113,13 +113,20 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      height: 160,
+                      margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
+                      height: 180,
                       child: Stack(
                         children: [
                           Positioned(
-                            top: 8,
-                            child: Container(),
+                            top: 16,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all()
+                              ),
+                            ),
                           )
                         ],
                       ),
