@@ -34,10 +34,27 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(24),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   child: const Center(
                     child: Text(
                       "Monthly",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  child: const Center(
+                    child: Text(
+                      "Premium",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
