@@ -47,7 +47,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       child: const Center(
                         child: Text(
                           "Monthly",
@@ -59,22 +59,29 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                    child: const Center(
-                      child: Text(
-                        "Premium",
-                        style: TextStyle(
-                          // color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageIndex = 1;
+                      });
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: Colors.grey),
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      child: const Center(
+                        child: Text(
+                          "Premium",
+                          style: TextStyle(
+                            // color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
