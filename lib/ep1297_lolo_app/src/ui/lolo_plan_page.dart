@@ -133,6 +133,10 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                               top: 0,
                               left: 16,
                               child: Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 8,
+                                ),
                                 decoration: BoxDecoration(
                                   color: Colors.green,
                                 ),
