@@ -112,6 +112,37 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                 child: ListView.builder(
                   itemCount: 10,
                   itemBuilder: (context, index) {
+                    if (index % 2 == 0) {
+                      return Container(
+                        margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
+                        height: 180,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 16,
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 0,
+                              left: 16,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                ),
+                                child: Text("Recommended"),
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    }
                     return Container(
                       margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
                       height: 180,
@@ -123,7 +154,9 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                             right: 0,
                             bottom: 0,
                             child: Container(
-                              decoration: BoxDecoration(border: Border.all()),
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                              ),
                             ),
                           )
                         ],
