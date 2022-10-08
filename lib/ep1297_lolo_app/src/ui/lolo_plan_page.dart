@@ -115,7 +115,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     if (index % 3 == 1) {
                       return Container(
                         margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                        height: 180,
+                        height: 210,
                         child: Stack(
                           children: [
                             Positioned(
@@ -130,6 +130,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                   ),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
+                                padding: EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
