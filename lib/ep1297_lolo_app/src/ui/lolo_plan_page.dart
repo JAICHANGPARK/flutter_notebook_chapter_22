@@ -175,14 +175,27 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Upgrade your likes"),
+                                  Text(
+                                    "Upgrade your likes",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                   Text(
                                     "\$9,99",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 20
+                                      fontSize: 20,
                                     ),
-                                  )
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
                                 ],
                               ),
                             ),
