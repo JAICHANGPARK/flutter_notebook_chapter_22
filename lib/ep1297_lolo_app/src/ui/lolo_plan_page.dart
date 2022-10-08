@@ -112,7 +112,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                 child: ListView.builder(
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    if (index % 2 == 0) {
+                    if (index % 3 == 1) {
                       return Container(
                         margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
                         height: 180,
@@ -125,8 +125,10 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                               bottom: 0,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  border: Border.all(),
-                                ),
+                                    border: Border.all(
+                                      color: Colors.purple,
+                                    ),
+                                    borderRadius: BorderRadius.circular(12)),
                               ),
                             ),
                             Positioned(
@@ -139,8 +141,15 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                 ),
                                 decoration: BoxDecoration(
                                   color: Colors.green,
+                                  borderRadius: BorderRadius.circular(9),
                                 ),
-                                child: Text("Recommended"),
+                                child: Text(
+                                  "Recommended",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             )
                           ],
@@ -160,6 +169,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 border: Border.all(),
+                                borderRadius: BorderRadius.circular(12),
                               ),
                             ),
                           )
