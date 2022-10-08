@@ -125,10 +125,54 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                               bottom: 0,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.purple,
+                                  border: Border.all(
+                                    color: Colors.purple,
+                                  ),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      "Upgrade your likes",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
                                     ),
-                                    borderRadius: BorderRadius.circular(12)),
+                                    const SizedBox(
+                                      height: 12,
+                                    ),
+                                    const Text(
+                                      "\$9,99",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    const Text(
+                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                                    ),
+                                    const Spacer(),
+                                    Row(
+                                      children: [
+                                        const Text(
+                                          "See benefits",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        const Icon(
+                                          Icons.keyboard_arrow_down,
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             Positioned(
