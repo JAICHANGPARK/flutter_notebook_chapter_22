@@ -105,7 +105,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   color: Colors.grey,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Expanded(
@@ -114,7 +114,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   itemBuilder: (context, index) {
                     if (index % 3 == 1) {
                       return Container(
-                        margin: EdgeInsets.fromLTRB(16, 0, 16, 12),
+                        margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
                         height: 180,
                         child: Stack(
                           children: [
@@ -135,7 +135,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                               top: 0,
                               left: 16,
                               child: Container(
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 8,
                                 ),
@@ -143,7 +143,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                   color: Colors.green,
                                   borderRadius: BorderRadius.circular(9),
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Recommended",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -157,7 +157,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                       );
                     }
                     return Container(
-                      margin: EdgeInsets.fromLTRB(16, 0, 16, 12),
+                      margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
                       height: 200,
                       child: Stack(
                         children: [
@@ -171,44 +171,44 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                 border: Border.all(),
                                 borderRadius: BorderRadius.circular(12),
                               ),
-                              padding: EdgeInsets.all(15),
+                              padding: const EdgeInsets.all(15),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Upgrade your likes",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
-                                  Text(
+                                  const Text(
                                     "\$9,99",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                                     style: TextStyle(color: Colors.grey, fontSize: 12),
                                   ),
-                                  Spacer(),
+                                  const Spacer(),
                                   Row(
                                     children: [
-                                      Text(
+                                      const Text(
                                         "See benefits",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.keyboard_arrow_down,
                                       )
                                     ],
