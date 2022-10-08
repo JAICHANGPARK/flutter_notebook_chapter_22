@@ -158,7 +158,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     }
                     return Container(
                       margin: EdgeInsets.fromLTRB(16, 0, 16, 12),
-                      height: 180,
+                      height: 200,
                       child: Stack(
                         children: [
                           Positioned(
@@ -192,10 +192,27 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                       fontSize: 20,
                                     ),
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(color: Colors.grey, fontSize: 12),
                                   ),
+                                  Spacer(),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "See benefits",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.keyboard_arrow_down,
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
