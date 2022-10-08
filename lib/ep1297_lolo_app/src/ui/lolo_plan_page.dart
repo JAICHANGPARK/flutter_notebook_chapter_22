@@ -171,6 +171,20 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                 border: Border.all(),
                                 borderRadius: BorderRadius.circular(12),
                               ),
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Upgrade your likes"),
+                                  Text(
+                                    "\$9,99",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           )
                         ],
