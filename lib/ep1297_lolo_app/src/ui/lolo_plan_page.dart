@@ -114,7 +114,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   itemBuilder: (context, index) {
                     if (index % 3 == 1) {
                       return Container(
-                        margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
+                        margin: EdgeInsets.fromLTRB(16, 0, 16, 12),
                         height: 180,
                         child: Stack(
                           children: [
@@ -157,7 +157,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                       );
                     }
                     return Container(
-                      margin: EdgeInsets.fromLTRB(16, 0, 16, 8),
+                      margin: EdgeInsets.fromLTRB(16, 0, 16, 12),
                       height: 180,
                       child: Stack(
                         children: [
