@@ -1,5 +1,9 @@
 # flutter_notebook_chapter_22
 
+## Flutter channel 
+
+- master
+
 ## How to run 
 
 > flutter run -d
