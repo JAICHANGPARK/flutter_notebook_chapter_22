@@ -46,9 +46,12 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                       decoration: BoxDecoration(
                         color: pageIndex == 0 ? Colors.black : Colors.white,
                         borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: pageIndex == 0 ? Colors.black : Colors.grey,
+                        ),
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      child:  Center(
+                      child: Center(
                         child: Text(
                           "Monthly",
                           style: TextStyle(
@@ -77,11 +80,11 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      child:  Center(
+                      child: Center(
                         child: Text(
                           "Premium",
                           style: TextStyle(
-                            color: pageIndex == 1? Colors.white : Colors.black,
+                            color: pageIndex == 1 ? Colors.white : Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
