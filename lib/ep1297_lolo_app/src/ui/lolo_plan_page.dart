@@ -109,163 +109,171 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                 height: 16,
               ),
               Expanded(
-                child: ListView.builder(
-                  itemCount: 10,
-                  itemBuilder: (context, index) {
-                    if (index % 3 == 1) {
-                      return Container(
-                        margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                        height: 210,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              top: 16,
-                              left: 0,
-                              right: 0,
-                              bottom: 0,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.purple,
-                                  ),
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      "Upgrade your likes",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 18,
+                child: IndexedStack(
+                  index: pageIndex,
+                  children: [
+                    ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        if (index % 3 == 1) {
+                          return Container(
+                            margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                            height: 210,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  top: 16,
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.purple,
                                       ),
+                                      borderRadius: BorderRadius.circular(12),
                                     ),
-                                    const SizedBox(
-                                      height: 12,
-                                    ),
-                                    const Text(
-                                      "\$9,99",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 8,
-                                    ),
-                                    const Text(
-                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                                    ),
-                                    const Spacer(),
-                                    Row(
+                                    padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         const Text(
-                                          "See benefits",
+                                          "Upgrade your likes",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
+                                            fontSize: 18,
                                           ),
                                         ),
-                                        const Icon(
-                                          Icons.keyboard_arrow_down,
+                                        const SizedBox(
+                                          height: 12,
+                                        ),
+                                        const Text(
+                                          "\$9,99",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        const Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
+                                        const Spacer(),
+                                        Row(
+                                          children: [
+                                            const Text(
+                                              "See benefits",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            const Icon(
+                                              Icons.keyboard_arrow_down,
+                                            )
+                                          ],
                                         )
                                       ],
-                                    )
-                                  ],
+                                    ),
+                                  ),
                                 ),
-                              ),
+                                Positioned(
+                                  top: 0,
+                                  left: 16,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 16,
+                                      vertical: 8,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: Colors.green,
+                                      borderRadius: BorderRadius.circular(9),
+                                    ),
+                                    child: const Text(
+                                      "Recommended",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
-                            Positioned(
-                              top: 0,
-                              left: 16,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 16,
-                                  vertical: 8,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(9),
-                                ),
-                                child: const Text(
-                                  "Recommended",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
+                          );
+                        }
+                        return Container(
+                          margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                          height: 200,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                top: 16,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(12),
                                   ),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      );
-                    }
-                    return Container(
-                      margin: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                      height: 200,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 16,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              padding: const EdgeInsets.all(15),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    "Upgrade your likes",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 12,
-                                  ),
-                                  const Text(
-                                    "\$9,99",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 8,
-                                  ),
-                                  const Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                                    style: TextStyle(color: Colors.grey, fontSize: 12),
-                                  ),
-                                  const Spacer(),
-                                  Row(
+                                  padding: const EdgeInsets.all(15),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       const Text(
-                                        "See benefits",
+                                        "Upgrade your likes",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontSize: 18,
                                         ),
                                       ),
-                                      const Icon(
-                                        Icons.keyboard_arrow_down,
+                                      const SizedBox(
+                                        height: 12,
+                                      ),
+                                      const Text(
+                                        "\$9,99",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 8,
+                                      ),
+                                      const Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      ),
+                                      const Spacer(),
+                                      Row(
+                                        children: [
+                                          const Text(
+                                            "See benefits",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          const Icon(
+                                            Icons.keyboard_arrow_down,
+                                          )
+                                        ],
                                       )
                                     ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    );
-                  },
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                    Container(
+                      color: Colors.pink,
+                    )
+                  ],
                 ),
               ),
             ],
