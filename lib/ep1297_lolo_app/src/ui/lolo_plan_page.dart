@@ -130,7 +130,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                   ),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                padding: EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
+                                padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
