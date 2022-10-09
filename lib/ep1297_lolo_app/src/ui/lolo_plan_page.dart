@@ -96,11 +96,19 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               const SizedBox(
                 height: 42,
               ),
-              const Text(
+               Text(
                 "Get Lolo Plus",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w800,
+                  foreground: Paint()
+                    ..shader = LinearGradient(colors: [
+                      Colors.black,
+                      Colors.black,
+                      Colors.purpleAccent
+                    ]).createShader(
+                      Rect.fromLTWH(0, 0, 250, 70),
+                    ),
                 ),
               ),
               const SizedBox(
