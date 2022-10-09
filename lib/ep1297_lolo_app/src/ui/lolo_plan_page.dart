@@ -48,11 +48,11 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      child: const Center(
+                      child:  Center(
                         child: Text(
                           "Monthly",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: pageIndex == 0 ? Colors.white : Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
