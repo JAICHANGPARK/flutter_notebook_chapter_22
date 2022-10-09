@@ -99,7 +99,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                Text(
                 "Get Lolo Plus",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 22,
                   fontWeight: FontWeight.w800,
                   foreground: Paint()
                     ..shader = LinearGradient(colors: [
@@ -107,7 +107,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                       Colors.black,
                       Colors.purpleAccent
                     ]).createShader(
-                      Rect.fromLTWH(0, 0, 250, 70),
+                      Rect.fromLTWH(0, 0, 220, 70),
                     ),
                 ),
               ),
