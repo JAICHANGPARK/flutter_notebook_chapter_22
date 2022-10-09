@@ -98,7 +98,10 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               ),
               const Text(
                 "Get Lolo Plus",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800,
+                ),
               ),
               const SizedBox(
                 height: 8,
