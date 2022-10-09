@@ -146,6 +146,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                     decoration: BoxDecoration(
                                       border: Border.all(
                                         color: Colors.purple,
+                                        width: 2
                                       ),
                                       borderRadius: BorderRadius.circular(12),
                                     ),
