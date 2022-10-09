@@ -71,7 +71,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: pageIndex == 1 ? Colors.black : Colors.white,
-                        border: Border.all(color: Colors.grey),
+                        border: Border.all(color: pageIndex == 1 ? Colors.black : Colors.grey),
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
