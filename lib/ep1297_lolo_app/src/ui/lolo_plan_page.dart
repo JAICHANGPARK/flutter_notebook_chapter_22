@@ -44,7 +44,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: pageIndex == 0 ? Colors.black : Colors.white,
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
@@ -70,7 +70,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: pageIndex == 1 ? Colors.black : Colors.white,
                         border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(24),
                       ),
