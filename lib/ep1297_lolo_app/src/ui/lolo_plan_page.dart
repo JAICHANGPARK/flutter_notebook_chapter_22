@@ -96,17 +96,13 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
               const SizedBox(
                 height: 42,
               ),
-               Text(
+              Text(
                 "Get Lolo Plus",
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
                   foreground: Paint()
-                    ..shader = LinearGradient(colors: [
-                      Colors.black,
-                      Colors.black,
-                      Colors.purpleAccent
-                    ]).createShader(
+                    ..shader = LinearGradient(colors: [Colors.black, Colors.black, Colors.purpleAccent]).createShader(
                       Rect.fromLTWH(0, 0, 220, 70),
                     ),
                 ),
@@ -144,10 +140,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                   bottom: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.purple,
-                                        width: 2
-                                      ),
+                                      border: Border.all(color: Colors.purple, width: 2),
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
