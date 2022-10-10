@@ -102,7 +102,7 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
                   foreground: Paint()
-                    ..shader = LinearGradient(colors: [Colors.black, Colors.black, Colors.purpleAccent]).createShader(
+                    ..shader = LinearGradient(colors: const [Colors.black, Colors.black, Colors.purpleAccent]).createShader(
                       Rect.fromLTWH(0, 0, 220, 70),
                     ),
                 ),
@@ -143,7 +143,12 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                       border: Border.all(color: Colors.purple, width: 2),
                                       borderRadius: BorderRadius.circular(12),
                                     ),
-                                    padding: const EdgeInsets.only(top: 24, left: 16, right: 16, bottom: 16),
+                                    padding: const EdgeInsets.only(
+                                      top: 24,
+                                      left: 16,
+                                      right: 16,
+                                      bottom: 16,
+                                    ),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -173,14 +178,14 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                         ),
                                         const Spacer(),
                                         Row(
-                                          children: [
-                                            const Text(
+                                          children: const [
+                                            Text(
                                               "See benefits",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            const Icon(
+                                            Icon(
                                               Icons.keyboard_arrow_down,
                                             )
                                           ],
@@ -259,14 +264,14 @@ class _LoloPlanPageState extends State<LoloPlanPage> {
                                       ),
                                       const Spacer(),
                                       Row(
-                                        children: [
-                                          const Text(
+                                        children: const [
+                                          Text(
                                             "See benefits",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          const Icon(
+                                          Icon(
                                             Icons.keyboard_arrow_down,
                                           )
                                         ],
