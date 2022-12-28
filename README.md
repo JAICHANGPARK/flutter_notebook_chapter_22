@@ -10,7 +10,7 @@
 
 ## S25
 
-### EP1297 - 1300
+### EP1297-1300
 
 - Lolo - Mobile Design for Dating App
 - by Mahima Mahajan
